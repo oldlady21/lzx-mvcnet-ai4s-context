@@ -1,15 +1,15 @@
 # lzx-mvcnet-ai4s 讨论资料入口
 
 仓库：https://github.com/oldlady21/lzx-mvcnet-ai4s-context
-导出时间（UTC）：2026-11-02T15:14:57.171238+00:00
-快照身份：`e8f66dbc2b2ccab03212f5cd54d40f365724ed06f79656fe88ff5fb1a0e2fd27`
+导出时间（UTC）：2026-11-02T15:42:36.866585+00:00
+快照身份：`6495c4a6753ed16238cddf55d9a26fe949c99ae0ddc36a5ed8269b257b041fc6`
 
 这是本地已保存文件的公开讨论副本。来源与公开文件 SHA-256、脱敏计数、未公开引用见 [SYNC_MANIFEST.json](SYNC_MANIFEST.json)。
 机器字段已机械脱敏；保留原研究身份、冻结边界、预算、证据状态和历史。它不替代本地权威记录，不授予执行/恢复/改协议权限。
 合同公开副本可能因脱敏与重排而改变哈希，不能作为可执行冻结合同。源文件字节哈希与合同内的科学规范哈希不是同一种身份。
 同一文件中的历史准备、失败和结果段落仍是历史。当前本地运行登记如下；未查询服务器，不保证远端实时状态。
 
-下面只列运行身份摘要，不是完整预算、协议或科学结论；完整字段以本库提供的State及合同公开副本为准，缺失时需回本地核对。
+下面只列运行身份摘要，不是完整预算、协议或科学结论。source_path 是本地项目路径；source_public_url 才是公开读取地址。source_in_this_repository=false 仅表示不在本库，不表示未公开。
 
 ## 当前本地登记
 
@@ -18,6 +18,8 @@
   "mvcnet": {
     "source_path": "ai4s/programs/mvcnet/research/STATE.yaml",
     "source_sha256": "60803dac039854e02c6178a70eed45517992df818ea7a76b2306733d140ab8be",
+    "source_public_url": "https://github.com/oldlady21/lzx-mvcnet-ai4s-context/blob/main/ai4s/programs/mvcnet/research/STATE.yaml",
+    "source_in_this_repository": true,
     "source_updated_at": "2026-11-01T14:54:25.530999+00:00",
     "status": "WAITING_REMOTE",
     "paused": false,
@@ -34,7 +36,11 @@
 
 1. 本入口与同步清单。
 2. PROMPT_INDEX 指定的活动链、对应 Program 当前认识、State 与 Evidence Index（本库提供的范围内）。
-3. 根据问题读取决策、论文主线和具体报告。缺失引用仅本地可用，不能推断为已核验。
+3. 根据问题读取决策、论文主线和具体报告。引用不在本库时先查下方对应模型库；仍找不到时再说明未公开，不推断为已核验。
+
+## 模型 State 公开地址
+
+- [mvcnet/STATE.yaml](https://github.com/oldlady21/lzx-mvcnet-ai4s-context/blob/main/ai4s/programs/mvcnet/research/STATE.yaml)（本库也提供）
 
 ## 文档列表
 

@@ -5,7 +5,7 @@
     "不自动递归补齐引用；未公开引用见每库SYNC_MANIFEST.json。",
     "不上传凭据、SSH配置、数据集、checkpoint、原始预测、机器日志或完整实验目录。"
   ],
-  "exported_at": "2026-11-02T15:14:57.171238+00:00",
+  "exported_at": "2026-11-02T15:42:36.866585+00:00",
   "files": [
     {
       "bytes": 10735,
@@ -341,7 +341,9 @@
         "round_id": "mvcnet-xsn-r1-screen-lab10-r1-budget480"
       },
       "paused": false,
+      "source_in_this_repository": true,
       "source_path": "ai4s/programs/mvcnet/research/STATE.yaml",
+      "source_public_url": "https://github.com/oldlady21/lzx-mvcnet-ai4s-context/blob/main/ai4s/programs/mvcnet/research/STATE.yaml",
       "source_sha256": "60803dac039854e02c6178a70eed45517992df818ea7a76b2306733d140ab8be",
       "source_updated_at": "2026-11-01T14:54:25.530999+00:00",
       "status": "WAITING_REMOTE"
@@ -349,7 +351,7 @@
   },
   "policy_version": "public-documents-v1",
   "repository": "oldlady21/lzx-mvcnet-ai4s-context",
-  "snapshot_id": "e8f66dbc2b2ccab03212f5cd54d40f365724ed06f79656fe88ff5fb1a0e2fd27",
+  "snapshot_id": "6495c4a6753ed16238cddf55d9a26fe949c99ae0ddc36a5ed8269b257b041fc6",
   "unpublished_references": [
     {
       "from": "AGENTS.md",
