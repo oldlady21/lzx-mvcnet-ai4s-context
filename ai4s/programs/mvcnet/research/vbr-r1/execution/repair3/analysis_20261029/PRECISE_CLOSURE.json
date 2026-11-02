@@ -1,0 +1,29 @@
+{
+  "accounting_started_at": "2026-10-24T04:35:51+00:00",
+  "campaign_total_hours": 275,
+  "complete_remote": true,
+  "contract_sha256": "57dfc4bd89fc84bad17a024df6ec1a313e7ac468e401443884209e56fb33ffdf",
+  "decision": "NO_SIGNAL",
+  "design_disposition": "Close this exact v01 instance; do not rescue its schedule, clipping limits or seeds or reinterpret the secondary contrast as primary support. Return the finding as a constraint on VCN primary-method evidence and writing. No next experiment is authorized.",
+  "evidence_change": "All72 fresh fits and72 checks completed. Remote full verification, frozen analysis, independent full-artifact raw replay and local core raw replay agree. Mean P0-S0 +0.019290pp, seed69 -0.250772pp/seed70 +0.289352pp, four positive subjects. Mean uplift, both-seed positivity and six-subject coverage gates fail.",
+  "evidence_id": "AI4S-MVCNET-mvcnet-vbr-r1-screen-lab10-r1-repair3",
+  "failed_repair_history_preserved": true,
+  "formal_claim": false,
+  "full_payload_local": false,
+  "intake_scope": "analysis_v1_recovery",
+  "judgment_change": "The fixed bounded within-view BRN correction did not establish a stable incremental benefit over VCN-P1. CE improvement and P0-B0 gain do not compensate for failed primary gates. This is not evidence that all normalization corrections are ineffective.",
+  "module_id": "vcn-view-batch-renorm-v01",
+  "next_control": null,
+  "next_control_disposition": "STOP_EXACT_INSTANCE_NO_NEW_TRAINING",
+  "program_id": "mvcnet",
+  "prohibited_follow_up": [
+    "Extra seeds, reruns or threshold changes to rescue this exact v01 screen",
+    "Post-result tuning of v01 warmup, ramp, clipping or recipe, or rebranding the same intervention as a fresh candidate",
+    "Promoting N0 or secondary P0-B0/interaction contrasts to a new authorized candidate or a paper Claim"
+  ],
+  "role": "exact_negative_boundary",
+  "run_id": "2026-10-28_mvcnet_vbr_r1_lab10_r1_repair3_packfix2-full-w1",
+  "schema": "vbr-r1-precise-closure-v1",
+  "scope": "Frozen seven-source developmental screen, seeds69/70, nine outer identities, four arms B0/S0/N0/P0, fixed BRN schedule and training recipe",
+  "transaction_id": "mvcnet-vbr-r1-tx-20261028-r1-repair3-packfix2"
+}

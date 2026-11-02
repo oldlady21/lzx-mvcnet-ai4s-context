@@ -1,0 +1,2468 @@
+{
+  "exclusions": [
+    "论文PDF、*-paper.md原文读取稿/全文翻译及DOCX继续作为网页项目稳定附件，未纳入公开同步。",
+    "boundary.py有多个同名实例，未确认截图文件身份，未纳入。",
+    "不自动递归补齐引用；未公开引用见每库SYNC_MANIFEST.json。",
+    "不上传凭据、SSH配置、数据集、checkpoint、原始预测、机器日志或完整实验目录。"
+  ],
+  "exported_at": "2026-11-02T15:14:57.171238+00:00",
+  "files": [
+    {
+      "bytes": 10735,
+      "path": "AGENTS.md",
+      "public_git_blob_sha1": "25474ecc9f18936ed238dc6b504c8c4c27d5e709",
+      "public_sha256": "8de6f323d284fd422927e50db822a53bd10fbd98f598f42f69e63f8cf8d48396",
+      "redactions": {
+        "host_alias": 1,
+        "workspace_prefix": 1
+      },
+      "source_sha256": "07275190a06ab6840fe6d73efae716d3d8f3c278e532da75943b72819c55f0bb"
+    },
+    {
+      "bytes": 699706,
+      "path": "DECISIONS.md",
+      "public_git_blob_sha1": "7eb5c4df54ae47de312642be115836a778550b58",
+      "public_sha256": "e294db96d1e88e65584afcd80a58154677120ea16fe62f121f3c680adfcf6609",
+      "redactions": {
+        "host_alias": 16,
+        "ipv4": 2,
+        "unix_home_path": 5
+      },
+      "source_sha256": "978344069ab94b5e3c0cd39a176cd40582486862a27cdaf793c8aeb6c29cd770"
+    },
+    {
+      "bytes": 300944,
+      "path": "PAPER.md",
+      "public_git_blob_sha1": "97a44b47db580ad1494bb33da0729c6b98730242",
+      "public_sha256": "3dd5f09400126a75946af035dd7045d4ba7791362a99a8318bc4a7868deb3879",
+      "redactions": {
+        "host_alias": 1
+      },
+      "source_sha256": "160182ce11dba8e340f68fa0d360990f9c75e134a0a7fb6462244b650d1cf80c"
+    },
+    {
+      "bytes": 10385,
+      "path": "README.md",
+      "public_git_blob_sha1": "db2df018d7526eeaf8cf233bdf9f7ca74fe2f1e1",
+      "public_sha256": "8783ba6211cc754ba274f367ccfd036860507297c371788ffeecc2dd373912f7",
+      "redactions": {},
+      "source_sha256": "8783ba6211cc754ba274f367ccfd036860507297c371788ffeecc2dd373912f7"
+    },
+    {
+      "bytes": 365701,
+      "path": "TASKS.md",
+      "public_git_blob_sha1": "3e4b92a0fbec54c60f8fa678a264df4db07f39b2",
+      "public_sha256": "a2080f11a9672fa2cec0728dd41fdecc585a80ab932b85b2a61ff2523095b37a",
+      "redactions": {
+        "host_alias": 9
+      },
+      "source_sha256": "972481060b9a74628589f70e5f00066d7e6b16c5db0c5632b7043d4f3c6b789b"
+    },
+    {
+      "bytes": 118035,
+      "path": "ai4s/PROMPT_INDEX.yaml",
+      "public_git_blob_sha1": "bc6f1092fc464797d95b15ee1f224e94982504e2",
+      "public_sha256": "d25a130ed1570da7da85a5fa3c86d6f7098c33049051ba36ec6889ce31c7bc85",
+      "redactions": {},
+      "source_sha256": "a3866371d25e89f397cee63e17437d229d17cf616ad633a9cfc76ad0b7bc720b"
+    },
+    {
+      "bytes": 11844,
+      "path": "ai4s/README.md",
+      "public_git_blob_sha1": "3b8f3644c92d03b86a8f1a3cd0c668db98aa5637",
+      "public_sha256": "b07f451d08ea25043b2dc60ca93b5386ccc45db129129383582eb8e732f1e458",
+      "redactions": {
+        "host_alias": 4
+      },
+      "source_sha256": "f656859ae13c63ca5cfd012f3b18690c48a6235ba32cfacdb7fd45ca1f9fd7ec"
+    },
+    {
+      "bytes": 7452,
+      "path": "ai4s/programs/mvcnet/PROGRAM.yaml",
+      "public_git_blob_sha1": "191c1babe797a2d2d3391092079f443a905aeb6a",
+      "public_sha256": "467c0958f7acd4ce9b25a555229f8d7c6baa95bed5975720a1ed956a58fd7e36",
+      "redactions": {
+        "host_alias": 1,
+        "machine_field": 9,
+        "workspace_prefix": 1
+      },
+      "source_sha256": "fd34a32d69c6f8114abe8396ff05987d5a10775ec11a90b359fcdfa74034b7c1"
+    },
+    {
+      "bytes": 7742,
+      "path": "ai4s/programs/mvcnet/PROJECT_PROMPT_v3.3.md",
+      "public_git_blob_sha1": "1767412e9bf6f2f351e78bd6d2d61aad083931f5",
+      "public_sha256": "a572c6cc82c4568f83453683160c58f832f4633621fbc5a11a388b98729e66fb",
+      "redactions": {},
+      "source_sha256": "a572c6cc82c4568f83453683160c58f832f4633621fbc5a11a388b98729e66fb"
+    },
+    {
+      "bytes": 18907,
+      "path": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "public_git_blob_sha1": "ac246a8b4e3e623b679231bdd563f7926384929e",
+      "public_sha256": "533983d1251382aa08e9105895e4295c461e26757e1b540c2ba4b2bdc953f2e3",
+      "redactions": {},
+      "source_sha256": "533983d1251382aa08e9105895e4295c461e26757e1b540c2ba4b2bdc953f2e3"
+    },
+    {
+      "bytes": 94185,
+      "path": "ai4s/programs/mvcnet/research/EVIDENCE_INDEX.yaml",
+      "public_git_blob_sha1": "6e6b47957bfd735dbda88ed21975d0bbe04cde66",
+      "public_sha256": "6c4df467598f936f2ac6b98bd46532830b14beb48679315340f964df3ab65198",
+      "redactions": {},
+      "source_sha256": "6e94d699a267cebfc1a6ed5670da12658e684d2aedfc049f8a4105870164d1a4"
+    },
+    {
+      "bytes": 468987,
+      "path": "ai4s/programs/mvcnet/research/STATE.yaml",
+      "public_git_blob_sha1": "19f15012efb6a4148c9ee6cd1eb331879371bdd9",
+      "public_sha256": "c72cb91a37b737674c2fe9b57991eddaba6ac1092a50d8ae96b68535427390c2",
+      "redactions": {
+        "host_alias": 18,
+        "machine_field": 47,
+        "unix_home_path": 1
+      },
+      "source_sha256": "60803dac039854e02c6178a70eed45517992df818ea7a76b2306733d140ab8be"
+    },
+    {
+      "bytes": 4467,
+      "path": "ai4s/programs/mvcnet/research/augmentation_readout/repair_resume69_oom_20261018/analysis_20261024/REPORT.md",
+      "public_git_blob_sha1": "467cc4d4f73f2b87e47eecebd8ac9d075c5828f3",
+      "public_sha256": "b09012b9ac434adb18628df02b31f7b677dedbf7286f3964bddbfa2594f5e36d",
+      "redactions": {},
+      "source_sha256": "b09012b9ac434adb18628df02b31f7b677dedbf7286f3964bddbfa2594f5e36d"
+    },
+    {
+      "bytes": 415622,
+      "path": "ai4s/programs/mvcnet/research/mvcnet-xsn-r1-screen-lab10-r1-budget480.yaml",
+      "public_git_blob_sha1": "d14f747ab6f9b75f2b573a30740a2c571fd3d7c6",
+      "public_sha256": "7e41e8db5b6c0bf83e8cc435e53e4e5c9c2888d3640a11bb678c33ff173d65a7",
+      "redactions": {
+        "host_alias": 1,
+        "machine_field": 4,
+        "unix_home_path": 4
+      },
+      "source_sha256": "cd3dbc40a122f7b5889675e2e28df0aedc8774a5edcef2ba58beab3dcab82d03"
+    },
+    {
+      "bytes": 9921,
+      "path": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/gradient_audit_20261029/REPORT.md",
+      "public_git_blob_sha1": "536773960c0b7b63c925afb350b263539ad8f4e9",
+      "public_sha256": "e933a75701bfaae8606e8756053e702eaf43dffe7634bb3a5ebd5887c9c40d3b",
+      "redactions": {
+        "windows_path": 2,
+        "workspace_prefix": 2
+      },
+      "source_sha256": "972455de211d33f2d16a4bdb434a488bab04181202db687410e46ebe9bd2c5ce"
+    },
+    {
+      "bytes": 18996,
+      "path": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/research_brief.md",
+      "public_git_blob_sha1": "d9fe1c765049f0ba1304367ebfbc1aa0d1ff4381",
+      "public_sha256": "26936dd7fdceb4fe4d24ed507640911fc1018d0a1f928ef53618abe4906d04eb",
+      "redactions": {},
+      "source_sha256": "26936dd7fdceb4fe4d24ed507640911fc1018d0a1f928ef53618abe4906d04eb"
+    },
+    {
+      "bytes": 2219,
+      "path": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/PRECISE_CLOSURE.json",
+      "public_git_blob_sha1": "7cda95600860af3872d8d0441e6b207445408c1c",
+      "public_sha256": "fa08791f20dec6a6aeaf9d1162bf0a486150a913e695dcccbcd5b797b2cecf8b",
+      "redactions": {},
+      "source_sha256": "ddfdc01d71360ffd1739e44437f24cc9c7c6b714374f60de292cf0688dd99c46"
+    },
+    {
+      "bytes": 6517,
+      "path": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/REPORT.md",
+      "public_git_blob_sha1": "990c82c2ce6c31b8bd12967efe6a9e7fca77bc02",
+      "public_sha256": "03ae5be361ea4ce1e852a9f3041b610bd0d50287cd379ceef3cbc2cf034000d2",
+      "redactions": {
+        "unix_home_path": 1
+      },
+      "source_sha256": "da845ba2950c515306317ebb27dfc53809b629495bdb122d92a02ed310f7ced3"
+    },
+    {
+      "bytes": 13533,
+      "path": "ai4s/programs/mvcnet/research/vbr-r1/research_brief.md",
+      "public_git_blob_sha1": "9ed2939b8bbdf8343ab02e64e91f1d9b3f9dd75f",
+      "public_sha256": "0657ad0858bb52471d2533f066fc3cfb80fea369cb858509f23f7989fbfca4b5",
+      "redactions": {},
+      "source_sha256": "0657ad0858bb52471d2533f066fc3cfb80fea369cb858509f23f7989fbfca4b5"
+    },
+    {
+      "bytes": 2283,
+      "path": "ai4s/programs/mvcnet/research/xsn-r1/execution/LATEST_EXECUTION_STATUS.json",
+      "public_git_blob_sha1": "c40707803a6bdfe79f77c9115e93054c272cbbdb",
+      "public_sha256": "904e6def015d878d96144944af03fc60fc6f8e00735acc053ca5704a089e4d75",
+      "redactions": {},
+      "source_sha256": "8e066d7574a521a9bc788ba40d9969defb13ff5f955b30718caf260c13227616"
+    },
+    {
+      "bytes": 4779,
+      "path": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/REPORT.md",
+      "public_git_blob_sha1": "e4a09b40094817418c3bd815116a186a40cb814f",
+      "public_sha256": "3e54ff9f13c8660ee95e0cce37e1e4f86b08d1228948fcc3e39b05c8160b7dfc",
+      "redactions": {
+        "host_alias": 1,
+        "unix_home_path": 2,
+        "windows_path": 1,
+        "workspace_prefix": 1
+      },
+      "source_sha256": "4edb6b2aedf999a9866e5afe1ac495df4507cc57f7b2e5f1f9356c20be12b719"
+    },
+    {
+      "bytes": 5942,
+      "path": "ai4s/programs/mvcnet/research/xsn-r1/mask_audit_20261029/REPORT.md",
+      "public_git_blob_sha1": "b1720a6cb564798cf0bec338eb4f1749e9af5344",
+      "public_sha256": "e9fa3bfc19d9b0d1e4cc08d6b884ab3683cd4f3d411b67547168074bedc6b641",
+      "redactions": {},
+      "source_sha256": "e9fa3bfc19d9b0d1e4cc08d6b884ab3683cd4f3d411b67547168074bedc6b641"
+    },
+    {
+      "bytes": 21155,
+      "path": "ai4s/programs/mvcnet/research/xsn-r1/research_brief.md",
+      "public_git_blob_sha1": "8257ead47b762d5c9eb9db834c236abb505817ae",
+      "public_sha256": "6b1a43633b42f1909396c573ef93361c8915408dfd1e13a999f7614dbafe4b71",
+      "redactions": {},
+      "source_sha256": "6b1a43633b42f1909396c573ef93361c8915408dfd1e13a999f7614dbafe4b71"
+    },
+    {
+      "bytes": 5290,
+      "path": "ai4s/programs/mvcnet/research/xsn-r1/review_20261029/CONTROL_COST_ANALYSIS.md",
+      "public_git_blob_sha1": "bf4166944912c68fede241452890367481d8965f",
+      "public_sha256": "5ebae1a117de4aa3172ae2b937a4aae85f01b1eb35e28ed9052cfd4a03198842",
+      "redactions": {},
+      "source_sha256": "5ebae1a117de4aa3172ae2b937a4aae85f01b1eb35e28ed9052cfd4a03198842"
+    },
+    {
+      "bytes": 5626,
+      "path": "ai4s/programs/mvcnet/research/xsn-r1/review_20261029/NOVELTY_AND_REBUTTAL.md",
+      "public_git_blob_sha1": "450a673d2a616a9281c089ddedd6a2457f294978",
+      "public_sha256": "e838c364ef6e09e13f9504977293f89e8fc5a4d8ec2e00b597d9131d31e39cce",
+      "redactions": {},
+      "source_sha256": "e838c364ef6e09e13f9504977293f89e8fc5a4d8ec2e00b597d9131d31e39cce"
+    },
+    {
+      "bytes": 14813,
+      "path": "ai4s/prompts/EVALUATION_EVIDENCE.md",
+      "public_git_blob_sha1": "a47feaeed1dc028af75514f6a3a873dc6ef38dba",
+      "public_sha256": "9c24f66d5ca658d990cd6bcc23e1ed6915e1d5634e8c27863b1507ab976fa33e",
+      "redactions": {},
+      "source_sha256": "9c24f66d5ca658d990cd6bcc23e1ed6915e1d5634e8c27863b1507ab976fa33e"
+    },
+    {
+      "bytes": 4514,
+      "path": "ai4s/prompts/EXTERNAL_REVIEW.md",
+      "public_git_blob_sha1": "3c3fe180f8e6962e8fed9c6f50e58198045953d4",
+      "public_sha256": "605ad28f8b5f8361f34c0e9135533e9354dde05ab866ac6e20c3777e5b39e63b",
+      "redactions": {},
+      "source_sha256": "605ad28f8b5f8361f34c0e9135533e9354dde05ab866ac6e20c3777e5b39e63b"
+    },
+    {
+      "bytes": 9058,
+      "path": "ai4s/prompts/LEVEL1_RESEARCH_v3.3.md",
+      "public_git_blob_sha1": "8ad3f67178af72ac7bcd97e7b6fc4de8004b7f63",
+      "public_sha256": "5b811d7ddcaba970267f1e2ff43c8a45550f8cc61add685e2ce17bff61b63cef",
+      "redactions": {},
+      "source_sha256": "5b811d7ddcaba970267f1e2ff43c8a45550f8cc61add685e2ce17bff61b63cef"
+    },
+    {
+      "bytes": 19581,
+      "path": "ai4s/prompts/LEVEL2_EXECUTION_v3.3.md",
+      "public_git_blob_sha1": "807f4b237287b23f09880cc34dc1f2d6c4b3247c",
+      "public_sha256": "80267dfbce9cf97d7bbbe013cced9d435af64f277aeaf21e935448b717d3e93d",
+      "redactions": {},
+      "source_sha256": "80267dfbce9cf97d7bbbe013cced9d435af64f277aeaf21e935448b717d3e93d"
+    },
+    {
+      "bytes": 9362,
+      "path": "ai4s/prompts/MIEEG_AI4S_SKILL_ROUTER.md",
+      "public_git_blob_sha1": "f7c99dbebce364832deb18a07ca456169208322a",
+      "public_sha256": "8d10fd2c61800ad935f4822ddf785bc2b773c952c6f13efe5633a81b1ea8746d",
+      "redactions": {
+        "windows_path": 1,
+        "workspace_prefix": 1
+      },
+      "source_sha256": "cb1b6c4e739e88c880f114c6d58a161b095f644cc12a28cb15fa38c313941a98"
+    },
+    {
+      "bytes": 38098,
+      "path": "ai4s/prompts/TRANSACTION_RUNTIME.md",
+      "public_git_blob_sha1": "dff3da2ee475975036c324bb6265768fb4839375",
+      "public_sha256": "6c371d8697fb2c689b264d172368f43f20a94e9426760b34f49416cc787389a7",
+      "redactions": {
+        "host_alias": 4
+      },
+      "source_sha256": "e6870a285e14462de680495627b434ba3dc82af0302b031d375d775813978b4d"
+    },
+    {
+      "bytes": 10071,
+      "path": "experiments/UNIFIED_EVALUATION_PROTOCOL.md",
+      "public_git_blob_sha1": "fe23d6165e269909775f8df946a037c8ce9c7a35",
+      "public_sha256": "9b3c19e66aee3bf48aa9e927bb18e5c1fdbae3ad1b74ad233f0544fdec35f5d5",
+      "redactions": {},
+      "source_sha256": "9b3c19e66aee3bf48aa9e927bb18e5c1fdbae3ad1b74ad233f0544fdec35f5d5"
+    },
+    {
+      "bytes": 21538,
+      "path": "refs/paper-cards/mvcnet/MVCNet-note.md",
+      "public_git_blob_sha1": "e8cae64022bf0160ea1494d24379422cbe7961fc",
+      "public_sha256": "3db0d7b75e453fb9a6ffe76e6c2e93e1b3969a0ea6974f713811e39d39fe9f8d",
+      "redactions": {
+        "workspace_prefix": 4
+      },
+      "source_sha256": "236a6006b499a6232d7136eb86bd010d4f3d5ca7a2e3797a792268c5ec7933a8"
+    },
+    {
+      "bytes": 36960,
+      "path": "refs/paper-cards/mvcnet/MVCNet-paper-card.md",
+      "public_git_blob_sha1": "966f73b45afacd707ebab21e7f32c3c842ec8fe3",
+      "public_sha256": "2ee7829dd8a7ea7c1678c033fc1d9eaa745b0d899cd834a0fb750891d535f8a3",
+      "redactions": {
+        "workspace_prefix": 18
+      },
+      "source_sha256": "f4a7652c9f11a6ed9aad2beb050bbf436c184c6ba7efcc6bd66e48b798d5d2e1"
+    },
+    {
+      "bytes": 25383,
+      "path": "refs/paper-cards/mvcnet/MVCNet-paper-xray.md",
+      "public_git_blob_sha1": "14b0cb15cb002adfc136f3f3c7f5e61862ec999d",
+      "public_sha256": "d27f0eab13b77fd925f5e83c4ca8fa4e6fedd291314ae7aee6d5818b628f14d8",
+      "redactions": {},
+      "source_sha256": "d27f0eab13b77fd925f5e83c4ca8fa4e6fedd291314ae7aee6d5818b628f14d8"
+    }
+  ],
+  "managed_by": "mieeg-gpt-context-v1",
+  "observed_local_state": {
+    "mvcnet": {
+      "active_operation": null,
+      "active_run": {
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "round_id": "mvcnet-xsn-r1-screen-lab10-r1-budget480"
+      },
+      "paused": false,
+      "source_path": "ai4s/programs/mvcnet/research/STATE.yaml",
+      "source_sha256": "60803dac039854e02c6178a70eed45517992df818ea7a76b2306733d140ab8be",
+      "source_updated_at": "2026-11-01T14:54:25.530999+00:00",
+      "status": "WAITING_REMOTE"
+    }
+  },
+  "policy_version": "public-documents-v1",
+  "repository": "oldlady21/lzx-mvcnet-ai4s-context",
+  "snapshot_id": "e8f66dbc2b2ccab03212f5cd54d40f365724ed06f79656fe88ff5fb1a0e2fd27",
+  "unpublished_references": [
+    {
+      "from": "AGENTS.md",
+      "not_in_snapshot": "ai4s/prompts/PROJECT_ADMISSION.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "_work/paper_refresh_20260923/CHANGELOG.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/_work/workflow_review_20260924/V3_IMPLEMENTATION_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/EVIDENCE_INDEX.yaml"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/STATE.yaml"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/apr_r1/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bas_r1/READINESS.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bas_r1/RESULTS_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bas_r1/STARTUP_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bas_r1/engineering_transport/APPROVAL_BLOCK.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bas_r1_design_20261022/DESIGN_RECORD.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bas_r1_design_20261022/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bcu_r1/STARTUP_REPORT_PACKFIX1.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bcu_r1/closeout_20261029/CLOSEOUT_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bns_r1/RESULTS_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bns_r1/STARTUP_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bpm_r1/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsd_r1_repair1/FOLLOW_UP.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsd_r1_repair1/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsp_r1/BUDGET_PROPOSAL.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsp_r1/MONITOR.ps1"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsp_r1/PREPARATION_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsp_r1/PREPARATION_STATUS.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsp_r1/STARTUP_RECEIPT.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/cbr_r1/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/cgb_r1/RESULTS_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/cgb_r1/STARTUP_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/direction_reset_20261023/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/dra_r1/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/edr_r1/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/edr_r1/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/fca_r1_repair2/STARTUP_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/fca_r1_repair3/STARTUP_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/fca_r1_repair4/STARTUP_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/fca_r1_repair4/transaction_contract.yaml"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/ndd_d0/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/rcs_r1/RESULTS_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261023_post_bns/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261024_post_svs/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261028_post_cgb/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261029_post_bcu/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261029_post_rcs/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sbn_r1/SCIENCE_START_GATES.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sbn_r1/STARTUP_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sbn_r1/closeout_20261029/CLOSEOUT_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sdt_r1/FOLLOW_UP.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sdt_r1/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sdt_r1/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/snr_r1/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/tmr_r1/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/P0_CANDIDATE_RETENTION_20261010.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/P0_CUE_LINEAGE_CLOSURE_20261101.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/REVIEW_DISPOSITION.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/AUTHORIZATION191_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/AUTHORIZATION194_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/AUTHORIZATION202_LAUNCH_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/BUDGET_PLAN.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/PREPARATION_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/RUNTIME_REVIEW_DISPOSITION.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/repair1/LAUNCH_REPORT212.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/dsa-nfi-v0.1/DESIGN_STATUS.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/dsa-nfi-v0.1/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/dsa-nfi-v0.1/review/DISPOSITION.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/foundry_if20261029_03_review_20261101/ASSESSMENT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r1-costcal-r1/analysis/RESULTS_ZH.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r1-costcal-r1/execution/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r1-limit72-r1/execution/STARTUP_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r1/execution/STARTUP_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r1/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-finitefix1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-flatfix1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-packfix1/execution/STARTUP_SNAPSHOT.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-perffix1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-recover53/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-recover53/analysis_remote/KEY_EVIDENCE.zip"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-recover53/analysis_remote/RESULTS_ZH.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-s0-cudnn-diagnosis/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-s0tech1-techaccept1/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-s0tech1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-science1-dispatchfix2/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-typefix1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-waitfix1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r3-cvar/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r3-cvar/closeout/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r3-cvar/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cumulative-review/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-fd-r1/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-ord-ec-r1/PREPARATION_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-pf-r1/EXPERIMENT_TRACKER.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-pf-r1/IMPLEMENTATION_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-pf-r1/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-postord-reassessment-20261031/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-postwmp-exploration-20261030/ord_ec_review/ASSESSMENT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-postwmp-exploration-20261030/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-sdro-r1/EXPERIMENT_PLAN.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-sdro-r1/REVISION_ASSESSMENT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-wmp-d1/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-wmp-d1/review/REVIEW_DISPOSITION.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/channel_bilinear/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/channel_bilinear/RESEARCH_BRIEF.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/review_20261029/NOVELTY_AND_REBUTTAL.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/ordered_pool/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/ordered_pool/RESEARCH_BRIEF.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/spatial_locality/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/spatial_locality/RESEARCH_BRIEF.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/temporal_tied_head/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/temporal_tied_head/RESEARCH_BRIEF.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/xsn-r1/execution/PROGRESS.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/xsn-r1/execution/repair1/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/ota/research/sic-r1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/ota/research/sic-r1/repair1/packfix1/PROGRESS.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/NEXT_RESEARCH.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asg-r01-v0.1/BUDGET_DESIGN_SNAPSHOT.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asg-r01-v0.1/DESIGN_CONFIG.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asg-r01-v0.1/DESIGN_REVIEW.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asg-r01-v0.1/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asr-r01-v0.1-repair1/execution/DEPLOYMENT_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asr-r01-v0.1-repair2/execution/DEPLOYMENT_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asr-r01-v0.1-repair3/execution/DEPLOYMENT_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asr-r01-v0.1/execution/DEPLOYMENT_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/BUDGET_DESIGN_SNAPSHOT.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/DESIGN_CONFIG.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/analysis_20261018/FINAL_RECONCILIATION.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/analysis_20261018/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/execution/DEPLOYMENT_REPORT.json"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/execution/MONITOR.ps1"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/execution/PREPARATION_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/fes-r01-v0.1/execution/closeout_repair1/resume_20261017/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/fta-r01-v0.1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/fta-r01-v0.1/analysis_20261023/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/fta-r01-v0.1/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/sgr-r01-v0.1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/sgr-r01-v0.1/analysis_20261023/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "experiments/records/physionet_mi/2026-09-25_full_analysis/RESULT_ANALYSIS.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "results/archives/mieeg-physionet-subject10fold-v1/README.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "results/archives/mieeg-zhou2016-loso-v1/dsainet/diagnosis_20261009/README.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "_work/paper_refresh_20260923/CHANGELOG.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "_work/paper_refresh_20260923/PAPER.before.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/archive/PATH_MAP.json"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/archive/programs/mvcnet/research/VCN_P1_ANCHOR.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/EVIDENCE_INDEX.yaml"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/HISTORY_BOUNDARIES.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/STATE.yaml"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/apr_r1/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bas_r1/RESULTS_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bas_r1_design_20261022/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bcu_r1/STARTUP_REPORT_PACKFIX1.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bcu_r1/closeout_20261029/CLOSEOUT_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bns_r1/RESULTS_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bns_r1/STARTUP_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsd_r1_repair1/FOLLOW_UP.json"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsd_r1_repair1/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsp_r1/BUDGET_PROPOSAL.json"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsp_r1/MONITOR.ps1"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsp_r1/PREPARATION_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsp_r1/PREPARATION_STATUS.json"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsp_r1/STARTUP_RECEIPT.json"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/cbr_r1/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/cgb_r1/RESULTS_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/cgb_r1/STARTUP_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/direction_reset_20261023/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/dra_r1/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/edr_r1/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/edr_r1/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/fca_r1_repair2/STARTUP_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/fca_r1_repair3/STARTUP_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/fca_r1_repair4/STARTUP_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/fca_r1_repair4/transaction_contract.yaml"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/ndd_d0/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/rcs_r1/RESULTS_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261023_post_bns/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261024_post_svs/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261028_post_cgb/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261029_post_bcu/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261029_post_rcs/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sbn_r1/SCIENCE_START_GATES.json"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sbn_r1/STARTUP_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sbn_r1/closeout_20261029/CLOSEOUT_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sdt_r1/FOLLOW_UP.json"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sdt_r1/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sdt_r1/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/snr_r1/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/tmr_r1/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/EVIDENCE_INDEX.yaml"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/P0_CANDIDATE_RETENTION_20261010.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/P0_CUE_LINEAGE_CLOSURE_20261101.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/STATE.yaml"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/REVIEW_DISPOSITION.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/AUTHORIZATION191_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/AUTHORIZATION194_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/AUTHORIZATION202_LAUNCH_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/BUDGET_PLAN.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/PREPARATION_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/RUNTIME_REVIEW_DISPOSITION.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/repair1/LAUNCH_REPORT212.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/dsa-nfi-v0.1/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/foundry_if20261029_03_review_20261101/ASSESSMENT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r1-costcal-r1/analysis/RESULTS_ZH.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r1-costcal-r1/execution/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r1-limit72-r1/execution/STARTUP_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r1/execution/STARTUP_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-finitefix1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-flatfix1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-packfix1/execution/STARTUP_SNAPSHOT.json"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-perffix1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-recover53/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-recover53/analysis_remote/KEY_EVIDENCE.zip"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-recover53/analysis_remote/RESULTS_ZH.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-s0-cudnn-diagnosis/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-s0tech1-techaccept1/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-s0tech1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-science1-dispatchfix2/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-typefix1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-waitfix1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r3-cvar/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r3-cvar/closeout/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r3-cvar/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cumulative-review/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-fd-r1/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-ord-ec-r1/PREPARATION_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-pf-r1/EXPERIMENT_TRACKER.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-pf-r1/IMPLEMENTATION_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-pf-r1/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-postord-reassessment-20261031/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-postwmp-exploration-20261030/ord_ec_review/ASSESSMENT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-postwmp-exploration-20261030/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-sdro-r1/EXPERIMENT_PLAN.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-sdro-r1/REVISION_ASSESSMENT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-wmp-d1/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-wmp-d1/review/REVIEW_DISPOSITION.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/channel_bilinear/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/channel_bilinear/RESEARCH_BRIEF.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/review_20261029/NOVELTY_AND_REBUTTAL.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/ordered_pool/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/ordered_pool/RESEARCH_BRIEF.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/spatial_locality/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/spatial_locality/RESEARCH_BRIEF.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/temporal_tied_head/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/temporal_tied_head/RESEARCH_BRIEF.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/xsn-r1/execution/PROGRESS.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/xsn-r1/execution/repair1/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/ota/research/EVIDENCE_INDEX.yaml"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/ota/research/STATE.yaml"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/ota/research/sic-r1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/ota/research/sic-r1/repair1/packfix1/PROGRESS.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/EVIDENCE_INDEX.yaml"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/HISTORY_BOUNDARIES.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/NEXT_RESEARCH.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/STATE.yaml"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asg-r01-v0.1/BUDGET_DESIGN_SNAPSHOT.json"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asg-r01-v0.1/DESIGN_CONFIG.json"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asg-r01-v0.1/DESIGN_REVIEW.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asg-r01-v0.1/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asr-r01-v0.1-repair1/execution/DEPLOYMENT_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asr-r01-v0.1-repair2/execution/DEPLOYMENT_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asr-r01-v0.1-repair3/execution/DEPLOYMENT_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asr-r01-v0.1/execution/DEPLOYMENT_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/BUDGET_DESIGN_SNAPSHOT.json"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/DESIGN_CONFIG.json"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/analysis_20261018/FINAL_RECONCILIATION.json"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/analysis_20261018/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/fes-r01-v0.1/execution/closeout_repair1/resume_20261017/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/fta-r01-v0.1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/fta-r01-v0.1/analysis_20261023/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/fta-r01-v0.1/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/nvs-r01-v0.1/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/sgr-r01-v0.1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/sgr-r01-v0.1/analysis_20261023/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/teo-r01-v0.1-e1/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/tmc-r01-v0.1/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/tpo-r01-v0.1/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "docs/notes/DSAINET_BASELINE_EVIDENCE_MAP_2026-08-26.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "draft/README.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "experiments/records/2026-08-21_smanet_band_specific_spatial_factorization/research_cycle.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "experiments/records/cfspmnet/2026-07-18_cfspmnet_xw_loso_full.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "experiments/records/li_dsn/2026-07-18_li_dsn_bnci2014001_loso_full_v1.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "experiments/records/patcnet/2026-07-18_patcnet_xw_loso_full.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "experiments/records/physionet_mi/2026-09-25_full_analysis/RESULT_ANALYSIS.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "experiments/records/physionet_mi/2026-09-25_recovery_r5/STATUS.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "experiments/records/smanet/2026-09-21_smanet100_final2_shared/RESULT_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "experiments/records/smanet/2026-09-22_paper_cue_v2_recovery/RESULT_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "experiments/records/smanet/2026-09-22_paper_equation_repair/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "experiments/records/smanet/2026-09-22_reconstruction_followup/RECONSTRUCTION_PLAN.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "experiments/records/smanet/2026-09-22_sinc_gain_comparison/STATUS.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "experiments/records/sstdpn/2026-07-16_sstdpn_bnci2014001_co_cv_full.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "results/archives/mieeg-physionet-subject10fold-v1/README.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "results/archives/mieeg-uep-v1.0/integrity_summary.json"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "results/archives/mieeg-uep-v1.0/result_registry.csv"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "results/archives/mieeg-zhou2016-loso-v1/dsainet/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "results/archives/mieeg-zhou2016-loso-v1/dsainet/diagnosis_20261009/README.md"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "ai4s/archive/PATH_MAP.json"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/PROGRAM.yaml"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/EVIDENCE_INDEX.yaml"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/STATE.yaml"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/PROGRAM.yaml"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/EVIDENCE_INDEX.yaml"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/STATE.yaml"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "ai4s/programs/ota/PROGRAM.yaml"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "ai4s/programs/ota/research/EVIDENCE_INDEX.yaml"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "ai4s/programs/ota/research/STATE.yaml"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/PROGRAM.yaml"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/EVIDENCE_INDEX.yaml"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/STATE.yaml"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "docs/ASSET_ARCHIVE.md"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "docs/DISK_HYGIENE_BATCH3_PLAN_20261016.md"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "docs/GIT_MAINTENANCE_20261016.md"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "docs/REPOSITORY_MAINTENANCE.md"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "draft/README.md"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "experiments/ENVIRONMENT.md"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "experiments/LOCAL_EXPERIMENT_MANUAL.md"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "experiments/LOCAL_WORKFLOW.md"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "experiments/README.md"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "experiments/REMOTE_WORKFLOW.md"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "experiments/records/smanet/2026-09-22_reconstruction_followup/RECONSTRUCTION_PLAN.md"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "experiments/records/smanet/2026-09-22_sinc_gain_comparison/STATUS.md"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "idea-stage/foundry"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "refs/README.md"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "results/archives/mieeg-uep-v1.0/README.md"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "results/archives/mieeg-uep-v1.0/integrity_summary.json"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "results/archives/mieeg-uep-v1.0/result_registry.csv"
+    },
+    {
+      "from": "README.md",
+      "not_in_snapshot": "scripts/README.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "_work/paper_refresh_20260923/CHANGELOG.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/_work/workflow_review_20260924/V3_IMPLEMENTATION_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/EVIDENCE_INDEX.yaml"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/STATE.yaml"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/apr_r1/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bas_r1/RESULTS_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bas_r1_design_20261022/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bcu_r1/STARTUP_REPORT_PACKFIX1.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bcu_r1/closeout_20261029/CLOSEOUT_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bns_r1/RESULTS_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bns_r1/STARTUP_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsd_r1_repair1/FOLLOW_UP.json"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsd_r1_repair1/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsp_r1/BUDGET_PROPOSAL.json"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsp_r1/MONITOR.ps1"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsp_r1/PREPARATION_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsp_r1/PREPARATION_STATUS.json"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/bsp_r1/STARTUP_RECEIPT.json"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/cbr_r1/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/cgb_r1/RESULTS_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/cgb_r1/STARTUP_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/direction_reset_20261023/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/dra_r1/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/edr_r1/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/fca_r1_repair2/STARTUP_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/fca_r1_repair3/STARTUP_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/fca_r1_repair4/STARTUP_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/fca_r1_repair4/transaction_contract.yaml"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/ndd_d0/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/rcs_r1/RESULTS_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261023_post_bns/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261024_post_svs/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261028_post_cgb/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261029_post_bcu/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261029_post_rcs/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sbn_r1/SCIENCE_START_GATES.json"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sbn_r1/STARTUP_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sbn_r1/closeout_20261029/CLOSEOUT_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sdt_r1/FOLLOW_UP.json"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sdt_r1/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/sdt_r1/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/snr_r1/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/tmr_r1/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/P0_CANDIDATE_RETENTION_20261010.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/P0_CUE_LINEAGE_CLOSURE_20261101.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/REVIEW_DISPOSITION.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/AUTHORIZATION191_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/AUTHORIZATION194_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/AUTHORIZATION202_LAUNCH_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/BUDGET_PLAN.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/PREPARATION_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/preparation/RUNTIME_REVIEW_DISPOSITION.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/repair1/LAUNCH_REPORT212.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ds07-r1/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/dsa-nfi-v0.1/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/foundry_if20261029_03_review_20261101/ASSESSMENT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r1-costcal-r1/analysis/RESULTS_ZH.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r1-costcal-r1/execution/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r1-limit72-r1/execution/STARTUP_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r1/execution/STARTUP_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r1/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-finitefix1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-flatfix1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-packfix1/execution/STARTUP_SNAPSHOT.json"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-perffix1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-recover53/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-recover53/analysis_remote/KEY_EVIDENCE.zip"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-recover53/analysis_remote/RESULTS_ZH.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-s0-cudnn-diagnosis/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-s0tech1-techaccept1/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-s0tech1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-science1-dispatchfix2/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-typefix1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2-waitfix1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r2/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r3-cvar/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r3-cvar/closeout/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cue-r3-cvar/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-cumulative-review/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-fd-r1/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-ord-ec-r1/PREPARATION_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-pf-r1/EXPERIMENT_TRACKER.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-pf-r1/IMPLEMENTATION_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-pf-r1/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-postord-reassessment-20261031/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-postwmp-exploration-20261030/ord_ec_review/ASSESSMENT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-postwmp-exploration-20261030/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-sdro-r1/EXPERIMENT_PLAN.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-sdro-r1/REVISION_ASSESSMENT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-wmp-d1/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/p0-wmp-d1/review/REVIEW_DISPOSITION.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/channel_bilinear/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/review_20261029/CONTROL_COST_ANALYSIS.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/review_20261029/NOVELTY_AND_REBUTTAL.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/ordered_pool/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/ordered_pool/RESEARCH_BRIEF.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/spatial_locality/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/spatial_locality/RESEARCH_BRIEF.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/temporal_tied_head/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/temporal_tied_head/RESEARCH_BRIEF.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/xsn-r1/execution/PROGRESS.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/xsn-r1/execution/repair1/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/ota/research/sic-r1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/ota/research/sic-r1/repair1/packfix1/PROGRESS.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/NEXT_RESEARCH.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asg-r01-v0.1/BUDGET_DESIGN_SNAPSHOT.json"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asg-r01-v0.1/DESIGN_CONFIG.json"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asg-r01-v0.1/DESIGN_REVIEW.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asg-r01-v0.1/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asr-r01-v0.1-repair1/execution/DEPLOYMENT_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asr-r01-v0.1-repair2/execution/DEPLOYMENT_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asr-r01-v0.1-repair3/execution/DEPLOYMENT_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/asr-r01-v0.1/execution/DEPLOYMENT_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/BUDGET_DESIGN_SNAPSHOT.json"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/DESIGN_CONFIG.json"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/analysis_20261018/FINAL_RECONCILIATION.json"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/analysis_20261018/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/execution/DEPLOYMENT_REPORT.json"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/execution/MONITOR.ps1"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/execution/PREPARATION_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/efr-r01-v0.1/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/fes-r01-v0.1/execution/closeout_repair1/resume_20261017/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/fta-r01-v0.1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/fta-r01-v0.1/analysis_20261023/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/fta-r01-v0.1/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/sgr-r01-v0.1/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/sstdpn/research/sgr-r01-v0.1/analysis_20261023/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "experiments/records/dsainet/zhou2016_3class_loso.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "experiments/records/physionet_mi/2026-09-25_full_analysis/RESULT_ANALYSIS.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "experiments/records/smanet/2026-09-22_paper_cue_v2_recovery/RESULT_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "experiments/records/smanet/2026-09-22_sinc_gain_comparison/STATUS.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "experiments/records/zhou2016/2026-10-09_dsainet_local_preflight/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "experiments/records/zhou2016/2026-10-09_dsainet_preprocess/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "results/archives/mieeg-physionet-subject10fold-v1/README.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "results/archives/mieeg-zhou2016-loso-v1/dsainet/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "results/archives/mieeg-zhou2016-loso-v1/dsainet/diagnosis_20261009/README.md"
+    },
+    {
+      "from": "ai4s/README.md",
+      "not_in_snapshot": "ai4s/_work/deployment_optimization_20261010/REPORT.md"
+    },
+    {
+      "from": "ai4s/README.md",
+      "not_in_snapshot": "ai4s/_work/dsainet_v32_activation_20261023/REPORT.md"
+    },
+    {
+      "from": "ai4s/README.md",
+      "not_in_snapshot": "ai4s/_work/launch_interface_20261014/REPORT.md"
+    },
+    {
+      "from": "ai4s/README.md",
+      "not_in_snapshot": "ai4s/_work/mvcnet_v32_activation_20261024/REPORT.md"
+    },
+    {
+      "from": "ai4s/README.md",
+      "not_in_snapshot": "ai4s/_work/ota_v33_activation_20261029/REPORT.md"
+    },
+    {
+      "from": "ai4s/README.md",
+      "not_in_snapshot": "ai4s/_work/prompt_v31_activation_20261008/REPORT.md"
+    },
+    {
+      "from": "ai4s/README.md",
+      "not_in_snapshot": "ai4s/_work/prompt_v32_activation_20261020/REPORT.md"
+    },
+    {
+      "from": "ai4s/README.md",
+      "not_in_snapshot": "ai4s/_work/prompt_v33_implementation_20261029/REPORT.md"
+    },
+    {
+      "from": "ai4s/README.md",
+      "not_in_snapshot": "ai4s/_work/resource_summary_20261014/REPORT.md"
+    },
+    {
+      "from": "ai4s/README.md",
+      "not_in_snapshot": "ai4s/_work/retro_field_contract_20261028/REPORT.md"
+    },
+    {
+      "from": "ai4s/README.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_v33_20261029/research_brief.md"
+    },
+    {
+      "from": "ai4s/README.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/vbr-r1/execution/LAUNCH_REPORT.md"
+    },
+    {
+      "from": "ai4s/README.md",
+      "not_in_snapshot": "ai4s/prompts/ALL_PROGRAMS_HISTORICAL_CLEANUP_AGENT_PROMPT.md"
+    },
+    {
+      "from": "ai4s/README.md",
+      "not_in_snapshot": "docs/ASSET_ARCHIVE.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/CONTEXT_MANIFEST.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/review_20261029/NOVELTY_AND_REBUTTAL.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/MVCNet-paper.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/research_brief.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/gradient_audit_20261029/COST_UPDATE.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/research_brief.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/review_20261029/CONTROL_COST_ANALYSIS.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/research_brief.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/review_20261029/NOVELTY_AND_REBUTTAL.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/research_brief.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/review_20261029/research_brief_before_review.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/REPORT.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/ABORTED_FETCH_DISPOSITION.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/REPORT.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/GROK_CORE_REVIEW_FINAL_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/REPORT.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/INDEPENDENT_SOURCE_DISPOSITION.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/REPORT.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/LOCAL_CORE_REPLAY.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/REPORT.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/RESULT_SUMMARY.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/REPORT.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/REVIEW_DISPOSITION.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/REPORT.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/intake_recovery_v1/ADDENDUM.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/REPORT.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/intake_recovery_v1/VALIDATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/xsn-r1/mask_audit_20261029/REPORT.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/xsn-r1/mask_audit_20261029/RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/xsn-r1/mask_audit_20261029/REPORT.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/xsn-r1/mask_audit_20261029/VERIFICATION.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/xsn-r1/mask_audit_20261029/REPORT.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/xsn-r1/mask_audit_20261029/audit.py"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/xsn-r1/mask_audit_20261029/REPORT.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/xsn-r1/mask_audit_20261029/verify_saved.py"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/xsn-r1/research_brief.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/contrastive_factorial/REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/xsn-r1/research_brief.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cross_objective_collision/PLAN.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/xsn-r1/research_brief.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cross_objective_collision/REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/xsn-r1/research_brief.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/source_class_mean_alignment/RESEARCH_BRIEF.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/xsn-r1/review_20261029/NOVELTY_AND_REBUTTAL.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/xsn-r1/review_20261029/GROK_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/xsn-r1/review_20261029/NOVELTY_AND_REBUTTAL.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/xsn-r1/review_20261029/LITERATURE.md"
+    },
+    {
+      "from": "ai4s/prompts/TRANSACTION_RUNTIME.md",
+      "not_in_snapshot": "ai4s/prompts/ALL_PROGRAMS_HISTORICAL_CLEANUP_AGENT_PROMPT.md"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-note.md",
+      "not_in_snapshot": "refs/paper-cards/README.md"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-note.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/MVCNet-paper.md"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-note.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/Wang 等 - 2025 - MVCNet Multi-view contrastive network for motor imagery classification.pdf"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-note.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/audit-report.json"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-note.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/refs/paper-cards/mvcnet/assets/figure-02-mvcnet-architecture.png"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-note.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/refs/paper-cards/mvcnet/assets/figure-06-pairwise-augmentations.png"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-note.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/source_map.json"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-note.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/translation_notes.md"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-paper-card.md",
+      "not_in_snapshot": "refs/paper-cards/README.md"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-paper-card.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/MVCNet-paper.md"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-paper-card.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/refs/paper-cards/mvcnet/assets/figure-01-prior-knowledge.png"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-paper-card.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/refs/paper-cards/mvcnet/assets/figure-02-mvcnet-architecture.png"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-paper-card.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/refs/paper-cards/mvcnet/assets/figure-03-augmentations.png"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-paper-card.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/refs/paper-cards/mvcnet/assets/figure-04-cvc-pairs.png"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-paper-card.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/refs/paper-cards/mvcnet/assets/figure-05-cmc-pairs.png"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-paper-card.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/refs/paper-cards/mvcnet/assets/figure-06-pairwise-augmentations.png"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-paper-card.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/refs/paper-cards/mvcnet/assets/figure-07-tsne.png"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-paper-card.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/refs/paper-cards/mvcnet/assets/figure-08-loss-sensitivity.png"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-paper-card.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/refs/paper-cards/mvcnet/assets/figure-09-transformer-sensitivity.png"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-paper-xray.md",
+      "not_in_snapshot": "refs/paper-cards/README.md"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-paper-xray.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/MVCNet-paper.md"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-paper-xray.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/Wang 等 - 2025 - MVCNet Multi-view contrastive network for motor imagery classification.pdf"
+    },
+    {
+      "from": "refs/paper-cards/mvcnet/MVCNet-paper-xray.md",
+      "not_in_snapshot": "refs/paper-cards/mvcnet/translation_notes.md"
+    }
+  ],
+  "warning": "Mechanical public snapshot only; not live server verification, complete evidence, new authorization, or a claim audit."
+}

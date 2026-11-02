@@ -1,0 +1,63 @@
+{
+  "accounting_started_at": "2026-10-29T13:20:00+00:00",
+  "allowable_science_hours_at_gate": 431.9943430847592,
+  "budget": {
+    "allowed": true,
+    "blockers": [],
+    "estimate_basis": "frozen_transaction_timeout",
+    "estimate_note": "XSN-R1 preparation-inclusive 480h cap; frozen Transaction reserve=432h; outside-Transaction reserve=6h; remaining headroom after both=39.007575h",
+    "excluded": {
+      "queue_hours": 16.51,
+      "verified_stopped_hours": 12.139
+    },
+    "excluded_hours": 28.649,
+    "expected_training_hours": 432.0,
+    "reason": "fits remaining budget",
+    "remaining_hours": 477.008,
+    "shortfall_hours": 0.0,
+    "spent_hours": 2.992,
+    "total_hours": 480.0
+  },
+  "budget_reset": false,
+  "bundle_id": "2026-10-31_mvcnet_xsn_r1_lab10_bundle_r1_budget480_packfix1",
+  "check_counts": {
+    "completed": 0,
+    "failed": 0,
+    "pending_blocked": 90,
+    "running": 0,
+    "total": 90
+  },
+  "closeout_reserve_hours": 6,
+  "contract_canonical_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
+  "cost_gate": "PASS",
+  "cumulative_budget_hours": 480,
+  "fit_counts": {
+    "completed": 0,
+    "failed": 0,
+    "pending": 90,
+    "running": 0,
+    "total": 90
+  },
+  "forecast_science_hours": 419.25888487456865,
+  "full_payload_stays_remote": true,
+  "full_training_stage_started": true,
+  "increase_from36_hours": 444,
+  "matrix_seeds_scientific_gates_unchanged": true,
+  "new_qualification_fits": 0,
+  "observed_at": "2026-10-30T20:56:32.651330+00:00",
+  "only_one_new_Run_registered": true,
+  "qualification_node": "PASS",
+  "qualification_reused": 10,
+  "raw_external_review_verdict": "REVISE; both requested guard fixes implemented and tested before launch; no external re-verdict claimed",
+  "recorded_at": "2026-10-30T20:58:29.389801+00:00",
+  "result_transfer": "analysis_v1",
+  "round_id": "mvcnet-xsn-r1-screen-lab10-r1-budget480",
+  "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+  "scientific_effects_read": false,
+  "scientific_fit_started": false,
+  "source_import": "PASS",
+  "source_manifest_sha256": "df03f73977bc5363ee5955b48b8a2cbf2dc98762f5ad3fa1153438ae1fe7cfac",
+  "status": "FULL_TRAINING_QUEUED_WAIT_FOR_GPU",
+  "training_started_task_ids": [],
+  "transaction_hours": 432
+}

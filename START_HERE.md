@@ -1,0 +1,86 @@
+# lzx-mvcnet-ai4s 讨论资料入口
+
+仓库：https://github.com/oldlady21/lzx-mvcnet-ai4s-context
+导出时间（UTC）：2026-11-02T15:14:57.171238+00:00
+快照身份：`e8f66dbc2b2ccab03212f5cd54d40f365724ed06f79656fe88ff5fb1a0e2fd27`
+
+这是本地已保存文件的公开讨论副本。来源与公开文件 SHA-256、脱敏计数、未公开引用见 [SYNC_MANIFEST.json](SYNC_MANIFEST.json)。
+机器字段已机械脱敏；保留原研究身份、冻结边界、预算、证据状态和历史。它不替代本地权威记录，不授予执行/恢复/改协议权限。
+合同公开副本可能因脱敏与重排而改变哈希，不能作为可执行冻结合同。源文件字节哈希与合同内的科学规范哈希不是同一种身份。
+同一文件中的历史准备、失败和结果段落仍是历史。当前本地运行登记如下；未查询服务器，不保证远端实时状态。
+
+下面只列运行身份摘要，不是完整预算、协议或科学结论；完整字段以本库提供的State及合同公开副本为准，缺失时需回本地核对。
+
+## 当前本地登记
+
+```json
+{
+  "mvcnet": {
+    "source_path": "ai4s/programs/mvcnet/research/STATE.yaml",
+    "source_sha256": "60803dac039854e02c6178a70eed45517992df818ea7a76b2306733d140ab8be",
+    "source_updated_at": "2026-11-01T14:54:25.530999+00:00",
+    "status": "WAITING_REMOTE",
+    "paused": false,
+    "active_run": {
+      "round_id": "mvcnet-xsn-r1-screen-lab10-r1-budget480",
+      "dispatch_status": "REMOTE_ACCEPTED"
+    },
+    "active_operation": null
+  }
+}
+```
+
+## 阅读顺序
+
+1. 本入口与同步清单。
+2. PROMPT_INDEX 指定的活动链、对应 Program 当前认识、State 与 Evidence Index（本库提供的范围内）。
+3. 根据问题读取决策、论文主线和具体报告。缺失引用仅本地可用，不能推断为已核验。
+
+## 文档列表
+
+- [AGENTS.md](<AGENTS.md>)
+- [DECISIONS.md](<DECISIONS.md>)
+- [PAPER.md](<PAPER.md>)
+- [README.md](<README.md>)
+- [TASKS.md](<TASKS.md>)
+- [ai4s/PROMPT_INDEX.yaml](<ai4s/PROMPT_INDEX.yaml>)
+- [ai4s/README.md](<ai4s/README.md>)
+- [ai4s/programs/mvcnet/PROGRAM.yaml](<ai4s/programs/mvcnet/PROGRAM.yaml>)
+- [ai4s/programs/mvcnet/PROJECT_PROMPT_v3.3.md](<ai4s/programs/mvcnet/PROJECT_PROMPT_v3.3.md>)
+- [ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md](<ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md>)
+- [ai4s/programs/mvcnet/research/EVIDENCE_INDEX.yaml](<ai4s/programs/mvcnet/research/EVIDENCE_INDEX.yaml>)
+- [ai4s/programs/mvcnet/research/STATE.yaml](<ai4s/programs/mvcnet/research/STATE.yaml>)
+- [ai4s/programs/mvcnet/research/augmentation_readout/repair_resume69_oom_20261018/analysis_20261024/REPORT.md](<ai4s/programs/mvcnet/research/augmentation_readout/repair_resume69_oom_20261018/analysis_20261024/REPORT.md>)
+- [ai4s/programs/mvcnet/research/mvcnet-xsn-r1-screen-lab10-r1-budget480.yaml](<ai4s/programs/mvcnet/research/mvcnet-xsn-r1-screen-lab10-r1-budget480.yaml>)
+- [ai4s/programs/mvcnet/research/next_auxiliary_20261029/gradient_audit_20261029/REPORT.md](<ai4s/programs/mvcnet/research/next_auxiliary_20261029/gradient_audit_20261029/REPORT.md>)
+- [ai4s/programs/mvcnet/research/next_auxiliary_20261029/research_brief.md](<ai4s/programs/mvcnet/research/next_auxiliary_20261029/research_brief.md>)
+- [ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/PRECISE_CLOSURE.json](<ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/PRECISE_CLOSURE.json>)
+- [ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/REPORT.md](<ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/REPORT.md>)
+- [ai4s/programs/mvcnet/research/vbr-r1/research_brief.md](<ai4s/programs/mvcnet/research/vbr-r1/research_brief.md>)
+- [ai4s/programs/mvcnet/research/xsn-r1/execution/LATEST_EXECUTION_STATUS.json](<ai4s/programs/mvcnet/research/xsn-r1/execution/LATEST_EXECUTION_STATUS.json>)
+- [ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/REPORT.md](<ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/REPORT.md>)
+- [ai4s/programs/mvcnet/research/xsn-r1/mask_audit_20261029/REPORT.md](<ai4s/programs/mvcnet/research/xsn-r1/mask_audit_20261029/REPORT.md>)
+- [ai4s/programs/mvcnet/research/xsn-r1/research_brief.md](<ai4s/programs/mvcnet/research/xsn-r1/research_brief.md>)
+- [ai4s/programs/mvcnet/research/xsn-r1/review_20261029/CONTROL_COST_ANALYSIS.md](<ai4s/programs/mvcnet/research/xsn-r1/review_20261029/CONTROL_COST_ANALYSIS.md>)
+- [ai4s/programs/mvcnet/research/xsn-r1/review_20261029/NOVELTY_AND_REBUTTAL.md](<ai4s/programs/mvcnet/research/xsn-r1/review_20261029/NOVELTY_AND_REBUTTAL.md>)
+- [ai4s/prompts/EVALUATION_EVIDENCE.md](<ai4s/prompts/EVALUATION_EVIDENCE.md>)
+- [ai4s/prompts/EXTERNAL_REVIEW.md](<ai4s/prompts/EXTERNAL_REVIEW.md>)
+- [ai4s/prompts/LEVEL1_RESEARCH_v3.3.md](<ai4s/prompts/LEVEL1_RESEARCH_v3.3.md>)
+- [ai4s/prompts/LEVEL2_EXECUTION_v3.3.md](<ai4s/prompts/LEVEL2_EXECUTION_v3.3.md>)
+- [ai4s/prompts/MIEEG_AI4S_SKILL_ROUTER.md](<ai4s/prompts/MIEEG_AI4S_SKILL_ROUTER.md>)
+- [ai4s/prompts/TRANSACTION_RUNTIME.md](<ai4s/prompts/TRANSACTION_RUNTIME.md>)
+- [experiments/UNIFIED_EVALUATION_PROTOCOL.md](<experiments/UNIFIED_EVALUATION_PROTOCOL.md>)
+- [refs/paper-cards/mvcnet/MVCNet-note.md](<refs/paper-cards/mvcnet/MVCNet-note.md>)
+- [refs/paper-cards/mvcnet/MVCNet-paper-card.md](<refs/paper-cards/mvcnet/MVCNet-paper-card.md>)
+- [refs/paper-cards/mvcnet/MVCNet-paper-xray.md](<refs/paper-cards/mvcnet/MVCNet-paper-xray.md>)
+
+## 未公开范围
+
+- 论文PDF、*-paper.md原文读取稿/全文翻译及DOCX继续作为网页项目稳定附件，未纳入公开同步。
+- boundary.py有多个同名实例，未确认截图文件身份，未纳入。
+- 不自动递归补齐引用；未公开引用见每库SYNC_MANIFEST.json。
+- 不上传凭据、SSH配置、数据集、checkpoint、原始预测、机器日志或完整实验目录。
+
+## 在 GPT 项目中使用
+
+讨论当前进度前通过 GitHub 读取本入口与清单，注明版本；读取失败时明确说明，不用历史附件代替当前状态。GitHub 更新不会替换项目附件。

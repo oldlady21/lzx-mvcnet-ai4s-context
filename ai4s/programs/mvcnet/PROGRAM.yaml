@@ -1,0 +1,234 @@
+{
+  "baseline_profile": {
+    "dataset": "BNCI2014001",
+    "epochs": 100,
+    "preprocessing": "official_mat_0p5_40hz_0_4s_250hz_22eeg",
+    "primary_metric": "accuracy_pp",
+    "protocol": "loso",
+    "seeds": [
+      5,
+      6
+    ],
+    "subjects": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "training_profile": "tp-mvcnet-uep-v1"
+  },
+  "candidate_source_root": "src/models/ai4s/mvcnet",
+  "controller": "ai4s/prompts/TRANSACTION_RUNTIME.md",
+  "default_executor_id": "ccmu_lab",
+  "defaults": {
+    "harm_floor_delta": -10.0,
+    "max_rounds": 1,
+    "minimum_positive_subjects": 5,
+    "monitor": "blocking",
+    "night_budget_hours": 10,
+    "queue_time_policy": "exclude_resource_wait"
+  },
+  "executors": {
+    "ccmu_lab": {
+      "candidate_gpu_ids": [
+        0,
+        1
+      ],
+      "capacity_packing_status": "frozen_contract_opt_in_gpu_acceptance_pending",
+      "conda_activation": "[REDACTED_MACHINE]",
+      "conda_env": "mieeg-modern",
+      "execution_mode": "ai4s_autopilot",
+      "host": "[REDACTED_MACHINE]",
+      "new_work_environment_authority": "User2026-10-05 authorized new campaign CCMU full execution and both GPUs; old frozen Runs keep explicit environment bindings.",
+      "python": "[REDACTED_MACHINE]",
+      "remote_root": "[REDACTED_MACHINE]",
+      "resource_policy_authority": "user 2026-09-06: dedicated personal GPU0; allow transient background usage",
+      "resource_policy_defaults": {
+        "allow_background_processes": true,
+        "gpu_id": 0,
+        "max_wait_seconds": 900,
+        "maximum_temperature_c": 90,
+        "minimum_free_mib": 12288,
+        "poll_seconds": 15
+      },
+      "scheduler": "scripts/remote/ccmu_lane_executor.py",
+      "transaction_runtime": "scripts/ai4s/transaction.py",
+      "workers_per_gpu": 1
+    },
+    "lab10": {
+      "candidate_gpu_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "capacity_authority": "user 2026-09-07: default same-account capacity sharing for ordinary training",
+      "capacity_defaults": {
+        "admission_mode": "capacity",
+        "allow_external_compute": true,
+        "allow_same_owner": true,
+        "concurrency_policy": "memory_only",
+        "coordination": "short_admission_lock_and_per_task_gpu_reservations_v1",
+        "enabled": true,
+        "max_attempts_per_task": 1,
+        "max_jobs_per_gpu": null,
+        "max_temperature_c": 90,
+        "measurement_mode": "ordinary_accuracy",
+        "memory_estimate_policy": "verified_profile",
+        "memory_headroom_policy": "lab_permissive_v1",
+        "memory_reserve_mib": 0,
+        "verified_profiles": {}
+      },
+      "capacity_packing_status": "frozen_contract_opt_in_gpu_acceptance_pending",
+      "conda_activation": "[REDACTED_MACHINE]",
+      "conda_env": "mieeg",
+      "execution_mode": "user_managed",
+      "exploration_panel_policy": {
+        "allowed_stages": [
+          "mechanism_pilot",
+          "formal_screen"
+        ],
+        "no_filler_tasks": true,
+        "preferred_target_concurrency": 10,
+        "required_for_non_preflight": false,
+        "soft_coverage_guidance": true
+      },
+      "host": "[REDACTED_MACHINE]",
+      "max_idle_utilization_pct": 20,
+      "max_temperature_c": 90,
+      "memory_reserve_mib": 0,
+      "python": "[REDACTED_MACHINE]",
+      "remote_root": "[REDACTED_MACHINE]",
+      "runtime_anchor": {
+        "kind": "conservative_verified_shared_subnetwork_transfer_planning",
+        "source": "ai4s/programs/mvcnet/research/contrastive_factorial/RUNTIME_PLANNING.json",
+        "source_sha256": "9198de240f8299741effa513f0e9de02ac990cae98687c11e80c2a79aeb05fb9",
+        "tasks_per_hour": 16
+      },
+      "runtime_anchor_history": [
+        {
+          "kind": "conservative_planning_not_ocst_measurement",
+          "source": "ai4s/programs/mvcnet/research/OCST_RUNTIME_PLANNING_20260908.json",
+          "source_sha256": "791e3dd3e2369bb4ddcfa6376e6da9ca6b63bead2ec7e743b95b7f7528ab6eba",
+          "tasks_per_hour": 12
+        }
+      ],
+      "runtime_anchor_status": "verified_historical_lab10_schedule_conservative_transfer_estimate",
+      "scheduler": "scripts/remote/lab10_shared_executor.py",
+      "transaction_runtime": "scripts/ai4s/transaction.py",
+      "transport_route_authority": "Same Lab10 account/root through previously authorized equivalent jump route; direct SSH closed on2026-10-31; old frozen contracts and Run identities untouched.",
+      "workers_per_gpu": 1
+    }
+  },
+  "external_repositories": "read_only",
+  "managed_write_paths": [
+    "ai4s/programs/mvcnet",
+    "src/models/ai4s/mvcnet"
+  ],
+  "program_id": "mvcnet",
+  "prompt_governance": {
+    "expected_active_chain_id": "mvcnet-transaction-v3.3",
+    "index": "ai4s/PROMPT_INDEX.yaml",
+    "mismatch_policy": "BLOCK"
+  },
+  "remote": {
+    "conda_env": "mieeg",
+    "controller": "scripts/ai4s/program_controller.py --program mvcnet advance",
+    "gpu_ids": [
+      0
+    ],
+    "host": "[REDACTED_MACHINE]",
+    "workers_per_gpu": 1
+  },
+  "repository": {
+    "root": "./",
+    "sentinel": "AGENTS.md"
+  },
+  "research_governance": {
+    "allowed_transitions": [
+      "REFINE_ONCE",
+      "DIAGNOSE_ONCE",
+      "CONFIRM_TO_CAP",
+      "MATURE_AND_FREEZE",
+      "RETIRE",
+      "DISCOVER_NEXT",
+      "SCREEN_NEW",
+      "EVALUATE_FROZEN"
+    ],
+    "authorization_transition_required_for_continuation": true,
+    "paired_seed_cap": 5,
+    "required_contract_schema": "mieeg-ai4s-round-contract-v2",
+    "required_transition_fields": [
+      "decision",
+      "run_action",
+      "source_decision_record",
+      "source_evidence_ids",
+      "evidence_basis",
+      "remaining_uncertainty",
+      "expected_information",
+      "stop_rule",
+      "next_stage"
+    ],
+    "run_action_by_transition": {
+      "CONFIRM_TO_CAP": "RUN_ALLOWED",
+      "DIAGNOSE_ONCE": "RUN_ALLOWED",
+      "DISCOVER_NEXT": "DESIGN_ONLY",
+      "EVALUATE_FROZEN": "RUN_ALLOWED",
+      "MATURE_AND_FREEZE": "NO_RUN",
+      "REFINE_ONCE": "RUN_ALLOWED",
+      "RETIRE": "NO_RUN",
+      "SCREEN_NEW": "RUN_ALLOWED"
+    },
+    "saturated_seed_identities": [
+      {
+        "hypothesis_family_id": "vcn-p1-fresh-seed-stability",
+        "interpretation_boundary": "仅登记稳定性证据已超过默认上限；不新增论文主张，也不追溯改写历史结果。",
+        "module_family_id": "VCN-P1",
+        "paired_seeds": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "source_rounds": [
+          "mvcnet-lab10-l1-seed78-fixed1024-v1.0",
+          "mvcnet-lab10-l2-seed910-fixed1024-v1.0",
+          "mvcnet-lab10-l3-seed1112-fixed1024-v1.0",
+          "mvcnet-lab10-l4-seed1314-fixed1024-v1.0",
+          "mvcnet-lab10-l5-seed1516-fixed1024-v1.0",
+          "mvcnet-lab10-l6-seed1718-fixed1024-v1.0",
+          "mvcnet-lab10-l7-seed1920-fixed1024-v1.0"
+        ],
+        "status": "SATURATED"
+      }
+    ]
+  },
+  "runtime_anchor": {
+    "source": "VCN-P1 S8C verified scheduler metrics on [REDACTED_MACHINE] GPU 0 single lane",
+    "tasks_per_hour": 4.86
+  },
+  "schema_version": "mieeg-ai4s-program-v1",
+  "status_authority": "ai4s/programs/mvcnet/research/STATE.yaml",
+  "title": "MVCNet VCN 锚点 AI4S 循环"
+}
