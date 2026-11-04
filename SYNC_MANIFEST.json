@@ -5,7 +5,7 @@
     "不自动递归补齐引用；未公开引用见每库SYNC_MANIFEST.json。",
     "不上传凭据、SSH配置、数据集、checkpoint、原始预测、机器日志或完整实验目录。"
   ],
-  "exported_at": "2026-11-02T15:42:36.866585+00:00",
+  "exported_at": "2026-11-04T12:33:18.973754+00:00",
   "files": [
     {
       "bytes": 10735,
@@ -113,16 +113,16 @@
       "source_sha256": "6e94d699a267cebfc1a6ed5670da12658e684d2aedfc049f8a4105870164d1a4"
     },
     {
-      "bytes": 468987,
+      "bytes": 471530,
       "path": "ai4s/programs/mvcnet/research/STATE.yaml",
-      "public_git_blob_sha1": "19f15012efb6a4148c9ee6cd1eb331879371bdd9",
-      "public_sha256": "c72cb91a37b737674c2fe9b57991eddaba6ac1092a50d8ae96b68535427390c2",
+      "public_git_blob_sha1": "e9fcfe50e1288dfc27dc4194eb44bc0b8d06d2e2",
+      "public_sha256": "825c729c615ceea5dc5742b830396667a2c457c9a16f99e97f65d85832ef02b8",
       "redactions": {
         "host_alias": 18,
         "machine_field": 47,
         "unix_home_path": 1
       },
-      "source_sha256": "60803dac039854e02c6178a70eed45517992df818ea7a76b2306733d140ab8be"
+      "source_sha256": "a6cb8f9ff2dff17bfb2b6bfbe9576adfc2334b4ab79335252a8b9558fac5d65b"
     },
     {
       "bytes": 4467,
@@ -344,14 +344,14 @@
       "source_in_this_repository": true,
       "source_path": "ai4s/programs/mvcnet/research/STATE.yaml",
       "source_public_url": "https://github.com/oldlady21/lzx-mvcnet-ai4s-context/blob/main/ai4s/programs/mvcnet/research/STATE.yaml",
-      "source_sha256": "60803dac039854e02c6178a70eed45517992df818ea7a76b2306733d140ab8be",
-      "source_updated_at": "2026-11-01T14:54:25.530999+00:00",
+      "source_sha256": "a6cb8f9ff2dff17bfb2b6bfbe9576adfc2334b4ab79335252a8b9558fac5d65b",
+      "source_updated_at": "2026-11-04T12:30:27.876234+00:00",
       "status": "WAITING_REMOTE"
     }
   },
   "policy_version": "public-documents-v1",
   "repository": "oldlady21/lzx-mvcnet-ai4s-context",
-  "snapshot_id": "6495c4a6753ed16238cddf55d9a26fe949c99ae0ddc36a5ed8269b257b041fc6",
+  "snapshot_id": "753fa85bf88ec7f7929b30136dc4d502b6cd19b01ca6dedc66dd71653b91e09f",
   "unpublished_references": [
     {
       "from": "AGENTS.md",

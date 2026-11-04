@@ -1,8 +1,8 @@
 # lzx-mvcnet-ai4s 讨论资料入口
 
 仓库：https://github.com/oldlady21/lzx-mvcnet-ai4s-context
-导出时间（UTC）：2026-11-02T15:42:36.866585+00:00
-快照身份：`6495c4a6753ed16238cddf55d9a26fe949c99ae0ddc36a5ed8269b257b041fc6`
+导出时间（UTC）：2026-11-04T12:33:18.973754+00:00
+快照身份：`753fa85bf88ec7f7929b30136dc4d502b6cd19b01ca6dedc66dd71653b91e09f`
 
 这是本地已保存文件的公开讨论副本。来源与公开文件 SHA-256、脱敏计数、未公开引用见 [SYNC_MANIFEST.json](SYNC_MANIFEST.json)。
 机器字段已机械脱敏；保留原研究身份、冻结边界、预算、证据状态和历史。它不替代本地权威记录，不授予执行/恢复/改协议权限。
@@ -17,10 +17,10 @@
 {
   "mvcnet": {
     "source_path": "ai4s/programs/mvcnet/research/STATE.yaml",
-    "source_sha256": "60803dac039854e02c6178a70eed45517992df818ea7a76b2306733d140ab8be",
+    "source_sha256": "a6cb8f9ff2dff17bfb2b6bfbe9576adfc2334b4ab79335252a8b9558fac5d65b",
     "source_public_url": "https://github.com/oldlady21/lzx-mvcnet-ai4s-context/blob/main/ai4s/programs/mvcnet/research/STATE.yaml",
     "source_in_this_repository": true,
-    "source_updated_at": "2026-11-01T14:54:25.530999+00:00",
+    "source_updated_at": "2026-11-04T12:30:27.876234+00:00",
     "status": "WAITING_REMOTE",
     "paused": false,
     "active_run": {

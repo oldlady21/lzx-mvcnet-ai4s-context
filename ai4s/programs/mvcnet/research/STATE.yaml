@@ -110,6 +110,65 @@
             "wall_seconds": 151136.6675632
           }
         }
+      },
+      {
+        "operation": "probe",
+        "recorded_at": "2026-11-02T15:46:35.823019+00:00",
+        "result": {
+          "action": "WAIT_FOR_RESOURCES",
+          "node_id": "diagnostic",
+          "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+          "status": "RUNNING",
+          "timing": {
+            "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
+            "execution_seconds": 11022.066134214401,
+            "queue_seconds": 229645.34784460068,
+            "queue_time_policy": "exclude_resource_wait",
+            "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+            "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
+            "waiting_for_resources": true,
+            "wall_seconds": 240667.41397881508
+          }
+        }
+      },
+      {
+        "operation": "probe",
+        "recorded_at": "2026-11-03T13:10:06.823755+00:00",
+        "result": {
+          "action": "WAIT_FOR_RESOURCES",
+          "node_id": "diagnostic",
+          "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+          "status": "RUNNING",
+          "timing": {
+            "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
+            "execution_seconds": 11208.993481636047,
+            "queue_seconds": 306468.8509852886,
+            "queue_time_policy": "exclude_resource_wait",
+            "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+            "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
+            "waiting_for_resources": true,
+            "wall_seconds": 317677.84446692467
+          }
+        }
+      },
+      {
+        "operation": "probe",
+        "recorded_at": "2026-11-04T12:30:27.875234+00:00",
+        "result": {
+          "action": "FETCH_VERIFY_INTAKE",
+          "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+          "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+          "timing": {
+            "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
+            "execution_seconds": 30514.033852100372,
+            "queue_seconds": 311798.2159655094,
+            "queue_time_policy": "exclude_resource_wait",
+            "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+            "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
+            "waiting_for_resources": false,
+            "wall_seconds": 342312.2498176098
+          }
+        }
       }
     ]
   },
@@ -3522,7 +3581,7 @@
       },
       "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1": {
         "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
-        "queue_seconds": 140363.5455532074,
+        "queue_seconds": 311798.2159655094,
         "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
         "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480"
       }
@@ -11363,7 +11422,7 @@
   },
   "schema_version": "mieeg-ai4s-state-v1",
   "status": "WAITING_REMOTE",
-  "updated_at": "2026-11-01T14:54:25.530999+00:00",
+  "updated_at": "2026-11-04T12:30:27.876234+00:00",
   "v3_follow_up": {
     "decision_record": "ai4s/programs/mvcnet/research/mvcnet-vbr-r1-screen-lab10-r1-repair3_decision.yaml",
     "evidence_id": "AI4S-MVCNET-mvcnet-vbr-r1-screen-lab10-r1-repair3",
