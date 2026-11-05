@@ -1,177 +1,38 @@
 {
-  "active_operation": null,
-  "active_round": "mvcnet-xsn-r1-screen-lab10-r1-budget480",
-  "active_run": {
-    "bundle_id": "2026-10-31_mvcnet_xsn_r1_lab10_bundle_r1_budget480_packfix1",
-    "dispatch_status": "REMOTE_ACCEPTED",
-    "dispatch_units": 90,
-    "estimated_training_hours": 432.0,
-    "execution_mode": "user_managed",
-    "executor_id": "lab10",
-    "planned_units": 192,
-    "recorded_at": "2026-10-30T20:52:28.157406+00:00",
-    "round_id": "mvcnet-xsn-r1-screen-lab10-r1-budget480",
-    "run_prefix": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480",
-    "transaction_operations": [
-      {
-        "operation": "upload",
-        "recorded_at": "2026-10-30T20:53:44.038286+00:00",
-        "result": {
-          "action": "UPLOADED",
-          "monitor_powershell": "[REDACTED_MACHINE]",
-          "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1"
-        }
-      },
-      {
-        "operation": "launch",
-        "recorded_at": "2026-10-30T20:55:15.199824+00:00",
-        "result": {
-          "action": "SUBMISSION_SENT_NOT_VERIFIED",
-          "monitor_powershell": "[REDACTED_MACHINE]",
-          "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1"
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-10-30T20:56:26.727135+00:00",
-        "result": {
-          "action": "WAIT_FOR_RESOURCES",
-          "node_id": "diagnostic",
-          "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
-          "status": "RUNNING",
-          "timing": {
-            "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
-            "execution_seconds": 43.385329723358154,
-            "queue_seconds": 16.164865493774414,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
-            "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
-            "waiting_for_resources": true,
-            "wall_seconds": 59.55019521713257
-          }
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-10-31T05:58:29.132025+00:00",
-        "result": {
-          "action": "WAIT_FOR_RESOURCES",
-          "node_id": "diagnostic",
-          "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
-          "status": "RUNNING",
-          "timing": {
-            "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
-            "execution_seconds": 137.63391637802124,
-            "queue_seconds": 32444.993614673615,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
-            "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
-            "waiting_for_resources": true,
-            "wall_seconds": 32582.627531051636
-          }
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-11-01T04:44:45.961077+00:00",
-        "result": {
-          "action": "WAIT_FOR_RESOURCES",
-          "node_id": "diagnostic",
-          "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
-          "status": "RUNNING",
-          "timing": {
-            "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
-            "execution_seconds": 10687.505733728409,
-            "queue_seconds": 103871.65816307068,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
-            "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
-            "waiting_for_resources": true,
-            "wall_seconds": 114559.16389679909
-          }
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-11-01T14:54:25.530479+00:00",
-        "result": {
-          "action": "WAIT_FOR_RESOURCES",
-          "node_id": "diagnostic",
-          "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
-          "status": "RUNNING",
-          "timing": {
-            "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
-            "execution_seconds": 10773.1220099926,
-            "queue_seconds": 140363.5455532074,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
-            "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
-            "waiting_for_resources": true,
-            "wall_seconds": 151136.6675632
-          }
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-11-02T15:46:35.823019+00:00",
-        "result": {
-          "action": "WAIT_FOR_RESOURCES",
-          "node_id": "diagnostic",
-          "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
-          "status": "RUNNING",
-          "timing": {
-            "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
-            "execution_seconds": 11022.066134214401,
-            "queue_seconds": 229645.34784460068,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
-            "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
-            "waiting_for_resources": true,
-            "wall_seconds": 240667.41397881508
-          }
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-11-03T13:10:06.823755+00:00",
-        "result": {
-          "action": "WAIT_FOR_RESOURCES",
-          "node_id": "diagnostic",
-          "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
-          "status": "RUNNING",
-          "timing": {
-            "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
-            "execution_seconds": 11208.993481636047,
-            "queue_seconds": 306468.8509852886,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
-            "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
-            "waiting_for_resources": true,
-            "wall_seconds": 317677.84446692467
-          }
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-11-04T12:30:27.875234+00:00",
-        "result": {
-          "action": "FETCH_VERIFY_INTAKE",
-          "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
-          "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
-          "timing": {
-            "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
-            "execution_seconds": 30514.033852100372,
-            "queue_seconds": 311798.2159655094,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
-            "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
-            "waiting_for_resources": false,
-            "wall_seconds": 342312.2498176098
-          }
-        }
-      }
-    ]
+  "acm_r1_checkrepair2_closeout": {
+    "analysis_result": {
+      "path": "ai4s/programs/mvcnet/research/acm-r1/execution/checkrepair2/analysis_20261105/RESULT.json",
+      "sha256": "17b9576b8da9aa564995a11f5e70095531be27547cd99173bd51131fbd84526c"
+    },
+    "checks": 72,
+    "claim_release": "none",
+    "cumulative_spent_hours": 23.823807198007902,
+    "decision": "NO_SIGNAL",
+    "evidence_id": "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-checkrepair2",
+    "failed_checks": 0,
+    "final_cost": {
+      "path": "ai4s/programs/mvcnet/research/acm-r1/execution/checkrepair2/analysis_20261105/FINAL_COST.json",
+      "sha256": "018d5d811dd99a24f6733321911551a402df492ce4ca7d65f8a1c5ad050df6a0"
+    },
+    "full_payload_local": false,
+    "further_training_authorized": false,
+    "new_fits": 0,
+    "original_anchor_preserved": true,
+    "precise_closure": {
+      "path": "ai4s/programs/mvcnet/research/acm-r1/execution/checkrepair2/analysis_20261105/PRECISE_CLOSURE.json",
+      "sha256": "de866a7dd7e7673aa58c1bf7f0237a148bc8621ba18ecfe0a4308518d55b25c0"
+    },
+    "report": {
+      "path": "ai4s/programs/mvcnet/research/acm-r1/execution/checkrepair2/analysis_20261105/REPORT.md",
+      "sha256": "b24ce1c1830a9c2d77e5309bcac98528115d04e172be3bbe24da7cabc8e53a38"
+    },
+    "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
+    "status": "CLOSED_NO_SIGNAL_EXACT_CONFIGURATION",
+    "total_budget_hours": 42
   },
+  "active_operation": null,
+  "active_round": null,
+  "active_run": null,
   "anchor": {
     "card": "ai4s/archive/programs/mvcnet/research/VCN_P1_ANCHOR.md",
     "module_id": "VCN-P1-v0.1",
@@ -3506,32 +3367,224 @@
       },
       "closing_status": "COMPLETE_MAX_ROUNDS",
       "closure_reason": "User authorized one-shot XSN-R1 exploration and independent 36h cap; preserve prior VBR 275h history and 13:20 UTC preparation anchor; one scientific stage only"
+    },
+    {
+      "campaign_id": "mvcnet-xsn-r1-lab10-20261029",
+      "closed_at": "2026-11-04T14:56:23.318302+00:00",
+      "closing_decision": {
+        "all_interpretive_gates_pass": false,
+        "claim_release": "none",
+        "decision": "NO_SIGNAL",
+        "failure_disposition": "stop this exact configuration; no rescue search",
+        "interpretation": "control advantages never substitute for the P0-S0 utility gate",
+        "interpretive_gates": {
+          "P0-C0": false,
+          "P0-N0": false,
+          "P0-R0": true
+        },
+        "primary_P0_minus_S0_pass": false,
+        "reason": "a frozen XSN utility or interpretive gate failed; stop this configuration",
+        "research_stage": "xsn_screen",
+        "round_id": "mvcnet-xsn-r1-screen-lab10-r1-budget480",
+        "status": "frozen_rule_applied"
+      },
+      "closing_round": "mvcnet-xsn-r1-screen-lab10-r1-budget480",
+      "closing_run": {
+        "analysis_receipt_sha256": "8e90ad02bcc9e445b3978a363e10360c595348af85eccebe7786640c5356bccc",
+        "artifact_manifest_sha256": "0644f17901c81030a03c080bdafdbf09818e5f7ed2fcd6651c6b5242104b26d5",
+        "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+        "intake_scope": "analysis_v1_recovery",
+        "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+        "run_status": "complete",
+        "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
+        "transfer_bytes": 31464578,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "用户授权ACM-R1一次性探索，独立42小时，准备计时起点2026-11-04T13:54:00Z；资格与成本门通过才四臂完整训练，不调参救援，保留XSN关闭及全部历史。",
+      "full_prior_campaign_snapshot": {
+        "campaign": {
+          "allowed_transitions": [
+            "SCREEN_NEW"
+          ],
+          "authorization_reason": "User authorized one-shot XSN-R1 exploration and independent 36h cap; preserve prior VBR 275h history and 13:20 UTC preparation anchor; one scientific stage only",
+          "budget_extensions": [
+            {
+              "accounting_started_at": "2026-10-29T13:20:00+00:00",
+              "authorization": {
+                "path": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/AUTHORIZATION.json",
+                "sha256": "7f9927c168131b7cb13a5072efc72b563a4a10c6958f077ef25e240d5b677909"
+              },
+              "increase_hours": 444,
+              "new_total_hours": 480,
+              "previous_total_hours": 36,
+              "recorded_at": "2026-10-30T20:32:02.230180+00:00",
+              "reset": false
+            }
+          ],
+          "budget_policy": {
+            "authorization_ref": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/AUTHORIZATION.json",
+            "exclude_verified_stopped_seconds": true
+          },
+          "campaign_id": "mvcnet-xsn-r1-lab10-20261029",
+          "completed_at": "2026-11-04T13:06:08.408292+00:00",
+          "continuation_policy_version": "evidence_to_design_v1",
+          "decision_policy": "stop_at_positive",
+          "execution_authorization": {
+            "allowed_operations": [
+              "upload",
+              "launch",
+              "probe",
+              "fetch",
+              "intake"
+            ],
+            "allowed_transitions": [
+              "SCREEN_NEW"
+            ],
+            "authorization_ref": "ai4s/programs/mvcnet/research/xsn-r1/execution/AUTHORIZATION.json",
+            "campaign_id": "mvcnet-xsn-r1-lab10-20261029",
+            "executor_id": "lab10",
+            "recorded_at": "2026-10-29T14:07:32.759938+00:00",
+            "research_scope": {
+              "allow_new_module": true,
+              "allowed_module_ids": [
+                "src.models.ai4s.mvcnet.xsn_r1"
+              ],
+              "allowed_stages": [
+                "xsn_screen"
+              ],
+              "data_scope_id": "xsn-seven-source-developmental-seeds71-72-v1",
+              "question_id": "vcn-cross-source-same-class-negative-selection"
+            },
+            "source_sha256": "57ab6321b850aa98f0123bc4be9ffa2f3782b07ca89a7087a8730e2467aa7fc1"
+          },
+          "final_accounting": {
+            "accounting_started_at": "2026-10-29T13:20:00+00:00",
+            "budget_reset": false,
+            "check_process_hours": 1.4906911111111114,
+            "closed_at": "2026-11-04T13:06:08.408292+00:00",
+            "cumulative_charged_hours": 12.02165241743252,
+            "elapsed_wall_hours": 143.76900230333334,
+            "excluded_resource_queue_hours": 103.11574117322763,
+            "excluded_verified_stopped_hours": 28.631608712673188,
+            "new_terminal_stopped_hours": 16.492168576783605,
+            "no_remaining_training_authorization": true,
+            "record": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/FINAL_COST.json",
+            "record_sha256": "8ee531f98eccc7f46d5d7edea9bb7a861163e726057a6e01d294fb4b29cf2cf0",
+            "remaining_budget_hours": 467.9783475825675,
+            "status": "FINAL_ACCOUNTING_AT_CLOSEOUT",
+            "time_settlement": {
+              "path": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/STOPPED_TIME_SETTLEMENT.json",
+              "sha256": "005c5e2d2325ba0063ada5467959c91580f38a677fef12d1a7626b6aacf35f2a"
+            },
+            "total_budget_hours": 480,
+            "training_process_hours": 55.126532222222195,
+            "transaction_actual_execution_hours": 8.476120514472326,
+            "transaction_forecast_hours": 419.25888487456865,
+            "transaction_resource_queue_hours": 86.61061554597484,
+            "units_note": "elapsed preparation/execution/intake/analysis, not summed parallel process hours. All time after first status check conservatively charged; no extra idle-gap exclusions."
+          },
+          "governance_chain_id": "mvcnet-transaction-v3.3",
+          "invalid_behavior": "fail_closed_without_advancing",
+          "positive_signal_behavior": "pause_for_human_review",
+          "purpose": "user-authorized bounded AI4S campaign",
+          "queue_accounting": {
+            "2026-10-29_mvcnet_xsn_r1_lab10_r1-full-w1": {
+              "contract_sha256": "a345fc22ba362196f342c74f5c91f0a7bfb2c9a92931f512dcb28f3761a36035",
+              "queue_seconds": 13711.903646469116,
+              "run_id": "2026-10-29_mvcnet_xsn_r1_lab10_r1-full-w1",
+              "transaction_id": "mvcnet-xsn-r1-tx-20261029-r1"
+            },
+            "2026-10-30_mvcnet_xsn_r1_lab10_r1_repair1-full-w1": {
+              "contract_sha256": "434a50bf6a957497bac049bbc7c424df6416210f2f07f9adcece832aa68943af",
+              "queue_seconds": 45706.54861164093,
+              "run_id": "2026-10-30_mvcnet_xsn_r1_lab10_r1_repair1-full-w1",
+              "transaction_id": "mvcnet-xsn-r1-tx-20261030-r1-repair1"
+            },
+            "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1": {
+              "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
+              "queue_seconds": 311798.2159655094,
+              "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+              "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480"
+            }
+          },
+          "round_decisions": [
+            {
+              "decision": "NO_SIGNAL",
+              "decision_record": "ai4s/programs/mvcnet/research/mvcnet-xsn-r1-screen-lab10-r1-budget480_decision.yaml",
+              "evidence_id": "AI4S-MVCNET-mvcnet-xsn-r1-screen-lab10-r1-budget480",
+              "recorded_at": "2026-11-04T13:00:30.633280+00:00",
+              "round_id": "mvcnet-xsn-r1-screen-lab10-r1-budget480"
+            }
+          ],
+          "started_at": "2026-10-29T14:07:24.178201+00:00",
+          "stopped_accounting": [
+            {
+              "authorization_ref": "ai4s/programs/mvcnet/research/xsn-r1/execution/repair1/AUTHORIZATION.json",
+              "end": 1793331454.339,
+              "evidence_ref": "ai4s/programs/mvcnet/research/xsn-r1/execution/repair1/STOPPED_TIME_SETTLEMENT.json",
+              "source_run_id": "2026-10-29_mvcnet_xsn_r1_lab10_r1-full-w1",
+              "start": 1793297121.270935
+            },
+            {
+              "authorization_ref": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/AUTHORIZATION.json",
+              "end": 1793391626.898,
+              "evidence_ref": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/STOPPED_TIME_SETTLEMENT.json",
+              "source_run_id": "2026-10-30_mvcnet_xsn_r1_lab10_r1_repair1-full-w1",
+              "start": 1793382257.9815757
+            },
+            {
+              "authorization_ref": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/CLOSEOUT_AUTHORIZATION.json",
+              "end": 1793795410.6048026,
+              "evidence_ref": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/STOPPED_TIME_SETTLEMENT.json",
+              "source_run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+              "start": 1793736038.7979262
+            }
+          ]
+        },
+        "final_accounting": null,
+        "run_control": {
+          "accounting_anchor_basis": "XSN-R1 AUTHORIZATION.json; preparation included; no reset",
+          "continuation_policy_version": "evidence_to_design_v1",
+          "continue_after_positive": false,
+          "max_rounds": 1,
+          "monitor": "blocking",
+          "night_budget_hours": 480.0,
+          "preparation_included": true,
+          "queue_time_policy": "exclude_resource_wait",
+          "round_index": 1,
+          "started_at": "2026-10-29T13:20:00+00:00"
+        },
+        "xsn_r1_closeout": {
+          "decision": "NO_SIGNAL",
+          "evidence_id": "AI4S-MVCNET-mvcnet-xsn-r1-screen-lab10-r1-budget480",
+          "final_cost": {
+            "path": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/FINAL_COST.json",
+            "sha256": "8ee531f98eccc7f46d5d7edea9bb7a861163e726057a6e01d294fb4b29cf2cf0"
+          },
+          "new_training_authorized": false,
+          "precise_closure": {
+            "path": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/PRECISE_CLOSURE.json",
+            "sha256": "12220f30e8a993c7c3748c9bb8940235628e26f2473ba316c5b604a0f4355c6d"
+          },
+          "report": {
+            "path": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/REPORT.md",
+            "sha256": "c3a9f81f7f6bd436483fc48904b249669dc3d6fa78ef79ac5953b88132898a7a"
+          }
+        }
+      },
+      "full_prior_campaign_snapshot_sha256": "ede4221e22eafe9fe9fcff760d1fc2ab4ddd572cb2e98929322de374304484a3"
     }
   ],
   "campaign": {
     "allowed_transitions": [
       "SCREEN_NEW"
     ],
-    "authorization_reason": "User authorized one-shot XSN-R1 exploration and independent 36h cap; preserve prior VBR 275h history and 13:20 UTC preparation anchor; one scientific stage only",
-    "budget_extensions": [
-      {
-        "accounting_started_at": "2026-10-29T13:20:00+00:00",
-        "authorization": {
-          "path": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/AUTHORIZATION.json",
-          "sha256": "7f9927c168131b7cb13a5072efc72b563a4a10c6958f077ef25e240d5b677909"
-        },
-        "increase_hours": 444,
-        "new_total_hours": 480,
-        "previous_total_hours": 36,
-        "recorded_at": "2026-10-30T20:32:02.230180+00:00",
-        "reset": false
-      }
-    ],
-    "budget_policy": {
-      "authorization_ref": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/AUTHORIZATION.json",
-      "exclude_verified_stopped_seconds": true
-    },
-    "campaign_id": "mvcnet-xsn-r1-lab10-20261029",
+    "authorization_reason": "用户授权ACM-R1一次性探索，独立42小时，准备计时起点2026-11-04T13:54:00Z；资格与成本门通过才四臂完整训练，不调参救援，保留XSN关闭及全部历史。",
+    "campaign_id": "mvcnet-acm-r1-lab10-20261104",
     "continuation_policy_version": "evidence_to_design_v1",
     "decision_policy": "stop_at_positive",
     "execution_authorization": {
@@ -3545,65 +3598,57 @@
       "allowed_transitions": [
         "SCREEN_NEW"
       ],
-      "authorization_ref": "ai4s/programs/mvcnet/research/xsn-r1/execution/AUTHORIZATION.json",
-      "campaign_id": "mvcnet-xsn-r1-lab10-20261029",
+      "authorization_ref": "ai4s/programs/mvcnet/research/acm-r1/execution/AUTHORIZATION.json",
+      "campaign_id": "mvcnet-acm-r1-lab10-20261104",
       "executor_id": "lab10",
-      "recorded_at": "2026-10-29T14:07:32.759938+00:00",
+      "recorded_at": "2026-11-04T14:56:23.655855+00:00",
       "research_scope": {
-        "allow_new_module": true,
+        "allow_new_module": false,
         "allowed_module_ids": [
-          "src.models.ai4s.mvcnet.xsn_r1"
+          "src.models.ai4s.mvcnet.acm_r1"
         ],
         "allowed_stages": [
-          "xsn_screen"
+          "acm_screen"
         ],
-        "data_scope_id": "xsn-seven-source-developmental-seeds71-72-v1",
-        "question_id": "vcn-cross-source-same-class-negative-selection"
+        "data_scope_id": "bnci2014001-seven-source-developmental-acm-r1-seeds73-74",
+        "question_id": "vcn-cmc-gradient-receiver-asymmetry"
       },
-      "source_sha256": "57ab6321b850aa98f0123bc4be9ffa2f3782b07ca89a7087a8730e2467aa7fc1"
+      "source_sha256": "4b077d38bbd24ce70f818121f229d2c2ef3c8a9920393785df1eb23e1a8f65fd"
     },
     "governance_chain_id": "mvcnet-transaction-v3.3",
     "invalid_behavior": "fail_closed_without_advancing",
     "positive_signal_behavior": "pause_for_human_review",
     "purpose": "user-authorized bounded AI4S campaign",
     "queue_accounting": {
-      "2026-10-29_mvcnet_xsn_r1_lab10_r1-full-w1": {
-        "contract_sha256": "a345fc22ba362196f342c74f5c91f0a7bfb2c9a92931f512dcb28f3761a36035",
-        "queue_seconds": 13711.903646469116,
-        "run_id": "2026-10-29_mvcnet_xsn_r1_lab10_r1-full-w1",
-        "transaction_id": "mvcnet-xsn-r1-tx-20261029-r1"
+      "2026-11-04_mvcnet_acm_r1_lab10_r1-full-w1": {
+        "contract_sha256": "ad8b2d0863b2f33b8ddfcc34d6e5b01f98a55f6ac6acb3a4daa6cfad0f066879",
+        "queue_seconds": 0.0,
+        "run_id": "2026-11-04_mvcnet_acm_r1_lab10_r1-full-w1",
+        "transaction_id": "mvcnet-acm-r1-tx-20261104-r1"
       },
-      "2026-10-30_mvcnet_xsn_r1_lab10_r1_repair1-full-w1": {
-        "contract_sha256": "434a50bf6a957497bac049bbc7c424df6416210f2f07f9adcece832aa68943af",
-        "queue_seconds": 45706.54861164093,
-        "run_id": "2026-10-30_mvcnet_xsn_r1_lab10_r1_repair1-full-w1",
-        "transaction_id": "mvcnet-xsn-r1-tx-20261030-r1-repair1"
+      "2026-11-04_mvcnet_acm_r1_lab10_r1_repair1-full-w1": {
+        "contract_sha256": "c67eb18a7d6915267d13dab4380e4a743fd0d47dc0c8216ec1c3b77c86478286",
+        "queue_seconds": 3.2646756172180176,
+        "run_id": "2026-11-04_mvcnet_acm_r1_lab10_r1_repair1-full-w1",
+        "transaction_id": "mvcnet-acm-r1-tx-20261104-r1-repair1"
       },
-      "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1": {
-        "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
-        "queue_seconds": 311798.2159655094,
-        "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
-        "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480"
+      "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1": {
+        "contract_sha256": "012358fb085a8f819ac864e361677901f025123a73695726355b437fccca06e7",
+        "queue_seconds": 0.788313627243042,
+        "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
+        "transaction_id": "mvcnet-acm-r1-tx-20261105-checkrepair2"
       }
     },
-    "round_decisions": [],
-    "started_at": "2026-10-29T14:07:24.178201+00:00",
-    "stopped_accounting": [
+    "round_decisions": [
       {
-        "authorization_ref": "ai4s/programs/mvcnet/research/xsn-r1/execution/repair1/AUTHORIZATION.json",
-        "end": 1793331454.339,
-        "evidence_ref": "ai4s/programs/mvcnet/research/xsn-r1/execution/repair1/STOPPED_TIME_SETTLEMENT.json",
-        "source_run_id": "2026-10-29_mvcnet_xsn_r1_lab10_r1-full-w1",
-        "start": 1793297121.270935
-      },
-      {
-        "authorization_ref": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/AUTHORIZATION.json",
-        "end": 1793391626.898,
-        "evidence_ref": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/STOPPED_TIME_SETTLEMENT.json",
-        "source_run_id": "2026-10-30_mvcnet_xsn_r1_lab10_r1_repair1-full-w1",
-        "start": 1793382257.9815757
+        "decision": "NO_SIGNAL",
+        "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-checkrepair2_decision.yaml",
+        "evidence_id": "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-checkrepair2",
+        "recorded_at": "2026-11-05T13:35:52.182251+00:00",
+        "round_id": "mvcnet-acm-r1-screen-lab10-checkrepair2"
       }
-    ]
+    ],
+    "started_at": "2026-11-04T14:56:23.318321+00:00"
   },
   "completed_rounds": [
     {
@@ -9614,6 +9659,341 @@
           }
         ]
       }
+    },
+    {
+      "decision": {
+        "all_interpretive_gates_pass": false,
+        "claim_release": "none",
+        "decision": "NO_SIGNAL",
+        "failure_disposition": "stop this exact configuration; no rescue search",
+        "interpretation": "control advantages never substitute for the P0-S0 utility gate",
+        "interpretive_gates": {
+          "P0-C0": false,
+          "P0-N0": false,
+          "P0-R0": true
+        },
+        "primary_P0_minus_S0_pass": false,
+        "reason": "a frozen XSN utility or interpretive gate failed; stop this configuration",
+        "research_stage": "xsn_screen",
+        "round_id": "mvcnet-xsn-r1-screen-lab10-r1-budget480",
+        "status": "frozen_rule_applied"
+      },
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-xsn-r1-screen-lab10-r1-budget480_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-xsn-r1-screen-lab10-r1-budget480",
+      "round_id": "mvcnet-xsn-r1-screen-lab10-r1-budget480",
+      "run": {
+        "bundle_id": "2026-10-31_mvcnet_xsn_r1_lab10_bundle_r1_budget480_packfix1",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "dispatch_units": 90,
+        "estimated_training_hours": 432.0,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 192,
+        "recorded_at": "2026-10-30T20:52:28.157406+00:00",
+        "round_id": "mvcnet-xsn-r1-screen-lab10-r1-budget480",
+        "run_prefix": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-10-30T20:53:44.038286+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-10-30T20:55:15.199824+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T20:56:26.727135+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "diagnostic",
+              "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
+                "execution_seconds": 43.385329723358154,
+                "queue_seconds": 16.164865493774414,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+                "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
+                "waiting_for_resources": true,
+                "wall_seconds": 59.55019521713257
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-31T05:58:29.132025+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "diagnostic",
+              "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
+                "execution_seconds": 137.63391637802124,
+                "queue_seconds": 32444.993614673615,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+                "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
+                "waiting_for_resources": true,
+                "wall_seconds": 32582.627531051636
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-01T04:44:45.961077+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "diagnostic",
+              "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
+                "execution_seconds": 10687.505733728409,
+                "queue_seconds": 103871.65816307068,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+                "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
+                "waiting_for_resources": true,
+                "wall_seconds": 114559.16389679909
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-01T14:54:25.530479+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "diagnostic",
+              "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
+                "execution_seconds": 10773.1220099926,
+                "queue_seconds": 140363.5455532074,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+                "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
+                "waiting_for_resources": true,
+                "wall_seconds": 151136.6675632
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-02T15:46:35.823019+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "diagnostic",
+              "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
+                "execution_seconds": 11022.066134214401,
+                "queue_seconds": 229645.34784460068,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+                "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
+                "waiting_for_resources": true,
+                "wall_seconds": 240667.41397881508
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-03T13:10:06.823755+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "diagnostic",
+              "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
+                "execution_seconds": 11208.993481636047,
+                "queue_seconds": 306468.8509852886,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+                "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
+                "waiting_for_resources": true,
+                "wall_seconds": 317677.84446692467
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-04T12:30:27.875234+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
+                "execution_seconds": 30514.033852100372,
+                "queue_seconds": 311798.2159655094,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+                "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
+                "waiting_for_resources": false,
+                "wall_seconds": 342312.2498176098
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-04T12:56:02.418090+00:00",
+            "result": {
+              "action": "FETCHED_VERIFIED",
+              "analysis_receipt_sha256": "8e90ad02bcc9e445b3978a363e10360c595348af85eccebe7786640c5356bccc",
+              "artifact_manifest_sha256": "0644f17901c81030a03c080bdafdbf09818e5f7ed2fcd6651c6b5242104b26d5",
+              "contract_sha256": "1c199413e43a6c42faa6badcee0db2ef1f056838527818063b47a6948618f3a8",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1_recovery",
+              "receipt_ref": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/FETCH_VERIFIED.json",
+              "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1",
+              "transaction_id": "mvcnet-xsn-r1-tx-20261031-budget480",
+              "transfer_bytes": 31464578,
+              "transport": "same-Run compact recovery tarball",
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "all_interpretive_gates_pass": false,
+        "claim_release": "none",
+        "decision": "NO_SIGNAL",
+        "interpretive_gates": {
+          "P0-N0": true,
+          "P0-R0": false
+        },
+        "primary_P0_minus_S0_pass": true,
+        "research_stage": "acm_screen",
+        "round_id": "mvcnet-acm-r1-screen-lab10-checkrepair2",
+        "status": "frozen_rule_applied"
+      },
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-checkrepair2_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-checkrepair2",
+      "round_id": "mvcnet-acm-r1-screen-lab10-checkrepair2",
+      "run": {
+        "bundle_id": "2026-11-05_mvcnet_acm_r1_lab10_bundle_checkrepair2_packfix1",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "dispatch_units": 72,
+        "estimated_training_hours": 4.0,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 73,
+        "recorded_at": "2026-11-05T13:20:29.025038+00:00",
+        "round_id": "mvcnet-acm-r1-screen-lab10-checkrepair2",
+        "run_prefix": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-05T13:20:44.386843+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-05T13:20:45.919585+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-05T13:21:07.586705+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "source-integrity",
+              "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "012358fb085a8f819ac864e361677901f025123a73695726355b437fccca06e7",
+                "execution_seconds": 18.50507140159607,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
+                "transaction_id": "mvcnet-acm-r1-tx-20261105-checkrepair2",
+                "waiting_for_resources": false,
+                "wall_seconds": 18.50507140159607
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-05T13:27:39.288167+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "diagnostic",
+              "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "012358fb085a8f819ac864e361677901f025123a73695726355b437fccca06e7",
+                "execution_seconds": 409.41458225250244,
+                "queue_seconds": 0.788313627243042,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
+                "transaction_id": "mvcnet-acm-r1-tx-20261105-checkrepair2",
+                "waiting_for_resources": false,
+                "wall_seconds": 410.2028958797455
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-05T13:28:42.409006+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "012358fb085a8f819ac864e361677901f025123a73695726355b437fccca06e7",
+                "execution_seconds": 415.4840364456177,
+                "queue_seconds": 0.788313627243042,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
+                "transaction_id": "mvcnet-acm-r1-tx-20261105-checkrepair2",
+                "waiting_for_resources": false,
+                "wall_seconds": 416.2723500728607
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-05T13:32:45.724090+00:00",
+            "result": {
+              "analysis_receipt_sha256": "510b47660658f3dd969953cfea81a8f0f06e7240a9235bdb7dfad690ec6ff1c1",
+              "artifact_manifest_sha256": "33535de00eadda737f59f7011965b57e042fb9485db6c80a054e1bb41a35808c",
+              "contract_sha256": "012358fb085a8f819ac864e361677901f025123a73695726355b437fccca06e7",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
+              "transaction_id": "mvcnet-acm-r1-tx-20261105-checkrepair2",
+              "transfer_bytes": 22225398,
+              "verified": true
+            }
+          }
+        ]
+      }
     }
   ],
   "continuation_history": [
@@ -10972,6 +11352,17 @@
       ],
       "reason": "Frozen VBR-R1 screen NO_SIGNAL: P0-S0 +0.019290pp, one negative seed,4/9 positive subjects; close only this fixed developmental instance",
       "status": "FROZEN_EVIDENCE_ONLY"
+    },
+    {
+      "evidence_record": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/PRECISE_CLOSURE.json",
+      "frozen_at": "2026-11-04T13:06:08.408292+00:00",
+      "module_id": "xsn-cross-source-same-class-negative-protection-v01",
+      "prohibited_follow_up": [
+        "No extra seeds, changed thresholds, masks, temperature or rescue reruns for this exact configuration",
+        "No automatic promotion of control arms, recombinations or ACM training"
+      ],
+      "reason": "Frozen XSN NO_SIGNAL: P0-S0 -0.192901pp, both seeds negative,5/9positive subjects; exact developmental instance only",
+      "status": "FROZEN_EVIDENCE_ONLY"
     }
   ],
   "frozen_output_correction_boundary": {
@@ -11158,13 +11549,61 @@
       "source_decision_record": "ai4s/programs/mvcnet/research/mvcnet-xsn-r1-screen-lab10-r1-repair1_decision.yaml",
       "source_round_id": "mvcnet-xsn-r1-screen-lab10-r1-repair1",
       "source_run_id": "2026-10-30_mvcnet_xsn_r1_lab10_r1_repair1-full-w1"
+    },
+    {
+      "authorized_at": "2026-11-04T15:41:10.382694+00:00",
+      "budget_reset": false,
+      "queue_credit_seconds": 0,
+      "reason": "non-operative implementation repair",
+      "repair_authorization_ref": "ai4s/programs/mvcnet/research/acm-r1/execution/repair1/AUTHORIZATION.json",
+      "repair_authorization_sha256": "401affd9c0ff0ca62878e3ca440f43d88e206e4de03cd3cf2b8d65077ff82cfe",
+      "repair_contract": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-r1-repair1.yaml",
+      "repair_contract_sha256": "c67eb18a7d6915267d13dab4380e4a743fd0d47dc0c8216ec1c3b77c86478286",
+      "repair_round_id": "mvcnet-acm-r1-screen-lab10-r1-repair1",
+      "source_decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-r1_decision.yaml",
+      "source_round_id": "mvcnet-acm-r1-screen-lab10-r1",
+      "source_run_id": "2026-11-04_mvcnet_acm_r1_lab10_r1-full-w1",
+      "stopped_time_credit": false
+    },
+    {
+      "authorized_at": "2026-11-05T13:14:49.287654+00:00",
+      "budget_reset": false,
+      "provenance_correction": {
+        "backup_path": "ai4s/programs/mvcnet/research/acm-r1/execution/checkrepair2/packfix1/PROVENANCE_CORRECTION_BEFORE.json",
+        "contract_sha256": "012358fb085a8f819ac864e361677901f025123a73695726355b437fccca06e7",
+        "corrected_at": "2026-11-05T13:20:09.233911+00:00",
+        "correction_id": "acm-r1-checkrepair2-packfix1-authref-20261105",
+        "new_authorization_ref": "ai4s/programs/mvcnet/research/acm-r1/execution/checkrepair2/packfix1/AUTHORIZATION.json",
+        "new_authorization_sha256": "1f366eb28c3b316cd442dc33d06d78661abe2e18157a20278b9fd34d73475f6a",
+        "old_authorization_ref": "ai4s/programs/mvcnet/research/acm-r1/execution/checkrepair2/AUTHORIZATION.json",
+        "old_authorization_sha256": "1f366eb28c3b316cd442dc33d06d78661abe2e18157a20278b9fd34d73475f6a",
+        "reason": "packfix1 AUTH SHA was recorded with the pre-packfix1 path"
+      },
+      "queue_credit_seconds": 0,
+      "reason": "non-operative implementation repair",
+      "repair_authorization_ref": "ai4s/programs/mvcnet/research/acm-r1/execution/checkrepair2/packfix1/AUTHORIZATION.json",
+      "repair_authorization_sha256": "1f366eb28c3b316cd442dc33d06d78661abe2e18157a20278b9fd34d73475f6a",
+      "repair_contract": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-checkrepair2.yaml",
+      "repair_contract_sha256": "012358fb085a8f819ac864e361677901f025123a73695726355b437fccca06e7",
+      "repair_round_id": "mvcnet-acm-r1-screen-lab10-checkrepair2",
+      "source_decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-r1-repair1_decision.yaml",
+      "source_round_id": "mvcnet-acm-r1-screen-lab10-r1-repair1",
+      "source_run_id": "2026-11-04_mvcnet_acm_r1_lab10_r1_repair1-full-w1",
+      "stopped_time_credit": false
     }
   ],
   "last_decision": {
-    "decision": "INVALID",
-    "reason": "engineering transaction failure recorded from metadata-only forensic intake",
-    "role": "invalid_non_scientific_record",
-    "round_id": "mvcnet-xsn-r1-screen-lab10-r1-repair1"
+    "all_interpretive_gates_pass": false,
+    "claim_release": "none",
+    "decision": "NO_SIGNAL",
+    "interpretive_gates": {
+      "P0-N0": true,
+      "P0-R0": false
+    },
+    "primary_P0_minus_S0_pass": true,
+    "research_stage": "acm_screen",
+    "round_id": "mvcnet-acm-r1-screen-lab10-checkrepair2",
+    "status": "frozen_rule_applied"
   },
   "last_remote_verified_analysis": {
     "analysis_report": "ai4s/programs/mvcnet/research/augmentation_readout/repair_resume69_oom_20261018/analysis_20261024/REPORT.md",
@@ -11186,28 +11625,23 @@
     "verified_at": "2026-10-23T18:51:33.808954+00:00"
   },
   "last_round_evidence": {
-    "decision_record": "ai4s/programs/mvcnet/research/mvcnet-xsn-r1-screen-lab10-r1-repair1_decision.yaml",
-    "evidence_id": "AI4S-MVCNET-mvcnet-xsn-r1-screen-lab10-r1-repair1",
-    "role": "invalid_non_scientific_record"
+    "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-checkrepair2_decision.yaml",
+    "evidence_id": "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-checkrepair2",
+    "role": "exact_negative_boundary"
   },
   "last_verified_intake": {
-    "addendum_sha256": "191e86ebf84071b7c06a52c09888734bb91949315d4f438038d1d7c0e46cf6a9",
-    "artifact_manifest_sha256": "206ac78625979fe528c4061543e8158f3a41a5595451ff724a95bf543116812f",
-    "bundle_manifest_sha256": "8ed6eb37ce031dc04af05fd31695670e9acb082d8fe55f50415bdfbb4337d946",
-    "complete_remote": true,
-    "contract_sha256": "57dfc4bd89fc84bad17a024df6ec1a313e7ac468e401443884209e56fb33ffdf",
-    "core_manifest_sha256": "8f23d0cf6a3c85870189581f8bb578816bcc4cb10bb4cd2778aa461adba0a516",
+    "analysis_receipt_sha256": "510b47660658f3dd969953cfea81a8f0f06e7240a9235bdb7dfad690ec6ff1c1",
+    "artifact_manifest_sha256": "33535de00eadda737f59f7011965b57e042fb9485db6c80a054e1bb41a35808c",
+    "contract_sha256": "012358fb085a8f819ac864e361677901f025123a73695726355b437fccca06e7",
     "full_payload_local": false,
-    "intake_path": "results/logs/remote/2026-10-28_mvcnet_vbr_r1_lab10_r1_repair3_packfix2-full-w1",
-    "intake_scope": "analysis_v1_recovery",
-    "run_id": "2026-10-28_mvcnet_vbr_r1_lab10_r1_repair3_packfix2-full-w1",
+    "intake_path": "results/logs/remote/2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
+    "intake_scope": "analysis_v1",
+    "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
     "run_status": "complete",
-    "support_sha256": "44326a309be05f654410a5c92c8742185cc2000a6ad61c01aceb5151eca1ffed",
-    "transaction_id": "mvcnet-vbr-r1-tx-20261028-r1-repair3-packfix2",
-    "transfer_bytes": 27222739,
+    "transaction_id": "mvcnet-acm-r1-tx-20261105-checkrepair2",
+    "transfer_bytes": 22225398,
     "verified": true,
-    "verified_at": null,
-    "verified_at_utc": "2026-10-28T18:21:05.601717+00:00"
+    "verified_at": null
   },
   "last_verified_preflight": {
     "bundle_id": "2026-09-03_ai4s_mvcnet_scva_p0_preflight_bundle_lab10_r1",
@@ -11340,7 +11774,31 @@
       "status": "CLOSED_BY_USER"
     }
   ],
-  "paused": false,
+  "paused": true,
+  "pending_execution_budget": {
+    "accounting_started_at": "2026-11-04T13:54:00+00:00",
+    "auto_budget_extension_authorized": false,
+    "automatic_training_retries": 0,
+    "budget_reset": false,
+    "closeout_reserve_hours": 6,
+    "duration_hours": 42,
+    "engineering_repairs": 1,
+    "operations": [
+      "upload",
+      "launch",
+      "probe",
+      "fetch",
+      "intake"
+    ],
+    "queue_credit_seconds": 0,
+    "repair_authorization_ref": "ai4s/programs/mvcnet/research/acm-r1/execution/checkrepair2/packfix1/AUTHORIZATION.json",
+    "repair_authorization_sha256": "1f366eb28c3b316cd442dc33d06d78661abe2e18157a20278b9fd34d73475f6a",
+    "repair_contract_sha256": "012358fb085a8f819ac864e361677901f025123a73695726355b437fccca06e7",
+    "source_run_id": "2026-11-04_mvcnet_acm_r1_lab10_r1_repair1-full-w1",
+    "stage2_authorized": false,
+    "stopped_time_credit": false,
+    "transaction_hours": 4
+  },
   "prelaunch_supersessions": [
     {
       "bundle_id": "2026-09-15_mvcnet_ccf_lab10_bundle_r2",
@@ -11409,23 +11867,23 @@
     }
   ],
   "run_control": {
-    "accounting_anchor_basis": "XSN-R1 AUTHORIZATION.json; preparation included; no reset",
+    "accounting_anchor_basis": "conservative minute boundary before initial preparation reads in this authorized turn; preparation included, no budget reset",
     "continuation_policy_version": "evidence_to_design_v1",
     "continue_after_positive": false,
     "max_rounds": 1,
     "monitor": "blocking",
-    "night_budget_hours": 480.0,
+    "night_budget_hours": 42.0,
     "preparation_included": true,
     "queue_time_policy": "exclude_resource_wait",
-    "round_index": 0,
-    "started_at": "2026-10-29T13:20:00+00:00"
+    "round_index": 1,
+    "started_at": "2026-11-04T13:54:00+00:00"
   },
   "schema_version": "mieeg-ai4s-state-v1",
-  "status": "WAITING_REMOTE",
-  "updated_at": "2026-11-04T12:30:27.876234+00:00",
+  "status": "COMPLETE_MAX_ROUNDS",
+  "updated_at": "2026-11-05T13:35:52.182281+00:00",
   "v3_follow_up": {
-    "decision_record": "ai4s/programs/mvcnet/research/mvcnet-vbr-r1-screen-lab10-r1-repair3_decision.yaml",
-    "evidence_id": "AI4S-MVCNET-mvcnet-vbr-r1-screen-lab10-r1-repair3",
+    "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-checkrepair2_decision.yaml",
+    "evidence_id": "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-checkrepair2",
     "next_design": null,
     "reason": "round_limit"
   },
@@ -11521,5 +11979,22 @@
       "round_id": "mvcnet-r02-vcn-p1-independent-seed-confirmation-v0.1",
       "run_prefix": "2026-08-31_ai4s_mvcnet_r02_seed78_b0p1"
     }
-  ]
+  ],
+  "xsn_r1_closeout": {
+    "decision": "NO_SIGNAL",
+    "evidence_id": "AI4S-MVCNET-mvcnet-xsn-r1-screen-lab10-r1-budget480",
+    "final_cost": {
+      "path": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/FINAL_COST.json",
+      "sha256": "8ee531f98eccc7f46d5d7edea9bb7a861163e726057a6e01d294fb4b29cf2cf0"
+    },
+    "new_training_authorized": false,
+    "precise_closure": {
+      "path": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/PRECISE_CLOSURE.json",
+      "sha256": "12220f30e8a993c7c3748c9bb8940235628e26f2473ba316c5b604a0f4355c6d"
+    },
+    "report": {
+      "path": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/REPORT.md",
+      "sha256": "c3a9f81f7f6bd436483fc48904b249669dc3d6fa78ef79ac5953b88132898a7a"
+    }
+  }
 }

@@ -5,7 +5,7 @@
     "不自动递归补齐引用；未公开引用见每库SYNC_MANIFEST.json。",
     "不上传凭据、SSH配置、数据集、checkpoint、原始预测、机器日志或完整实验目录。"
   ],
-  "exported_at": "2026-11-04T12:33:18.973754+00:00",
+  "exported_at": "2026-11-05T13:48:30.708880+00:00",
   "files": [
     {
       "bytes": 10735,
@@ -19,26 +19,26 @@
       "source_sha256": "07275190a06ab6840fe6d73efae716d3d8f3c278e532da75943b72819c55f0bb"
     },
     {
-      "bytes": 699706,
+      "bytes": 710072,
       "path": "DECISIONS.md",
-      "public_git_blob_sha1": "7eb5c4df54ae47de312642be115836a778550b58",
-      "public_sha256": "e294db96d1e88e65584afcd80a58154677120ea16fe62f121f3c680adfcf6609",
+      "public_git_blob_sha1": "b0c2935504cb2217e516c8968c7d8aef40d6eb92",
+      "public_sha256": "9fa55e54f13933aae0ec43ad95c543c0f914654e740c1fc5a9352408e2f02b82",
       "redactions": {
         "host_alias": 16,
         "ipv4": 2,
         "unix_home_path": 5
       },
-      "source_sha256": "978344069ab94b5e3c0cd39a176cd40582486862a27cdaf793c8aeb6c29cd770"
+      "source_sha256": "89544348c72860c7ab770a165ea8e34684a9d1ab72687954cc173bed88f6bd88"
     },
     {
-      "bytes": 300944,
+      "bytes": 310703,
       "path": "PAPER.md",
-      "public_git_blob_sha1": "97a44b47db580ad1494bb33da0729c6b98730242",
-      "public_sha256": "3dd5f09400126a75946af035dd7045d4ba7791362a99a8318bc4a7868deb3879",
+      "public_git_blob_sha1": "31516b4351b0790a144a67d76969bcd64ab05e00",
+      "public_sha256": "ad9c6ed0a01fd27ecc2a61e26544dd44ee406401b6b570e2e09be0e17bd8402b",
       "redactions": {
         "host_alias": 1
       },
-      "source_sha256": "160182ce11dba8e340f68fa0d360990f9c75e134a0a7fb6462244b650d1cf80c"
+      "source_sha256": "9c2fdf93a855cdbb6906543f29d1b152c24f41bd359a6a38a47708b0eac3d076"
     },
     {
       "bytes": 10385,
@@ -49,14 +49,14 @@
       "source_sha256": "8783ba6211cc754ba274f367ccfd036860507297c371788ffeecc2dd373912f7"
     },
     {
-      "bytes": 365701,
+      "bytes": 375196,
       "path": "TASKS.md",
-      "public_git_blob_sha1": "3e4b92a0fbec54c60f8fa678a264df4db07f39b2",
-      "public_sha256": "a2080f11a9672fa2cec0728dd41fdecc585a80ab932b85b2a61ff2523095b37a",
+      "public_git_blob_sha1": "a1646354ca873ac2a284d78efd3ac281d894d4cd",
+      "public_sha256": "e518df6e7d05854f45e4d9744bd37eab7b411659a1b31aaddbfcb0f05472d730",
       "redactions": {
         "host_alias": 9
       },
-      "source_sha256": "972481060b9a74628589f70e5f00066d7e6b16c5db0c5632b7043d4f3c6b789b"
+      "source_sha256": "ab4051e2855d4a335c821f808830128458bffba7c26b379565f1881eb70dc220"
     },
     {
       "bytes": 118035,
@@ -77,52 +77,52 @@
       "source_sha256": "f656859ae13c63ca5cfd012f3b18690c48a6235ba32cfacdb7fd45ca1f9fd7ec"
     },
     {
-      "bytes": 7452,
+      "bytes": 7529,
       "path": "ai4s/programs/mvcnet/PROGRAM.yaml",
-      "public_git_blob_sha1": "191c1babe797a2d2d3391092079f443a905aeb6a",
-      "public_sha256": "467c0958f7acd4ce9b25a555229f8d7c6baa95bed5975720a1ed956a58fd7e36",
+      "public_git_blob_sha1": "d6eeb1f9c042d7ff1c56d1d077ebe243e32a14eb",
+      "public_sha256": "d81aee3a5e9dd8fce2d08f7bed1c97c998f7621262ad1304c4dad573c5060c8e",
       "redactions": {
-        "host_alias": 1,
+        "host_alias": 3,
         "machine_field": 9,
         "workspace_prefix": 1
       },
-      "source_sha256": "fd34a32d69c6f8114abe8396ff05987d5a10775ec11a90b359fcdfa74034b7c1"
+      "source_sha256": "a8deef979db3efcb845acea533095dca4533305d0f63d1bdea0d454658e3e1ff"
     },
     {
-      "bytes": 7742,
+      "bytes": 8126,
       "path": "ai4s/programs/mvcnet/PROJECT_PROMPT_v3.3.md",
-      "public_git_blob_sha1": "1767412e9bf6f2f351e78bd6d2d61aad083931f5",
-      "public_sha256": "a572c6cc82c4568f83453683160c58f832f4633621fbc5a11a388b98729e66fb",
+      "public_git_blob_sha1": "5db49a1cef4bb536ce9e6b3653d4626a76219505",
+      "public_sha256": "c58aa6afd92ac6eba65dfb9e804428fe3ca6e17ef83816e4eb72a5d1b2e36f16",
       "redactions": {},
-      "source_sha256": "a572c6cc82c4568f83453683160c58f832f4633621fbc5a11a388b98729e66fb"
+      "source_sha256": "c58aa6afd92ac6eba65dfb9e804428fe3ca6e17ef83816e4eb72a5d1b2e36f16"
     },
     {
-      "bytes": 18907,
+      "bytes": 21586,
       "path": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
-      "public_git_blob_sha1": "ac246a8b4e3e623b679231bdd563f7926384929e",
-      "public_sha256": "533983d1251382aa08e9105895e4295c461e26757e1b540c2ba4b2bdc953f2e3",
+      "public_git_blob_sha1": "5487d83ebc3910e342d67f83209d7778237cbd72",
+      "public_sha256": "0a97077c7225f13c7c641f0821827f8c8f9251d21fcf33af3cf848dd3e99910c",
       "redactions": {},
-      "source_sha256": "533983d1251382aa08e9105895e4295c461e26757e1b540c2ba4b2bdc953f2e3"
+      "source_sha256": "0a97077c7225f13c7c641f0821827f8c8f9251d21fcf33af3cf848dd3e99910c"
     },
     {
-      "bytes": 94185,
+      "bytes": 112330,
       "path": "ai4s/programs/mvcnet/research/EVIDENCE_INDEX.yaml",
-      "public_git_blob_sha1": "6e6b47957bfd735dbda88ed21975d0bbe04cde66",
-      "public_sha256": "6c4df467598f936f2ac6b98bd46532830b14beb48679315340f964df3ab65198",
+      "public_git_blob_sha1": "31653a494de668e18f5e04838651d61840af0d5a",
+      "public_sha256": "419823a61edb1732508e501e5d924bd5f29404f65d359e156444774796a13663",
       "redactions": {},
-      "source_sha256": "6e94d699a267cebfc1a6ed5670da12658e684d2aedfc049f8a4105870164d1a4"
+      "source_sha256": "b6a5a4c896aae73e810af4cc50e14c050b6376052f1b803561aa28dcc9a0b16b"
     },
     {
-      "bytes": 471530,
+      "bytes": 496132,
       "path": "ai4s/programs/mvcnet/research/STATE.yaml",
-      "public_git_blob_sha1": "e9fcfe50e1288dfc27dc4194eb44bc0b8d06d2e2",
-      "public_sha256": "825c729c615ceea5dc5742b830396667a2c457c9a16f99e97f65d85832ef02b8",
+      "public_git_blob_sha1": "2be296205e760d3c7e82a3bcd81646f4dcbe4ebb",
+      "public_sha256": "4a27ea1c85db7e545b4b6a28281916ae02bf758c5c269df46c42f216d5f90c02",
       "redactions": {
         "host_alias": 18,
-        "machine_field": 47,
+        "machine_field": 49,
         "unix_home_path": 1
       },
-      "source_sha256": "a6cb8f9ff2dff17bfb2b6bfbe9576adfc2334b4ab79335252a8b9558fac5d65b"
+      "source_sha256": "1a1ad39582bf6b3373c536394aead7e2f4fa9a54d908ed81f5d7cd5b3c71c6d4"
     },
     {
       "bytes": 4467,
@@ -156,12 +156,12 @@
       "source_sha256": "972455de211d33f2d16a4bdb434a488bab04181202db687410e46ebe9bd2c5ce"
     },
     {
-      "bytes": 18996,
+      "bytes": 21562,
       "path": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/research_brief.md",
-      "public_git_blob_sha1": "d9fe1c765049f0ba1304367ebfbc1aa0d1ff4381",
-      "public_sha256": "26936dd7fdceb4fe4d24ed507640911fc1018d0a1f928ef53618abe4906d04eb",
+      "public_git_blob_sha1": "b1cc29fca5ead7f157d7572f2269051f280ad864",
+      "public_sha256": "21d3cdb33bec3379326d0606055e5bd37e9d55539bb21a464b6369357c5cdcd5",
       "redactions": {},
-      "source_sha256": "26936dd7fdceb4fe4d24ed507640911fc1018d0a1f928ef53618abe4906d04eb"
+      "source_sha256": "21d3cdb33bec3379326d0606055e5bd37e9d55539bb21a464b6369357c5cdcd5"
     },
     {
       "bytes": 2219,
@@ -259,20 +259,20 @@
       "source_sha256": "605ad28f8b5f8361f34c0e9135533e9354dde05ab866ac6e20c3777e5b39e63b"
     },
     {
-      "bytes": 9058,
+      "bytes": 9481,
       "path": "ai4s/prompts/LEVEL1_RESEARCH_v3.3.md",
-      "public_git_blob_sha1": "8ad3f67178af72ac7bcd97e7b6fc4de8004b7f63",
-      "public_sha256": "5b811d7ddcaba970267f1e2ff43c8a45550f8cc61add685e2ce17bff61b63cef",
+      "public_git_blob_sha1": "334259c006c7d86ee8fd2d525ef7ac4010af9114",
+      "public_sha256": "d4e5c0f16d864431943247d5f6ad62ce354d4940ec75472fb17a67e3545a40fa",
       "redactions": {},
-      "source_sha256": "5b811d7ddcaba970267f1e2ff43c8a45550f8cc61add685e2ce17bff61b63cef"
+      "source_sha256": "d4e5c0f16d864431943247d5f6ad62ce354d4940ec75472fb17a67e3545a40fa"
     },
     {
-      "bytes": 19581,
+      "bytes": 23489,
       "path": "ai4s/prompts/LEVEL2_EXECUTION_v3.3.md",
-      "public_git_blob_sha1": "807f4b237287b23f09880cc34dc1f2d6c4b3247c",
-      "public_sha256": "80267dfbce9cf97d7bbbe013cced9d435af64f277aeaf21e935448b717d3e93d",
+      "public_git_blob_sha1": "6b3c657b7891553f57b8cd61a0aa6357e4b83a47",
+      "public_sha256": "4eafbb2b73437ea8cec19cef70b53c86aec8e657ebc614aaaf755d9ff8ebe7ec",
       "redactions": {},
-      "source_sha256": "80267dfbce9cf97d7bbbe013cced9d435af64f277aeaf21e935448b717d3e93d"
+      "source_sha256": "4eafbb2b73437ea8cec19cef70b53c86aec8e657ebc614aaaf755d9ff8ebe7ec"
     },
     {
       "bytes": 9362,
@@ -336,22 +336,19 @@
   "observed_local_state": {
     "mvcnet": {
       "active_operation": null,
-      "active_run": {
-        "dispatch_status": "REMOTE_ACCEPTED",
-        "round_id": "mvcnet-xsn-r1-screen-lab10-r1-budget480"
-      },
-      "paused": false,
+      "active_run": null,
+      "paused": true,
       "source_in_this_repository": true,
       "source_path": "ai4s/programs/mvcnet/research/STATE.yaml",
       "source_public_url": "https://github.com/oldlady21/lzx-mvcnet-ai4s-context/blob/main/ai4s/programs/mvcnet/research/STATE.yaml",
-      "source_sha256": "a6cb8f9ff2dff17bfb2b6bfbe9576adfc2334b4ab79335252a8b9558fac5d65b",
-      "source_updated_at": "2026-11-04T12:30:27.876234+00:00",
-      "status": "WAITING_REMOTE"
+      "source_sha256": "1a1ad39582bf6b3373c536394aead7e2f4fa9a54d908ed81f5d7cd5b3c71c6d4",
+      "source_updated_at": "2026-11-05T13:35:52.182281+00:00",
+      "status": "COMPLETE_MAX_ROUNDS"
     }
   },
   "policy_version": "public-documents-v1",
   "repository": "oldlady21/lzx-mvcnet-ai4s-context",
-  "snapshot_id": "753fa85bf88ec7f7929b30136dc4d502b6cd19b01ca6dedc66dd71653b91e09f",
+  "snapshot_id": "fa123e6dd57f8ebc62e32dc7f55f1f3e320fb99d43e52241d0ff7a07ceeb5e2d",
   "unpublished_references": [
     {
       "from": "AGENTS.md",
@@ -527,6 +524,18 @@
     },
     {
       "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261104_post_sgp/SGP_DESIGN_CONSTRAINTS.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261104_post_sgp/research_brief.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261104_post_sgp/source_identification_design/PROTOCOL_DRAFT.md"
+    },
+    {
+      "from": "DECISIONS.md",
       "not_in_snapshot": "ai4s/programs/dbconformer/research/sbn_r1/SCIENCE_START_GATES.json"
     },
     {
@@ -552,6 +561,14 @@
     {
       "from": "DECISIONS.md",
       "not_in_snapshot": "ai4s/programs/dbconformer/research/snr_r1/REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/source_geometry_r1/FINAL_REPORT.md"
+    },
+    {
+      "from": "DECISIONS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/source_geometry_r1/STARTUP_REPORT.md"
     },
     {
       "from": "DECISIONS.md",
@@ -1075,6 +1092,18 @@
     },
     {
       "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261104_post_sgp/SGP_DESIGN_CONSTRAINTS.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261104_post_sgp/research_brief.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261104_post_sgp/source_identification_design/PROTOCOL_DRAFT.md"
+    },
+    {
+      "from": "PAPER.md",
       "not_in_snapshot": "ai4s/programs/dbconformer/research/sbn_r1/SCIENCE_START_GATES.json"
     },
     {
@@ -1100,6 +1129,14 @@
     {
       "from": "PAPER.md",
       "not_in_snapshot": "ai4s/programs/dbconformer/research/snr_r1/REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/source_geometry_r1/FINAL_REPORT.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/source_geometry_r1/STARTUP_REPORT.md"
     },
     {
       "from": "PAPER.md",
@@ -1811,6 +1848,18 @@
     },
     {
       "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261104_post_sgp/SGP_DESIGN_CONSTRAINTS.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261104_post_sgp/research_brief.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_20261104_post_sgp/source_identification_design/PROTOCOL_DRAFT.md"
+    },
+    {
+      "from": "TASKS.md",
       "not_in_snapshot": "ai4s/programs/dbconformer/research/sbn_r1/SCIENCE_START_GATES.json"
     },
     {
@@ -1836,6 +1885,14 @@
     {
       "from": "TASKS.md",
       "not_in_snapshot": "ai4s/programs/dbconformer/research/snr_r1/REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/source_geometry_r1/FINAL_REPORT.md"
+    },
+    {
+      "from": "TASKS.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/source_geometry_r1/STARTUP_REPORT.md"
     },
     {
       "from": "TASKS.md",
@@ -2275,7 +2332,19 @@
     },
     {
       "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/reassessment_20261104/REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/review_20261029/NOVELTY_AND_REBUTTAL.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/PRECISE_CLOSURE.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/REPORT.md"
     },
     {
       "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
@@ -2283,7 +2352,19 @@
     },
     {
       "from": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/research_brief.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/acm-r1/execution/AUTHORIZATION.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/research_brief.md",
       "not_in_snapshot": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/gradient_audit_20261029/COST_UPDATE.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/research_brief.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/reassessment_20261104/COST_ESTIMATE.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/research_brief.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/reassessment_20261104/REPORT.md"
     },
     {
       "from": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/research_brief.md",

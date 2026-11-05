@@ -124,3 +124,23 @@ ACM预算UNASSIGNED，无新seed/Run/Claim。XSN36h与VBR275h原起点/历史保
 覆盖实际大小模块、合成batch2/4和空Adam首步，未读真实EEG；10个临时副本各一次技术更新、0科学拟合。未验证生产增强、batch64、长期优化或Lab10成本。主Agent将判断从图资格HOLD推进为“有条件值得一次四臂开发探索”，仍不立即派发，预算UNASSIGNED。保持四臂与关闭/反向对照，不增第五臂、不调权救援。前轮Grok原HOLD和5/10查新意见保留，本次没有冒充外审改判。
 
 成本仍采用历史46.942process-h；有效并发4为20.67–23.60h、并发2为35.34–41.21h的条件情景。小batch审计主体59.801秒及CUDA allocator峰值不转成生产报价。XSN当前Run和36h、VBR历史275h及各原起点保持，未访问XSN中间效果或远端。
+
+
+## U8：XSN-R1未形成VCN-P1支架增量（2026-11-04）
+
+MVCNET-XSN-R1-VERIFIED-NO-SIGNAL-20261104；证据 AI4S-MVCNET-mvcnet-xsn-r1-screen-lab10-r1-budget480。
+
+XSN-R1同Run完成90fit+90check，0失败/0OOM；完整结果留Lab10，核心正式analysis_v1_recovery intake，原始logits两套独立复算一致NO_SIGNAL。P0−S0 −0.192901pp（seed71 −0.135031pp、seed72 −0.250772pp；5/9正向）。P0−C0 +0.096451pp、P0−N0 +0.212191pp未过门；P0−R0 +0.366512pp过门不能替代主门。关闭该固定开发配置，不新增训练或释放Claim。
+
+证据引用 → 判断变化：CE改善0.011905且无≤−5pp被试，不能替代准确率门失败；没有充分依据把来源限制列为VCN-P1的必要辅助模块，不泛化为所有source-aware对比学习无效。来源：[正式结案报告](xsn-r1/execution/budget480/analysis_20261104/REPORT.md)、[精确关闭边界](xsn-r1/execution/budget480/analysis_20261104/PRECISE_CLOSURE.json)。
+
+设计变化或停止 → 下一项对照：关闭此v01实例，不改mask、温度、seed或门救援，不自动改推N0/R0或叠加ACM。ACM零训练资格保留原角色、不继承训练授权；若另选问题，先比较与补齐VCN主方法证据的投入价值，本轮不创建新候选或对照。原480h预算、计时起点和全部失败修复历史保持。
+
+
+## U9：XSN关闭后，ACM只保留为预算受控的职责检验
+
+2026-11-04；MVCNET-ACM-R1-POST-XSN-REASSESSMENT-20261104。证据→判断：XSN负结果关闭删边v01，并未测试CMC接收端，不为ACM提供正支持。ACM既有53项合成资格和CVC间接作用非退化说明四臂可辨识；CCF/VOGR未建立CMC有害，既有不对称近邻限制仍在。详见[重评依据与关键对照](next_auxiliary_20261029/reassessment_20261104/REPORT.md)。
+
+判断→设计/停止：仅有条件值得一次S0/P0/N0/R0开发探索，先宿主增量，再关闭和反向必要性；任何必要门失败收口固定实例，不调权/加seed/切方向或叠加XSN。四臂不排除一般减权、不证明VCN协同；主方法强近邻/范围证据仍比默认加模块更优先。下一项是将来获准后生产objective绑定与B64/目标机资格、固定判读/成本门，并非本轮执行。
+
+成本→投入：近期XSN原生S0收据×4为37.512192process-h；K4含假设倍率/6h余量约17.72–20.07h，工作量敏感性及旧VBR参照约20.15–23.60h；K2情景29.45–41.21h。36h只是预算商议目标，不是已分配上限或实测可行性。ACM预算UNASSIGNED，XSN480h余款不转用。Program暂停/运行状态保持，本轮无新训练、seed、Run或Claim。

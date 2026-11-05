@@ -127,7 +127,7 @@
       "runtime_anchor_status": "verified_historical_lab10_schedule_conservative_transfer_estimate",
       "scheduler": "scripts/remote/lab10_shared_executor.py",
       "transaction_runtime": "scripts/ai4s/transaction.py",
-      "transport_route_authority": "Same Lab10 account/root through previously authorized equivalent jump route; direct SSH closed on2026-10-31; old frozen contracts and Run identities untouched.",
+      "transport_route_authority": "Same authorized Lab10 account/root; 2026-11-04 jump route banner timeout/ccmu publickey failure, direct [REDACTED_MACHINE] verified hostname [REDACTED_MACHINE] uid1001 bdi2l_ski; ACM bundle absent before transport; frozen Run unchanged.",
       "workers_per_gpu": 1
     }
   },

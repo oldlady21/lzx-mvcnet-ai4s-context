@@ -235,6 +235,67 @@
       "status_record": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/LAUNCH_STATUS.json",
       "status_record_sha256": "8e066d7574a521a9bc788ba40d9969defb13ff5f955b30718caf260c13227616",
       "transaction_hours": 432
+    },
+    {
+      "XSN_closure_preserved": true,
+      "acceptance": "ai4s/programs/mvcnet/research/acm-r1/execution/acceptance/final_bundle_execution_acceptance.json",
+      "accounting_started_at": "2026-11-04T13:54:00+00:00",
+      "budget_hours": 42,
+      "claim_created": false,
+      "contract": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-r1.yaml",
+      "contract_sha256": "355ddd1c088fb3314421b243cd992c171be82784629319c18e7d018015f268d6",
+      "evidence_id": "MVCNET-ACM-R1-FROZEN-PRODUCTION-PREPARATION-20261104",
+      "independent_budget": true,
+      "production_code_review": "ai4s/programs/mvcnet/research/acm-r1/execution/prelaunch_review/GROK_META.json",
+      "real_intake_acceptance": "ai4s/programs/mvcnet/research/acm-r1/execution/acceptance/real_intake_acceptance.json",
+      "registered_at": "2026-11-04T14:49:13.959434+00:00",
+      "role": "frozen_production_preparation_not_scientific_result",
+      "round_id": "mvcnet-acm-r1-screen-lab10-r1",
+      "run_id": "2026-11-04_mvcnet_acm_r1_lab10_r1-full-w1",
+      "scientific_fits_started": 0,
+      "status": "LOCAL_ACCEPTANCE_PASS_REMOTE_QUALIFICATION_PENDING"
+    },
+    {
+      "XSN_protected_hashes_unchanged": true,
+      "candidate_node_sha256": "f563c1ab0de64e5f860f5b00981dd682f7f309b6ebc9e06d9d00353be10ee33e",
+      "evidence_id": "MVCNET-ACM-R1-ISOLATED-STARTUP-REPAIR-PREPARATION-20261104",
+      "frozen_source_unchanged": true,
+      "new_run_started": false,
+      "real_source_import_reexecuted": false,
+      "registered_at": "2026-11-04T15:10:00.561681+00:00",
+      "repair_plan": "ai4s/programs/mvcnet/research/acm-r1/execution/repair_preparation/REPAIR_PLAN.json",
+      "role": "isolated_engineering_repair_not_execution_authorization",
+      "scientific_fit_count": 0,
+      "source_failed_run_id": "2026-11-04_mvcnet_acm_r1_lab10_r1-full-w1",
+      "status": "CONSUMER_REPLAY_PASS_NOT_DISPATCHED"
+    },
+    {
+      "XSN_closure_preserved": true,
+      "accounting_started_at": "2026-11-04T13:54:00+00:00",
+      "budget_hours": 42,
+      "claim_created": false,
+      "closeout_reserve_hours": 6,
+      "contract": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-r1-repair1.yaml",
+      "contract_canonical_sha256": "c67eb18a7d6915267d13dab4380e4a743fd0d47dc0c8216ec1c3b77c86478286",
+      "contract_sha256": "d860d54354aa367044f2d9273f8467e54685446d891536b18c4c628e8a360c13",
+      "cost_gate": "PASS",
+      "evidence_id": "MVCNET-ACM-R1-REPAIR1-QUALIFIED-COST-PASS-LAUNCH-20261104",
+      "full_payload_stays_remote": true,
+      "full_training_started": true,
+      "independent_cost_recomputation": "ai4s/programs/mvcnet/research/acm-r1/execution/repair1/qualification_preview/INDEPENDENT_COST_RECOMPUTATION.json",
+      "intake_scope": "engineering_preview_only",
+      "launch_binding": "ai4s/programs/mvcnet/research/acm-r1/execution/repair1/LAUNCH_BINDING.json",
+      "qualification_count": 8,
+      "qualification_reuse": 0,
+      "registered_at": "2026-11-04T15:47:20.580362+00:00",
+      "report": "ai4s/programs/mvcnet/research/acm-r1/execution/repair1/REPORT.md",
+      "role": "real_engineering_qualification_cost_and_launch_not_scientific_effect",
+      "round_id": "mvcnet-acm-r1-screen-lab10-r1-repair1",
+      "run_id": "2026-11-04_mvcnet_acm_r1_lab10_r1_repair1-full-w1",
+      "science_forecast_hours": 13.389568741463057,
+      "scientific_effects_read": false,
+      "source_failure_preserved": true,
+      "status": "REAL_QUALIFICATION_COST_PASS_FULL_TRAINING_RUNNING"
     }
   ],
   "imports": [
@@ -600,6 +661,50 @@
       ],
       "status": "DESIGN_ONLY_HOLD_TRAINING",
       "validation": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/review_20261029/VALIDATION.json"
+    },
+    {
+      "arms": [
+        "S0",
+        "P0",
+        "N0",
+        "R0"
+      ],
+      "budget": "UNASSIGNED",
+      "context": {
+        "path": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/reassessment_20261104/CONTEXT.json",
+        "sha256": "a2ef8088176419a007cce1c1c807363ea793cf225f9a1be129f7e5be6a723cc9"
+      },
+      "cost": {
+        "path": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/reassessment_20261104/COST_ESTIMATE.json",
+        "sha256": "093205b4f18d79e68060505d112dc639520630877504d23c69349445f0a2c3c5"
+      },
+      "evidence_id": "MVCNET-ACM-R1-POST-XSN-REASSESSMENT-20261104",
+      "external_review_reused": "2026-10-29; original HOLD preserved; no new external verdict",
+      "governance_chain_id": "mvcnet-transaction-v3.3",
+      "new_real_data_compute": false,
+      "planned_checks": 72,
+      "planned_fits": 72,
+      "program_id": "mvcnet",
+      "registered_at": "2026-11-04T13:37:31.904693+00:00",
+      "report": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/reassessment_20261104/REPORT.md",
+      "report_sha256": "7d94ee179f9ebe222f53024d281b03064b04a6bc2332f1b603a833db70f86977",
+      "research_brief": "ai4s/programs/mvcnet/research/next_auxiliary_20261029/research_brief.md",
+      "research_brief_sha256": "32550d5cd23afd4d5e197088b7619e1d6c8944ca7548fe063553c16da80ed190",
+      "research_id": "ACM-R1",
+      "role": "design_reassessment_after_verified_negative_not_efficacy_evidence",
+      "scientific_fits": 0,
+      "source_evidence_ids": [
+        "AI4S-MVCNET-mvcnet-xsn-r1-screen-lab10-r1-budget480",
+        "MVCNET-ACM-R1-GRADIENT-AUDIT-20261029",
+        "MVCNET-ACM-R1-NOVELTY-REBUTTAL-20261029",
+        "AI4S-MVCNET-mvcnet-contrastive-factorial-diagnostic-lab10-r3",
+        "AI4S-MVCNET-mvcnet-vogr-d0-diagnostic-lab10-r1",
+        "AI4S-MVCNET-mvcnet-scva-cvc-s0p0-screen-lab10-v0.2",
+        "AI4S-MVCNET-mvcnet-vbr-r1-screen-lab10-r1-repair3"
+      ],
+      "status": "CONDITIONAL_SINGLE_EXPLORATION_NOT_DISPATCH_READY",
+      "training_authorized": false,
+      "xsn_closure_preserved": true
     }
   ],
   "round_evidence": [
@@ -1572,8 +1677,206 @@
       "round_id": "mvcnet-xsn-r1-screen-lab10-r1-repair1",
       "run_id": "2026-10-30_mvcnet_xsn_r1_lab10_r1_repair1-full-w1",
       "scientific_effect_evaluated": false
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "complete_remote": true,
+      "core_transfer": {
+        "path": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/FETCH_VERIFIED.json",
+        "sha256": "5e57e8ac43652a86735f59b00b7cb6679dd1be59c7aa62300e715220ffc665d2"
+      },
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-xsn-r1-screen-lab10-r1-budget480_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-xsn-r1-screen-lab10-r1-budget480",
+      "executor_id": "lab10",
+      "final_cost": {
+        "path": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/FINAL_COST.json",
+        "sha256": "8ee531f98eccc7f46d5d7edea9bb7a861163e726057a6e01d294fb4b29cf2cf0"
+      },
+      "follow_up_status": "v3_record_design_constraint_or_precise_closure",
+      "full_payload_local": false,
+      "independent_replay": {
+        "path": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/INDEPENDENT_REPLAY.json",
+        "sha256": "6adfa27321573597d07e58d4e0314bc646bc3bd58dfac8cab9984e6192cf9ee6"
+      },
+      "intake_scope": "analysis_v1_recovery",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "Developmental screen only; no mechanism or publication claim.",
+      "precise_closure": {
+        "path": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/PRECISE_CLOSURE.json",
+        "sha256": "12220f30e8a993c7c3748c9bb8940235628e26f2473ba316c5b604a0f4355c6d"
+      },
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "raw_logit_replay": {
+        "path": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/ANALYSIS.json",
+        "sha256": "2bee46982b207b4bee88135083b6d7ebb2fe461f501a5dca9a8fbc958cc6c832"
+      },
+      "report": "ai4s/programs/mvcnet/research/xsn-r1/execution/budget480/analysis_20261104/REPORT.md",
+      "report_sha256": "c3a9f81f7f6bd436483fc48904b249669dc3d6fa78ef79ac5953b88132898a7a",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/mvcnet/research/mvcnet-xsn-r1-screen-lab10-r1-budget480.yaml",
+      "round_id": "mvcnet-xsn-r1-screen-lab10-r1-budget480",
+      "run_id": "2026-10-31_mvcnet_xsn_r1_lab10_r1_budget480-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "INVALID",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-r1_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-r1",
+      "failure_input_sha256": "9a90970b82377783f39c02705d36813cbc218642a92656506ed5681ac691181a",
+      "follow_up_status": "repair_requires_new_immutable_run_and_frozen_contract",
+      "intake_status": "verified_failure_metadata_only",
+      "interpretation_boundary": "Only metadata-only engineering failure evidence was verified; scientific effects were not evaluated and partial artifacts are ineligible.",
+      "partial_artifacts_eligible": false,
+      "role": "invalid_non_scientific_record",
+      "round_id": "mvcnet-acm-r1-screen-lab10-r1",
+      "run_id": "2026-11-04_mvcnet_acm_r1_lab10_r1-full-w1",
+      "scientific_effect_evaluated": false
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "INVALID",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-r1-repair1_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-r1-repair1",
+      "failure_input_sha256": "2ff383852cec12c10164c720525362dfc1635df313e6fb0f7f2e34f7f6b4310b",
+      "follow_up_status": "repair_requires_new_immutable_run_and_frozen_contract",
+      "intake_status": "verified_failure_metadata_only",
+      "interpretation_boundary": "Only metadata-only engineering failure evidence was verified; scientific effects were not evaluated and partial artifacts are ineligible.",
+      "partial_artifacts_eligible": false,
+      "role": "invalid_non_scientific_record",
+      "round_id": "mvcnet-acm-r1-screen-lab10-r1-repair1",
+      "run_id": "2026-11-04_mvcnet_acm_r1_lab10_r1_repair1-full-w1",
+      "scientific_effect_evaluated": false
+    },
+    {
+      "accounting_started_at": "2026-11-04T13:54:00+00:00",
+      "allowable_seconds": 14240.57351398468,
+      "budget_hours": 42,
+      "bundle_id": "2026-11-05_mvcnet_acm_r1_lab10_bundle_checkrepair2_packfix1",
+      "bundle_source_manifest": "programs/mvcnet/staging/2026-11-05_mvcnet_acm_r1_lab10_bundle_checkrepair2_packfix1/source_manifest.json",
+      "bundle_source_manifest_sha256": "76abf46a8b05b65fdadf3141642f792444c7b98d21e347cfa4fe69610768387e",
+      "campaign_id": "mvcnet-acm-r1-lab10-20261104",
+      "chain_id": "mvcnet-transaction-v3.3",
+      "check_stage_status": "RUNNING",
+      "check_units": 72,
+      "claim_created": false,
+      "closeout_reserve_hours": 6,
+      "contract": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-checkrepair2.yaml",
+      "contract_canonical_sha256": "012358fb085a8f819ac864e361677901f025123a73695726355b437fccca06e7",
+      "contract_file_sha256": "91c24d5a7c8d5c78e23cc7929c89d7aaae5252ea1938f087e10e19d36dc3adb3",
+      "controller_interfaces_result": "62/62 PASS",
+      "controller_interfaces_test": {
+        "path": "programs/mvcnet/research/acm-r1/execution/checkrepair2/acceptance/INTERFACES_AFTER_CONTROLLER.log",
+        "sha256": "f444f87b3b89e3aae476c4575fc8002a8760051373a5446fb1c01f70150768b4"
+      },
+      "controller_record_run_snapshot": {
+        "path": "programs/mvcnet/research/acm-r1/execution/checkrepair2/packfix1/RECORD_RUN_RESULT.json",
+        "sha256": "441c8bfc1abdc3a6498195d853178e866fd33972b69d28f6008209e18b6a456e"
+      },
+      "controller_recovery_snapshot": {
+        "path": "programs/mvcnet/research/acm-r1/execution/checkrepair2/packfix1/RECOVERY_RESULT.json",
+        "sha256": "31cf53bb14a818b79cc44ce904d6b8bd32a2a5999aae9027dddc32d3afac649f"
+      },
+      "cost_gate": {
+        "path": "programs/mvcnet/research/acm-r1/execution/checkrepair2/qualification_preview/cost_gate.json",
+        "sha256": "3c62dcc4f3bae891cc9d3323cf589247b81030ca0c88b9e2f9eafa4c2e2592dc"
+      },
+      "cost_gate_status": "PASS",
+      "engineering_receipt": "programs/mvcnet/research/acm-r1/execution/checkrepair2/ENGINEERING_RECEIPT.json",
+      "engineering_receipt_sha256": "021e7ec43f6ce04b43d3f5a636d014a474059c5a51af045f186423768595bf21",
+      "evidence_id": "MVCNET-ACM-R1-CHECKREPAIR2-ENGINEERING-LAUNCH-20261105",
+      "forecast_seconds": 3052.965674854815,
+      "grok_original_response": "programs/mvcnet/research/acm-r1/execution/checkrepair2/review/retry1/GROK_RESPONSE.json",
+      "grok_original_response_sha256": "c176557b57f0fcd710f727d88c8d1753a768f84962a78ba996155fac1f8f1d3f",
+      "grok_original_verdict": "NEEDS_FIX",
+      "independent_cost_recomputation": {
+        "path": "programs/mvcnet/research/acm-r1/execution/checkrepair2/qualification_preview/INDEPENDENT_COST_RECOMPUTATION.json",
+        "sha256": "9cfafc0166833e3373888acfa5860db7be9e7bda4f640a900ebee18c76e8422c"
+      },
+      "launch_binding": "programs/mvcnet/research/acm-r1/execution/checkrepair2/packfix1/LAUNCH_BINDING.json",
+      "launch_binding_sha256": "e1f01f6cdf50406f35aee722ce90b8a3101e76718a60599480ac77ae6c65f423",
+      "local_disposition": "programs/mvcnet/research/acm-r1/execution/checkrepair2/review/retry1/LOCAL_DISPOSITION.json",
+      "local_disposition_sha256": "994da3c122765fb4e24c19529d6ab71601716a195f3cbf104632eb54c13bb807",
+      "local_disposition_status": "RESOLVED_BY_LOCAL_REAL_CONSUMER_REGRESSIONS",
+      "local_node_consumer_regression": {
+        "path": "programs/mvcnet/research/acm-r1/execution/checkrepair2/acceptance/node_consumers_cpu.json",
+        "sha256": "6ecb51034b9b9abbb48c6e94c021b3590646261fe1978bf9d8dcb0ee6bda9593"
+      },
+      "new_fits": 0,
+      "new_qualification_fits": 0,
+      "offline_acceptance": "programs/mvcnet/research/acm-r1/execution/checkrepair2/packfix1/acceptance/final_bundle_offline_acceptance.json",
+      "offline_acceptance_sha256": "952eac41a48561cb0c06f7c861b8e9a3cd4eaf25cdaf81f928130a3b1e537363",
+      "planned_units": 73,
+      "program_id": "mvcnet",
+      "provenance_correction_before": {
+        "path": "programs/mvcnet/research/acm-r1/execution/checkrepair2/packfix1/PROVENANCE_CORRECTION_BEFORE.json",
+        "sha256": "00d71fa141a8232e2a499bb4e6e2f6ce3eaf873162e560992eb5c9ac9c865f51"
+      },
+      "registered_at": "2026-11-05T13:29:14.725473+00:00",
+      "research_id": "ACM-R1",
+      "role": "engineering_repair_launch_not_scientific_evidence",
+      "round_id": "mvcnet-acm-r1-screen-lab10-checkrepair2",
+      "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
+      "scientific_effects_read": false,
+      "scientific_result_registered": false,
+      "source_failure_decision_records": [
+        {
+          "path": "programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-r1_decision.yaml",
+          "sha256": "56d2d9ce6c771990a966c05240a6f30de0eeb411c61ba49bf4d275d81d27478d"
+        },
+        {
+          "path": "programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-r1-repair1_decision.yaml",
+          "sha256": "da633bdf473a60869d21cf2b3698d8209b9d510b2ca51b438e935231c868cf72"
+        }
+      ],
+      "source_failure_evidence_ids": [
+        "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-r1",
+        "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-r1-repair1"
+      ],
+      "source_fit_reuse": 72,
+      "source_integrity_node": {
+        "path": "programs/mvcnet/research/acm-r1/execution/checkrepair2/qualification_preview/node_result.json",
+        "sha256": "48ccb5bf81dd74a065e112020d87499b11944930101917c22031d765c30bee46"
+      },
+      "source_integrity_receipt": {
+        "path": "programs/mvcnet/research/acm-r1/execution/checkrepair2/qualification_preview/source_manifest.json",
+        "sha256": "899d28b4256c0b8bd446c3cf03db01e1ef9b9a5ca1d029395a3a2cb0e85b0d9b"
+      },
+      "source_integrity_status": "PASS",
+      "source_integrity_technical_units": 1,
+      "source_qualification_reuse": 8,
+      "source_reuse_manifest": "programs/mvcnet/research/acm-r1/execution/checkrepair2/REPAIR1_SOURCE_MANIFEST.json",
+      "source_reuse_manifest_sha256": "4ea6103fa429a014bcfaafefc1b798294981c0ec9c02306fd762080b512bae34",
+      "status": "CHECK_ONLY_RUNNING_AFTER_TECH_COST_PASS",
+      "status_gate_pass": "programs/mvcnet/research/acm-r1/execution/checkrepair2/packfix1/STATUS_GATE_PASS.json",
+      "status_gate_pass_sha256": "874b42def326dfabcbf3417862b91ed76583bfc5e575c61193231a84a0b8fefa",
+      "transaction_hours": 4,
+      "transaction_id": "mvcnet-acm-r1-tx-20261105-checkrepair2"
+    },
+    {
+      "analysis_result": "ai4s/programs/mvcnet/research/acm-r1/execution/checkrepair2/analysis_20261105/RESULT.json",
+      "analysis_result_sha256": "17b9576b8da9aa564995a11f5e70095531be27547cd99173bd51131fbd84526c",
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-checkrepair2_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-checkrepair2",
+      "executor_id": "lab10",
+      "final_cost": "ai4s/programs/mvcnet/research/acm-r1/execution/checkrepair2/analysis_20261105/FINAL_COST.json",
+      "final_cost_sha256": "018d5d811dd99a24f6733321911551a402df492ce4ca7d65f8a1c5ad050df6a0",
+      "follow_up_record": "ai4s/programs/mvcnet/research/acm-r1/execution/checkrepair2/analysis_20261105/REPORT.md",
+      "follow_up_sha256": "b24ce1c1830a9c2d77e5309bcac98528115d04e172be3bbe24da7cabc8e53a38",
+      "follow_up_status": "exact_instance_closed_no_rescue",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "One developmental screen only; no mechanism, novelty, VCN-specific interaction, or publication claim.",
+      "precise_closure": "ai4s/programs/mvcnet/research/acm-r1/execution/checkrepair2/analysis_20261105/PRECISE_CLOSURE.json",
+      "precise_closure_sha256": "de866a7dd7e7673aa58c1bf7f0237a148bc8621ba18ecfe0a4308518d55b25c0",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-checkrepair2.yaml",
+      "round_id": "mvcnet-acm-r1-screen-lab10-checkrepair2",
+      "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1"
     }
   ],
   "schema_version": "mieeg-ai4s-evidence-index-v1",
-  "updated_at": "2026-10-30T20:58:29.389801+00:00"
+  "updated_at": "2026-11-05T13:43:29.758902+00:00"
 }
