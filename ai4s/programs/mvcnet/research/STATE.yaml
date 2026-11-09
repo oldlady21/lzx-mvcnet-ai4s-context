@@ -3577,14 +3577,51 @@
         }
       },
       "full_prior_campaign_snapshot_sha256": "ede4221e22eafe9fe9fcff760d1fc2ab4ddd572cb2e98929322de374304484a3"
+    },
+    {
+      "campaign_id": "mvcnet-acm-r1-lab10-20261104",
+      "closed_at": "2026-11-06T04:59:00+00:00",
+      "closing_decision": {
+        "all_interpretive_gates_pass": false,
+        "claim_release": "none",
+        "decision": "NO_SIGNAL",
+        "interpretive_gates": {
+          "P0-N0": true,
+          "P0-R0": false
+        },
+        "primary_P0_minus_S0_pass": true,
+        "research_stage": "acm_screen",
+        "round_id": "mvcnet-acm-r1-screen-lab10-checkrepair2",
+        "status": "frozen_rule_applied"
+      },
+      "closing_round": "mvcnet-acm-r1-screen-lab10-checkrepair2",
+      "closing_run": {
+        "analysis_receipt_sha256": "510b47660658f3dd969953cfea81a8f0f06e7240a9235bdb7dfad690ec6ff1c1",
+        "artifact_manifest_sha256": "33535de00eadda737f59f7011965b57e042fb9485db6c80a054e1bb41a35808c",
+        "contract_sha256": "012358fb085a8f819ac864e361677901f025123a73695726355b437fccca06e7",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
+        "run_status": "complete",
+        "transaction_id": "mvcnet-acm-r1-tx-20261105-checkrepair2",
+        "transfer_bytes": 22225398,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User authorized one cue4 B0/CE paired full comparison under independent 20h cap; exact protocol and full launch gated by acceptance."
     }
   ],
   "campaign": {
     "allowed_transitions": [
       "SCREEN_NEW"
     ],
-    "authorization_reason": "用户授权ACM-R1一次性探索，独立42小时，准备计时起点2026-11-04T13:54:00Z；资格与成本门通过才四臂完整训练，不调参救援，保留XSN关闭及全部历史。",
-    "campaign_id": "mvcnet-acm-r1-lab10-20261104",
+    "authorization_reason": "User authorized one cue4 B0/CE paired full comparison under independent 20h cap; exact protocol and full launch gated by acceptance.",
+    "budget_policy": {
+      "exclude_verified_stopped_seconds": true
+    },
+    "campaign_id": "mvcnet-cue-aligned-two-arm-20261106",
     "continuation_policy_version": "evidence_to_design_v1",
     "decision_policy": "stop_at_positive",
     "execution_authorization": {
@@ -3598,57 +3635,72 @@
       "allowed_transitions": [
         "SCREEN_NEW"
       ],
-      "authorization_ref": "ai4s/programs/mvcnet/research/acm-r1/execution/AUTHORIZATION.json",
-      "campaign_id": "mvcnet-acm-r1-lab10-20261104",
+      "authorization_ref": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_production/FULL_AUTHORIZATION.json",
+      "campaign_id": "mvcnet-cue-aligned-two-arm-20261106",
       "executor_id": "lab10",
-      "recorded_at": "2026-11-04T14:56:23.655855+00:00",
+      "recorded_at": "2026-11-06T05:03:50.242371+00:00",
       "research_scope": {
         "allow_new_module": false,
         "allowed_module_ids": [
-          "src.models.ai4s.mvcnet.acm_r1"
+          "mvcnet-cue4-native-b0-fourview-ce"
         ],
         "allowed_stages": [
-          "acm_screen"
+          "full"
         ],
-        "data_scope_id": "bnci2014001-seven-source-developmental-acm-r1-seeds73-74",
-        "question_id": "vcn-cmc-gradient-receiver-asymmetry"
+        "data_scope_id": "bnci001-cue4-seven-source-exposed-development-v1",
+        "question_id": "mvcnet-cue4-native-joint-objective-utility"
       },
-      "source_sha256": "4b077d38bbd24ce70f818121f229d2c2ef3c8a9920393785df1eb23e1a8f65fd"
+      "source_sha256": "f5f2b65cc1ba8db26eac38aa1a0526b0ad8a84c311049e4c5b522b4498cca9ad"
     },
     "governance_chain_id": "mvcnet-transaction-v3.3",
     "invalid_behavior": "fail_closed_without_advancing",
     "positive_signal_behavior": "pause_for_human_review",
     "purpose": "user-authorized bounded AI4S campaign",
     "queue_accounting": {
-      "2026-11-04_mvcnet_acm_r1_lab10_r1-full-w1": {
-        "contract_sha256": "ad8b2d0863b2f33b8ddfcc34d6e5b01f98a55f6ac6acb3a4daa6cfad0f066879",
+      "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1-full-w1": {
+        "contract_sha256": "81d1162824161fda5219a1448f948ca1fa52ef166a6fe6dae23dbb3941ad77b7",
         "queue_seconds": 0.0,
-        "run_id": "2026-11-04_mvcnet_acm_r1_lab10_r1-full-w1",
-        "transaction_id": "mvcnet-acm-r1-tx-20261104-r1"
+        "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1-full-w1",
+        "transaction_id": "mvcnet-cue-aligned-two-arm-tx-20261106-r1"
       },
-      "2026-11-04_mvcnet_acm_r1_lab10_r1_repair1-full-w1": {
-        "contract_sha256": "c67eb18a7d6915267d13dab4380e4a743fd0d47dc0c8216ec1c3b77c86478286",
-        "queue_seconds": 3.2646756172180176,
-        "run_id": "2026-11-04_mvcnet_acm_r1_lab10_r1_repair1-full-w1",
-        "transaction_id": "mvcnet-acm-r1-tx-20261104-r1-repair1"
+      "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1-full-w1": {
+        "contract_sha256": "d0e05798dfebc2b0e7fdcb0c21a2a283829b3a35f7eaedcb77c85beeafe62008",
+        "queue_seconds": 0.0,
+        "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1-full-w1",
+        "transaction_id": "mvcnet-cue-aligned-two-arm-tx-20261106-r1-py39fix1"
       },
-      "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1": {
-        "contract_sha256": "012358fb085a8f819ac864e361677901f025123a73695726355b437fccca06e7",
-        "queue_seconds": 0.788313627243042,
-        "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
-        "transaction_id": "mvcnet-acm-r1-tx-20261105-checkrepair2"
+      "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix1-full-w1": {
+        "contract_sha256": "ba58b57a4420caf8776e222c6eefd6de5b18d2274a9723576152501e654e9bef",
+        "queue_seconds": 0.0,
+        "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix1-full-w1",
+        "transaction_id": "mvcnet-cue-aligned-two-arm-tx-20261106-r1-py39fix1-sealfix1"
+      },
+      "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1": {
+        "contract_sha256": "df5a3476a80c807f4b81a0344683cd987b7977c9741516fc06d184f2a308ea57",
+        "queue_seconds": 0.0,
+        "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1",
+        "transaction_id": "mvcnet-cue-aligned-two-arm-tx-20261106-r1-py39fix1-sealfix2"
       }
     },
     "round_decisions": [
       {
         "decision": "NO_SIGNAL",
-        "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-checkrepair2_decision.yaml",
-        "evidence_id": "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-checkrepair2",
-        "recorded_at": "2026-11-05T13:35:52.182251+00:00",
-        "round_id": "mvcnet-acm-r1-screen-lab10-checkrepair2"
+        "decision_record": "ai4s/programs/mvcnet/research/mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2_decision.yaml",
+        "evidence_id": "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2",
+        "recorded_at": "2026-11-08T13:59:45.549895+00:00",
+        "round_id": "mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2"
       }
     ],
-    "started_at": "2026-11-04T14:56:23.318321+00:00"
+    "started_at": "2026-11-06T04:59:00+00:00",
+    "stopped_accounting": [
+      {
+        "authorization_ref": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_production/py39fix1_failure/STOPPED_AUTHORIZATION.json",
+        "end": 1794137201.0,
+        "evidence_ref": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_production/py39fix1_failure/transaction_status.json",
+        "source_run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1-full-w1",
+        "start": 1793948020.9120984
+      }
+    ]
   },
   "completed_rounds": [
     {
@@ -9994,6 +10046,82 @@
           }
         ]
       }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "reason": "overall paired delta is below the frozen minimum meaningful effect",
+        "round_id": "mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2"
+      },
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2",
+      "round_id": "mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2",
+      "run": {
+        "bundle_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_bundle_r1_py39fix1_sealfix2",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 4.562,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 73,
+        "recorded_at": "2026-11-08T11:33:23.470108+00:00",
+        "round_id": "mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2",
+        "run_prefix": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-08T11:34:23.967713+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-08T11:34:58.954728+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-08T11:35:15.991667+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "science",
+              "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "df5a3476a80c807f4b81a0344683cd987b7977c9741516fc06d184f2a308ea57",
+                "execution_seconds": 16.04147219657898,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1",
+                "transaction_id": "mvcnet-cue-aligned-two-arm-tx-20261106-r1-py39fix1-sealfix2",
+                "waiting_for_resources": false,
+                "wall_seconds": 16.04147219657898
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-08T13:58:54.799185+00:00",
+            "result": {
+              "analysis_receipt_sha256": "8d1162a88ab3e42e674558e18d234462404bb2af3c0f5bf1658d3342dd385277",
+              "artifact_manifest_sha256": "eccf1daa200552ee68f3546fa09e40f000bd4afe1dd49f70252c8059d1069f47",
+              "contract_sha256": "df5a3476a80c807f4b81a0344683cd987b7977c9741516fc06d184f2a308ea57",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1",
+              "transaction_id": "mvcnet-cue-aligned-two-arm-tx-20261106-r1-py39fix1-sealfix2",
+              "transfer_bytes": 5309246,
+              "verified": true
+            }
+          }
+        ]
+      }
     }
   ],
   "continuation_history": [
@@ -11590,20 +11718,39 @@
       "source_round_id": "mvcnet-acm-r1-screen-lab10-r1-repair1",
       "source_run_id": "2026-11-04_mvcnet_acm_r1_lab10_r1_repair1-full-w1",
       "stopped_time_credit": false
+    },
+    {
+      "authorized_at": "2026-11-06T05:39:46.331383+00:00",
+      "reason": "Python 3.9 Path.write_text compatibility before any scheduler task dispatch",
+      "repair_contract": "ai4s/programs/mvcnet/research/mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1.yaml",
+      "repair_round_id": "mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1",
+      "source_decision_record": "ai4s/programs/mvcnet/research/mvcnet-cue-aligned-two-arm-full-lab10-r1_decision.yaml",
+      "source_round_id": "mvcnet-cue-aligned-two-arm-full-lab10-r1",
+      "source_run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1-full-w1"
+    },
+    {
+      "authorized_at": "2026-11-08T11:29:07.476976+00:00",
+      "reason": "reuse 36 immutable fits; restore original qualification definitions and run only sealed checks",
+      "repair_contract": "ai4s/programs/mvcnet/research/mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix1.yaml",
+      "repair_round_id": "mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix1",
+      "source_decision_record": "ai4s/programs/mvcnet/research/mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1_decision.yaml",
+      "source_round_id": "mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1",
+      "source_run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1-full-w1"
+    },
+    {
+      "authorized_at": "2026-11-08T11:33:19.088227+00:00",
+      "reason": "check-only 3h Transaction cap; same original 36 fits, matrix and stopped accounting",
+      "repair_contract": "ai4s/programs/mvcnet/research/mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2.yaml",
+      "repair_round_id": "mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2",
+      "source_decision_record": "ai4s/programs/mvcnet/research/mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix1_decision.yaml",
+      "source_round_id": "mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix1",
+      "source_run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix1-full-w1"
     }
   ],
   "last_decision": {
-    "all_interpretive_gates_pass": false,
-    "claim_release": "none",
     "decision": "NO_SIGNAL",
-    "interpretive_gates": {
-      "P0-N0": true,
-      "P0-R0": false
-    },
-    "primary_P0_minus_S0_pass": true,
-    "research_stage": "acm_screen",
-    "round_id": "mvcnet-acm-r1-screen-lab10-checkrepair2",
-    "status": "frozen_rule_applied"
+    "reason": "overall paired delta is below the frozen minimum meaningful effect",
+    "round_id": "mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2"
   },
   "last_remote_verified_analysis": {
     "analysis_report": "ai4s/programs/mvcnet/research/augmentation_readout/repair_resume69_oom_20261018/analysis_20261024/REPORT.md",
@@ -11625,21 +11772,21 @@
     "verified_at": "2026-10-23T18:51:33.808954+00:00"
   },
   "last_round_evidence": {
-    "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-checkrepair2_decision.yaml",
-    "evidence_id": "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-checkrepair2",
+    "decision_record": "ai4s/programs/mvcnet/research/mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2_decision.yaml",
+    "evidence_id": "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2",
     "role": "exact_negative_boundary"
   },
   "last_verified_intake": {
-    "analysis_receipt_sha256": "510b47660658f3dd969953cfea81a8f0f06e7240a9235bdb7dfad690ec6ff1c1",
-    "artifact_manifest_sha256": "33535de00eadda737f59f7011965b57e042fb9485db6c80a054e1bb41a35808c",
-    "contract_sha256": "012358fb085a8f819ac864e361677901f025123a73695726355b437fccca06e7",
+    "analysis_receipt_sha256": "8d1162a88ab3e42e674558e18d234462404bb2af3c0f5bf1658d3342dd385277",
+    "artifact_manifest_sha256": "eccf1daa200552ee68f3546fa09e40f000bd4afe1dd49f70252c8059d1069f47",
+    "contract_sha256": "df5a3476a80c807f4b81a0344683cd987b7977c9741516fc06d184f2a308ea57",
     "full_payload_local": false,
-    "intake_path": "results/logs/remote/2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
+    "intake_path": "results/logs/remote/2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1",
     "intake_scope": "analysis_v1",
-    "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1",
+    "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1",
     "run_status": "complete",
-    "transaction_id": "mvcnet-acm-r1-tx-20261105-checkrepair2",
-    "transfer_bytes": 22225398,
+    "transaction_id": "mvcnet-cue-aligned-two-arm-tx-20261106-r1-py39fix1-sealfix2",
+    "transfer_bytes": 5309246,
     "verified": true,
     "verified_at": null
   },
@@ -11867,23 +12014,21 @@
     }
   ],
   "run_control": {
-    "accounting_anchor_basis": "conservative minute boundary before initial preparation reads in this authorized turn; preparation included, no budget reset",
     "continuation_policy_version": "evidence_to_design_v1",
     "continue_after_positive": false,
     "max_rounds": 1,
     "monitor": "blocking",
-    "night_budget_hours": 42.0,
-    "preparation_included": true,
+    "night_budget_hours": 20.0,
     "queue_time_policy": "exclude_resource_wait",
     "round_index": 1,
-    "started_at": "2026-11-04T13:54:00+00:00"
+    "started_at": "2026-11-06T04:59:00+00:00"
   },
   "schema_version": "mieeg-ai4s-state-v1",
   "status": "COMPLETE_MAX_ROUNDS",
-  "updated_at": "2026-11-05T13:35:52.182281+00:00",
+  "updated_at": "2026-11-08T13:59:45.549917+00:00",
   "v3_follow_up": {
-    "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-checkrepair2_decision.yaml",
-    "evidence_id": "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-checkrepair2",
+    "decision_record": "ai4s/programs/mvcnet/research/mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2_decision.yaml",
+    "evidence_id": "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2",
     "next_design": null,
     "reason": "round_limit"
   },

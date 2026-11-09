@@ -1,6 +1,30 @@
 {
   "engineering_preparations": [
     {
+      "core": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_production/CUDAINITFIX1_CORE.json",
+      "core_sha256": "4fff2711dd68b12b05f09a20909ba39532ff234439d7426a806272aa8b9cd0a9",
+      "cost": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_production/CUDAINITFIX1_COST.json",
+      "cost_sha256": "3597b5d47bcc55b28f57d1cab6651b7c946f6ca7e049381b95be0a369baab019",
+      "evidence_id": "MVCNET-CUE4-CUDAINITFIX1-QUALIFICATION-PASS-20261106",
+      "failed": 0,
+      "qualified": 4,
+      "role": "verified_engineering_qualification_not_scientific_evidence",
+      "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_qualification1_cudainitfix1",
+      "scientific_fits": 0,
+      "status": "QUALIFICATION_PASS_FULL_TRAINING_NOT_AUTHORIZED"
+    },
+    {
+      "closeout": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_production/IMPORTFIX1_CLOSEOUT.json",
+      "evidence_id": "MVCNET-CUE4-IMPORTFIX1-ENGINEERING-INVALID-20261106",
+      "failed": 4,
+      "qualified": 0,
+      "repair_preparation": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_production/CUDA_INIT_REPAIR.diff",
+      "role": "failed_qualification_not_scientific_evidence",
+      "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_qualification1_importfix1",
+      "scientific_fits": 0,
+      "status": "CUDA_CONTEXT_FAILURE_BEFORE_DATA"
+    },
+    {
       "actual_run_id": "2026-10-24_mvcnet_vbr_r1_lab10_r1-full-w1",
       "budget_rule": "cumulative200h from04:35:51Z; Transaction188h plus analysis6h; admission194h remaining",
       "chain_id": "mvcnet-transaction-v3.2",
@@ -458,6 +482,733 @@
   "program_id": "mvcnet",
   "research_preparations": [
     {
+      "anchor_availability": "verified_historical_manifest_only_not_in_local_intake",
+      "anchor_checkpoint_manifest_path": "science/2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1/artifacts/fit-CE-seed73-outer0/selected.pt",
+      "anchor_checkpoint_sha256": "b8670160ec0d3da33a2979e051085d445d4cf76ecb9ac73c35f60fe08aa2375b",
+      "anchor_run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1",
+      "asset_manifest_sha256": "3797dfe81259a2afd9e6e18faefef931f4b5a52b77a5958de844dc55a3258bf2",
+      "evidence_id": "MVCNET-VCN-VIEW-AFFINE-TRANSFER-DESIGN-20261109",
+      "fold": "seed73-outer0",
+      "fold_sha256": "589601e816b3bb6d0c98ba1afd6693c1b3d78e4363767395add4524f6aa8de40",
+      "historical_normalization_decision_sha256": "efccb438f36819ee65134ec6437727803905d7e16707a82cd84f16d7cee334bd",
+      "metadata_sha256": "4360438110359ee6b5308aff3533ed41cd6129217ac0e9ddbcf543e1ce459e38",
+      "new_run_started": false,
+      "planned_E_trials": 400,
+      "planned_T_trials": 896,
+      "planned_probe_indices_sha256_canonical_json": "b90312007f39239d9cb4b521802bce6763d4ffffa477810e817d59370ca18a5c",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/VCN_VIEW_AFFINE_TRANSFER_DESIGN_20261109.md",
+      "report_sha256": "6542f5bba25b0b2238795f240d045ea17433919afdf8ab2feb4e11d43a070004",
+      "research_disposition": "HOLD_AS_MAINLINE_PENDING_ZERO_TRAINING",
+      "role": "research_question_screening_and_fixed_probe_metadata",
+      "scaffold_role": "scoped_empirically_supported_stage_innovation",
+      "scientific_fit_count": 0,
+      "source_evidence_ids": [
+        "VCN-P1-S8-SCOPED-2026-08-28",
+        "MVCNET-VCN-MINIMAL-STRUCTURE-READONLY-ZERO-TRAINING-20261106",
+        "MVCNET-CUE4-READONLY-PROTOCOL-BINDING-20261106",
+        "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2",
+        "MVCNET-FIR-SUPPORT-DISJOINT-SELECTION-DIRECTION-CLOSE-20261109"
+      ],
+      "source_subjects": 7,
+      "status": "DESIGN_ONLY_ZERO_TRAINING_GATE_FIRST",
+      "zero_training_gate_executed": false
+    },
+    {
+      "asset_checks": "PASS",
+      "checkpoint_selection_effect": "UNTESTED",
+      "design_review_disposition": "HOLD_MISSING_REUSABLE_EPOCH_TRAJECTORY",
+      "evidence_id": "MVCNET-FIR-SUPPORT-DISJOINT-SELECTION-DIRECTION-CLOSE-20261109",
+      "frozen_replayed_validation": 222,
+      "held_check_accuracy_effect": "UNTESTED",
+      "matched_real_pulse_probes": 8,
+      "matched_waveform_pairs": 67,
+      "model_forward_count": 0,
+      "new_run_started": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/FIR_SUPPORT_DISJOINT_SELECTION_ZERO_TRAINING_20261109.json",
+      "receipt_sha256": "4d09ff833df4b8024ff4f7de9c109ab6ef03cb8ad9d32598b721dd4f2f4293b7",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/FIR_SUPPORT_DISJOINT_SELECTION_ZERO_TRAINING_20261109.md",
+      "report_sha256": "79bf3d81c9ebd43176e8b68a758a5b97b5eba6bf2ea4b9543f865ac5c66aeb5e",
+      "retained_zero_training_status": "PASS_DESIGN_REVIEW_ONLY",
+      "reviewed_artifact_manifest_sha256": "eccf1daa200552ee68f3546fa09e40f000bd4afe1dd49f70252c8059d1069f47",
+      "reviewed_frozen_runner_sha256": "0af3fcc5529d35c543053b824713f99bf9ed275d0530d85fbba0168a40c53533",
+      "reviewed_run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1",
+      "role": "user_directed_research_direction_closeout",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-FIR-SUPPORT-DISJOINT-SELECTION-ZERO-TRAINING-20261109",
+      "status": "CLOSED_AFTER_POSITIVE_ZERO_TRAINING_AND_ASSET_LIMIT",
+      "synthetic_and_real_pulse_gates": "PASS",
+      "waveform_summary": {
+        "A03E.mat": {
+          "median_at_least_1pct": true,
+          "opposite_median_ratio": 0.07034892538512509,
+          "paired_trials": 17,
+          "protected_median_ratio": 0.05382240492519521
+        },
+        "A03T.mat": {
+          "median_at_least_1pct": true,
+          "opposite_median_ratio": 0.10319068242806392,
+          "paired_trials": 8,
+          "protected_median_ratio": 0.0881289036456267
+        },
+        "A04E.mat": {
+          "median_at_least_1pct": true,
+          "opposite_median_ratio": 0.04199737786404399,
+          "paired_trials": 18,
+          "protected_median_ratio": 0.04681481695940949
+        },
+        "A04T.mat": {
+          "median_at_least_1pct": true,
+          "opposite_median_ratio": 0.03605680607333133,
+          "paired_trials": 24,
+          "protected_median_ratio": 0.039742848430336014
+        }
+      }
+    },
+    {
+      "asset_checks": "PASS",
+      "audit_script": "ai4s/programs/mvcnet/research/next_core_direction_20261106/audit_fir_support_disjoint_selection.py",
+      "audit_script_sha256": "6ac92d25ddf5acc543f3b4711d3930d68cf2550bc67700974f9e587e3a3a8d55",
+      "design_review_disposition": "HOLD_MISSING_REUSABLE_EPOCH_TRAJECTORY",
+      "design_review_entered": true,
+      "evidence_id": "MVCNET-FIR-SUPPORT-DISJOINT-SELECTION-ZERO-TRAINING-20261109",
+      "fold": "seed73-outer0",
+      "frozen_replayed_validation": 222,
+      "matched_real_pulse_probes": 8,
+      "matched_waveform_pairs": 67,
+      "model_forward_count": 0,
+      "new_run_started": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/FIR_SUPPORT_DISJOINT_SELECTION_ZERO_TRAINING_20261109.json",
+      "receipt_sha256": "4d09ff833df4b8024ff4f7de9c109ab6ef03cb8ad9d32598b721dd4f2f4293b7",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/FIR_SUPPORT_DISJOINT_SELECTION_ZERO_TRAINING_20261109.md",
+      "report_sha256": "79bf3d81c9ebd43176e8b68a758a5b97b5eba6bf2ea4b9543f865ac5c66aeb5e",
+      "reviewed_artifact_manifest_sha256": "eccf1daa200552ee68f3546fa09e40f000bd4afe1dd49f70252c8059d1069f47",
+      "reviewed_frozen_runner_sha256": "0af3fcc5529d35c543053b824713f99bf9ed275d0530d85fbba0168a40c53533",
+      "reviewed_run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1",
+      "role": "zero_training_physical_fir_support_pulse_and_waveform_gate",
+      "scientific_fit_count": 0,
+      "selected_weights_in_manifest": 36,
+      "source_evidence_id": "MVCNET-FIR-SUPPORT-DISJOINT-SELECTION-DESIGN-20261109",
+      "status": "PASS_DESIGN_REVIEW_ONLY",
+      "synthetic_and_real_pulse_gates": "PASS",
+      "waveform_summary": {
+        "A03E.mat": {
+          "median_at_least_1pct": true,
+          "opposite_median_ratio": 0.07034892538512509,
+          "paired_trials": 17,
+          "protected_median_ratio": 0.05382240492519521
+        },
+        "A03T.mat": {
+          "median_at_least_1pct": true,
+          "opposite_median_ratio": 0.10319068242806392,
+          "paired_trials": 8,
+          "protected_median_ratio": 0.0881289036456267
+        },
+        "A04E.mat": {
+          "median_at_least_1pct": true,
+          "opposite_median_ratio": 0.04199737786404399,
+          "paired_trials": 18,
+          "protected_median_ratio": 0.04681481695940949
+        },
+        "A04T.mat": {
+          "median_at_least_1pct": true,
+          "opposite_median_ratio": 0.03605680607333133,
+          "paired_trials": 24,
+          "protected_median_ratio": 0.039742848430336014
+        }
+      }
+    },
+    {
+      "cue_asset_manifest_sha256": "3797dfe81259a2afd9e6e18faefef931f4b5a52b77a5958de844dc55a3258bf2",
+      "cue_metadata_sha256": "4360438110359ee6b5308aff3533ed41cd6129217ac0e9ddbcf543e1ce459e38",
+      "evidence_id": "MVCNET-FIR-SUPPORT-DISJOINT-SELECTION-DESIGN-20261109",
+      "geometry_folds": 18,
+      "new_run_started": false,
+      "pilot_files": [
+        "A03T.mat",
+        "A03E.mat",
+        "A04T.mat",
+        "A04E.mat"
+      ],
+      "pilot_fold": "seed73-outer0",
+      "pilot_fold_sha256": "589601e816b3bb6d0c98ba1afd6693c1b3d78e4363767395add4524f6aa8de40",
+      "pilot_validation_trials": 222,
+      "raw_crop_gap_samples_range": [
+        895,
+        1120
+      ],
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/FIR_SUPPORT_DISJOINT_SELECTION_DESIGN_20261109.md",
+      "report_sha256": "ff87daf02098372d33a1ee5114033e1586cec58587289345241c46b3216100ca",
+      "role": "research_direction_design_and_frozen_role_support_geometry",
+      "scientific_fit_count": 0,
+      "single_sided_interior_pilot_trials": 67,
+      "source_check_same_run_overlap_pairs": 0,
+      "source_evidence_ids": [
+        "MVCNET-MU-HIGH-BETA-ALIGNMENT-DIRECTION-CLOSE-20261109",
+        "MVCNET-ERROR-SEQUENCE-CLUSTERING-DIRECTION-CLOSE-20261109",
+        "MVCNET-ERROR-SEQUENCE-CLUSTERING-DESIGN-20261109",
+        "MVCNET-CUE4-READONLY-PROTOCOL-BINDING-20261106",
+        "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2",
+        "VCN-P1-S8-SCOPED-2026-08-28"
+      ],
+      "split_manifest_sha256": "db50df59092248a8e2a51b40405a928efa31cbccfbfcd1f3ce0dfa14f59dd76b",
+      "status": "DESIGN_ONLY_ZERO_TRAINING_GATE_FIRST",
+      "train_validation_shared_support_pairs_per_fold_range": [
+        1221,
+        1266
+      ],
+      "validation_with_shared_train_support_per_fold_range": [
+        761,
+        772
+      ],
+      "zero_training_gate_executed": false
+    },
+    {
+      "E_matched_hand_trials": 129,
+      "E_matched_runs": 20,
+      "asset_checks": "PASS",
+      "auroc_gain_vs_power": 0.011904761904761904,
+      "auroc_gain_vs_shifted": 0.003720238095238095,
+      "design_review_entered": false,
+      "evidence_id": "MVCNET-MU-HIGH-BETA-ALIGNMENT-DIRECTION-CLOSE-20261109",
+      "gates": {
+        "at_least_5_of_7_improve_vs_both": false,
+        "auroc_gain_vs_power_at_least_0p03": false,
+        "auroc_gain_vs_shifted_at_least_0p03": false,
+        "oriented_class_difference_above_repaired_p95": false
+      },
+      "new_run_started": false,
+      "oriented_class_difference": -0.0041303812551943975,
+      "raw_mat_files_verified": 14,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/MU_HIGH_BETA_ALIGNMENT_ZERO_TRAINING_20261109.json",
+      "receipt_sha256": "d66f695183caefc5d7abea6dab5d934e9978db71925320d754b58d54e3c9d050",
+      "repaired_p95": 0.19186384072510887,
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/MU_HIGH_BETA_ALIGNMENT_ZERO_TRAINING_20261109.md",
+      "report_sha256": "ae6440c8e0e79ec42f578dd1718afd110ef014d0321ad6d9e0a5e568d43d9ec1",
+      "role": "user_directed_research_direction_closeout",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-MU-HIGH-BETA-ALIGNMENT-ZERO-TRAINING-20261109",
+      "status": "CLOSED_MU_HIGH_BETA_ALIGNMENT_EFFECT_GATE",
+      "subjects_improved_vs_both": 1,
+      "synthetic_controls": "PASS"
+    },
+    {
+      "E_matched_hand_trials": 129,
+      "E_matched_runs": 20,
+      "T_source_hand_trials": 812,
+      "asset_checks": "PASS",
+      "audit_script": "ai4s/programs/mvcnet/research/next_core_direction_20261106/audit_mu_high_beta_alignment.py",
+      "audit_script_sha256": "d934319cf455059e9e1770e449f5eee8316b97180062e44e58ec677e07be8b3b",
+      "auroc_gain_vs_power": 0.011904761904761904,
+      "auroc_gain_vs_shifted": 0.003720238095238095,
+      "design_review_entered": false,
+      "evidence_id": "MVCNET-MU-HIGH-BETA-ALIGNMENT-ZERO-TRAINING-20261109",
+      "fold": "seed73-outer0",
+      "gates": {
+        "at_least_5_of_7_improve_vs_both": false,
+        "auroc_gain_vs_power_at_least_0p03": false,
+        "auroc_gain_vs_shifted_at_least_0p03": false,
+        "oriented_class_difference_above_repaired_p95": false
+      },
+      "model_forward_count": 0,
+      "new_run_started": false,
+      "oriented_class_difference": -0.0041303812551943975,
+      "permutations": 10000,
+      "pooled_auc": {
+        "power": 0.5735284391534392,
+        "power_plus_aligned": 0.5854332010582011,
+        "power_plus_shifted": 0.5817129629629629
+      },
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/MU_HIGH_BETA_ALIGNMENT_ZERO_TRAINING_20261109.json",
+      "receipt_sha256": "d66f695183caefc5d7abea6dab5d934e9978db71925320d754b58d54e3c9d050",
+      "repaired_p95": 0.19186384072510887,
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/MU_HIGH_BETA_ALIGNMENT_ZERO_TRAINING_20261109.md",
+      "report_sha256": "ae6440c8e0e79ec42f578dd1718afd110ef014d0321ad6d9e0a5e568d43d9ec1",
+      "role": "zero_training_cross_person_band_alignment_and_conditional_repairing_gate",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-MU-HIGH-BETA-ALIGNMENT-DESIGN-20261109",
+      "status": "STOP_MU_HIGH_BETA_ALIGNMENT_GATE",
+      "subjects_improved_vs_both": 1,
+      "synthetic_controls": "PASS"
+    },
+    {
+      "cue_asset_manifest_sha256": "3797dfe81259a2afd9e6e18faefef931f4b5a52b77a5958de844dc55a3258bf2",
+      "cue_metadata_sha256": "4360438110359ee6b5308aff3533ed41cd6129217ac0e9ddbcf543e1ce459e38",
+      "evidence_id": "MVCNET-MU-HIGH-BETA-ALIGNMENT-DESIGN-20261109",
+      "fold": "seed73-outer0",
+      "fold_sha256": "589601e816b3bb6d0c98ba1afd6693c1b3d78e4363767395add4524f6aa8de40",
+      "new_run_started": false,
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/MU_HIGH_BETA_ALIGNMENT_DESIGN_20261109.md",
+      "report_sha256": "b8117b3a692b2f8d5515e1a2ba2176a039922b185b94c8ed630f4804a67f97f6",
+      "role": "research_direction_design_and_fixed_split_metadata_count",
+      "scientific_fit_count": 0,
+      "source_E_eligible_hand_trials": 129,
+      "source_E_eligible_runs": 20,
+      "source_T_hand_trials": 812,
+      "source_evidence_ids": [
+        "MVCNET-ERROR-SEQUENCE-CLUSTERING-DIRECTION-CLOSE-20261109",
+        "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2",
+        "MVCNET-TIME-REVERSAL-ODD-DIRECTION-CLOSE-20261109",
+        "MVCNET-OCULAR-REPLAY-DIRECTION-CLOSE-20261109",
+        "MVCNET-SAME-CUE-PASSIVE-K-ZERO-TRAINING-20261109"
+      ],
+      "source_subjects": 7,
+      "status": "DESIGN_ONLY_ZERO_TRAINING_GATE_FIRST",
+      "zero_training_gate_executed": false
+    },
+    {
+      "design_review_entered": false,
+      "even_mean_ce_excess_pp": 0.6109574915824916,
+      "even_only_ce73_above_p95": true,
+      "even_subjects_positive": 7,
+      "evidence_id": "MVCNET-ERROR-SEQUENCE-CLUSTERING-DIRECTION-CLOSE-20261109",
+      "gates": {
+        "even_at_least_6_subjects_positive_ce_mean": true,
+        "even_ce73_above_p95": true,
+        "even_ce74_above_p95": false,
+        "even_ce_cross_repeat_above_p95": false,
+        "even_mean_ce_excess_at_least_1pp": false,
+        "odd_ce73_ce74_and_cross_repeat_positive": false
+      },
+      "new_run_started": false,
+      "odd_ce73_ce74_cross_repeat_excess_pp": {
+        "CE-73": -0.945513468013468,
+        "CE-74": -0.1771506734006734,
+        "CE-cross-repeat": -0.45802609427609425
+      },
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/ERROR_SEQUENCE_CLUSTERING_ZERO_TRAINING_20261109.json",
+      "receipt_sha256": "1efa5f77deaf38f457ba8d1fd5a6a3b3ebc0762dc304065f4340efebc8320582",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/ERROR_SEQUENCE_CLUSTERING_ZERO_TRAINING_20261109.md",
+      "report_sha256": "b43d8639f31ff91b8cd48166e6fd94aa82d8fb399ada0440c2f268c2f93fa546",
+      "role": "user_directed_research_direction_closeout",
+      "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-ERROR-SEQUENCE-CLUSTERING-ZERO-TRAINING-20261109",
+      "status": "CLOSED_ERROR_SEQUENCE_REPRODUCIBILITY_GATE"
+    },
+    {
+      "asset_checks": "PASS",
+      "audit_script": "ai4s/programs/mvcnet/research/next_core_direction_20261106/audit_error_sequence_clustering.py",
+      "audit_script_sha256": "6eaa20de8562d74d9169614e53c00f37ef04efe2af4d93a9ac73f425c76157b3",
+      "design_review_entered": false,
+      "even_mean_ce_excess_pp": 0.6109574915824916,
+      "even_subjects_positive": 7,
+      "evidence_id": "MVCNET-ERROR-SEQUENCE-CLUSTERING-ZERO-TRAINING-20261109",
+      "gates": {
+        "even_at_least_6_subjects_positive_ce_mean": true,
+        "even_ce73_above_p95": true,
+        "even_ce74_above_p95": false,
+        "even_ce_cross_repeat_above_p95": false,
+        "even_mean_ce_excess_at_least_1pp": false,
+        "odd_ce73_ce74_and_cross_repeat_positive": false
+      },
+      "model_forward_count": 0,
+      "new_run_started": false,
+      "odd_subjects_positive": 2,
+      "pairs_per_parity": 2376,
+      "permutation_seed": 20261109,
+      "permutations_per_parity": 10000,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/ERROR_SEQUENCE_CLUSTERING_ZERO_TRAINING_20261109.json",
+      "receipt_sha256": "1efa5f77deaf38f457ba8d1fd5a6a3b3ebc0762dc304065f4340efebc8320582",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/ERROR_SEQUENCE_CLUSTERING_ZERO_TRAINING_20261109.md",
+      "report_sha256": "b43d8639f31ff91b8cd48166e6fd94aa82d8fb399ada0440c2f268c2f93fa546",
+      "role": "zero_training_paired_error_sequence_permutation_gate",
+      "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1",
+      "scientific_fit_count": 0,
+      "sealed_checks": 36,
+      "source_evidence_id": "MVCNET-ERROR-SEQUENCE-CLUSTERING-DESIGN-20261109",
+      "status": "STOP_ERROR_SEQUENCE_CLUSTERING_GATE",
+      "unique_trials": 5184
+    },
+    {
+      "adjacent_trial_pairs_with_fir_support_overlap": 5076,
+      "cue_asset_manifest_sha256": "3797dfe81259a2afd9e6e18faefef931f4b5a52b77a5958de844dc55a3258bf2",
+      "cue_metadata_sha256": "4360438110359ee6b5308aff3533ed41cd6129217ac0e9ddbcf543e1ce459e38",
+      "evidence_id": "MVCNET-ERROR-SEQUENCE-CLUSTERING-DESIGN-20261109",
+      "lag_two_trial_pairs_without_fir_support_overlap": 4968,
+      "metadata_runs": 108,
+      "metadata_subjects": 9,
+      "metadata_trials": 5184,
+      "new_run_started": false,
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/ERROR_SEQUENCE_CLUSTERING_DESIGN_20261109.md",
+      "report_sha256": "aa991144b4569e68bb0d93fb53b636518a2ed7caa3e1739b7bf53fc2592f8c3e",
+      "role": "research_direction_design_and_frozen_asset_metadata_support_geometry",
+      "scientific_fit_count": 0,
+      "sealfix2_core_sha256": "aff0faaf03c5188af9c2e4e45945b5e7bc7f59247451a13bf185e669c7b968a6",
+      "sealfix2_decision_sha256": "2fdd8b09f9da5fc777aa33734e4c756764604efc12a3f7b03c57650944a4f1c4",
+      "source_evidence_ids": [
+        "MVCNET-ACTIVE-UNSUPPORTED-COMMAND-DIRECTION-CLOSE-20261109",
+        "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2",
+        "MVCNET-PAIRED-RECIPE-ERROR-RANKING-ZERO-TRAINING-20261108",
+        "MVCNET-TIME-REVERSAL-ODD-DIRECTION-CLOSE-20261109",
+        "MVCNET-OCULAR-REPLAY-DIRECTION-CLOSE-20261109",
+        "MVCNET-SAME-CUE-PASSIVE-K-ZERO-TRAINING-20261109"
+      ],
+      "status": "DESIGN_ONLY_ZERO_TRAINING_GATE_FIRST",
+      "within_half_run_pairs_per_parity": 2376,
+      "zero_training_effect_gate_executed": false
+    },
+    {
+      "accept_mask_matches_with_nearest_and_midpoint": 329,
+      "design_review_entered": false,
+      "evidence_id": "MVCNET-ACTIVE-UNSUPPORTED-COMMAND-DIRECTION-CLOSE-20261109",
+      "known_acceptance_comparability_max_pp": 5,
+      "known_acceptance_gap_pp_rounded": 12.41,
+      "matched_runs": 33,
+      "matched_trials": 329,
+      "new_run_started": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/ACTIVE_UNSUPPORTED_COMMAND_ZERO_TRAINING_20261109.json",
+      "receipt_sha256": "87ee7c5557c2921a36f57dfcdac1d554ca9cc69c90f23c18297779347e994901",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/ACTIVE_UNSUPPORTED_COMMAND_ZERO_TRAINING_20261109.md",
+      "report_sha256": "ba16adb8885a8895177dac141a050c04b896d35d0be7d6ef2198289ae339084f",
+      "role": "user_directed_research_direction_closeout",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-ACTIVE-UNSUPPORTED-COMMAND-ZERO-TRAINING-20261109",
+      "status": "CLOSED_REJECTION_COMPARABILITY_AND_INCREMENT_GATE"
+    },
+    {
+      "accept_mask_matches_with_nearest_and_midpoint": 329,
+      "audit_script": "ai4s/programs/mvcnet/research/next_core_direction_20261106/audit_active_unsupported_command.py",
+      "audit_script_sha256": "dc3c351a5358e32ccf4b571c417370842390e416f3e47b01366524594b6d68f3",
+      "design_review_entered": false,
+      "evidence_id": "MVCNET-ACTIVE-UNSUPPORTED-COMMAND-ZERO-TRAINING-20261109",
+      "matched_runs": 33,
+      "matched_trials": 329,
+      "new_run_started": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/ACTIVE_UNSUPPORTED_COMMAND_ZERO_TRAINING_20261109.json",
+      "receipt_sha256": "87ee7c5557c2921a36f57dfcdac1d554ca9cc69c90f23c18297779347e994901",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/ACTIVE_UNSUPPORTED_COMMAND_ZERO_TRAINING_20261109.md",
+      "report_sha256": "ba16adb8885a8895177dac141a050c04b896d35d0be7d6ef2198289ae339084f",
+      "role": "zero_training_known_only_calibration_and_unsupported_command_rejection_gate",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-ACTIVE-UNSUPPORTED-COMMAND-DESIGN-20261109",
+      "status": "STOP_REJECTION_GATE"
+    },
+    {
+      "evidence_id": "MVCNET-ACTIVE-UNSUPPORTED-COMMAND-DESIGN-20261109",
+      "fixed_E_source_validation_matched_runs": 33,
+      "fixed_E_source_validation_matched_trials": 329,
+      "fold": "seed73-outer0",
+      "new_run_started": false,
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/ACTIVE_UNSUPPORTED_COMMAND_DESIGN_20261109.md",
+      "report_sha256": "4004795579d5ae86c8ccc12868af5ae8363a6f3ff3cdcd6c867a03c557f1c734",
+      "role": "research_direction_design_and_fixed_split_metadata_count",
+      "scientific_fit_count": 0,
+      "source_evidence_ids": [
+        "MVCNET-TIME-REVERSAL-ODD-DIRECTION-CLOSE-20261109",
+        "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2",
+        "MVCNET-PAIRED-RECIPE-ERROR-RANKING-ZERO-TRAINING-20261108"
+      ],
+      "status": "DESIGN_ONLY_ZERO_TRAINING_GATE_FIRST",
+      "zero_training_gate_executed": false
+    },
+    {
+      "evidence_id": "MVCNET-TIME-REVERSAL-ODD-DIRECTION-CLOSE-20261109",
+      "late_minus_pre_permutation_gate": "FAIL",
+      "late_permutation_gate": "FAIL",
+      "new_run_started": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/TIME_REVERSAL_ODD_ZERO_TRAINING_20261109.json",
+      "receipt_sha256": "155df96705bbf13c5197003fa9e0e7bc75338f457cf5885c7f754eaa8a5093de",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/TIME_REVERSAL_ODD_ZERO_TRAINING_20261109.md",
+      "report_sha256": "a8b6a34e80853214250e59523d8a7f4bf8a7ccbff3403aec579e8ac0f43819a9",
+      "retained_spectral_invariants": "PASS",
+      "role": "user_directed_research_direction_closeout",
+      "same_direction_subjects": 4,
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-TIME-REVERSAL-ODD-ZERO-TRAINING-20261109",
+      "spectral_invariant_trials": 403,
+      "spectral_invariant_windows": 806,
+      "status": "CLOSED_SIGNED_LAG_TRANSFER_GATE"
+    },
+    {
+      "audit_script": "ai4s/programs/mvcnet/research/next_core_direction_20261106/audit_time_reversal_odd.py",
+      "audit_script_sha256": "d7e384fb20bb6efa4b509a058c1666d894070c6f9cc1a168f09d5a49bdd63591",
+      "design_review_entered": false,
+      "evidence_id": "MVCNET-TIME-REVERSAL-ODD-ZERO-TRAINING-20261109",
+      "mixed_run_trials": 391,
+      "new_run_started": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/TIME_REVERSAL_ODD_ZERO_TRAINING_20261109.json",
+      "receipt_sha256": "155df96705bbf13c5197003fa9e0e7bc75338f457cf5885c7f754eaa8a5093de",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/TIME_REVERSAL_ODD_ZERO_TRAINING_20261109.md",
+      "report_sha256": "a8b6a34e80853214250e59523d8a7f4bf8a7ccbff3403aec579e8ac0f43819a9",
+      "role": "zero_training_spectral_invariants_and_held_source_transfer_gate",
+      "same_direction_subjects": 4,
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-TIME-REVERSAL-ODD-EVIDENCE-DESIGN-20261109",
+      "spectral_invariant_trials": 403,
+      "spectral_invariant_windows": 806,
+      "status": "STOP_TRANSFER_GATE"
+    },
+    {
+      "eligible_source_validation_left_right_trials_metadata_count": 403,
+      "evidence_id": "MVCNET-TIME-REVERSAL-ODD-EVIDENCE-DESIGN-20261109",
+      "fold": "seed73-outer0",
+      "new_run_started": false,
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/TIME_REVERSAL_ODD_EVIDENCE_DESIGN_20261109.md",
+      "report_sha256": "619ae5e0e470ab9099084d039261a6e8215ec4fdca6bcd77d30d28e18cf8056c",
+      "role": "research_direction_design_and_fixed_split_metadata_count",
+      "scientific_fit_count": 0,
+      "source_evidence_ids": [
+        "MVCNET-OCULAR-REPLAY-DIRECTION-CLOSE-20261109",
+        "AI4S-MVCNET-mvcnet-temporal-tied-head-screen-lab10-r1",
+        "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2",
+        "MVCNET-CAUSAL-TWO-DEADLINE-ZERO-TRAINING-20261109"
+      ],
+      "status": "DESIGN_ONLY_ZERO_TRAINING_GATE_FIRST",
+      "zero_training_gate_executed": false
+    },
+    {
+      "absolute_cosine_limit": 0.95,
+      "common_start_bounds_inclusive": [
+        325,
+        331
+      ],
+      "evidence_id": "MVCNET-OCULAR-REPLAY-DIRECTION-CLOSE-20261109",
+      "first_fixture_absolute_cosine": 0.9571225829797563,
+      "new_run_started": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/OCULAR_REPLAY_SHARED_POSITION_20261109.json",
+      "receipt_sha256": "d3a3f48765b886c8b544a9ee90ee289deff63360f0edd82a4c1e95066a0c4c88",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/OCULAR_REPLAY_SHARED_POSITION_20261109.md",
+      "report_sha256": "6d63f0645458ca367e82a153d0bb21c72c0f75afa301b29e7c77036cfc920588",
+      "retained_within_subject_calibration_transfer": "PASS_BOTH",
+      "role": "user_directed_research_direction_closeout",
+      "scientific_fit_count": 0,
+      "source_evidence_ids": [
+        "MVCNET-OCULAR-REPLAY-SHARED-POSITION-20261109",
+        "MVCNET-OCULAR-REPLAY-ZERO-TRAINING-20261109"
+      ],
+      "status": "CLOSED_FIXED_OCULAR_SHAM_TOPOLOGY_GATE"
+    },
+    {
+      "audit_script": "ai4s/programs/mvcnet/research/next_core_direction_20261106/audit_ocular_shared_position.py",
+      "audit_script_sha256": "604bdecbdc261562b915191d5c9372df500bf904e13b96c09e0587a28d772099",
+      "boundary_fixtures": 4,
+      "common_start_bounds_inclusive": [
+        325,
+        331
+      ],
+      "design_review_entered": false,
+      "evidence_id": "MVCNET-OCULAR-REPLAY-SHARED-POSITION-20261109",
+      "new_run_started": false,
+      "paired_waveform_fixtures": 1,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/OCULAR_REPLAY_SHARED_POSITION_20261109.json",
+      "receipt_sha256": "d3a3f48765b886c8b544a9ee90ee289deff63360f0edd82a4c1e95066a0c4c88",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/OCULAR_REPLAY_SHARED_POSITION_20261109.md",
+      "report_sha256": "6d63f0645458ca367e82a153d0bb21c72c0f75afa301b29e7c77036cfc920588",
+      "role": "shared_position_boundary_check_and_paired_input_closeout",
+      "scientific_fit_count": 0,
+      "selected_start_sample_after_cue": 328,
+      "source_evidence_id": "MVCNET-OCULAR-REPLAY-ZERO-TRAINING-20261109",
+      "status": "CLOSED_FIXED_OCULAR_SHAM_TOPOLOGY_GATE",
+      "stop_reason": "first_fixture_spatial_sham_cosine_above_original_limit"
+    },
+    {
+      "evidence_id": "MVCNET-OCULAR-REPLAY-ZERO-TRAINING-20261109",
+      "matched_energy_topology": "NOT_REACHED",
+      "new_run_started": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/OCULAR_REPLAY_ZERO_TRAINING_20261109.json",
+      "receipt_sha256": "a26ae0aa0141c343bdfbaecf5b8b942d71b5283994d5eac293ef1e926c5ae3fc",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/OCULAR_REPLAY_ZERO_TRAINING_20261109.md",
+      "report_sha256": "5a66be926ec630d5930c9a361dfdaa6996a0419c7b18fda01c225359d966c3a0",
+      "role": "four_file_zero_training_asset_calibration_and_input_gate",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-OCULAR-REPLAY-DESIGN-20261109",
+      "status": "STOP_PAIRED_INPUT_GATE",
+      "stop_reason": "fixed_injection_fir_support_crossed_next_trial_boundary",
+      "trial_identities_verified": 1152,
+      "within_subject_T_to_E_calibration_transfer": "PASS_BOTH"
+    },
+    {
+      "evidence_id": "MVCNET-OCULAR-REPLAY-DESIGN-20261109",
+      "inspected_mat_structures": [
+        "A01T.mat",
+        "A01E.mat",
+        "A04T.mat"
+      ],
+      "new_run_started": false,
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/OCULAR_REPLAY_DESIGN_20261109.md",
+      "report_sha256": "c6eafdee92f2743ce10b26c6ed59a7208e7d7b205893dec557a4cb3a22363bfb",
+      "role": "research_direction_design_and_local_mat_structural_check",
+      "scientific_fit_count": 0,
+      "source_evidence_ids": [
+        "MVCNET-SAME-CUE-PASSIVE-ALTERNATIVES-CLOSE-20261109",
+        "MVCNET-SAME-CUE-PASSIVE-K-ZERO-TRAINING-20261109",
+        "MVCNET-CAUSAL-TWO-DEADLINE-ZERO-TRAINING-20261109",
+        "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2"
+      ],
+      "status": "DESIGN_ONLY_ZERO_TRAINING_GATE_FIRST",
+      "zero_training_gate_executed": false
+    },
+    {
+      "candidates_checked": 8,
+      "evidence_id": "MVCNET-SAME-CUE-PASSIVE-ALTERNATIVES-CLOSE-20261109",
+      "new_run_started": false,
+      "qualified_alternative_count": 0,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/SAME_CUE_PASSIVE_ALTERNATIVE_METADATA_20261109.json",
+      "receipt_sha256": "59fdee133135a06133ad2224d2f1fed3ee52abc5a8b43addeea8c6850c5dbd43",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/SAME_CUE_PASSIVE_ALTERNATIVES_CLOSE_20261109.md",
+      "report_sha256": "598c00f5c0cfce76e6863b5dd656bb5e05e79bc5da943158e0b061ed019b868b",
+      "role": "bounded_public_asset_qualification_and_research_direction_closeout",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-SAME-CUE-PASSIVE-K-ZERO-TRAINING-20261109",
+      "status": "CLOSED_NO_QUALIFIED_SAME_CUE_PASSIVE_ASSET"
+    },
+    {
+      "evidence_id": "MVCNET-SAME-CUE-PASSIVE-K-ZERO-TRAINING-20261109",
+      "new_run_started": false,
+      "participants_inspected": [
+        "K"
+      ],
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/SAME_CUE_PASSIVE_K_ZERO_TRAINING_20261109.json",
+      "receipt_sha256": "98196dcd50f88379911092fdffeb493666f1752e6323802041ed967073a239d8",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/SAME_CUE_PASSIVE_K_ZERO_TRAINING_20261109.md",
+      "report_sha256": "ab2f5a7639529147bb8adb0e23107b04603f778745127bbd6512d54880711015",
+      "role": "zero_training_raw_asset_qualification_and_validation_path_closeout",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-SAME-CUE-PASSIVE-SPECIFICITY-DESIGN-20261109",
+      "status": "CLOSED_KAYA_K_STIMULUS_PROVENANCE_GATE",
+      "stop_reasons": [
+        "rendered_direction_code_binding_unresolved",
+        "hardware_cue_offset_unverified"
+      ]
+    },
+    {
+      "evidence_id": "MVCNET-SAME-CUE-PASSIVE-SPECIFICITY-DESIGN-20261109",
+      "new_run_started": false,
+      "public_catalog_candidate_subjects": [
+        "F",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M"
+      ],
+      "raw_asset_status": "NOT_INSPECTED",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/SAME_CUE_PASSIVE_SPECIFICITY_DESIGN_20261109.md",
+      "report_sha256": "fac119aea45602e2bedda030dcbc90f761cfd1ae2fe5bec84d2d032a62c9651b",
+      "role": "research_direction_design_and_public_catalog_check",
+      "scientific_fit_count": 0,
+      "source_evidence_ids": [
+        "MVCNET-CAUSAL-TWO-DEADLINE-DIRECTION-CLOSE-20261109",
+        "MVCNET-CUE-ONSET-ALTERNATIVES-CLOSE-20261108",
+        "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2"
+      ],
+      "status": "DESIGN_ONLY_ASSET_GATE_FIRST"
+    },
+    {
+      "evidence_id": "MVCNET-CAUSAL-TWO-DEADLINE-DIRECTION-CLOSE-20261109",
+      "new_run_started": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/production_two_deadline/LOCAL_QUALIFICATION_20261109.json",
+      "receipt_sha256": "f998dee231afb35499ce81f0b2a0cbbafb6c2f44ad870e040d4551cf17d7c33c",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/CAUSAL_TWO_DEADLINE_PRODUCTION_QUALIFICATION_20261109.md",
+      "report_sha256": "efe3ddec1ca4b534f2876b2fb496355f8c64ad5329f4e122a263f41d7687e532",
+      "role": "user_directed_research_direction_closeout",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-CAUSAL-TWO-DEADLINE-PRODUCTION-QUALIFICATION-20261109",
+      "status": "CLOSED_BY_TOTAL_P95_GATE",
+      "technical_five_arm_zero_training_acceptance": "PASS",
+      "total_p95_reduction_percent": 8.42,
+      "total_p95_required_reduction_percent": 10.0
+    },
+    {
+      "evidence_id": "MVCNET-CAUSAL-TWO-DEADLINE-PRODUCTION-QUALIFICATION-20261109",
+      "lab10_cost_gate": "UNASSESSED_STOPPED_BY_LOCAL_REPLAY_GATE",
+      "new_run_started": false,
+      "optimizer_steps": 0,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/production_two_deadline/LOCAL_QUALIFICATION_20261109.json",
+      "receipt_sha256": "f998dee231afb35499ce81f0b2a0cbbafb6c2f44ad870e040d4551cf17d7c33c",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/CAUSAL_TWO_DEADLINE_PRODUCTION_QUALIFICATION_20261109.md",
+      "report_sha256": "efe3ddec1ca4b534f2876b2fb496355f8c64ad5329f4e122a263f41d7687e532",
+      "role": "opt_in_adapter_zero_training_qualification_and_cpu_replay_gate",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-CAUSAL-TWO-DEADLINE-INDEPENDENT-REBUTTAL-20261109",
+      "status": "STOP_TOTAL_P95_GATE"
+    },
+    {
+      "evidence_id": "MVCNET-CAUSAL-TWO-DEADLINE-INDEPENDENT-REBUTTAL-20261109",
+      "new_run_started": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/CAUSAL_TWO_DEADLINE_GROK_TRACE_20261109.json",
+      "receipt_sha256": "c44c20bad6a075081f9ff91f3435ea7007e9b96c309f5d44a2fa414c318bd785",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/CAUSAL_TWO_DEADLINE_DEVELOPMENT_GATE_20261109.md",
+      "report_sha256": "3628ea8fca226d7f2848a74fb907f857da17fd507fb8ee1abeca8d405c31f00a",
+      "review_verdict": "HOLD_FOR_DESIGN_FIX",
+      "role": "cross_model_design_rebuttal_and_local_cost_refinement",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-CAUSAL-TWO-DEADLINE-ZERO-TRAINING-20261109",
+      "status": "HOLD_BEFORE_DEVELOPMENT_DISPATCH"
+    },
+    {
+      "evidence_id": "MVCNET-CAUSAL-TWO-DEADLINE-ZERO-TRAINING-20261109",
+      "new_run_started": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/CAUSAL_TWO_DEADLINE_ZERO_TRAINING_20261109.json",
+      "receipt_sha256": "84825d1e6a87b9681892bbe7e30e95a7bfd4acdb57f252d9c3d1b04c20958837",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/CAUSAL_TWO_DEADLINE_ZERO_TRAINING_20261109.md",
+      "report_sha256": "d3709370d37b4ccbee7b235d86fa58ce0dd7558067dfdba9c9796e13260fa9c5",
+      "role": "isolated_zero_training_causal_and_gradient_qualification",
+      "scientific_fit_count": 0,
+      "status": "PASS_ZERO_TRAINING_REVIEW_WORTHY"
+    },
+    {
+      "evidence_id": "MVCNET-PAIRED-RECIPE-DIRECTION-CLOSE-20261109",
+      "new_run_started": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/PAIRED_RECIPE_ZERO_TRAINING_20261108.json",
+      "receipt_sha256": "e2c51deb544a74bc8549c072d18049fafc34a107ea655fa783cc545d3fcba792",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/PAIRED_RECIPE_ZERO_TRAINING_20261108.md",
+      "report_sha256": "a5f68c219a6c39684881f73e31a07b415ebe8605e9ee8c575c82e50f89dc856e",
+      "role": "user_directed_research_direction_closeout",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-PAIRED-RECIPE-ERROR-RANKING-ZERO-TRAINING-20261108",
+      "status": "CLOSED_NO_INDEPENDENT_REVIEW_INVESTMENT"
+    },
+    {
+      "evidence_id": "MVCNET-PAIRED-RECIPE-ERROR-RANKING-ZERO-TRAINING-20261108",
+      "new_model_forward_count": 0,
+      "new_run_started": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/PAIRED_RECIPE_ZERO_TRAINING_20261108.json",
+      "receipt_sha256": "e2c51deb544a74bc8549c072d18049fafc34a107ea655fa783cc545d3fcba792",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/PAIRED_RECIPE_ZERO_TRAINING_20261108.md",
+      "report_sha256": "a5f68c219a6c39684881f73e31a07b415ebe8605e9ee8c575c82e50f89dc856e",
+      "role": "retrospective_zero_training_development_falsification",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2",
+      "status": "STOP_NO_INCREMENTAL_ERROR_RANKING"
+    },
+    {
+      "closed_validation_path": "Supernumerary BCI V3",
+      "evidence_id": "MVCNET-CUE-ONSET-ALTERNATIVES-CLOSE-20261108",
+      "new_run_started": false,
+      "qualified_alternative_count": 0,
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/CUE_ONSET_ALTERNATIVES_CLOSE_20261108.md",
+      "report_sha256": "2a6ef1a52ac3e93c9c80894db34417bb7fb08004f7f6f7386a1899d7f791d4d8",
+      "role": "bounded_asset_qualification_and_research_direction_closeout",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-SUPERNUMERARY-V3-CUE-ONSET-ZERO-TRAINING-20261108",
+      "status": "CLOSED_NO_QUALIFIED_ALTERNATIVE"
+    },
+    {
+      "evidence_id": "MVCNET-SUPERNUMERARY-V3-CUE-ONSET-ZERO-TRAINING-20261108",
+      "new_run_started": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/CUE_ONSET_ZERO_TRAINING_20261108.json",
+      "receipt_sha256": "5a344e8006f4671dba8925ec59a693fb5110cdaebb25ec3e8e67ed5b7868e4fe",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/CUE_ONSET_ZERO_TRAINING_20261108.md",
+      "report_sha256": "92e8f22b7203f986dc4828e576eff3da19a2b7160c78aa7017c0b296e214e9da",
+      "role": "zero_training_data_and_intervention_identifiability_gate",
+      "scientific_fit_count": 0,
+      "status": "STOP_CUE_ONSET_UNVERIFIED"
+    },
+    {
+      "decision_authority": "User directed the research direction closure on 2026-11-08",
+      "evidence_id": "MVCNET-PRECUE-ZERO-TRAINING-CLOSE-20261108",
+      "new_run_started": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/PRECUE_ZERO_TRAINING_AUDIT_20261108.json",
+      "receipt_sha256": "b14594983fa3803db7268535997f9966fd46712458c6e473a1d2c410fcae8877",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/PRECUE_ZERO_TRAINING_AUDIT_20261108.md",
+      "report_sha256": "99883d5116836bae30c189ea5a7e221c87ed27a5a363fa7389a5936c9bf2261f",
+      "role": "zero_training_identifiability_and_research_direction_closeout",
+      "scientific_fit_count": 0,
+      "status": "CLOSED_NO_DEVELOPMENT_COMPARISON"
+    },
+    {
       "budget_status": "UNASSIGNED_UNAUTHORIZED",
       "campaign_created": false,
       "chain_id": "mvcnet-transaction-v3.2",
@@ -705,6 +1456,235 @@
       "status": "CONDITIONAL_SINGLE_EXPLORATION_NOT_DISPATCH_READY",
       "training_authorized": false,
       "xsn_closure_preserved": true
+    },
+    {
+      "budget": "UNASSIGNED",
+      "claim_release": "none",
+      "cost_scenarios": {
+        "path": "ai4s/programs/mvcnet/research/normalization_minimal_20261106/COST_SCENARIOS.json",
+        "sha256": "dff997611396c9b3176bf7d6bdc5ede431d685952b1b43e40a1035444b04e0e8"
+      },
+      "data_window_audit": {
+        "path": "ai4s/programs/mvcnet/research/normalization_minimal_20261106/data_audit/CURRENT_X_WINDOW_CHECK.json",
+        "sha256": "3d9067ee80305f2d4ea18125210f40e0908ea7be59ebbffa55caaf5c37058255"
+      },
+      "decision": {
+        "path": "ai4s/programs/mvcnet/research/normalization_minimal_20261106/DECISION.json",
+        "sha256": "efccb438f36819ee65134ec6437727803905d7e16707a82cd84f16d7cee334bd"
+      },
+      "evidence_id": "MVCNET-VCN-MINIMAL-STRUCTURE-READONLY-ZERO-TRAINING-20261106",
+      "existing_cue_asset_inventory": {
+        "path": "ai4s/programs/mvcnet/research/normalization_minimal_20261106/data_audit/CUE_ASSET_INVENTORY.json",
+        "sha256": "3df53642a14f81c2559a1e62d029f838bec675a7f8f8a3a41e37112ca68f5599"
+      },
+      "external_verdict": "STOP_MAIN_INNOVATION_INVESTMENT",
+      "follow_up_status": "closed_for_new_main_innovation_no_automatic_training",
+      "governance_chain_id": "mvcnet-transaction-v3.3",
+      "independent_review": {
+        "path": "ai4s/programs/mvcnet/research/normalization_minimal_20261106/review/META.json",
+        "sha256": "3f128f0cfcdc979ad15bd0934eecede3d40ea6d91e233472030ec610373724d5"
+      },
+      "new_real_data_model_effects_read": false,
+      "new_real_data_source_window_replay": true,
+      "optimizer_steps": 0,
+      "program_id": "mvcnet",
+      "registered_at": "2026-11-05T17:36:24.868163+00:00",
+      "remote_operations": 0,
+      "research_brief": "ai4s/programs/mvcnet/research/normalization_minimal_20261106/research_brief.md",
+      "research_brief_sha256": "fd420eecc0c4ec1ec5542744e08878f993c7eea6e6722f39b340f92ba630f260",
+      "role": "design_and_synthetic_identifiability_not_efficacy",
+      "scientific_fits": 0,
+      "source_evidence_ids": [
+        "VCN-P1-S8-SCOPED-2026-08-28",
+        "VCN-V0-1-PARENT-BOUNDARY-2026-08-21",
+        "AI4S-MVCNET-mvcnet-vbr-r1-screen-lab10-r1-repair3",
+        "AI4S-MVCNET-mvcnet-xsn-r1-screen-lab10-r1-budget480",
+        "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-checkrepair2"
+      ],
+      "status": "STOP_AS_NEW_MAIN_INNOVATION_HOLD_TRAINING",
+      "training_authorized": false,
+      "zero_training_audit": {
+        "path": "ai4s/programs/mvcnet/research/normalization_minimal_20261106/zero_training/RESULT.json",
+        "sha256": "beb79222de8c3167e30535cc8e7e35bb154504544d8f313eab36d31e4dc9d383"
+      }
+    },
+    {
+      "budget": "UNASSIGNED",
+      "candidate_pool": {
+        "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/CANDIDATE_POOL.md",
+        "sha256": "6caaecadc51218fd1e77e39d1ad94cd8708e844d2aa6ee2cc53aa75575cdbc16"
+      },
+      "claim_release": "none",
+      "decision": "prioritize cue-aligned full-method net utility design with matched IFNet augmentation-CE control; reserve trial-paired reference as conditional secondary question",
+      "decision_record": {
+        "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/DIRECTION_DECISION.json",
+        "sha256": "d0709fa7791cb527eca6626c423f1b8ec8e0204a3305194523be1430c1cf1b90"
+      },
+      "evidence_id": "MVCNET-CORE-DIRECTION-CUE-ALIGNED-DESIGN-20261106",
+      "governance_chain_id": "mvcnet-transaction-v3.3",
+      "independent_review": {
+        "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/review/META.json",
+        "sha256": "a34d4ff43c43f2bfebf2de6690cba307f1a749352baaaf7c865c20018fac8fc8"
+      },
+      "next_stage": "read-only cue protocol binding and comparison design",
+      "program_id": "mvcnet",
+      "registered_at": "2026-11-05T18:09:45.853845+00:00",
+      "research_brief": "ai4s/programs/mvcnet/research/next_core_direction_20261106/research_brief.md",
+      "research_brief_sha256": "d3843f0f37866b85072466011ab0a1a8768190f303809765e03214c523355e3a",
+      "review_disposition": "accepted reprioritization from paired-reference-first. Current final brief adds primary studies and explicit comparisons after review. Review covers initial snapshot.",
+      "role": "research_direction_selection_not_efficacy",
+      "scientific_fits": 0,
+      "source_evidence_ids": [
+        "VCN-P1-S8-SCOPED-2026-08-28",
+        "MVCNET-VCN-MINIMAL-STRUCTURE-READONLY-ZERO-TRAINING-20261106",
+        "AI4S-MVCNET-mvcnet-vbr-r1-screen-lab10-r1-repair3",
+        "AI4S-MVCNET-mvcnet-xsn-r1-screen-lab10-r1-budget480",
+        "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-checkrepair2",
+        "AI4S-MVCNET-mvcnet-energy-complementarity-screen-lab10-r3",
+        "AI4S-MVCNET-mvcnet-dual-atom-screen-lab10-r4"
+      ],
+      "status": "DESIGN_ONLY_CUE_ALIGNED_NET_VALUE_FIRST",
+      "training_authorized": false
+    },
+    {
+      "asset_id": "bnci001-dsainet-cue0to4-bp0p5to40-v1",
+      "binding_audit": {
+        "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_protocol_binding/BINDING_AUDIT.json",
+        "sha256": "f533be7dd14291afc21b1cb64fcda6a1abd478930a275a3a9a5a97f725bc6142"
+      },
+      "budget": "UNASSIGNED",
+      "claim_release": "none",
+      "decision_record": {
+        "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_protocol_binding/BINDING_DECISION.json",
+        "sha256": "a27fcd6b3943545be564cd46e80acda74d557abb4ebfcac6a5ea799104dbd736"
+      },
+      "evidence_id": "MVCNET-CUE4-READONLY-PROTOCOL-BINDING-20261106",
+      "governance_chain_id": "mvcnet-transaction-v3.3",
+      "new_run": false,
+      "next_stage": "isolated cue-aware loader and same-view CE versus B0 qualification design",
+      "program_id": "mvcnet",
+      "recommendation": "retain two-arm protocol design; defer full training pending isolated production consumer qualification and predeclared cost/comparison",
+      "registered_at": "2026-11-06T02:47:38.139057+00:00",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_protocol_binding/REPORT.md",
+      "report_sha256": "43007e2ca78c8c877e9ded07c92ae117c80c68619912bd11527513d40726ecda",
+      "role": "read_only_asset_and_development_protocol_binding",
+      "scientific_fits": 0,
+      "source_evidence_ids": [
+        "MVCNET-CORE-DIRECTION-CUE-ALIGNED-DESIGN-20261106",
+        "AI4S-MVCNET-mvcnet-contrastive-factorial-diagnostic-lab10-r3",
+        "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-checkrepair2"
+      ],
+      "status": "ASSET_ROLE_MAPPING_VERIFIED_DESIGN_ONLY",
+      "training_authorized": false
+    },
+    {
+      "audits": {
+        "INTEGRATION_AUDIT.json": {
+          "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_two_arm_zero_training/INTEGRATION_AUDIT.json",
+          "sha256": "5411e4b20cf34da0528b97dfaaf6e2c1c795f557d3e69cf43225fa17a5c716a6"
+        },
+        "LOADER_AUDIT.json": {
+          "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_two_arm_zero_training/LOADER_AUDIT.json",
+          "sha256": "95d33e4150056bfd6067374526a77d9ad413494b2c7342968dceb9fbc2c2b4f1"
+        },
+        "MODEL_AUDIT.json": {
+          "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_two_arm_zero_training/MODEL_AUDIT.json",
+          "sha256": "c41accb40202e753cdded9e5b55c2625e12720623bf6c58bc09c391e18ecc5b1"
+        },
+        "source_snapshot/SOURCE_MANIFEST.json": {
+          "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_two_arm_zero_training/source_snapshot/SOURCE_MANIFEST.json",
+          "sha256": "436b8945f42bfc9290d095d52eebc2bf3e5e1f7d1aabd0e116aeb6efa5ff52d4"
+        }
+      },
+      "budget": "UNASSIGNED",
+      "claim_release": "none",
+      "cost_role": "historical scale estimate only; Lab10 per-arm qualification pending",
+      "decision": "consider one developmental comparison only if the manuscript requires the net-utility test; defer full training",
+      "evidence_id": "MVCNET-CUE4-TWO-ARM-ZERO-TRAINING-20261106",
+      "governance_chain_id": "mvcnet-transaction-v3.3",
+      "historical_workload_process_hours": 18.973136703297495,
+      "new_run": false,
+      "optimizer_steps": 0,
+      "primary_contrast": "cue-aligned native IFNet B0 without VCN versus the same IFNet and four-view CE without auxiliary encoder/projector",
+      "program_id": "mvcnet",
+      "reference_split_count": 18,
+      "registered_at": "2026-11-06T03:46:23.9283824Z",
+      "report": {
+        "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_two_arm_zero_training/REPORT.md",
+        "sha256": "91ce4a9c7702b3c89adeb69175c887d40d1b97e6cd78f6cb011388c12a8c8409"
+      },
+      "role": "isolated_engineering_qualification_not_scientific_evidence",
+      "scientific_fits": 0,
+      "source_evidence_ids": [
+        "MVCNET-CUE4-READONLY-PROTOCOL-BINDING-20261106",
+        "AI4S-MVCNET-mvcnet-contrastive-factorial-diagnostic-lab10-r3",
+        "AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-checkrepair2"
+      ],
+      "source_state_sha256": "1a1ad39582bf6b3373c536394aead7e2f4fa9a54d908ed81f5d7cd5b3c71c6d4",
+      "status": "ISOLATED_ZERO_TRAINING_PASS_HOLD_FULL_TRAINING",
+      "training_authorized": false
+    },
+    {
+      "actual_per_arm_cost": "UNAVAILABLE",
+      "budget": "UNASSIGNED",
+      "claim_release": "none",
+      "evidence_id": "MVCNET-CUE4-PRODUCTION-QUALIFICATION-20261106",
+      "files": {
+        "FROZEN_PROTOCOL.json": {
+          "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_production/FROZEN_PROTOCOL.json",
+          "sha256": "72f88caa3cb3763ab5611c95a708ee8619551e10497ac0c05dfb8623a5ff5f96"
+        },
+        "GROK_REVIEW.json": {
+          "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_production/GROK_REVIEW.json",
+          "sha256": "2b2fe1ae56ae9b9fe74cbc3ca95bfb23df6dd1ab5587c8faaf41cc6f8b4eef77"
+        },
+        "REPAIR_PREPARATION.json": {
+          "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_production/REPAIR_PREPARATION.json",
+          "sha256": "d960196146ed8a635cdb39a0cc1423817686c23750f5b854e48afaa76cc7addb"
+        },
+        "REPORT.md": {
+          "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_production/REPORT.md",
+          "sha256": "f3c0f27e050b58871e55c1ecd2dcf0c502858c8efbec019f28c535808d206104"
+        },
+        "RUN_CLOSEOUT.json": {
+          "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_production/RUN_CLOSEOUT.json",
+          "sha256": "c7bea1894703bb370ca5f5ae80359619b0d6d4f8f96b649bc98b4d94b647b6f8"
+        },
+        "decision.py": {
+          "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_production/decision.py",
+          "sha256": "9a8ec8e6be2904a6ad1d559270ddc6a6bd3653d0d9a15aee53aa3cb04f619f74"
+        },
+        "lab10_qualification.py": {
+          "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_production/lab10_qualification.py",
+          "sha256": "95903e0d08859009f63fc768279a76504b8027c2639f20e74ebfdda42a68622c"
+        },
+        "runner.py": {
+          "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_production/runner.py",
+          "sha256": "c554619ef166d8d858a048e89708534d2724731ac672e1a164b698582463c894"
+        },
+        "seal.py": {
+          "path": "ai4s/programs/mvcnet/research/next_core_direction_20261106/cue_production/seal.py",
+          "sha256": "2be8089d4c64c186d9bc64c1b041a017d72d6e89a89e3eea530067dcc508fbbd"
+        }
+      },
+      "full_training_authorized": false,
+      "governance_chain_id": "mvcnet-transaction-v3.3",
+      "held_check_started": false,
+      "new_scientific_fits": 0,
+      "next_stage": "authorized immutable import repair for the same four qualification tasks",
+      "optimizer_steps_remote": 0,
+      "program_id": "mvcnet",
+      "qualification_attempt_limit_exhausted": true,
+      "qualification_failed": 4,
+      "qualification_passed": 0,
+      "qualification_planned": 4,
+      "registered_at": "2026-11-06T04:13:51.1405223Z",
+      "role": "engineering_preparation_and_failed_qualification_not_scientific_evidence",
+      "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_qualification1",
+      "source_evidence_ids": [
+        "MVCNET-CUE4-TWO-ARM-ZERO-TRAINING-20261106"
+      ],
+      "status": "FROZEN_POLICY_LOCAL_PRODUCTION_WIRING_PASS_LAB10_IMPORT_INVALID"
     }
   ],
   "round_evidence": [
@@ -1875,8 +2855,68 @@
       "round_contract": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-checkrepair2.yaml",
       "round_id": "mvcnet-acm-r1-screen-lab10-checkrepair2",
       "run_id": "2026-11-05_mvcnet_acm_r1_lab10_checkrepair2-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "INVALID",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-cue-aligned-two-arm-full-lab10-r1_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1",
+      "failure_input_sha256": "29950190457320dc5ae555438723617f8e74223fc4c32dcf565e2f793d45aec9",
+      "follow_up_status": "repair_requires_new_immutable_run_and_frozen_contract",
+      "intake_status": "verified_failure_metadata_only",
+      "interpretation_boundary": "Only metadata-only engineering failure evidence was verified; scientific effects were not evaluated and partial artifacts are ineligible.",
+      "partial_artifacts_eligible": false,
+      "role": "invalid_non_scientific_record",
+      "round_id": "mvcnet-cue-aligned-two-arm-full-lab10-r1",
+      "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1-full-w1",
+      "scientific_effect_evaluated": false
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "INVALID",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1",
+      "failure_input_sha256": "3824a85526bfb016b1c54a3e5a0ac96ddafd978efb775b58adcfd4fe6e321a72",
+      "follow_up_status": "repair_requires_new_immutable_run_and_frozen_contract",
+      "intake_status": "verified_failure_metadata_only",
+      "interpretation_boundary": "Only metadata-only engineering failure evidence was verified; scientific effects were not evaluated and partial artifacts are ineligible.",
+      "partial_artifacts_eligible": false,
+      "role": "invalid_non_scientific_record",
+      "round_id": "mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1",
+      "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1-full-w1",
+      "scientific_effect_evaluated": false
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "INVALID",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix1_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix1",
+      "failure_input_sha256": "2c210669c31b5a08b59397ad3a80819c0b1f1af65576c43a321a489b2aa925d2",
+      "follow_up_status": "repair_requires_new_immutable_run_and_frozen_contract",
+      "intake_status": "verified_failure_metadata_only",
+      "interpretation_boundary": "Only metadata-only engineering failure evidence was verified; scientific effects were not evaluated and partial artifacts are ineligible.",
+      "partial_artifacts_eligible": false,
+      "role": "invalid_non_scientific_record",
+      "round_id": "mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix1",
+      "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix1-full-w1",
+      "scientific_effect_evaluated": false
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2",
+      "executor_id": "lab10",
+      "follow_up_status": "v3_record_design_constraint_or_precise_closure",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "See frozen decision record.",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/mvcnet/research/mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2.yaml",
+      "round_id": "mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2",
+      "run_id": "2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1"
     }
   ],
   "schema_version": "mieeg-ai4s-evidence-index-v1",
-  "updated_at": "2026-11-05T13:43:29.758902+00:00"
+  "updated_at": "2026-11-06T04:13:51.1405223Z"
 }

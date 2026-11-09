@@ -144,3 +144,168 @@ XSN-R1同Run完成90fit+90check，0失败/0OOM；完整结果留Lab10，核心�
 判断→设计/停止：仅有条件值得一次S0/P0/N0/R0开发探索，先宿主增量，再关闭和反向必要性；任何必要门失败收口固定实例，不调权/加seed/切方向或叠加XSN。四臂不排除一般减权、不证明VCN协同；主方法强近邻/范围证据仍比默认加模块更优先。下一项是将来获准后生产objective绑定与B64/目标机资格、固定判读/成本门，并非本轮执行。
 
 成本→投入：近期XSN原生S0收据×4为37.512192process-h；K4含假设倍率/6h余量约17.72–20.07h，工作量敏感性及旧VBR参照约20.15–23.60h；K2情景29.45–41.21h。36h只是预算商议目标，不是已分配上限或实测可行性。ACM预算UNASSIGNED，XSN480h余款不转用。Program暂停/运行状态保持，本轮无新训练、seed、Run或Claim。
+
+
+## U10：ACM 固定职责实例已按冻结门关闭（2026-11-05）
+
+历史时点修正：U9 的有条件探索后，用户另授独立42h并完成执行/工程修复。证据 `AI4S-MVCNET-mvcnet-acm-r1-screen-lab10-checkrepair2`；[正式关闭报告](acm-r1/execution/checkrepair2/analysis_20261105/REPORT.md)。72个模型复用、72项check完成/独立logits复算，新增fit0；P0-S0 +0.733025pp主门通过，P0-N0 +0.868056pp通过，但P0-R0在seed74为-0.115741pp，关键逐seed门失败，NO_SIGNAL。保留开发效用线索，不升级为单向机制/论文Claim，不调参救援。原42h及起点/全部失败历史保持；截至既有最终结算累计23.823807h，不转为下一方向预算。
+
+## U11：最小归一化结构已收束，不作新增主创新训练（2026-11-06）
+
+证据 `MVCNET-VCN-MINIMAL-STRUCTURE-READONLY-ZERO-TRAINING-20261106`；[唯一研究brief](normalization_minimal_20261106/research_brief.md)与[结构化决定](normalization_minimal_20261106/DECISION.json)。绑定v3.3，只读设计/隔离CPU零训练，Program State与全部冻结Run/预算不改。
+
+证据→判断：P1/N1已有scoped支持，不重训N1；两个真实IFNet+native CE/CVC/CMC合成实例中，仅合并三个增强running缓冲、保持四affine和raw统计独立，输出/全部已核查梯度/raw预测差均0，完整state_dict不同。共享增强affine具有非同view梯度和梯度求和关系，是活干预，但不能用可辨识性证明性能；固定bank置换只是重命名。B64、长期优化、checkpoint别名和完整gateway动态路径未覆盖，不为已放弃M补资格。
+
+输入/近邻→设计后果：当前生产资产四hash闭合，当前X18条重放匹配trial[0,4)，非cue后[0,4)；历史S8 X字节身份未知，不改旧内部配对/曝光。已找到并核验5hash的既有cue资产候选，不需假设重建数据，但MVCNet协议未绑定，也不产生独立确认。AdvProp/DAJAT/DualBN已覆盖多BN及统计-affine拆分；真实Grok独立反驳STOP_MAIN_INNOVATION_INVESTMENT，原文/主Agent处置完整保留。
+
+最终选择→下一行动：STOP_AS_NEW_MAIN_INNOVATION / HOLD_TRAINING，保留P1既有支架身份；只保留P1对普通raw/aug双BN作为未来论文补证草案，不自动开训、加随机路由臂、救援旧实例或借ACM/XSN预算。12-18h仅是旧100epoch两臂情景假设，非新Lab10报价/授权。下一步先收窄论文贡献与评价对象；cue对齐完整方法净收益是另一明确科学问题，不能冒充本题续跑。此为投入判断而非新科学NO_SIGNAL。
+
+
+## U12：cue 对齐条件下先检验完整训练方案（2026-11-06）
+
+证据 `MVCNET-CORE-DIRECTION-CUE-ALIGNED-DESIGN-20261106`。既有 P1 scoped、VBR/XSN/ACM 固定实例关闭及最小结构审计共同限制新增支架改动的论文价值。多视角构思初选逐试次参考，经独立科研反驳和限定近邻核对，将 cue 对齐下原生 MVCNet 相对同 IFNet、同增强监督的净增量列为下一设计优先项。P1−B0 另答支架适用范围。主比较成立后再考虑等长度窗口的提示时序依赖，窗口差只能先作条件性证据。
+
+现成 cue 资产有五项哈希核验记录，当前数据 loader 与 role／trial-ID 仍需映射。下一步只读绑定资产、事件、划分、信息与训练预算，核对后决定是否值得配对比较。已暴露九被试限开发；预提示参考保留为次级问题，待因果输入、最近历史对照与独立评价可用性核查。范围及判别见[研究简报](next_core_direction_20261106/research_brief.md)与[决策](next_core_direction_20261106/DIRECTION_DECISION.json)。
+
+
+### U12 只读绑定结果
+
+证据 `MVCNET-CUE4-READONLY-PROTOCOL-BINDING-20261106`。cue 资产五文件与 18 份 MAT 哈希通过，5,184 条试次身份与旧 MVCNet 输入逐行对应，18 条抽样数组重放确认 500 点窗口偏移。MVCNet 的 18 份七源参考索引在 cue 元数据上闭合，DSAINet 的六源角色保持单独。旧生产入口依赖旧字段、哈希和 VCN-P1，cue 原生 B0 仍需独立生产接线资格。
+
+历史 CVC×CMC 已在旧窗 P1 上比较四视图 CE，联合增量 +0.279707 pp 未过冻结门。当前唯一主比较草案是 cue 窗无 VCN B0 对同 IFNet、同四视图 CE。统一监督与更新步数，计算量单独计量。继续协议准备，暂缓完整训练。数据与角色证明、限制和投入处置见[绑定报告](next_core_direction_20261106/cue_protocol_binding/REPORT.md)。
+
+### U12 两臂隔离零训练验收
+
+证据 `MVCNET-CUE4-TWO-ARM-ZERO-TRAINING-20261106`。源 loader 通过 18 份参考划分闭合、B64 批次与角色拒绝检查。实际四视图匹配原生输入及标签规则，同 IFNet 的共享 CE 梯度一致，B0 的 CVC+CMC 确实进入梯度。两臂源侧 raw 验证共用正确数、平均 CE 和 epoch 的顺序，拒绝越权和不完整验证。真实 EEG 仅用于源批次与增强，模型前向及梯度使用合成输入。
+
+隔离资格通过后，仍暂缓完整训练。仅在论文需要明确检验原生配方相对强增强监督的净增量时，考虑一次两臂开发比较。历史尺度约 19 process-hours。先定义有成文价值的最小差异和个体风险，再核验生产封存链及两臂 Lab10 实际成本。九个已暴露被试只提供开发证据。[验收与投入评估](next_core_direction_20261106/cue_two_arm_zero_training/REPORT.md)
+
+### U12 生产接线、科学门冻结与 Lab10 启动故障
+
+证据 `MVCNET-CUE4-PRODUCTION-QUALIFICATION-20261106`。已接通真实源拟合、raw 选模、全局 36 checkpoint 封存及逐折检查和判读消费者。平均 B0−CE 至少 +1 pp，两 seed 均值各为正，至少 6/9 被试改善，最差被试的两 seed 平均至少 −3 pp，并按 95% 被试配对 bootstrap 区分稳定开发信号和不确定。资格与科学合同身份分离。
+
+Lab10 资格任务 0/4，全部在加载数据和更新前遭遇同一导入路径错误。原包和日志保留，入口修复及无训练的导入重放已完成。冻结的一次任务尝试均已消耗，后继资格须另授一次工程修复。成本仍缺两臂生产形状实测，科学拟合与开发检查均为零。[协议与工程收尾](next_core_direction_20261106/cue_production/REPORT.md)
+
+### U13 sealfix2 后的逐试次参考核查
+
+`sealfix2` 的 [NO_SIGNAL](mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2_decision.yaml) 保留。新零训练核查在名义视觉 cue 下通过参考和任务截止的因果性回放，精确匹配实际派发包的 18 份划分，采集时序共同试次 4,860。严格同角色历史的源验证每折仅 3–10 项。同试次参考相对等长最近历史、等点数三窗替换的全任务窗被试中位距离优势均很小，较短历史时距层方向反转，现有时序无法分离试次身份与时间邻近。按原停止规则结束该方向的训练投入。四视图 CE 继续作为同期强基线，VCN-P1 保留为原历史协议的限定支持证据。[零训练核查与处置](next_core_direction_20261106/PRECUE_ZERO_TRAINING_AUDIT_20261108.md)
+
+### U14 预提示参考关闭与下一候选
+
+依用户指令正式关闭逐试次预提示参考，登记 `MVCNET-PRECUE-ZERO-TRAINING-CLOSE-20261108`。后续只设计一个独立候选，在四视图 CE 的固定一路训练增强上扰动提示起始，以等长错位遮挡和简单晚窗检验真实换提示时的净收益。现成 Supernumerary V3 有同被试双提示，但按日采集，资产触发、时钟和曝光须先验收。当前仅为选题草案，最低下一关为零训练。[候选与停止条件](next_core_direction_20261106/CUE_ONSET_AUGMENTATION_DESIGN_20261108.md)
+
+### U15 提示起始遮挡在 Supernumerary V3 数据关停止
+
+40 份 XDF 的 1,600 个左右想象任务窗可定位，未找到两条件的逐试次视觉提示起始标记。XDF 通道头与发行方位置表冲突，去抖显著改变 EEG 时间戳。匹配遮挡的合成控制通过，前向 SOS 与原生 Hilbert 频移在遮挡前处理都会把早段信息带到遮挡外。按原规则 `STOP_CUE_ONSET_UNVERIFIED`，当前资产和管线不进入四臂开发比较。这是数据与辨识性停止，未测模型效用。[实测与处置](next_core_direction_20261106/CUE_ONSET_ZERO_TRAINING_20261108.md)
+
+### U16 提示起始遮挡方向收束
+
+依用户指令关闭 Supernumerary V3 验证路径。限定替代核查未发现同时具有同被试双提示、两种实际起始事件、EEG 时钟和通道映射的公开资产。最接近的 BCIC IV Dataset 1 可由官方标签恢复大多数语音评分边界，仍缺实际呈现事件。DynamicCues 的原始发布未取得。登记 `CLOSED_NO_QUALIFIED_ALTERNATIVE`，提示起始遮挡不进入四臂开发比较。保留 Supernumerary 零训练回执、逐试次参考关闭及 sealfix2 的 `NO_SIGNAL`。[替代核查与收束](next_core_direction_20261106/CUE_ONSET_ALTERNATIVES_CLOSE_20261108.md)
+
+### U17 用已有预测证伪训练配方分歧的错误辨识价值
+
+选题草案。`sealfix2` 两臂准确率接近，已有正式核心包可在同一试次上区分两臂错误重叠和分歧。固定 CE 的预测，比较同 seed B0–CE 分歧与单 CE 置信度、普通 CE 重复分歧和相同两模型的平均概率置信度。最低验证是 CPU 离线等覆盖率错误排序，无新增模型前向、拟合或下载。两重复的源划分也不同，且九人已暴露，只支持开发证伪。两项时间参考/遮挡关闭和 `sealfix2` 判定保持原记录。[候选与对照](next_core_direction_20261106/PAIRED_RECIPE_ERROR_RANKING_DESIGN_20261108.md)
+
+### U18 配对分歧未改善 CE 错误排序
+
+CPU 核查已完成，处置 `STOP_NO_INCREMENTAL_ERROR_RANKING`。固定 CE 输出，每人保留 518/576，配对 JS 比单 CE 最大概率、同对平均置信度的错误率分别高 1.512、1.652 pp，两重复均落后，均为 0/9 人改善。相对普通 CE 重复为 −0.086 pp 改善，重复方向相反、5/9 人改善。匹配预测类别拒绝配额后仍落后主要置信度对照。结束当前路线的独立复核投入，保留所有旧结论。[正式核查](next_core_direction_20261106/PAIRED_RECIPE_ZERO_TRAINING_20261108.md)
+
+### U19 配对分歧正式关闭与固定截止候选
+
+依用户指令关闭 B0–CE 配对分歧方向，登记 `MVCNET-PAIRED-RECIPE-DIRECTION-CLOSE-20261109`，复用原零训练回执。下一候选只做设计，复用现有 2a 连续数据和试次闭集，在名义 cue 后 2 秒、4 秒共享因果主干并保留独立位置读出。最强反证为相同截止独立 CE 或等监督预算短窗 CE。先核前缀因果、训练梯度与缓存等价，再判断是否有资格申请比较。既有三项关闭和 `sealfix2` 的 `NO_SIGNAL` 保留。[设计与停止条件](next_core_direction_20261106/CAUSAL_TWO_DEADLINE_DESIGN_20261109.md)
+
+### U20 双截止 CPU 技术核查通过
+
+18 份 2a MAT、5,184 项嵌套共同试次及 18 个既有划分闭合。每个截止的原始波形扰动与截断回放一致。合成 IFNet 探针通过后缀扰动、完整输入梯度和缓存等价检查，长窗 CE 到共享主干梯度非零。处置 `PASS_ZERO_TRAINING_REVIEW_WORTHY`，仅建议进入独立科研复核，继续保留提示效应和训练预算匹配的反证。未执行外审或开发比较，既有关闭与 `sealfix2` 判定保留。[技术核查与边界](next_core_direction_20261106/CAUSAL_TWO_DEADLINE_ZERO_TRAINING_20261109.md)
+
+### U21 双截止外审与开发派发前置门
+
+Grok 4.6 对原设计独立反驳为 `HOLD_FOR_DESIGN_FIX`。修订后保留同截止独立 CE，加入两个 4 帧头的等监督短窗和 4/8 帧头的等容量短窗对照。匹配两项 CE、处理点数与更新，实测计算和共享梯度。合成 CPU 计时中 2×500 缓存的两次合计中位数下降约 23%，8×125 分块反而更慢。仅建议继续生产形状零训练接线、回放计时与成本资格，当前 `HOLD_BEFORE_DEVELOPMENT_DISPATCH`。早窗仅支持已知提示下的定时四分类。既有关闭和 `sealfix2 NO_SIGNAL` 保留。[外审及本地修订](next_core_direction_20261106/CAUSAL_TWO_DEADLINE_DEVELOPMENT_GATE_20261109.md)
+
+### U22 五臂技术验收通过，含因果前端的合计 p95 未过门
+
+显式候选经实际 adapter/gateway 接通 J/E2/E4/E/P。B64 源侧接线、等监督、J/P 活跃读出容量以及长窗到共享主干梯度均验收，零优化步。分包与前向 SOS 纳入后，2×500 缓存首段和第二段 p95 过门，合计 p95 从 2.2685 降到 2.0775 ms，仅省 8.42%。按原门 `STOP_TOTAL_P95_GATE`，不进入两重复开发或新 Lab10 资格。成本仅更新为历史锚点情景，保留全部旧关闭与 `sealfix2 NO_SIGNAL`。[生产形状资格与停止判断](next_core_direction_20261106/CAUSAL_TWO_DEADLINE_PRODUCTION_QUALIFICATION_20261109.md)
+
+### U23 双截止正式关闭，转向同提示被动观看负对照
+
+依用户指令登记 `MVCNET-CAUSAL-TWO-DEADLINE-DIRECTION-CLOSE-20261109`。五臂零训练资格与原始回执保留。含分包和前向 SOS 的合计 p95 仅下降 8.42%，低于 10% 预设门，关闭双截止开发投入。逐试次预提示参考、提示起始遮挡、B0–CE 配对分歧的关闭结论及 `sealfix2` 的 `NO_SIGNAL` 保留。[资格与停止记录](next_core_direction_20261106/CAUSAL_TWO_DEADLINE_PRODUCTION_QUALIFICATION_20261109.md)
+
+`MVCNET-SAME-CUE-PASSIVE-SPECIFICITY-DESIGN-20261109` 仅登记设计。利用已公开的 HaLT 和 NoMT 记录，问主动训练的左右手解码器在同提示被动观看中是否仍能识别方向。目录可配同人七组，跨日与实际被动方向码和时钟尚待核查。先限定 Subject K 两份原始 MAT 做无拟合数据资格。通过后才核对全组，随后才有理由评审轻量读出。当前无原始波形读取、训练或新 Run。[设计与停止门](next_core_direction_20261106/SAME_CUE_PASSIVE_SPECIFICITY_DESIGN_20261109.md)
+
+### U24 同提示负对照在 Subject K 实际提示资格停止
+
+登记 `MVCNET-SAME-CUE-PASSIVE-K-ZERO-TRAINING-20261109`。HaLT、NoMT 两份原始 MAT 与作者采集脚本均通过发布哈希。两条件同为 200 Hz、相同 19 路 EEG 顺序，各有 163 个左发布码和 159 个右发布码。第 22 列使 322/322 个起点在 ±1 点内唯一复现，MAT 通道名为 X5，与论文 X3 的物理映射未核实。表 5 与发布 eGUI 的 2/3 图标索引冲突，缺逐试次界面源日志。独立硬件结束标记未验出，1 秒共同窗仅按发布 marker 成立。按硬门关闭这条 Kaya 发布资产路径，未扩到其余被试，未训练。保留既有关闭和 `sealfix2` 的 `NO_SIGNAL`。[实测与处置](next_core_direction_20261106/SAME_CUE_PASSIVE_K_ZERO_TRAINING_20261109.md)
+
+### U25 同提示特异性方向因缺合格替代资产收束
+
+登记 `MVCNET-SAME-CUE-PASSIVE-ALTERNATIVES-CLOSE-20261109`。限定核查八个候选，合格数为零。最接近的公开篮球数据同人有纯观察和纯想象。固定发行件实读表明运球事件按任务状态标码，缺可追溯的左右手码与实际显示起止；传球是复合序列。其余候选缺同提示被动条件、仅覆盖单手、改变呈现或当前无公开资产。按原规则收束方向，保留 Subject K 核查、Kaya 路径关闭和 `sealfix2` 的 `NO_SIGNAL`。零拟合，零新 Run。[替代资产核查](next_core_direction_20261106/SAME_CUE_PASSIVE_ALTERNATIVES_CLOSE_20261109.md)
+
+### U26 以独立校准回放检验眼电扰动敏感性
+
+登记 `MVCNET-OCULAR-REPLAY-DESIGN-20261109`。同提示方向关闭后，选择本地 2a 中独立于任务标签的前置眼电校准。对同一 EEG 波形作原波形、真实校准扰动、等能量空间对照三方配对，另以错位校准验证场估计。已查 A01T/E、A04T 的块结构及 seed73-outer0 的被试角色。拟在两名源被试 A03/A04 的 T/E 上做一次 CPU 零训练资格，先验证跨会话混合、等能量和非退化，失败即止。当前设计未执行资格或模型重放。保留同提示关闭、Subject K 核查及 `sealfix2` 的 `NO_SIGNAL`。[设计与停止门](next_core_direction_20261106/OCULAR_REPLAY_DESIGN_20261109.md)
+
+### U27 眼电同步跨会话通过，固定注入因滤波越过试次边界停止
+
+登记 `MVCNET-OCULAR-REPLAY-ZERO-TRAINING-20261109`。A03/A04 的 T/E 四份 MAT、10 个校准块、1,152 条源侧试次身份闭合。E 的 4 秒窗中，同步较错位的归一化平方误差中位优势为 A03 28.76%、A04 14.35%，逐校准块留一方向均为正。按本次固定中央 1 秒注入与 1,651 点连续 FIR，首条 A03T 的理论支撑越过下一试次起点 44 点。`STOP_PAIRED_INPUT_GATE`，尚未生成对照波形或核验等 RMS／拓扑，当前不进入设计复核。保留同提示关闭、Subject K 核查和 `sealfix2` 的 `NO_SIGNAL`。零模型前向、零训练、新 Run 为零。[核查报告](next_core_direction_20261106/OCULAR_REPLAY_ZERO_TRAINING_20261109.md)
+
+### U28 共同位置解决固定试次边界，空间对照未过可辨门
+
+登记 `MVCNET-OCULAR-REPLAY-SHARED-POSITION-20261109`。四条固定试次的共同安全起点为 cue 后 325–331 点，按中点取 328。首条 A03T 实测滤波隔离和等 RMS 通过，真实与分区置换对照的余弦 0.957123 超过既定 0.95，按规则结束固定方案，余下三条只核边界，未进入设计复核。保留上次试次隔离失败、同步通过、同提示关闭、Subject K 和 `sealfix2` 的 `NO_SIGNAL`。无模型前向、训练或新 Run。[补测与关闭记录](next_core_direction_20261106/OCULAR_REPLAY_SHARED_POSITION_20261109.md)
+
+### U29 眼电固定方案正式关闭，登记同窗时间反演设计
+
+依用户指令登记 `MVCNET-OCULAR-REPLAY-DIRECTION-CLOSE-20261109`。同步跨会话通过、原位置试次隔离失败、325–331 点共同安全位置和首条空间对照余弦 0.957123 超过 0.95 均保留。既有各方向关闭、Subject K 核查及 `sealfix2` 的 `NO_SIGNAL` 保留。
+
+`MVCNET-TIME-REVERSAL-ODD-EVIDENCE-DESIGN-20261109` 仅设计。晚窗同试次正放与倒放的功率、实部互谱、零时滞协方差和幅值分布相同，有符号虚部反号。以共同平移、cue 前等长窗和 run 内置换排查伪差，先核其他源被试的 T 对照能否在留出人的 E 上复现。已从固定折元数据计得 403 条源验证左右手试次，未读取信号做效果统计、未拟合或启动 Run。[设计与停止门](next_core_direction_20261106/TIME_REVERSAL_ODD_EVIDENCE_DESIGN_20261109.md)
+
+### U30 晚窗有符号时滞在跨人 T→E 门停止
+
+登记 `MVCNET-TIME-REVERSAL-ODD-ZERO-TRAINING-20261109`。403 条源验证左右手试次及 806 个窗的正放、倒放和共同平移谱不变量通过，391 条进入双类 run 对照。晚窗仅 4/7 人同向，等权晚窗投影 +0.034532 低于置换 P95 +0.190738，晚窗相对 cue 前的增量 +0.189301 低于 P95 +0.360775。三门均未过，固定方案停止于零训练，未进入设计复核。保留眼电回放关闭、Subject K 核查、同提示关闭及 `sealfix2` 的 `NO_SIGNAL`。零模型前向、零训练、零新 Run。[核查与处置](next_core_direction_20261106/TIME_REVERSAL_ODD_ZERO_TRAINING_20261109.md)
+
+### U31 晚窗有符号时滞正式关闭，登记主动未见类拒识设计
+
+依用户指令登记 `MVCNET-TIME-REVERSAL-ODD-DIRECTION-CLOSE-20261109`。保留 403 条、806 窗的谱不变量通过、4/7 人同向及两项置换门失败。保留眼电回放关闭、Subject K 核查、既有关闭与 `sealfix2` 的 `NO_SIGNAL`。
+
+`MVCNET-ACTIVE-UNSUPPORTED-COMMAND-DESIGN-20261109` 仅设计。固定左右手原型读出，比较到两类线段的距离、置信间隔、最近原型和中点距离。在六名源被试 T 定原型、六人 E 的已知手类定阈值，留出人 E 的同 run 双脚和舌只作最后评分。元数据已核对 33 个合格 E run、329 条候选试次。直接近邻已有同类被试内配置，论文投入以严格留人和风险匹配下对简单强对照的实质增量为前提。未做效果统计、拟合或派发。[设计与停止门](next_core_direction_20261106/ACTIVE_UNSUPPORTED_COMMAND_DESIGN_20261109.md)
+
+### U32 主动未见类拒识因接收率不可比且无原型增量停止
+
+登记 `MVCNET-ACTIVE-UNSUPPORTED-COMMAND-ZERO-TRAINING-20261109`。33 个同 run 匹配、329 条留出评分均闭合。其余六人仅以 T 左右手定原型、E 左右手定阈值。线段规则与最近原型和中点的 329 条接收决定完全一致。相对置信间隔，已知接收率相差 12.41 个百分点，超过 5 点门；双脚误放改善 7.82 点，舌 18.28 点，两类各仅 4/7 人改善。按 `STOP_REJECTION_GATE` 停止固定方案，未进入设计复核。保留晚窗时滞、眼电回放关闭、Subject K 核查及 `sealfix2` 的 `NO_SIGNAL`。零模型前向、零训练、零新 Run。[核查与处置](next_core_direction_20261106/ACTIVE_UNSUPPORTED_COMMAND_ZERO_TRAINING_20261109.md)
+
+### U33 主动未见类拒识正式关闭，登记错误序列核查设计
+
+依用户指令登记 `MVCNET-ACTIVE-UNSUPPORTED-COMMAND-DIRECTION-CLOSE-20261109`。保留 33 个匹配 run、329 条试次，线段与最近原型和中点的接收决定全部一致，已知类接收率相差 12.41 个百分点，高于 5 点可比性门。晚窗时滞和眼电回放的关闭、Subject K 核查和 `sealfix2` 的 `NO_SIGNAL` 均保留。[拒识核查](next_core_direction_20261106/ACTIVE_UNSUPPORTED_COMMAND_ZERO_TRAINING_20261109.md)
+
+`MVCNET-ERROR-SEQUENCE-CLUSTERING-DESIGN-20261109` 仅设计。已核对 5,184 条、108 个 run 的时间索引，全部 5,076 对紧邻试次的连续 FIR 输入范围有重叠，全部 4,968 对隔一试次的输入范围分离。拟用两个不重叠子序列及保持真实类别、run 半段错误率和四模型同试次共错的联合置换，判断错误聚集是否值得独立复核。只做了资产和元数据核查，未计算错误序列效果或启动 Run。[设计与停止门](next_core_direction_20261106/ERROR_SEQUENCE_CLUSTERING_DESIGN_20261109.md)
+
+### U34 错误序列聚集在偶数主检验与奇数复核的冻结门停止
+
+登记 `MVCNET-ERROR-SEQUENCE-CLUSTERING-ZERO-TRAINING-20261109`。`sealfix2` 核心包、36 项已封存检查和 5,184 条唯一试次通过身份核验。两组各 2,376 对，分别完成 10,000 次分层联合置换。偶数 CE-73 过 P95，CE-74 和跨重复未过。两次 CE 平均超额 +0.611 个百分点，低于 +1 点门，7/9 人平均超额为正。奇数两次 CE 和跨重复超额均为负。按 `STOP_ERROR_SEQUENCE_CLUSTERING_GATE` 停止固定方向，未进入设计复核。既有关闭结论、Subject K 核查和 `sealfix2` 的 `NO_SIGNAL` 保留。零模型重放、零训练、零新 Run。[核查与处置](next_core_direction_20261106/ERROR_SEQUENCE_CLUSTERING_ZERO_TRAINING_20261109.md)
+
+### U35 错误序列聚集正式关闭，登记 μ 与高 β 时间对齐设计
+
+依用户指令登记 `MVCNET-ERROR-SEQUENCE-CLUSTERING-DIRECTION-CLOSE-20261109`。偶数主检验仅 CE-73 过 P95，两次 CE 平均超额 +0.611 个百分点，7/9 人同向。跨重复未过 P95，奇数复核三项均为负。保留既有关闭结论、Subject K 核查及 `sealfix2` 的 `NO_SIGNAL`。[错误序列核查](next_core_direction_20261106/ERROR_SEQUENCE_CLUSTERING_ZERO_TRAINING_20261109.md)
+
+`MVCNET-MU-HIGH-BETA-ALIGNMENT-DESIGN-20261109` 仅设计。使用两个频带的完整功率轨迹、同维的试次内错位，以及同 run 同类、保留 cue 时钟的跨试次重配，检验同一试次 μ 与高 β 对齐的跨人 T→E 增量。固定折核对七名源被试、812 条 T 左右手和 E 的 20 个匹配 run、129 条。只做了元数据核对，未读取波形计算效应或启动 Run。[新方向与停止门](next_core_direction_20261106/MU_HIGH_BETA_ALIGNMENT_DESIGN_20261109.md)
+
+### U36 μ 与高 β 时间对齐在冻结效果门停止
+
+登记 `MVCNET-MU-HIGH-BETA-ALIGNMENT-ZERO-TRAINING-20261109`。14 份原始 MAT、812 条 T 源侧左右手、20 个 E 匹配 run 的 129 条评分试次和合成对照均通过。候选相对完整功率、同维错位的 AUROC 增量分别为 +0.011905、+0.003720，均低于 +0.03，只有 1/7 人同时改善。候选定向类差 −0.004130，低于 10,000 次同 run 同类重配的 P95 +0.191864。四项效果门均失败，按 `STOP_MU_HIGH_BETA_ALIGNMENT_GATE` 停止，未进入设计复核。保留既有关闭结论、Subject K 核查和 `sealfix2` 的 `NO_SIGNAL`。零模型重放、零训练、零新 Run。[核查与处置](next_core_direction_20261106/MU_HIGH_BETA_ALIGNMENT_ZERO_TRAINING_20261109.md)
+
+### U37 μ 与高 β 时间对齐正式关闭，登记源验证 FIR 支撑隔离设计
+
+依用户指令登记 `MVCNET-MU-HIGH-BETA-ALIGNMENT-DIRECTION-CLOSE-20261109`。保留 14 份 MAT 和合成对照通过、20 个匹配 run 和 129 条试次。两项 AUROC 增量未达 0.03，仅 1/7 人同时改善，定向类差未过重配 P95。既有关闭结论、Subject K 核查和 `sealfix2` 的 `NO_SIGNAL` 均保留。[核查与处置](next_core_direction_20261106/MU_HIGH_BETA_ALIGNMENT_ZERO_TRAINING_20261109.md)
+
+`MVCNET-FIR-SUPPORT-DISJOINT-SELECTION-DESIGN-20261109` 仅设计。18 个冻结折每折有 761–772 条源验证试次与训练窗共享扩展 FIR 支撑，源侧与独立检查被试无同 run 相交。拟固定训练输入和验证身份，只限制验证可读原始采样。A03/A04 T/E 四份文件有 222 条验证，其中 67 条可做单侧相交的等长度反侧对照。仅完成元数据和文件可用性核对，未运行波形探针、复算选模、重放模型或启动训练。[新设计与停止门](next_core_direction_20261106/FIR_SUPPORT_DISJOINT_SELECTION_DESIGN_20261109.md)
+
+### U38 源侧验证 FIR 支撑隔离过零训练门，设计复核暂缓选模比较
+
+登记 `MVCNET-FIR-SUPPORT-DISJOINT-SELECTION-ZERO-TRAINING-20261109`。四份 MAT、222 条冻结验证裁剪及物理支撑通过，8 条实数据脉冲探针的共享响应在隔离验证端归零。67 条配对中，A03T、A03E、A04T、A04E 的隔离改变量中位数分别 8.81%、5.38%、3.97%、4.68%，全部通过 1% 门。进入只读设计复核。冻结 runner 与已验收清单只支持每次拟合的最终选中权重，缺可复用的多 epoch 轨迹，处置 `HOLD_MISSING_REUSABLE_EPOCH_TRAJECTORY`，不推断选模或准确率变化。保留既有关闭结论、Subject K 核查和 `sealfix2` 的 `NO_SIGNAL`。未重放模型、训练或建立 Run。[核查与设计复核](next_core_direction_20261106/FIR_SUPPORT_DISJOINT_SELECTION_ZERO_TRAINING_20261109.md)
+
+### U39 源侧验证 FIR 支撑隔离正式关闭
+
+依用户指令登记 `MVCNET-FIR-SUPPORT-DISJOINT-SELECTION-DIRECTION-CLOSE-20261109`。保留 222 条冻结数组重放、物理支撑与 8 条实数据脉冲核查通过，以及 67 对中四份记录的隔离中位数 8.81%、5.38%、3.97%、4.68%。设计复核确认 `sealfix2` 现有产物缺可复用的多 epoch 轨迹，选模和独立检查准确率的变化仍未检验。保留 Subject K 核查、既有关闭和 `sealfix2` 的 `NO_SIGNAL`。本次关闭不激活新方向。[核查与设计复核](next_core_direction_20261106/FIR_SUPPORT_DISJOINT_SELECTION_ZERO_TRAINING_20261109.md)
+
+### U40 VCN-P1 保留为阶段性创新，登记逐视图 affine 可迁移性判据
+
+`MVCNET-VCN-VIEW-AFFINE-TRANSFER-DESIGN-20261109` 仅设计。历史 P1−B0 和参数匹配 N1 支持仍限原协议。原最小结构结论 `STOP_AS_NEW_MAIN_INNOVATION` 保留。本次筛的是 raw 已独立后，增强 affine 的额外方向是否跨人和记录可复用，能否经共享主干更有利于另一会话的 raw 目标。关键对照为按增强视图分别计算批统计的 raw／增强双 BN、冻结方向后五种同范数错配和三路相同视图。固定折元数据支持七名源被试的 896 条 T 探针与 400 条 E 源验证。单份封存 CE 权重只由历史清单定位，本地精简包无该文件，未验证远端可达性。当前不确立新主线，未执行零训练探针或启动 Run。既有关闭结论与 `sealfix2` 的 `NO_SIGNAL` 均保留。[筛查设计与停止门](next_core_direction_20261106/VCN_VIEW_AFFINE_TRANSFER_DESIGN_20261109.md)
