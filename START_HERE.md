@@ -1,8 +1,8 @@
 # lzx-mvcnet-ai4s 讨论资料入口
 
 仓库：https://github.com/oldlady21/lzx-mvcnet-ai4s-context
-导出时间（UTC）：2026-11-09T08:18:39.864506+00:00
-快照身份：`6376d4a674861c11fda6b9747a76f4d14fc9d0c035c0017ae53a32b603eac964`
+导出时间（UTC）：2026-11-11T14:43:59.425077+00:00
+快照身份：`b6d17490a7d6369b59392cd1597f2ab44cef10314797376437349334d2cc165d`
 
 这是本地已保存文件的公开讨论副本。来源与公开文件 SHA-256、脱敏计数、未公开引用见 [SYNC_MANIFEST.json](SYNC_MANIFEST.json)。
 机器字段已机械脱敏；保留原研究身份、冻结边界、预算、证据状态和历史。它不替代本地权威记录，不授予执行/恢复/改协议权限。
@@ -50,6 +50,7 @@
 - [ai4s/README.md](<ai4s/README.md>)
 - [ai4s/programs/mvcnet/PROGRAM.yaml](<ai4s/programs/mvcnet/PROGRAM.yaml>)
 - [ai4s/programs/mvcnet/PROJECT_PROMPT_v3.3.md](<ai4s/programs/mvcnet/PROJECT_PROMPT_v3.3.md>)
+- [ai4s/programs/mvcnet/PROJECT_PROMPT_v3.4.md](<ai4s/programs/mvcnet/PROJECT_PROMPT_v3.4.md>)
 - [ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md](<ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md>)
 - [ai4s/programs/mvcnet/research/EVIDENCE_INDEX.yaml](<ai4s/programs/mvcnet/research/EVIDENCE_INDEX.yaml>)
 - [ai4s/programs/mvcnet/research/STATE.yaml](<ai4s/programs/mvcnet/research/STATE.yaml>)
@@ -69,7 +70,9 @@
 - [ai4s/prompts/EVALUATION_EVIDENCE.md](<ai4s/prompts/EVALUATION_EVIDENCE.md>)
 - [ai4s/prompts/EXTERNAL_REVIEW.md](<ai4s/prompts/EXTERNAL_REVIEW.md>)
 - [ai4s/prompts/LEVEL1_RESEARCH_v3.3.md](<ai4s/prompts/LEVEL1_RESEARCH_v3.3.md>)
+- [ai4s/prompts/LEVEL1_RESEARCH_v3.4.md](<ai4s/prompts/LEVEL1_RESEARCH_v3.4.md>)
 - [ai4s/prompts/LEVEL2_EXECUTION_v3.3.md](<ai4s/prompts/LEVEL2_EXECUTION_v3.3.md>)
+- [ai4s/prompts/LEVEL2_EXECUTION_v3.4.md](<ai4s/prompts/LEVEL2_EXECUTION_v3.4.md>)
 - [ai4s/prompts/MIEEG_AI4S_SKILL_ROUTER.md](<ai4s/prompts/MIEEG_AI4S_SKILL_ROUTER.md>)
 - [ai4s/prompts/TRANSACTION_RUNTIME.md](<ai4s/prompts/TRANSACTION_RUNTIME.md>)
 - [experiments/UNIFIED_EVALUATION_PROTOCOL.md](<experiments/UNIFIED_EVALUATION_PROTOCOL.md>)

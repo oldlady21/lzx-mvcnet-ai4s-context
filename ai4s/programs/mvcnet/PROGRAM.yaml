@@ -138,7 +138,7 @@
   ],
   "program_id": "mvcnet",
   "prompt_governance": {
-    "expected_active_chain_id": "mvcnet-transaction-v3.3",
+    "expected_active_chain_id": "mvcnet-transaction-v3.4",
     "index": "ai4s/PROMPT_INDEX.yaml",
     "mismatch_policy": "BLOCK"
   },
