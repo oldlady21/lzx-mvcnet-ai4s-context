@@ -11,7 +11,7 @@ status: ACTIVE
 
 研究认识与唯一来源索引见 [研究总览](research/CURRENT_UNDERSTANDING.md)。该总览指向基模阅读材料与本地实现依据；本 L3 不重复列举论文路径。
 
-首次采用基模理解时，重点核对四视图与 CNN／Transformer 两分支、CE／CVC／CMC 的对应及 raw-only 推理仍保留两分支；VCN 的每视图 BN 状态隔离与训练／推理统计一致性分别判断。 已有同版本核对可复用，缺口只限制依赖它的判断。
+首次采用基模理解时，区分论文 v4 的分类结构与本地实现。论文将 CNN 与 Transformer 特征拼接分类，测试时输入未增强试次。本地规范 MVCNet（`MVCNetAdapter`）、已核对的 VCN-P1 和 VBR-R1 分类走 raw → CNN/IFNet → 分类头。Transformer／投影器经 CVC、CMC 影响训练梯度，分类推理不直接调用。其他变体按对应版本的实际 `forward` 核对。VCN 的视图间 BN 状态隔离与训练／推理统计一致性分别判断。已有同版本核对可复用。
 
 新判定映射要区分完整方法相对 baseline、候选相对 VCN 支架的新增价值及机制控制；不得用前者收益覆盖后者失败，也不自动套用旧 VBR 的优效门。 实际判定路径的对应、接线缺口与最小验证按 [L2 第2节](../../prompts/LEVEL2_EXECUTION_v3.4.md#2-用现有-brief-完成一页决策)执行，共享细则不在本 L3 重复。
 

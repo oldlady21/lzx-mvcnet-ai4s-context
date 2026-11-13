@@ -17,7 +17,7 @@
 
 下文是当前可修正综合。作者报告、阅读推断、代码行为、本地观测应按所引来源理解；MVCNet的视图隔离和配套监督不能单凭结构推断互补机制成立。重要结论应能回到原文/源码及Evidence ID，并说明适用范围和何种新证据会改变取舍。历史轮次保留在原报告；其中运行状态只代表记录时点，当前状态以 STATE.yaml 为准。
 
-2026-10-29补充核对：论文阅读材料中“raw-only推理仍保留两分支”的解释属于论文v4。**当前本地VCN-P1分类实现不同**：`src/baselines/mvcnet.py:212` 和原生参考 `_work/augmentation_readout_source_r1/ai4s/programs/mvcnet/research/augmentation_readout/train.py:28` 的推理均仅用CNN/IFNet→分类头；Transformer/投影器只参与训练对比目标。原生CVC沿batch轴拼接两种分支表示，仍含跨分支负项；因此不能假设去掉CMC某侧梯度就隔绝所有分支影响。本轮只是静态事实核对，不改基模、L3、历史合同或结果。后续依赖此事实的方向必须绑定实际native实现，不能套用论文融合分类图。直接核对及源码哈希见[下一辅助方向上下文](next_auxiliary_20261029/CONTEXT_MANIFEST.json)。
+本地实现核对（2026-10-29，2026-11-12复核）。论文 v4 Algorithm 1 第 25 步对未增强测试试次采用 CNN／Transformer 特征拼接分类。本地规范 UEP baseline 的 `MVCNetAdapter.forward`（`src/baselines/mvcnet.py:212`）和本地留存 native runner（`ai4s/_work/augmentation_readout_source_r1/ai4s/programs/mvcnet/research/augmentation_readout/train.py:28`）均走 CNN/IFNet → 分类头。已核对的 VCN-P1 和 VBR-R1 改动 IFNet 归一化，仍走这一分类路径。Transformer／投影器经训练对比损失影响参数；本地 CVC 沿 batch 轴拼接两种分支表示并包含跨分支负项，切断 CMC 一侧的梯度仍可能保留 CVC 的跨分支影响。其他变体绑定其实际 adapter 和调用路径。[2026-10-29 的来源与源码哈希](next_auxiliary_20261029/CONTEXT_MANIFEST.json)。
 
 ## 当前综合与关键缺口
 
@@ -359,3 +359,19 @@ Grok 4.6 对原设计独立反驳为 `HOLD_FOR_DESIGN_FIX`。修订后保留同�
 ### U52 开发门已冻结，Lab10 四臂资格等待隔离 GPU
 
 冻结原 Cue4 的离线四臂配对设计及 seed73-outer0/3/6，预先固定 B0、N0、C0 效用差、逐被试风险与错配机制门，矩阵成本限 9 进程小时含 20% 余量。核验 18 份原始 MAT；在同 run、原始支撑分离和四段幅度约束下分别匹配 707、660、679/807 条，均过 80% 门。真实 cue radix=1、63 点原生支路四臂接线的隔离 CPU 检查通过。资格 Run `2026-11-11_mvcnet_context_filter_lab10_qual1` 已在 Lab10 核验不可变包并启动调度，22:39 快照为 4 待、0 运行、0 完成、0 失败，等待 GPU 3 无驻留计算。目标机成本未知，12 次科学拟合尚未派发。[准备及调度记录](next_core_direction_20261106/nonadjacent_context_temporal_filter/DEVELOPMENT_PREPARATION_20261111.md)
+
+### U53 Lab10 四臂资格与成本门通过
+
+原资格 Run 四臂齐套，失败为 0。Lab10 核验四个检查点，本地核验九份核心回执。原 12 次拟合＋12 次检查估算为 6.8594 进程小时，计入 20% 余量为 8.2313 小时，低于 9 小时上限。下一步是完成科学轮正式派发及精简验收判读接线，继续使用冻结四臂三折和全拟合封存规则。科学任务当前尚未派发。[资格验收与成本复算](next_core_direction_20261106/nonadjacent_context_temporal_filter/qualification/QUALIFICATION_CLOSEOUT_20261112.md)
+
+### U54 四臂封存、精简判读与 Lab10 CPU 入口通过验收
+
+容量调度接入四臂全拟合封存，检查在封存后开放，精简包接入专用效应及条件机制判读。合成完整链路覆盖通过与停止分支，目标 Lab10 的 Python 3.9、包哈希、冻结数据和正式入口通过 CPU 验收。原 12＋12 科学轮尚无任务派发，等待共享控制器所需的独立累计执行上限。[派发验收记录](next_core_direction_20261106/nonadjacent_context_temporal_filter/DEPLOYMENT_ACCEPTANCE_20261112.md)
+
+### U55 Lab10 科学轮已启动
+
+用户确认独立累计 12 小时后，Lab10 接收原四臂三折矩阵。23:50:37 核对 12 项拟合中 2 项运行、10 项待运行，完成及失败均为 0。检查按全拟合封存顺序开放。原资格 Run 保留，成本门复算仍为含余量 8.2313 进程小时。[启动记录](next_core_direction_20261106/nonadjacent_context_temporal_filter/DEPLOYMENT_ACCEPTANCE_20261112.md#正式启动核验)
+
+### U56 四臂科学轮效应门停止
+
+12 拟合与 12 检查齐套并通过正式精简 intake。P0 对 B0 与 C0 增量不足，且仅 1/3 人同时优于三臂，登记 `STOP_EFFECT_GATE`。源侧错配未触发。实测 34.250 进程小时，Transaction 执行 7.825 小时，原口径累计至登记 18.134 小时。[收尾记录](next_core_direction_20261106/nonadjacent_context_temporal_filter/SCIENCE_CLOSEOUT_20261114.md)

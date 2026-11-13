@@ -5,7 +5,7 @@
     "不自动递归补齐引用；未公开引用见每库SYNC_MANIFEST.json。",
     "不上传凭据、SSH配置、数据集、checkpoint、原始预测、机器日志或完整实验目录。"
   ],
-  "exported_at": "2026-11-11T14:43:59.425077+00:00",
+  "exported_at": "2026-11-13T17:37:09.109931+00:00",
   "files": [
     {
       "bytes": 10818,
@@ -67,26 +67,26 @@
       "source_sha256": "7a3f28b0472af1799a115f3d9f996347e6f569d3561896d78ed1160a4bd16946"
     },
     {
-      "bytes": 11987,
+      "bytes": 12519,
       "path": "ai4s/README.md",
-      "public_git_blob_sha1": "3d4c2eb84dc1f5c697e0bf3c7209244392bd9cd4",
-      "public_sha256": "0df4765f386984cb6eb6c4dacf394e53dfbd9eb451bbb0058d907149f6459da9",
+      "public_git_blob_sha1": "dfc68e33c2e9f5a674ef7f4af0b3bb8c64dbaf86",
+      "public_sha256": "f2392a3beee979c5d8fa074b1b7b3b3faeed53ab1b161ed010568276f37068ce",
       "redactions": {
         "host_alias": 4
       },
-      "source_sha256": "fb55d878d88ccbcbca3c298a242a31868b1eaaa56d20277bfb2bafdf4dce3383"
+      "source_sha256": "c76e172b0e76772892bc99469141432a5a9e46510d043e5938193702810567ee"
     },
     {
-      "bytes": 7529,
+      "bytes": 7526,
       "path": "ai4s/programs/mvcnet/PROGRAM.yaml",
-      "public_git_blob_sha1": "247783782dc8c37fdc0015932e808341aea6a4c0",
-      "public_sha256": "6f5e93da6adb635572bc99fc5b35d65fce5481adb80fedc8ce84bbcded38fd74",
+      "public_git_blob_sha1": "c60d55e4b9fff23e02604062d01c9951c9d4ddea",
+      "public_sha256": "1c4e8ed7b206ee80c8bdeda66585f5c8c3937c9c6325a7e1ac3777e0f4807401",
       "redactions": {
         "host_alias": 3,
         "machine_field": 9,
         "workspace_prefix": 1
       },
-      "source_sha256": "c5863c264c9b2548a409df45d776404664c4845b65a8e1c9a45f0362dbcd4d89"
+      "source_sha256": "ff11ed53c86101c3b565a7b3162aa9ba000ab7d68af47a9e2ee79863eff9a453"
     },
     {
       "bytes": 8126,
@@ -97,40 +97,40 @@
       "source_sha256": "c58aa6afd92ac6eba65dfb9e804428fe3ca6e17ef83816e4eb72a5d1b2e36f16"
     },
     {
-      "bytes": 7400,
+      "bytes": 7639,
       "path": "ai4s/programs/mvcnet/PROJECT_PROMPT_v3.4.md",
-      "public_git_blob_sha1": "f46cfc08d43de0c96fea6e629bdb4d0f47028943",
-      "public_sha256": "c0f043af2e5b94e95fd9f174efd5789f91e777bc90eca6c69e6804ddbe134d8a",
+      "public_git_blob_sha1": "c42f7aff101b62b3ac87b6e6a2f533a72e394c68",
+      "public_sha256": "6962a6592ec7d05a04b2e7598b5ba709ada7a0f634ee99effb2955d4d2620147",
       "redactions": {},
-      "source_sha256": "c0f043af2e5b94e95fd9f174efd5789f91e777bc90eca6c69e6804ddbe134d8a"
+      "source_sha256": "6962a6592ec7d05a04b2e7598b5ba709ada7a0f634ee99effb2955d4d2620147"
     },
     {
-      "bytes": 58502,
+      "bytes": 60555,
       "path": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
-      "public_git_blob_sha1": "7c581236d3c54ee981dce632704a49a79322a8e1",
-      "public_sha256": "8494e8681b80d9d105d343aed8e14193dc9be1188769656185abb8d1e2ff9d00",
+      "public_git_blob_sha1": "2ec1d3779f808959f8f845fef878660ea2cb07fb",
+      "public_sha256": "19a6cd7781aea82ac8649adc021033854dc5048bd730b0a2e9076e1adfe1f0a0",
       "redactions": {},
-      "source_sha256": "8494e8681b80d9d105d343aed8e14193dc9be1188769656185abb8d1e2ff9d00"
+      "source_sha256": "19a6cd7781aea82ac8649adc021033854dc5048bd730b0a2e9076e1adfe1f0a0"
     },
     {
-      "bytes": 189892,
+      "bytes": 194734,
       "path": "ai4s/programs/mvcnet/research/EVIDENCE_INDEX.yaml",
-      "public_git_blob_sha1": "bf05d647b27490855ea8649f3ee3f15be667e917",
-      "public_sha256": "734a6e8e0e9450700a7ff03914208e0ef74e7f8e397fe18da35f98a67a0b3e23",
+      "public_git_blob_sha1": "c807adfb1cf13702c98ab2ea629b8712baa11e42",
+      "public_sha256": "c7b1f7757f5d7fcb5072b60583254155a8b125aab2545c0ed4c078181d895e06",
       "redactions": {},
-      "source_sha256": "7225b68eb2c9382e1862ad2d5cbc35cae5a39e686f381763a3abe4e2f28119cf"
+      "source_sha256": "c4b2e850504a5e5266ac9b8c9fc98d1526858c383f572fbd864d853c70031b69"
     },
     {
-      "bytes": 504248,
+      "bytes": 509834,
       "path": "ai4s/programs/mvcnet/research/STATE.yaml",
-      "public_git_blob_sha1": "83f29ff1a00abe968fb3180a17676969e646a054",
-      "public_sha256": "fa4e89ba764c1d42fe1dd2c61ef8e9c82dda5fba5d7035270c217f38e24e7fd0",
+      "public_git_blob_sha1": "df40c5dd35ce1b4bdd1700da11c44869bdd39c26",
+      "public_sha256": "be3ab166edd4c917637a00eec7bcea3e8a5b7d3698ec3fc00f88a7b3419ecd39",
       "redactions": {
         "host_alias": 18,
-        "machine_field": 51,
+        "machine_field": 53,
         "unix_home_path": 1
       },
-      "source_sha256": "337ea40c8092936f375868481d75d6baf0c1e7298ae77e9fc9c77cdd2a29b248"
+      "source_sha256": "4e5e83e297ab1880a5f743e99f5049771278bf0f875b2a7063a0f407c026608e"
     },
     {
       "bytes": 4467,
@@ -275,12 +275,12 @@
       "source_sha256": "d4e5c0f16d864431943247d5f6ad62ce354d4940ec75472fb17a67e3545a40fa"
     },
     {
-      "bytes": 8246,
+      "bytes": 8266,
       "path": "ai4s/prompts/LEVEL1_RESEARCH_v3.4.md",
-      "public_git_blob_sha1": "508c3acf491a394b97a3c512aacfbf585de0f5f1",
-      "public_sha256": "f5ab7a207c66ddf14997acbf612979227611987b41ac1b8e391388aa956ad634",
+      "public_git_blob_sha1": "2bd51134e3dfc2b08211b0e36e5b29a3692f13b2",
+      "public_sha256": "697fafc593bb51569298ace26ad361c222fb93e34c00f76c125f0722bee36ba0",
       "redactions": {},
-      "source_sha256": "f5ab7a207c66ddf14997acbf612979227611987b41ac1b8e391388aa956ad634"
+      "source_sha256": "697fafc593bb51569298ace26ad361c222fb93e34c00f76c125f0722bee36ba0"
     },
     {
       "bytes": 23489,
@@ -291,12 +291,12 @@
       "source_sha256": "4eafbb2b73437ea8cec19cef70b53c86aec8e657ebc614aaaf755d9ff8ebe7ec"
     },
     {
-      "bytes": 23782,
+      "bytes": 24093,
       "path": "ai4s/prompts/LEVEL2_EXECUTION_v3.4.md",
-      "public_git_blob_sha1": "4f73fbb62d1c4e8142aca358e8dc2628f555bf00",
-      "public_sha256": "5baeac30dcefc080882e3ca0f96309c8aebac2def75b600528aa9f2ac522d626",
+      "public_git_blob_sha1": "1cfb18fd1b82aa9e2b1547320619174e82280daa",
+      "public_sha256": "f161f68c31a88976f0c20698873543d9a594626e4f4dceb729fde358653c1d17",
       "redactions": {},
-      "source_sha256": "5baeac30dcefc080882e3ca0f96309c8aebac2def75b600528aa9f2ac522d626"
+      "source_sha256": "f161f68c31a88976f0c20698873543d9a594626e4f4dceb729fde358653c1d17"
     },
     {
       "bytes": 9320,
@@ -310,14 +310,14 @@
       "source_sha256": "af3d86340269cb290f76df2a162b907c9cdf1dfe2027f26538739116461f9a1f"
     },
     {
-      "bytes": 38098,
+      "bytes": 39162,
       "path": "ai4s/prompts/TRANSACTION_RUNTIME.md",
-      "public_git_blob_sha1": "dff3da2ee475975036c324bb6265768fb4839375",
-      "public_sha256": "6c371d8697fb2c689b264d172368f43f20a94e9426760b34f49416cc787389a7",
+      "public_git_blob_sha1": "1037988c2fe36130fcc7471c150ca68af1e64e9f",
+      "public_sha256": "0783480e66fa24de2e9832a8b55f63d5c8d1dd53062ae590074692e1ddf2eab7",
       "redactions": {
         "host_alias": 4
       },
-      "source_sha256": "e6870a285e14462de680495627b434ba3dc82af0302b031d375d775813978b4d"
+      "source_sha256": "fd753f578650ed879294f1c9c4bad685421037b03e763a9e0c86a90c0d46fca6"
     },
     {
       "bytes": 10071,
@@ -365,14 +365,14 @@
       "source_in_this_repository": true,
       "source_path": "ai4s/programs/mvcnet/research/STATE.yaml",
       "source_public_url": "https://github.com/oldlady21/lzx-mvcnet-ai4s-context/blob/main/ai4s/programs/mvcnet/research/STATE.yaml",
-      "source_sha256": "337ea40c8092936f375868481d75d6baf0c1e7298ae77e9fc9c77cdd2a29b248",
-      "source_updated_at": "2026-11-08T13:59:45.549917+00:00",
+      "source_sha256": "4e5e83e297ab1880a5f743e99f5049771278bf0f875b2a7063a0f407c026608e",
+      "source_updated_at": "2026-11-13T17:10:52.996536+00:00",
       "status": "COMPLETE_MAX_ROUNDS"
     }
   },
   "policy_version": "public-documents-v1",
   "repository": "oldlady21/lzx-mvcnet-ai4s-context",
-  "snapshot_id": "b6d17490a7d6369b59392cd1597f2ab44cef10314797376437349334d2cc165d",
+  "snapshot_id": "c5978492a1c64209a9e3138dd221715f2f506b9bf59b3dac3487e4bb06e69a9d",
   "unpublished_references": [
     {
       "from": "AGENTS.md",
@@ -2536,6 +2536,10 @@
     },
     {
       "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/next_core_direction_20261106/nonadjacent_context_temporal_filter/DEPLOYMENT_ACCEPTANCE_20261112.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/mvcnet/research/next_core_direction_20261106/nonadjacent_context_temporal_filter/DEVELOPMENT_PREPARATION_20261111.md"
     },
     {
@@ -2544,7 +2548,15 @@
     },
     {
       "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/next_core_direction_20261106/nonadjacent_context_temporal_filter/SCIENCE_CLOSEOUT_20261114.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/mvcnet/research/next_core_direction_20261106/nonadjacent_context_temporal_filter/ZERO_FIT_RESULT_20261111.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/next_core_direction_20261106/nonadjacent_context_temporal_filter/qualification/QUALIFICATION_CLOSEOUT_20261112.md"
     },
     {
       "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",

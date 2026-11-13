@@ -24,7 +24,7 @@
   },
   "candidate_source_root": "src/models/ai4s/mvcnet",
   "controller": "ai4s/prompts/TRANSACTION_RUNTIME.md",
-  "default_executor_id": "ccmu_lab",
+  "default_executor_id": "lab10",
   "defaults": {
     "harm_floor_delta": -10.0,
     "max_rounds": 1,
