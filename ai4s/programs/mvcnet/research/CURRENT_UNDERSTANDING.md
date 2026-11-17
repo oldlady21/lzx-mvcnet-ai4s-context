@@ -1,5 +1,13 @@
 # MVCNet 当前研究认识
 
+## 基模设计先验
+
+本节是稳定的来源与事实索引：作者论文陈述、阅读解释、本地实现及本 Program 已有结果分别按下列直接来源理解，不能互相替代。v4.0 的 L3 在“阅读与研究认识入口”链接到本节；本节本身不记录活动状态、权限或当前 Run 结论。
+Paper X-Ray §§2–3 与 Note「方法主线」描述作者的训练/分类路径；本地对应以 src/baselines/mvcnet.py:212、augmentation_readout/train.py:28 及本总览 U1 和 next_auxiliary_20261029/CONTEXT_MANIFEST.json 为准。
+
+- **两条分类路径。** 论文 Algorithm 1 对未增强试次做 CNN／Transformer 特征拼接。本地规范 UEP 与 VCN-P1 分类只走 CNN／IFNet 和分类头，Transformer 经训练对比目标影响参数。训练期梯度干预与部署分类修改对应不同对照。（下方本地实现核对、原文算法与已绑定适配器）
+- **配套目标的竞争解释。** CVC 与 CMC 会共同影响原生训练；切断一侧 CMC 梯度仍可能经 CVC 跨支影响。保留 CVC 的同配方控制更能识别接收端改动。（下方 U7 及梯度审计）
+
 ## 基模来源与认识边界
 
 同一论文的加工材料不作独立证据计数。路径从本文件位置解析：
@@ -375,3 +383,7 @@ Grok 4.6 对原设计独立反驳为 `HOLD_FOR_DESIGN_FIX`。修订后保留同�
 ### U56 四臂科学轮效应门停止
 
 12 拟合与 12 检查齐套并通过正式精简 intake。P0 对 B0 与 C0 增量不足，且仅 1/3 人同时优于三臂，登记 `STOP_EFFECT_GATE`。源侧错配未触发。实测 34.250 进程小时，Transaction 执行 7.825 小时，原口径累计至登记 18.134 小时。[收尾记录](next_core_direction_20261106/nonadjacent_context_temporal_filter/SCIENCE_CLOSEOUT_20261114.md)
+
+### U57 VCN-P1 × ACM-R1 析因轮关闭，VCN-P1 优先作为论文主方法候选
+
+36 项拟合、36 项检查经续接闭合。原 Run 归档为 `FAILED`，共享控制器对账为 `COMPLETE_MAX_ROUNDS`，按原起点结算 54.672／57 小时。组合相对原生 +3.144 点通过开发门；VCN-P1 相对原生 +2.411 点，ACM 加到 VCN-P1 上 +0.733 点且区间跨零，交互未过门。原 ACM-R1 的 `NO_SIGNAL` 保留。建议以 VCN-P1 起稿，组合列入开发消融。独立确认优先在未暴露队列中锁定 VCN-P1 对原生和强 raw／增强双 BN 的逐被试增量。若将组合升为主方法，须独立证明 ACM 加到 VCN-P1 后的实际增量。未启动训练或释放新 Claim。 [正式收尾与证据要求](acm-r1/factorial/FINAL_CLOSEOUT_20261116.md)

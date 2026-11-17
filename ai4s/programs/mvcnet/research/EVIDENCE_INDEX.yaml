@@ -324,6 +324,32 @@
   ],
   "imports": [
     {
+      "claim_status": "no_paper_claim",
+      "controller_status": "COMPLETE_MAX_ROUNDS",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-factorial-development_decision.yaml",
+      "evidence_id": "MVCNET-ACM-FACTORIAL-CHECKFINISH2-CLOSEOUT-20261116",
+      "prior_acm_decision": "NO_SIGNAL",
+      "reconciliation": "ai4s/programs/mvcnet/research/acm-r1/factorial/CONTROLLER_RECONCILIATION_20261116.json",
+      "report": "ai4s/programs/mvcnet/research/acm-r1/factorial/FINAL_CLOSEOUT_20261116.md",
+      "result": "ai4s/programs/mvcnet/research/acm-r1/factorial/FACTORIAL_RESULT_20261116.json",
+      "role": "paired_development_factorial_result",
+      "scope": "BNCI2014001 exposed development, seed 73/74 and nine paired subjects",
+      "status": "COMBINED_GATE_PASS_INTERACTION_GATE_FAIL"
+    },
+    {
+      "archive_root": "output/backups/vcn_p1_s8_20261106/checkpoints",
+      "claim_status": "asset_only_no_new_scientific_result",
+      "evidence_id": "VCN-P1-S8-USB-CHECKPOINT-IMPORT-20261116",
+      "receipt": "ai4s/programs/mvcnet/research/VCN_P1_USB_IMPORT_20261116.json",
+      "role": "verified_local_checkpoint_asset_availability",
+      "scope": "BNCI2014004 historical CV and LOSO checkpoints verified against S8 manifests; pilot not verified",
+      "source_evidence_id": "VCN-P1-S8-SCOPED-2026-08-28",
+      "verified_checkpoint_counts": {
+        "2026-08-24_vcn_p1_s8b_004_cv_ccmu_r8-full-w1": 450,
+        "2026-08-24_vcn_p1_s8b_004_loso_ccmu_r8-full-w1": 90
+      }
+    },
+    {
       "claim_status": "scoped_utility_and_attribution_only",
       "evidence_id": "VCN-P1-S8-SCOPED-2026-08-28",
       "intake_status": "verified_upstream_reference",
