@@ -31,8 +31,58 @@
     "total_budget_hours": 42
   },
   "active_operation": null,
-  "active_round": null,
-  "active_run": null,
+  "active_round": "mvcnet-dual-bn-004-development-v1",
+  "active_run": {
+    "bundle_id": "2026-11-19_mvcnet_dual_bn_004_lab10-bundle",
+    "dispatch_status": "REMOTE_ACCEPTED",
+    "estimated_training_hours": 18.0,
+    "execution_mode": "user_managed",
+    "executor_id": "lab10",
+    "planned_units": 72,
+    "recorded_at": "2026-11-19T15:00:40.587002+00:00",
+    "round_id": "mvcnet-dual-bn-004-development-v1",
+    "run_prefix": "2026-11-19_mvcnet_dual_bn_004_lab10",
+    "transaction_operations": [
+      {
+        "operation": "upload",
+        "recorded_at": "2026-11-19T15:01:16.740740+00:00",
+        "result": {
+          "action": "UPLOADED",
+          "monitor_powershell": "[REDACTED_MACHINE]",
+          "run_id": "2026-11-19_mvcnet_dual_bn_004_lab10-full-w1"
+        }
+      },
+      {
+        "operation": "launch",
+        "recorded_at": "2026-11-19T15:01:18.627595+00:00",
+        "result": {
+          "action": "SUBMISSION_SENT_NOT_VERIFIED",
+          "monitor_powershell": "[REDACTED_MACHINE]",
+          "run_id": "2026-11-19_mvcnet_dual_bn_004_lab10-full-w1"
+        }
+      },
+      {
+        "operation": "probe",
+        "recorded_at": "2026-11-19T15:01:50.609783+00:00",
+        "result": {
+          "action": "RECONCILE_SAME_NODE",
+          "node_id": "science",
+          "run_id": "2026-11-19_mvcnet_dual_bn_004_lab10-full-w1",
+          "status": "RUNNING",
+          "timing": {
+            "contract_sha256": "30329075e7b0c8530966aff6da5a842fb21d9c75d5753d2c80a58de7a408086a",
+            "execution_seconds": 30.387417793273926,
+            "queue_seconds": 0.8414535522460938,
+            "queue_time_policy": "exclude_resource_wait",
+            "run_id": "2026-11-19_mvcnet_dual_bn_004_lab10-full-w1",
+            "transaction_id": "2026-11-19_mvcnet_dual_bn_004_lab10-tx",
+            "waiting_for_resources": false,
+            "wall_seconds": 31.22887134552002
+          }
+        }
+      }
+    ]
+  },
   "anchor": {
     "card": "ai4s/archive/programs/mvcnet/research/VCN_P1_ANCHOR.md",
     "module_id": "VCN-P1-v0.1",
@@ -3702,14 +3752,318 @@
       },
       "closing_status": "COMPLETE_MAX_ROUNDS",
       "closure_reason": "User delegated autonomous execution of one exact matrix. Selected 34h cap from measured shared-load process estimate."
+    },
+    {
+      "campaign_id": "mvcnet-acm-factorial-development-20261114",
+      "closed_at": "2026-11-17T11:50:15.203575+00:00",
+      "closing_decision": {
+        "claim_status": "no_paper_claim",
+        "decision": "SCREEN_POSITIVE",
+        "factorial_gates": {
+          "combined_gate_pass": true,
+          "interaction_gate_pass": false,
+          "mutual_promotion_gate_pass": false
+        },
+        "next_training_authorized": false,
+        "prior_acm_decision": "NO_SIGNAL",
+        "round_id": "mvcnet-acm-factorial-development",
+        "run_action": "STOP"
+      },
+      "closing_round": "mvcnet-acm-factorial-development",
+      "closing_run": {
+        "contract_sha256": "319ed6901d80740804e782c889a427fbb5047983c78f08771e5abd89f0600a8c",
+        "core_archive_sha256": "8a6c2cb5b6bf4d817a121a15ecf7adc9f92b14132b60d86870c4b53437f4b4c5",
+        "core_bytes": 1886337,
+        "core_files": 78,
+        "core_manifest_sha256": "940cda90be97bd9a0a679b8282f8b95c682b0aa71390dce49875b891d6623ad0",
+        "full_payload_local": false,
+        "intake_path": "ai4s/programs/mvcnet/research/acm-r1/factorial/CHECKFINISH2_CORE",
+        "intake_scope": "verified_factorial_continuation_core",
+        "normal_original_run_intake": false,
+        "run_id": "2026-11-16_mvcnet_acm_factorial_checkfinish2",
+        "source_run_id": "2026-11-14_mvcnet_acm_factorial_lab10-full-w1",
+        "verified": true
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User approved exact P0-only S8B v4.0 matrix; original accounting anchor 2026-11-17T11:28:27+00:00."
+    },
+    {
+      "campaign_id": "mvcnet-acm-s8-loso-stability-20261117",
+      "closed_at": "2026-11-18T01:39:16.155182+00:00",
+      "closing_decision": {
+        "claim_status": "no_paper_claim",
+        "decision": "NO_SIGNAL",
+        "next_training_authorized": false,
+        "reason": "the frozen promotion gates require both datasets to pass; at least one S8 dataset failed",
+        "round_id": "mvcnet-acm-s8-loso-stability",
+        "run_action": "STOP",
+        "s8_dataset_gates": {
+          "001": {
+            "increment": false,
+            "risk": true,
+            "seed_stability": true,
+            "total": true
+          },
+          "004": {
+            "increment": false,
+            "risk": true,
+            "seed_stability": false,
+            "total": false
+          }
+        }
+      },
+      "closing_round": "mvcnet-acm-s8-loso-stability",
+      "closing_run": {
+        "analysis_receipt_sha256": "d0b5350b73c9fa1fc67ddfa47cbbf41f98c61ed799d9bcf830a11a78abf38db0",
+        "artifact_manifest_sha256": "4eaf489cb547c5179dfe693623a35d11ac246dc31f0c6b7e3453b4645ca59124",
+        "contract_sha256": "2f67bb81cbe745c52cc0b9d1d5c1efce687f7022ce36a652e2f74f2e9f92cfad",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-17_mvcnet_acm_s8_loso_lab10-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-tx",
+        "transfer_bytes": 2142655,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User approved the independent 42-hour Zhou2016 and BNCI2014002 exact paired S8 LOSO extension after six completed Lab10 qualification tasks."
+    },
+    {
+      "campaign_id": "mvcnet-acm-s8-loso-extension-20261118",
+      "closed_at": "2026-11-19T14:51:12.841027+00:00",
+      "closing_decision": {
+        "claim_status": "no_paper_claim",
+        "contract_sha256": "0d46c75539dd242e5a97fe3122d3b8d53b3c7297ef4fc92489377ea35e99cfdb",
+        "decision": "NO_SIGNAL",
+        "eligible_for_independent_confirmation": false,
+        "intake_verified": true,
+        "matrix_complete": true,
+        "next_training_authorized": false,
+        "prior_acm_r1_decision": "NO_SIGNAL",
+        "reason": "at least one additional dataset fails the frozen promotion gates; retain the ACM-R1 NO_SIGNAL boundary",
+        "round_id": "mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1",
+        "run_action": "STOP",
+        "s8_extension_analysis": {
+          "datasets": {
+            "BNCI2014002": {
+              "acc_percent": {
+                "B0": 67.26785714285714,
+                "P0": 69.85714285714286,
+                "S0": 69.1875
+              },
+              "acm_increment": {
+                "ci95_pp": [
+                  -0.07142857142857124,
+                  1.4375
+                ],
+                "harmed_subjects": 0,
+                "leave_one_seed_out_pp": [
+                  0.8035714285714283,
+                  0.6473214285714288,
+                  0.6919642857142856,
+                  0.7142857142857143,
+                  0.49107142857142866
+                ],
+                "mean_pp": 0.6696428571428571,
+                "per_seed_pp": [
+                  0.13392857142857245,
+                  0.7589285714285704,
+                  0.5803571428571433,
+                  0.49107142857142855,
+                  1.383928571428571
+                ],
+                "per_subject_pp": [
+                  0.0,
+                  -1.25,
+                  3.5,
+                  1.0,
+                  -1.8749999999999987,
+                  1.625,
+                  1.125,
+                  1.3750000000000029,
+                  -0.75,
+                  3.125,
+                  0.0,
+                  0.875,
+                  -4.263256414560601e-15,
+                  0.625
+                ],
+                "positive_subjects": 8,
+                "worst_subject_pp": -1.8749999999999987
+              },
+              "combined": {
+                "ci95_pp": [
+                  0.2767857142857138,
+                  5.071651785714266
+                ],
+                "harmed_subjects": 1,
+                "leave_one_seed_out_pp": [
+                  2.444196428571428,
+                  2.5111607142857144,
+                  3.0580357142857135,
+                  2.7790178571428563,
+                  2.1540178571428568
+                ],
+                "mean_pp": 2.5892857142857144,
+                "per_seed_pp": [
+                  3.1696428571428577,
+                  2.9017857142857113,
+                  0.7142857142857159,
+                  1.830357142857144,
+                  4.3303571428571415
+                ],
+                "per_subject_pp": [
+                  -2.1250000000000013,
+                  -1.25,
+                  10.25,
+                  12.0,
+                  -5.875000000000002,
+                  3.875,
+                  0.0,
+                  3.2499999999999987,
+                  7.125,
+                  1.1250000000000013,
+                  3.375,
+                  2.125,
+                  0.375,
+                  1.9999999999999987
+                ],
+                "positive_subjects": 10,
+                "worst_subject_pp": -5.875000000000002
+              },
+              "gates": {
+                "increment": false,
+                "risk": true,
+                "seed_stability": true,
+                "total": true
+              }
+            },
+            "Zhou2016": {
+              "acc_percent": {
+                "B0": 80.58888888888889,
+                "P0": 82.5514939309057,
+                "S0": 82.02474323062559
+              },
+              "acm_increment": {
+                "ci95_pp": [
+                  -0.08991596638655466,
+                  0.9201680672268907
+                ],
+                "harmed_subjects": 0,
+                "leave_one_seed_out_pp": [
+                  0.6636321195144719,
+                  0.502626050420167,
+                  0.5047852474323067,
+                  0.5907446311858076,
+                  0.3719654528478058
+                ],
+                "mean_pp": 0.5267507002801117,
+                "per_seed_pp": [
+                  -0.020774976657328637,
+                  0.6232492997198911,
+                  0.6146125116713321,
+                  0.27077497665732864,
+                  1.1458916900093357
+                ],
+                "per_subject_pp": [
+                  0.8403361344537814,
+                  1.0,
+                  -0.4,
+                  0.6666666666666657
+                ],
+                "positive_subjects": 3,
+                "worst_subject_pp": -0.4
+              },
+              "combined": {
+                "ci95_pp": [
+                  0.20000000000000143,
+                  4.637815126050417
+                ],
+                "harmed_subjects": 0,
+                "leave_one_seed_out_pp": [
+                  2.249241363211951,
+                  1.8672969187675053,
+                  1.7930672268907566,
+                  1.6203314659197012,
+                  2.2830882352941178
+                ],
+                "mean_pp": 1.9626050420168062,
+                "per_seed_pp": [
+                  0.8160597572362285,
+                  2.3438375350140106,
+                  2.6407563025210052,
+                  3.3316993464052267,
+                  0.6806722689075606
+                ],
+                "per_subject_pp": [
+                  6.050420168067222,
+                  0.4,
+                  1.4,
+                  2.842170943040401e-15
+                ],
+                "positive_subjects": 4,
+                "worst_subject_pp": 2.842170943040401e-15
+              },
+              "gates": {
+                "increment": false,
+                "risk": true,
+                "seed_stability": true,
+                "total": true
+              }
+            }
+          },
+          "extension_gates_all_pass": false,
+          "metric_unit": "accuracy_pp",
+          "prior_acm_r1": "NO_SIGNAL",
+          "prior_s8_001_004_increment_gate": "NOT_PASSED",
+          "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-full-w1"
+        },
+        "s8_extension_dataset_gates": {
+          "BNCI2014002": {
+            "increment": false,
+            "risk": true,
+            "seed_stability": true,
+            "total": true
+          },
+          "Zhou2016": {
+            "increment": false,
+            "risk": true,
+            "seed_stability": true,
+            "total": true
+          }
+        },
+        "supplemental_predictions": {
+          "path": "ai4s/_work/s8_loso_extension_20261118/gpu10/pack1/checkfix1/supplemental_core/predictions.npz",
+          "sha256": "25af664d2f6f8d0579a939c1a7f6305362c0e2616a5fd70cfd0280d54714c693"
+        }
+      },
+      "closing_round": "mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1",
+      "closing_run": {
+        "analysis_receipt_sha256": "03cacc13a31d84d3bfcc3981a4c938003fa7f107ad2e9a8691dacf58fe9d5047",
+        "artifact_manifest_sha256": "5c2ed567e98cb13c346241bb22bd5abdf2a100e232c4de19590977b5e9abb8a8",
+        "contract_sha256": "0d46c75539dd242e5a97fe3122d3b8d53b3c7297ef4fc92489377ea35e99cfdb",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-tx",
+        "transfer_bytes": 2879694,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User approved proceeding with 004 S0 and D2, Lab10 capacity admission with no fixed card count"
     }
   ],
   "campaign": {
     "allowed_transitions": [
       "SCREEN_NEW"
     ],
-    "authorization_reason": "User delegated autonomous execution of one exact matrix. Selected 34h cap from measured shared-load process estimate.",
-    "campaign_id": "mvcnet-acm-factorial-development-20261114",
+    "authorization_reason": "User approved proceeding with 004 S0 and D2, Lab10 capacity admission with no fixed card count",
+    "campaign_id": "mvcnet-dual-bn-004-development-20261119",
     "continuation_policy_version": "evidence_to_design_v1",
     "decision_policy": "stop_at_positive",
     "execution_authorization": {
@@ -3723,65 +4077,301 @@
       "allowed_transitions": [
         "SCREEN_NEW"
       ],
-      "authorization_ref": "ai4s/programs/mvcnet/research/acm-r1/factorial/NIGHT_AUTHORITY.json",
-      "campaign_id": "mvcnet-acm-factorial-development-20261114",
+      "authorization_ref": "ai4s/programs/mvcnet/research/task_evidence_selection_20261119/dual_bn_004/EXECUTION_AUTHORITY.md",
+      "campaign_id": "mvcnet-dual-bn-004-development-20261119",
       "executor_id": "lab10",
-      "recorded_at": "2026-11-13T20:44:28.920476+00:00",
+      "recorded_at": "2026-11-19T14:51:14.653643+00:00",
       "research_scope": {
         "allow_new_module": false,
         "allowed_module_ids": [
-          "mvcnet.acm_factorial.native_bn.v1"
+          "src.models.ai4s.mvcnet.dual_bn_004"
         ],
         "allowed_stages": [
           "full"
         ],
-        "data_scope_id": "acm-r1-original-2a-development",
-        "question_id": "mvcnet-acm-factorial-development"
+        "data_scope_id": "s8b-r8-004-exposed-loso",
+        "question_id": "mvcnet-dual-bn-004-development-v1"
       },
-      "source_sha256": "664941ccbdc0c64b94ddf09141478566f12ca154b49634c735283d7be2182f70"
+      "source_sha256": "c2327c82338ec0f21ab036f7643fdb364720282ed87b409828cbb383bbf38e4a"
     },
-    "final_accounting": {
-      "credited_resource_queue_seconds": {
-        "checkfinish1": 2720.115307569504,
-        "checkfinish2": 3225.689065217972,
-        "original_run": 29741.06253027916,
-        "recovery1": 7861.833627700806
-      },
-      "cumulative_limit_hours": 57,
-      "frozen_at_existing_closeout": true,
-      "historical_caps_hours": [
-        34,
-        55,
-        57
-      ],
-      "remaining_hours": 2.328081474966474,
-      "settled_at": "2026-11-16T23:30:35+08:00",
-      "spent_hours": 54.671918525033526,
-      "started_at": "2026-11-13T20:44:27.392779+00:00"
-    },
-    "governance_chain_id": "mvcnet-transaction-v3.4",
+    "governance_chain_id": "mvcnet-transaction-v4.1",
     "invalid_behavior": "fail_closed_without_advancing",
     "positive_signal_behavior": "pause_for_human_review",
     "purpose": "user-authorized bounded AI4S campaign",
     "queue_accounting": {
-      "2026-11-14_mvcnet_acm_factorial_lab10-full-w1": {
-        "contract_sha256": "319ed6901d80740804e782c889a427fbb5047983c78f08771e5abd89f0600a8c",
-        "queue_seconds": 29741.06253027916,
-        "run_id": "2026-11-14_mvcnet_acm_factorial_lab10-full-w1",
-        "transaction_id": "2026-11-14_mvcnet_acm_factorial_lab10-tx"
+      "2026-11-19_mvcnet_dual_bn_004_lab10-full-w1": {
+        "contract_sha256": "30329075e7b0c8530966aff6da5a842fb21d9c75d5753d2c80a58de7a408086a",
+        "queue_seconds": 0.8414535522460938,
+        "run_id": "2026-11-19_mvcnet_dual_bn_004_lab10-full-w1",
+        "transaction_id": "2026-11-19_mvcnet_dual_bn_004_lab10-tx"
       }
     },
-    "round_decisions": [
-      {
-        "decision": "SCREEN_POSITIVE",
-        "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-factorial-development_decision.yaml",
-        "evidence_id": "MVCNET-ACM-FACTORIAL-CHECKFINISH2-CLOSEOUT-20261116",
-        "recorded_at": "2026-11-16T15:44:37.744328+00:00",
-        "round_id": "mvcnet-acm-factorial-development"
-      }
-    ],
-    "started_at": "2026-11-13T20:44:27.392779+00:00"
+    "round_decisions": [],
+    "started_at": "2026-11-19T14:51:12.841027+00:00"
   },
+  "capacity_rollover_history": [
+    {
+      "budget_settlement_sha256": "37e031bed599a289971c210a481e1df6cbe70fdcf31d4df91619b3f61c218a73",
+      "check_dispatch_count": 270,
+      "kind": "verified_gpu10_operational_rollover",
+      "parent_proof_path": "_work\\s8_loso_extension_20261118\\gpu10\\parent_drain.json",
+      "parent_proof_sha256": "d17ed03163af590acfba53d81042b8078ec6c291ac9ed86ce754ea4875e4475a",
+      "parent_round_id": "mvcnet-acm-s8-loso-extension",
+      "parent_run": {
+        "bundle_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-bundle",
+        "dispatch_status": "PENDING_UPLOAD",
+        "estimated_training_hours": 38.0,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 540,
+        "recorded_at": "2026-11-18T01:40:06.100887+00:00",
+        "round_id": "mvcnet-acm-s8-loso-extension",
+        "run_prefix": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-18T01:40:22.754995+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-18T01:40:25.399837+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-full-w1"
+            }
+          }
+        ]
+      },
+      "parent_run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-full-w1",
+      "recorded_at": "2026-11-18T02:34:31.123085+00:00",
+      "reused_fit_count": 22,
+      "terminal_ledger_sha256": "a6eec4b365437c7364e1382d67c551379c722368b40e2a8e757eddc91a83e1ec",
+      "unstarted_fit_count": 248
+    },
+    {
+      "budget_settlement_sha256": "04cfa06dc08ee24d32507e85f6f2999a4be38a6932d1199c44f548d82bd1ba80",
+      "check_dispatch_count": 270,
+      "kind": "verified_gpu10_operational_rollover",
+      "parent_proof_path": "_work\\s8_loso_extension_20261118\\gpu10\\parent_drain.json",
+      "parent_proof_sha256": "d17ed03163af590acfba53d81042b8078ec6c291ac9ed86ce754ea4875e4475a",
+      "parent_round_id": "mvcnet-acm-s8-loso-extension-gpu10",
+      "parent_run": {
+        "bundle_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-bundle",
+        "capacity_rollover_of": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-full-w1",
+        "dispatch_status": "PENDING_UPLOAD",
+        "dispatch_units": 518,
+        "estimated_training_hours": 37.582,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 540,
+        "recorded_at": "2026-11-18T02:34:31.123085+00:00",
+        "round_id": "mvcnet-acm-s8-loso-extension-gpu10",
+        "run_prefix": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-18T02:34:41.114743+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-18T02:34:44.473669+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-full-w1"
+            }
+          }
+        ]
+      },
+      "parent_run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-full-w1",
+      "recorded_at": "2026-11-18T02:40:48.348463+00:00",
+      "reused_fit_count": 22,
+      "terminal_ledger_sha256": "a6eec4b365437c7364e1382d67c551379c722368b40e2a8e757eddc91a83e1ec",
+      "unstarted_fit_count": 248
+    },
+    {
+      "check_dispatch_count": 270,
+      "kind": "verified_s8_gpu10_pack_rollover",
+      "max_active_tasks": 10,
+      "parent_run": {
+        "bundle_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-importfix1-bundle",
+        "capacity_rollover_of": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-full-w1",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "dispatch_units": 518,
+        "estimated_training_hours": 37.582,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 540,
+        "recorded_at": "2026-11-18T02:40:48.348463+00:00",
+        "round_id": "mvcnet-acm-s8-loso-extension-gpu10-importfix1",
+        "run_prefix": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-importfix1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-18T02:40:53.174657+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-importfix1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-18T02:40:55.871849+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-importfix1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-18T02:42:03.293670+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "science",
+              "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-importfix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "95c0195f1c6acf7ff000e9ca5384ea610b9ad5931a6e5da3a7733655b935f424",
+                "execution_seconds": 64.52348971366882,
+                "queue_seconds": 1.4207758903503418,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-importfix1-full-w1",
+                "transaction_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-importfix1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 65.94426560401917
+              }
+            }
+          }
+        ]
+      },
+      "parent_run_ids": [
+        "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-full-w1",
+        "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-importfix1-full-w1"
+      ],
+      "recorded_at": "2026-11-18T05:08:39.702448+00:00",
+      "reused_fit_count": 89,
+      "settlement_path": "ai4s/_work/s8_loso_extension_20261118/gpu10/pack1/budget_settlement.json",
+      "settlement_sha256": "d82bcd707f2e8d0d2f7dfc337114338f63402b881f6eb32ddd922eff15cda84b",
+      "sources": [
+        {
+          "contract_path": "ai4s/programs/mvcnet/research/mvcnet-acm-s8-loso-extension.yaml",
+          "ledger_path": "ai4s/_work/s8_loso_extension_20261118/gpu10/transaction_status.json",
+          "ledger_sha256": "a6eec4b365437c7364e1382d67c551379c722368b40e2a8e757eddc91a83e1ec",
+          "proof_path": "ai4s/_work/s8_loso_extension_20261118/gpu10/parent_drain.json",
+          "proof_sha256": "d17ed03163af590acfba53d81042b8078ec6c291ac9ed86ce754ea4875e4475a",
+          "queue_clock_path": "ai4s/_work/s8_loso_extension_20261118/gpu10/science.queue_clock.json",
+          "queue_clock_sha256": "963ab9bfd7bb776ea1d7d5106490691f94afec1ea651d50f78c5e3a938039358",
+          "scheduler_path": "ai4s/_work/s8_loso_extension_20261118/gpu10/parent_drain_scheduler.json",
+          "scheduler_sha256": "50e6fec754d46cb1ccb37281cd91dfa98ca1e220609278849ed9096d24f02611"
+        },
+        {
+          "contract_path": "ai4s/programs/mvcnet/research/mvcnet-acm-s8-loso-extension-gpu10-importfix1.yaml",
+          "ledger_path": "ai4s/_work/s8_loso_extension_20261118/gpu10/pack1/transaction_status.json",
+          "ledger_sha256": "21a778e1a7a56cf7e9befd830b53775ab6361f5dc08c381f25b25cdc95af8349",
+          "proof_path": "ai4s/_work/s8_loso_extension_20261118/gpu10/pack1/parent_drain.json",
+          "proof_sha256": "1bd5df1edce2e446492493d1405b555a092c86ad453d2c7c159fda50da4b10cb",
+          "queue_clock_path": "ai4s/_work/s8_loso_extension_20261118/gpu10/pack1/science.queue_clock.json",
+          "queue_clock_sha256": "7d1dc01817313b23e75774e4bccea87c1234099247a2efea1f5dc28d3a23bb1b",
+          "scheduler_path": "ai4s/_work/s8_loso_extension_20261118/gpu10/pack1/parent_drain_scheduler.json",
+          "scheduler_sha256": "e931d842f8124561559606a73096f5607ee1bb54990905151bd1d84dc663a852"
+        }
+      ],
+      "unstarted_fit_count": 181
+    },
+    {
+      "check_dispatch_count": 270,
+      "checkfinish": {
+        "check_dispatch_count": 270,
+        "fit_dispatch_count": 0,
+        "fit_scheduler_metrics_path": "ai4s/_work/s8_loso_extension_20261118/gpu10/pack1/checkfix1/scheduler_metrics.json",
+        "fit_scheduler_metrics_sha256": "c817c4c36ae83019bf0579f31ed2b55963673a3ead89b28bea7db4d2c458eb22",
+        "fit_seal_path": "ai4s/_work/s8_loso_extension_20261118/gpu10/pack1/checkfix1/fit_seal.json",
+        "fit_seal_sha256": "0ef765a2fa3c9ee523c8dfcfe8085338f2d7a32138736152877188cee5f2b77e",
+        "parent_bundle_root": "[REDACTED_MACHINE]",
+        "parent_check_dispatch_count": 0,
+        "parent_contract_path": "ai4s/programs/mvcnet/research/mvcnet-acm-s8-loso-extension-gpu10-pack1.yaml",
+        "parent_contract_sha256": "a42a2d04baa175076ff3a36209d198136c7e1076a7b7ee0469ffb461dc249cbe",
+        "parent_failure_log_path": "ai4s/_work/s8_loso_extension_20261118/gpu10/pack1/checkfix1/science.log",
+        "parent_failure_log_sha256": "75135e2ddb36643dc4e18580c5a0169c3677b290976fe49694af94a7543d606e",
+        "parent_ledger_path": "ai4s/_work/s8_loso_extension_20261118/gpu10/pack1/checkfix1/transaction_status.json",
+        "parent_ledger_sha256": "340a6a176336e375c379ec78cfe726410acbd626c18c4b5617577f417424bd77",
+        "parent_run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-full-w1",
+        "settlement_path": "ai4s/_work/s8_loso_extension_20261118/gpu10/pack1/checkfix1/budget_settlement.json",
+        "settlement_sha256": "32d19127d61c8529c2938b3bcea876d0383091808caaa8f38edb93ccc33be392"
+      },
+      "fit_dispatch_count": 0,
+      "kind": "verified_s8_checks_only_repair",
+      "parent_run": {
+        "bundle_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-bundle",
+        "capacity_rollover_of": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-importfix1-full-w1",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "dispatch_units": 451,
+        "estimated_training_hours": 35.178,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 540,
+        "recorded_at": "2026-11-18T05:08:39.702448+00:00",
+        "round_id": "mvcnet-acm-s8-loso-extension-gpu10-pack1",
+        "run_prefix": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-18T05:08:54.246392+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-18T05:09:36.276303+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-18T05:11:56.146394+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "science",
+              "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "a42a2d04baa175076ff3a36209d198136c7e1076a7b7ee0469ffb461dc249cbe",
+                "execution_seconds": 138.22561049461365,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-full-w1",
+                "transaction_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 138.22561049461365
+              }
+            }
+          }
+        ]
+      },
+      "parent_run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-full-w1",
+      "recorded_at": "2026-11-18T08:39:07.605625+00:00",
+      "reused_fit_count": 270
+    }
+  ],
   "completed_rounds": [
     {
       "decision": {
@@ -10445,6 +11035,422 @@
           }
         ]
       }
+    },
+    {
+      "decision": {
+        "claim_status": "no_paper_claim",
+        "decision": "NO_SIGNAL",
+        "next_training_authorized": false,
+        "reason": "the frozen promotion gates require both datasets to pass; at least one S8 dataset failed",
+        "round_id": "mvcnet-acm-s8-loso-stability",
+        "run_action": "STOP",
+        "s8_dataset_gates": {
+          "001": {
+            "increment": false,
+            "risk": true,
+            "seed_stability": true,
+            "total": true
+          },
+          "004": {
+            "increment": false,
+            "risk": true,
+            "seed_stability": false,
+            "total": false
+          }
+        }
+      },
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-s8-loso-stability_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-acm-s8-loso-stability",
+      "round_id": "mvcnet-acm-s8-loso-stability",
+      "run": {
+        "bundle_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 44.0,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 180,
+        "recorded_at": "2026-11-17T11:50:23.168917+00:00",
+        "round_id": "mvcnet-acm-s8-loso-stability",
+        "run_prefix": "2026-11-17_mvcnet_acm_s8_loso_lab10",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-17T11:50:50.533407+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-17T11:51:50.159577+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-17T11:52:09.592646+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "science",
+              "run_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "2f67bb81cbe745c52cc0b9d1d5c1efce687f7022ce36a652e2f74f2e9f92cfad",
+                "execution_seconds": 13.065919399261475,
+                "queue_seconds": 4.973520517349243,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-full-w1",
+                "transaction_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 18.039439916610718
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-17T13:11:52.799325+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "science",
+              "run_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "2f67bb81cbe745c52cc0b9d1d5c1efce687f7022ce36a652e2f74f2e9f92cfad",
+                "execution_seconds": 4796.371497392654,
+                "queue_seconds": 4.973520517349243,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-full-w1",
+                "transaction_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 4801.345017910004
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-17T14:47:08.486434+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "science",
+              "run_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "2f67bb81cbe745c52cc0b9d1d5c1efce687f7022ce36a652e2f74f2e9f92cfad",
+                "execution_seconds": 10512.162744760513,
+                "queue_seconds": 4.973520517349243,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-full-w1",
+                "transaction_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 10517.136265277863
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-18T01:02:17.868443+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "2f67bb81cbe745c52cc0b9d1d5c1efce687f7022ce36a652e2f74f2e9f92cfad",
+                "execution_seconds": 18230.377185821533,
+                "queue_seconds": 13.416983842849731,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-full-w1",
+                "transaction_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 18243.794169664383
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "claim_status": "no_paper_claim",
+        "contract_sha256": "0d46c75539dd242e5a97fe3122d3b8d53b3c7297ef4fc92489377ea35e99cfdb",
+        "decision": "NO_SIGNAL",
+        "eligible_for_independent_confirmation": false,
+        "intake_verified": true,
+        "matrix_complete": true,
+        "next_training_authorized": false,
+        "prior_acm_r1_decision": "NO_SIGNAL",
+        "reason": "at least one additional dataset fails the frozen promotion gates; retain the ACM-R1 NO_SIGNAL boundary",
+        "round_id": "mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1",
+        "run_action": "STOP",
+        "s8_extension_analysis": {
+          "datasets": {
+            "BNCI2014002": {
+              "acc_percent": {
+                "B0": 67.26785714285714,
+                "P0": 69.85714285714286,
+                "S0": 69.1875
+              },
+              "acm_increment": {
+                "ci95_pp": [
+                  -0.07142857142857124,
+                  1.4375
+                ],
+                "harmed_subjects": 0,
+                "leave_one_seed_out_pp": [
+                  0.8035714285714283,
+                  0.6473214285714288,
+                  0.6919642857142856,
+                  0.7142857142857143,
+                  0.49107142857142866
+                ],
+                "mean_pp": 0.6696428571428571,
+                "per_seed_pp": [
+                  0.13392857142857245,
+                  0.7589285714285704,
+                  0.5803571428571433,
+                  0.49107142857142855,
+                  1.383928571428571
+                ],
+                "per_subject_pp": [
+                  0.0,
+                  -1.25,
+                  3.5,
+                  1.0,
+                  -1.8749999999999987,
+                  1.625,
+                  1.125,
+                  1.3750000000000029,
+                  -0.75,
+                  3.125,
+                  0.0,
+                  0.875,
+                  -4.263256414560601e-15,
+                  0.625
+                ],
+                "positive_subjects": 8,
+                "worst_subject_pp": -1.8749999999999987
+              },
+              "combined": {
+                "ci95_pp": [
+                  0.2767857142857138,
+                  5.071651785714266
+                ],
+                "harmed_subjects": 1,
+                "leave_one_seed_out_pp": [
+                  2.444196428571428,
+                  2.5111607142857144,
+                  3.0580357142857135,
+                  2.7790178571428563,
+                  2.1540178571428568
+                ],
+                "mean_pp": 2.5892857142857144,
+                "per_seed_pp": [
+                  3.1696428571428577,
+                  2.9017857142857113,
+                  0.7142857142857159,
+                  1.830357142857144,
+                  4.3303571428571415
+                ],
+                "per_subject_pp": [
+                  -2.1250000000000013,
+                  -1.25,
+                  10.25,
+                  12.0,
+                  -5.875000000000002,
+                  3.875,
+                  0.0,
+                  3.2499999999999987,
+                  7.125,
+                  1.1250000000000013,
+                  3.375,
+                  2.125,
+                  0.375,
+                  1.9999999999999987
+                ],
+                "positive_subjects": 10,
+                "worst_subject_pp": -5.875000000000002
+              },
+              "gates": {
+                "increment": false,
+                "risk": true,
+                "seed_stability": true,
+                "total": true
+              }
+            },
+            "Zhou2016": {
+              "acc_percent": {
+                "B0": 80.58888888888889,
+                "P0": 82.5514939309057,
+                "S0": 82.02474323062559
+              },
+              "acm_increment": {
+                "ci95_pp": [
+                  -0.08991596638655466,
+                  0.9201680672268907
+                ],
+                "harmed_subjects": 0,
+                "leave_one_seed_out_pp": [
+                  0.6636321195144719,
+                  0.502626050420167,
+                  0.5047852474323067,
+                  0.5907446311858076,
+                  0.3719654528478058
+                ],
+                "mean_pp": 0.5267507002801117,
+                "per_seed_pp": [
+                  -0.020774976657328637,
+                  0.6232492997198911,
+                  0.6146125116713321,
+                  0.27077497665732864,
+                  1.1458916900093357
+                ],
+                "per_subject_pp": [
+                  0.8403361344537814,
+                  1.0,
+                  -0.4,
+                  0.6666666666666657
+                ],
+                "positive_subjects": 3,
+                "worst_subject_pp": -0.4
+              },
+              "combined": {
+                "ci95_pp": [
+                  0.20000000000000143,
+                  4.637815126050417
+                ],
+                "harmed_subjects": 0,
+                "leave_one_seed_out_pp": [
+                  2.249241363211951,
+                  1.8672969187675053,
+                  1.7930672268907566,
+                  1.6203314659197012,
+                  2.2830882352941178
+                ],
+                "mean_pp": 1.9626050420168062,
+                "per_seed_pp": [
+                  0.8160597572362285,
+                  2.3438375350140106,
+                  2.6407563025210052,
+                  3.3316993464052267,
+                  0.6806722689075606
+                ],
+                "per_subject_pp": [
+                  6.050420168067222,
+                  0.4,
+                  1.4,
+                  2.842170943040401e-15
+                ],
+                "positive_subjects": 4,
+                "worst_subject_pp": 2.842170943040401e-15
+              },
+              "gates": {
+                "increment": false,
+                "risk": true,
+                "seed_stability": true,
+                "total": true
+              }
+            }
+          },
+          "extension_gates_all_pass": false,
+          "metric_unit": "accuracy_pp",
+          "prior_acm_r1": "NO_SIGNAL",
+          "prior_s8_001_004_increment_gate": "NOT_PASSED",
+          "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-full-w1"
+        },
+        "s8_extension_dataset_gates": {
+          "BNCI2014002": {
+            "increment": false,
+            "risk": true,
+            "seed_stability": true,
+            "total": true
+          },
+          "Zhou2016": {
+            "increment": false,
+            "risk": true,
+            "seed_stability": true,
+            "total": true
+          }
+        },
+        "supplemental_predictions": {
+          "path": "ai4s/_work/s8_loso_extension_20261118/gpu10/pack1/checkfix1/supplemental_core/predictions.npz",
+          "sha256": "25af664d2f6f8d0579a939c1a7f6305362c0e2616a5fd70cfd0280d54714c693"
+        }
+      },
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1",
+      "round_id": "mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1",
+      "run": {
+        "bundle_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-bundle",
+        "capacity_rollover_of": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-full-w1",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "dispatch_units": 270,
+        "estimated_training_hours": 32.357,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 540,
+        "recorded_at": "2026-11-18T08:39:07.605625+00:00",
+        "round_id": "mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1",
+        "run_prefix": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-18T08:39:15.320776+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-18T08:51:08.101392+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-18T08:57:49.923207+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "science",
+              "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "0d46c75539dd242e5a97fe3122d3b8d53b3c7297ef4fc92489377ea35e99cfdb",
+                "execution_seconds": 400.27956914901733,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-full-w1",
+                "transaction_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 400.27956914901733
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-18T09:52:26.309783+00:00",
+            "result": {
+              "analysis_receipt_sha256": "03cacc13a31d84d3bfcc3981a4c938003fa7f107ad2e9a8691dacf58fe9d5047",
+              "artifact_manifest_sha256": "5c2ed567e98cb13c346241bb22bd5abdf2a100e232c4de19590977b5e9abb8a8",
+              "contract_sha256": "0d46c75539dd242e5a97fe3122d3b8d53b3c7297ef4fc92489377ea35e99cfdb",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-full-w1",
+              "transaction_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-tx",
+              "transfer_bytes": 2879694,
+              "verified": true
+            }
+          }
+        ]
+      }
     }
   ],
   "continuation_history": [
@@ -12072,16 +13078,209 @@
   ],
   "last_decision": {
     "claim_status": "no_paper_claim",
-    "decision": "SCREEN_POSITIVE",
-    "factorial_gates": {
-      "combined_gate_pass": true,
-      "interaction_gate_pass": false,
-      "mutual_promotion_gate_pass": false
-    },
+    "contract_sha256": "0d46c75539dd242e5a97fe3122d3b8d53b3c7297ef4fc92489377ea35e99cfdb",
+    "decision": "NO_SIGNAL",
+    "eligible_for_independent_confirmation": false,
+    "intake_verified": true,
+    "matrix_complete": true,
     "next_training_authorized": false,
-    "prior_acm_decision": "NO_SIGNAL",
-    "round_id": "mvcnet-acm-factorial-development",
-    "run_action": "STOP"
+    "prior_acm_r1_decision": "NO_SIGNAL",
+    "reason": "at least one additional dataset fails the frozen promotion gates; retain the ACM-R1 NO_SIGNAL boundary",
+    "round_id": "mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1",
+    "run_action": "STOP",
+    "s8_extension_analysis": {
+      "datasets": {
+        "BNCI2014002": {
+          "acc_percent": {
+            "B0": 67.26785714285714,
+            "P0": 69.85714285714286,
+            "S0": 69.1875
+          },
+          "acm_increment": {
+            "ci95_pp": [
+              -0.07142857142857124,
+              1.4375
+            ],
+            "harmed_subjects": 0,
+            "leave_one_seed_out_pp": [
+              0.8035714285714283,
+              0.6473214285714288,
+              0.6919642857142856,
+              0.7142857142857143,
+              0.49107142857142866
+            ],
+            "mean_pp": 0.6696428571428571,
+            "per_seed_pp": [
+              0.13392857142857245,
+              0.7589285714285704,
+              0.5803571428571433,
+              0.49107142857142855,
+              1.383928571428571
+            ],
+            "per_subject_pp": [
+              0.0,
+              -1.25,
+              3.5,
+              1.0,
+              -1.8749999999999987,
+              1.625,
+              1.125,
+              1.3750000000000029,
+              -0.75,
+              3.125,
+              0.0,
+              0.875,
+              -4.263256414560601e-15,
+              0.625
+            ],
+            "positive_subjects": 8,
+            "worst_subject_pp": -1.8749999999999987
+          },
+          "combined": {
+            "ci95_pp": [
+              0.2767857142857138,
+              5.071651785714266
+            ],
+            "harmed_subjects": 1,
+            "leave_one_seed_out_pp": [
+              2.444196428571428,
+              2.5111607142857144,
+              3.0580357142857135,
+              2.7790178571428563,
+              2.1540178571428568
+            ],
+            "mean_pp": 2.5892857142857144,
+            "per_seed_pp": [
+              3.1696428571428577,
+              2.9017857142857113,
+              0.7142857142857159,
+              1.830357142857144,
+              4.3303571428571415
+            ],
+            "per_subject_pp": [
+              -2.1250000000000013,
+              -1.25,
+              10.25,
+              12.0,
+              -5.875000000000002,
+              3.875,
+              0.0,
+              3.2499999999999987,
+              7.125,
+              1.1250000000000013,
+              3.375,
+              2.125,
+              0.375,
+              1.9999999999999987
+            ],
+            "positive_subjects": 10,
+            "worst_subject_pp": -5.875000000000002
+          },
+          "gates": {
+            "increment": false,
+            "risk": true,
+            "seed_stability": true,
+            "total": true
+          }
+        },
+        "Zhou2016": {
+          "acc_percent": {
+            "B0": 80.58888888888889,
+            "P0": 82.5514939309057,
+            "S0": 82.02474323062559
+          },
+          "acm_increment": {
+            "ci95_pp": [
+              -0.08991596638655466,
+              0.9201680672268907
+            ],
+            "harmed_subjects": 0,
+            "leave_one_seed_out_pp": [
+              0.6636321195144719,
+              0.502626050420167,
+              0.5047852474323067,
+              0.5907446311858076,
+              0.3719654528478058
+            ],
+            "mean_pp": 0.5267507002801117,
+            "per_seed_pp": [
+              -0.020774976657328637,
+              0.6232492997198911,
+              0.6146125116713321,
+              0.27077497665732864,
+              1.1458916900093357
+            ],
+            "per_subject_pp": [
+              0.8403361344537814,
+              1.0,
+              -0.4,
+              0.6666666666666657
+            ],
+            "positive_subjects": 3,
+            "worst_subject_pp": -0.4
+          },
+          "combined": {
+            "ci95_pp": [
+              0.20000000000000143,
+              4.637815126050417
+            ],
+            "harmed_subjects": 0,
+            "leave_one_seed_out_pp": [
+              2.249241363211951,
+              1.8672969187675053,
+              1.7930672268907566,
+              1.6203314659197012,
+              2.2830882352941178
+            ],
+            "mean_pp": 1.9626050420168062,
+            "per_seed_pp": [
+              0.8160597572362285,
+              2.3438375350140106,
+              2.6407563025210052,
+              3.3316993464052267,
+              0.6806722689075606
+            ],
+            "per_subject_pp": [
+              6.050420168067222,
+              0.4,
+              1.4,
+              2.842170943040401e-15
+            ],
+            "positive_subjects": 4,
+            "worst_subject_pp": 2.842170943040401e-15
+          },
+          "gates": {
+            "increment": false,
+            "risk": true,
+            "seed_stability": true,
+            "total": true
+          }
+        }
+      },
+      "extension_gates_all_pass": false,
+      "metric_unit": "accuracy_pp",
+      "prior_acm_r1": "NO_SIGNAL",
+      "prior_s8_001_004_increment_gate": "NOT_PASSED",
+      "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-full-w1"
+    },
+    "s8_extension_dataset_gates": {
+      "BNCI2014002": {
+        "increment": false,
+        "risk": true,
+        "seed_stability": true,
+        "total": true
+      },
+      "Zhou2016": {
+        "increment": false,
+        "risk": true,
+        "seed_stability": true,
+        "total": true
+      }
+    },
+    "supplemental_predictions": {
+      "path": "ai4s/_work/s8_loso_extension_20261118/gpu10/pack1/checkfix1/supplemental_core/predictions.npz",
+      "sha256": "25af664d2f6f8d0579a939c1a7f6305362c0e2616a5fd70cfd0280d54714c693"
+    }
   },
   "last_remote_verified_analysis": {
     "analysis_report": "ai4s/programs/mvcnet/research/augmentation_readout/repair_resume69_oom_20261018/analysis_20261024/REPORT.md",
@@ -12103,24 +13302,24 @@
     "verified_at": "2026-10-23T18:51:33.808954+00:00"
   },
   "last_round_evidence": {
-    "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-factorial-development_decision.yaml",
-    "evidence_id": "MVCNET-ACM-FACTORIAL-CHECKFINISH2-CLOSEOUT-20261116",
-    "role": "paired_development_factorial_result"
+    "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1_decision.yaml",
+    "evidence_id": "AI4S-MVCNET-mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1",
+    "role": "exact_negative_boundary"
   },
   "last_run_reconciliation": "ai4s/programs/mvcnet/research/acm-r1/factorial/CONTROLLER_RECONCILIATION_20261116.json",
   "last_verified_intake": {
-    "contract_sha256": "319ed6901d80740804e782c889a427fbb5047983c78f08771e5abd89f0600a8c",
-    "core_archive_sha256": "8a6c2cb5b6bf4d817a121a15ecf7adc9f92b14132b60d86870c4b53437f4b4c5",
-    "core_bytes": 1886337,
-    "core_files": 78,
-    "core_manifest_sha256": "940cda90be97bd9a0a679b8282f8b95c682b0aa71390dce49875b891d6623ad0",
+    "analysis_receipt_sha256": "03cacc13a31d84d3bfcc3981a4c938003fa7f107ad2e9a8691dacf58fe9d5047",
+    "artifact_manifest_sha256": "5c2ed567e98cb13c346241bb22bd5abdf2a100e232c4de19590977b5e9abb8a8",
+    "contract_sha256": "0d46c75539dd242e5a97fe3122d3b8d53b3c7297ef4fc92489377ea35e99cfdb",
     "full_payload_local": false,
-    "intake_path": "ai4s/programs/mvcnet/research/acm-r1/factorial/CHECKFINISH2_CORE",
-    "intake_scope": "verified_factorial_continuation_core",
-    "normal_original_run_intake": false,
-    "run_id": "2026-11-16_mvcnet_acm_factorial_checkfinish2",
-    "source_run_id": "2026-11-14_mvcnet_acm_factorial_lab10-full-w1",
-    "verified": true
+    "intake_path": "results/logs/remote/2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-full-w1",
+    "intake_scope": "analysis_v1",
+    "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-full-w1",
+    "run_status": "complete",
+    "transaction_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-tx",
+    "transfer_bytes": 2879694,
+    "verified": true,
+    "verified_at": null
   },
   "last_verified_preflight": {
     "bundle_id": "2026-09-03_ai4s_mvcnet_scva_p0_preflight_bundle_lab10_r1",
@@ -12253,7 +13452,7 @@
       "status": "CLOSED_BY_USER"
     }
   ],
-  "paused": true,
+  "paused": false,
   "pending_execution_budget": {
     "accounting_started_at": "2026-11-04T13:54:00+00:00",
     "auto_budget_extension_authorized": false,
@@ -12350,17 +13549,17 @@
     "continue_after_positive": false,
     "max_rounds": 1,
     "monitor": "blocking",
-    "night_budget_hours": 57,
+    "night_budget_hours": 24.0,
     "queue_time_policy": "exclude_resource_wait",
-    "round_index": 1,
-    "started_at": "2026-11-13T20:44:27.392779+00:00"
+    "round_index": 0,
+    "started_at": "2026-11-19T14:51:12.841027+00:00"
   },
   "schema_version": "mieeg-ai4s-state-v1",
-  "status": "COMPLETE_MAX_ROUNDS",
-  "updated_at": "2026-11-16T15:44:37.744328+00:00",
+  "status": "WAITING_REMOTE",
+  "updated_at": "2026-11-19T15:01:50.609783+00:00",
   "v3_follow_up": {
-    "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-factorial-development_decision.yaml",
-    "evidence_id": "MVCNET-ACM-FACTORIAL-CHECKFINISH2-CLOSEOUT-20261116",
+    "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1_decision.yaml",
+    "evidence_id": "AI4S-MVCNET-mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1",
     "next_design": null,
     "reason": "round_limit"
   },

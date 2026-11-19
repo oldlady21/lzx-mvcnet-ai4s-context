@@ -387,3 +387,31 @@ Grok 4.6 对原设计独立反驳为 `HOLD_FOR_DESIGN_FIX`。修订后保留同�
 ### U57 VCN-P1 × ACM-R1 析因轮关闭，VCN-P1 优先作为论文主方法候选
 
 36 项拟合、36 项检查经续接闭合。原 Run 归档为 `FAILED`，共享控制器对账为 `COMPLETE_MAX_ROUNDS`，按原起点结算 54.672／57 小时。组合相对原生 +3.144 点通过开发门；VCN-P1 相对原生 +2.411 点，ACM 加到 VCN-P1 上 +0.733 点且区间跨零，交互未过门。原 ACM-R1 的 `NO_SIGNAL` 保留。建议以 VCN-P1 起稿，组合列入开发消融。独立确认优先在未暴露队列中锁定 VCN-P1 对原生和强 raw／增强双 BN 的逐被试增量。若将组合升为主方法，须独立证明 ACM 加到 VCN-P1 后的实际增量。未启动训练或释放新 Claim。 [正式收尾与证据要求](acm-r1/factorial/FINAL_CLOSEOUT_20261116.md)
+
+### U58 v4.0 启用，组合稳定性以 S8 两套 LOSO 的三臂比较推进
+
+MVCNet 新工作切换至 `mvcnet-transaction-v4.0`。001 和 004 的 S8B 各 45 对 B0/S0 通过复用核查。方案只补 P0，分别判读对原生与对 VCN-P1 的增量，事前限定个体退化并核对删去任一 seed 后的增量方向。两套齐过门才建议进入独立确认。当前仍是设计，原 r8 宿主源码复验、Lab10 资格与本轮执行预算待完成。 [v4.0 设计及晋级门](acm-r1/factorial/S8_LOSO_STABILITY_PLAN_20261117.md)
+
+### U59 S8 LOSO 的 P0 技术资格通过
+
+001 和 004 的原 r8 压缩包及源码哈希复验通过。两种输入的零训练检查显示 CMC 的 IFNet 梯度归零，辅助端梯度保留。Lab10 两项 B64 P0 资格各完成五个源侧 epoch，驱动显存峰值分别 7,621 和 6,133 MiB。正式 90 拟合加 90 检查含 25% 余量估计 84.14 进程小时。双任务有效并发下建议累计 48 小时，等待正式轮授权及封存入口验收。正式训练未启动，原 ACM-R1 的 `NO_SIGNAL` 保留。 [技术验收与预算](acm-r1/factorial/S8_LOSO_QUALIFICATION_20261117.md)
+
+### U60 四数据集结案与三臂研究身份冻结
+
+两轮三臂 LOSO 已完成。组合相对原生在 3/4 个数据集通过总效应门，ACM 在 VCN-P1 之上的增量在 0/4 个数据集通过，保留两轮及原 ACM-R1 的 `NO_SIGNAL`。原生 B0、VCN-P1 S0、组合 P0 的身份、各版本源码与配置、核心结果和远程权重位置已集中登记。现有 540 份权重中 450 份已验哈希，001 的 90 份历史 B0/S0 权重保留精确路径与旧清单，CCMU 实际可读性待复核。既有历史结论及执行授权不变。[冻结索引与恢复入口](identity_freeze_20261118/README.md)
+
+### U61 L3 v4.1 激活，双假设零训练筛查停止
+
+登记 `MVCNET-TASK-EVIDENCE-SELECTION-004-ZERO-TRAINING-20261119`。004 本地 18 份 S0 源侧权重、54 个分区指纹和合成对照通过。频移 CVC 真实配对两 seed 的梯度余弦均为正，固定 raw μ 侧化叠加的 AUROC 增量均为负。两诊断均在冻结门停止，本轮转入 VCN-P1 对 raw／增强双 BN 的强对照补证设计。已暴露的四数据集可用于开发，核查范围内尚无合格独立确认队列。共享 L1/L2 留在 v4.0，既有冻结历史及原 ACM-R1 的 `NO_SIGNAL` 保留。零拟合。[诊断收尾](task_evidence_selection_20261119/CLOSEOUT.md) · [双 BN 设计与资产缺口](task_evidence_selection_20261119/DUAL_BN_FOLLOWUP.md)
+
+### U62 双 BN 设计收束到同期开发比较
+
+登记 `MVCNET-VCN-DUAL-BN-DESIGN-20261119`。004 的真实 r8 路径在合成零步检查中，仅共享增强运行缓冲时输出、梯度和 raw eval 逐值相同。D2 共享增强 affine 后聚合三种增强的梯度，保留为唯一新增拟合臂。004 历史 B0／S0 内部配对可追溯到原 CCMU 环境，拟用 D2 的新环境尚未取得严格复用资格。推荐同栈 S0／D2 做 2 seed×9 折开发比较，需要同期原生效用时补 B0。归档与本地资产复核仍无合格独立队列。保留预拟效用、稳定性及逐人风险门，生产模块与判定接线待准备。零科学拟合。[强对照、最小矩阵与成本](task_evidence_selection_20261119/DUAL_BN_FOLLOWUP.md)
+
+### U63 004 两臂生产路径通过 CPU 零步验收
+
+登记 `MVCNET-VCN-DUAL-BN-004-CPU-ZERO-STEP-20261119`。004 已接通同期 S0／D2 的 36 拟合全封存、36 raw 检查和已核验 intake 判定。CPU 验收确认两层 BN 的 1／3 路由、增强 affine 梯度聚合和 raw 重载隔离。合成往返走通精简回传与专用科学门，运行栈不一致和预测篡改被拒绝。下一步为两臂同型号卡的源侧资格及实测成本复算，当前尚未申请额度，零科学拟合和零优化步。[CPU 验收与 Lab10 资格方案](task_evidence_selection_20261119/dual_bn_004/CPU_ACCEPTANCE_AND_LAB10.md)
+
+### U64 004 双 BN 资格通过并派发科学矩阵
+
+登记 `MVCNET-VCN-DUAL-BN-004-LAB10-QUALIFIED-AND-LAUNCHED-20261119`。首个资格包在模型构造时缺动态载入文件，零完整 epoch。补齐原件后，S0／D2 各通过 5 个源侧 epoch 与冷重载，峰值均为 6,133 MiB，含余量外推 14.164 进程小时。正式科学轮为原 36＋36 闭集。首批使用 Lab10 全部 10 张候选卡，其余按容量自然补位，等待全拟合封存后检查。[资格核验与启动](task_evidence_selection_20261119/dual_bn_004/LAUNCH_AND_QUALIFICATION.md)

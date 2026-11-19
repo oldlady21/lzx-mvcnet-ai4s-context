@@ -33,7 +33,7 @@ MVCNet 想解决的问题是：同一类运动想象 EEG 会因时间、频谱�
 
 ## 先把几个容易混在一起的概念分开
 
-一条 **trial（试次）** 是一次运动想象对应的一段多通道 EEG。设它有 $C$ 个通道、$T$ 个采样点，则输入是矩阵 $X\in\mathbb R^{C\times T}$。本文的任务标签描述想象哪一种动作，例如左手或右手。[PDF p. 7，Table III]
+一条 **trial（试次）** 是一次运动想象对应的一段多通道 EEG。设它有 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math> 个通道、<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math> 个采样点，则输入是矩阵 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><mrow><mi>C</mi><mo>×</mo><mi>T</mi></mrow></msup></mrow><annotation encoding="application/x-tex">X\in\mathbb R^{C\times T}</annotation></semantics></math>。本文的任务标签描述想象哪一种动作，例如左手或右手。[PDF p. 7，Table III]
 
 **视图（view）** 是同一输入经过一种变换后的版本。小幅缩放改变振幅，频移改变频谱位置，通道镜像改变空间排列。本文没有要求额外采集一种模态；这些视图由训练数据生成。[PDF pp. 4–5，Table II]
 
@@ -57,9 +57,9 @@ MVCNet 想解决的问题是：同一类运动想象 EEG 会因时间、频谱�
 
 主实验按任务采用指定组合。BNCI2014001、Zhou2016、Blankertz2007 使用 Scale、FShift、CR；BNCI2014002、BNCI2015001 使用 Flip、FShift、HS。应区分“增强操作内含随机性”与“每次从七种操作中随机挑选策略”：原文主实验明确列出了组合，旧 Reader 对随机选策略的表述不宜直接沿用。[PDF p. 8，Section IV-C]
 
-![MVCNet 原论文 Figure 2：网络与训练目标](<./refs/paper-cards/mvcnet/assets/figure-02-mvcnet-architecture.png>)
+![MVCNet 原论文 Figure 2：网络与训练目标](<assets/figure-02-mvcnet-architecture.png>)
 
-[打开原图，放大查看](<./refs/paper-cards/mvcnet/assets/figure-02-mvcnet-architecture.png>)
+[打开原图，放大查看](<assets/figure-02-mvcnet-architecture.png>)
 
 *原论文 Figure 2，PDF 第 4 页。左侧是输入及增强，中间是 CNN/Transformer，右侧是分类与对比训练关系。这是结构图，不是模块贡献的消融证据。*
 
@@ -79,17 +79,15 @@ MVCNet 想解决的问题是：同一类运动想象 EEG 会因时间、频谱�
 
 ## 跟着一个小例子走到预测
 
-以下全部为**教学示例，非论文实验数据**。取 $N=2$ 条试次，每条 $C=2$ 个通道、$T=4$ 个采样点。原始 batch 形状是 $2\times2\times4$；分别生成时间、空间、频率增强后，得到四组同形状 batch。
+以下全部为**教学示例，非论文实验数据**。取 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">N=2</annotation></semantics></math> 条试次，每条 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">C=2</annotation></semantics></math> 个通道、<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">T=4</annotation></semantics></math> 个采样点。原始 batch 形状是 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">2\times2\times4</annotation></semantics></math>；分别生成时间、空间、频率增强后，得到四组同形状 batch。
 
-假设每条分支最终把一条试次映射成 $d_p=2$ 维向量。一条 raw 试次的 CNN 表示为 $z^c=(1,0)$，Transformer 表示为 $z^t=(0,1)$，则拼接得到 $h=(1,0,0,1)$。这里的维度仅用于演示，实际论文没有给出所有维度的统一具体值。[形状依据：PDF p. 5，Table I]
+假设每条分支最终把一条试次映射成 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>p</mi></msub><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">d_p=2</annotation></semantics></math> 维向量。一条 raw 试次的 CNN 表示为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>z</mi><mi>c</mi></msup><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">z^c=(1,0)</annotation></semantics></math>，Transformer 表示为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>z</mi><mi>t</mi></msup><mo>=</mo><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">z^t=(0,1)</annotation></semantics></math>，则拼接得到 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">h=(1,0,0,1)</annotation></semantics></math>。这里的维度仅用于演示，实际论文没有给出所有维度的统一具体值。[形状依据：PDF p. 5，Table I]
 
-分类器把 $h$ 变成 $N_c$ 个 logits；$N_c$ 为类别数。对于二分类，令权重两行为 $(1,0,0,1)$ 和全零，偏置为零，则 logits 是 $(2,0)$。softmax 得到类别 0 概率
+分类器把 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math> 变成 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">N_c</annotation></semantics></math> 个 logits；<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">N_c</annotation></semantics></math> 为类别数。对于二分类，令权重两行为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1,0,0,1)</annotation></semantics></math> 和全零，偏置为零，则 logits 是 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>2</mn><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(2,0)</annotation></semantics></math>。softmax 得到类别 0 概率
 
-$$
-p_0=\frac{e^2}{e^2+1}=0.8808.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mfrac><msup><mi>e</mi><mn>2</mn></msup><mrow><msup><mi>e</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>0.8808.</mn></mrow><annotation encoding="application/x-tex">p_0=\frac{e^2}{e^2+1}=0.8808.</annotation></semantics></math>
 
-若标签是 0，交叉熵为 $-\log0.8808=0.1269$。训练还会对三个增强视图走同一条分类路径，并对中间表示计算 CVC、CMC；推理则在 raw 预测处结束。[PDF pp. 6–7，Eqs. (5)–(6)，Algorithm 1]
+若标签是 0，交叉熵为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mi>log</mi><mo>⁡</mo><mn>0.8808</mn><mo>=</mo><mn>0.1269</mn></mrow><annotation encoding="application/x-tex">-\log0.8808=0.1269</annotation></semantics></math>。训练还会对三个增强视图走同一条分类路径，并对中间表示计算 CVC、CMC；推理则在 raw 预测处结束。[PDF pp. 6–7，Eqs. (5)–(6)，Algorithm 1]
 
 <a id="reading-section-06"></a>
 
@@ -97,57 +95,45 @@ $$
 
 ### 1. 对比距离衡量正对相对于负对有多接近
 
-$z_i,z_i^v\in\mathbb R^{d_p}$ 分别表示试次 $i$ 的原始与增强特征；$v\in\{T,S,F\}$ 是时间、空间、频率视图。$\operatorname{sim}$ 为余弦相似度，$\tau$ 为温度，$N$ 为 batch 中原始试次数。论文印出的式 (1) 是：
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>i</mi></msub><mo separator="true">,</mo><msubsup><mi>z</mi><mi>i</mi><mi>v</mi></msubsup><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><msub><mi>d</mi><mi>p</mi></msub></msup></mrow><annotation encoding="application/x-tex">z_i,z_i^v\in\mathbb R^{d_p}</annotation></semantics></math> 分别表示试次 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math> 的原始与增强特征；<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>∈</mo><mo stretchy="false">{</mo><mi>T</mi><mo separator="true">,</mo><mi>S</mi><mo separator="true">,</mo><mi>F</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">v\in\{T,S,F\}</annotation></semantics></math> 是时间、空间、频率视图。<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">sim</mi><mo>⁡</mo></mrow><annotation encoding="application/x-tex">\operatorname{sim}</annotation></semantics></math> 为余弦相似度，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi></mrow><annotation encoding="application/x-tex">\tau</annotation></semantics></math> 为温度，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math> 为 batch 中原始试次数。论文印出的式 (1) 是：
 
-$$
-d(z_i,z_i^v)=-\log\frac{\exp(\operatorname{sim}(z_i,z_i^v)/\tau)}{\sum_{j=1}^{N}\mathbf1_{i\ne j}\exp(\operatorname{sim}(z_i,z_j^v)/\tau)}.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>d</mi><mo stretchy="false">(</mo><msub><mi>z</mi><mi>i</mi></msub><mo separator="true">,</mo><msubsup><mi>z</mi><mi>i</mi><mi>v</mi></msubsup><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mi>log</mi><mo>⁡</mo><mfrac><mrow><mi>exp</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi mathvariant="normal">sim</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mi>z</mi><mi>i</mi></msub><mo separator="true">,</mo><msubsup><mi>z</mi><mi>i</mi><mi>v</mi></msubsup><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mi>τ</mi><mo stretchy="false">)</mo></mrow><mrow><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mn mathvariant="bold">1</mn><mrow><mi>i</mi><mo mathvariant="normal">≠</mo><mi>j</mi></mrow></msub><mi>exp</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi mathvariant="normal">sim</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mi>z</mi><mi>i</mi></msub><mo separator="true">,</mo><msubsup><mi>z</mi><mi>j</mi><mi>v</mi></msubsup><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mi>τ</mi><mo stretchy="false">)</mo></mrow></mfrac><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">d(z_i,z_i^v)=-\log\frac{\exp(\operatorname{sim}(z_i,z_i^v)/\tau)}{\sum_{j=1}^{N}\mathbf1_{i\ne j}\exp(\operatorname{sim}(z_i,z_j^v)/\tau)}.</annotation></semantics></math>
 
-注意分母的 $i\ne j$：正对没有放入分母。教学例子取 $N=2,\tau=0.2$，anchor 为单位向量 $(1,0)$，正对为 $(0.8,0.6)$，唯一负对为 $(0,1)$。相似度分别为 0.8 与 0，得到
+注意分母的 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo mathvariant="normal">≠</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i\ne j</annotation></semantics></math>：正对没有放入分母。教学例子取 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo separator="true">,</mo><mi>τ</mi><mo>=</mo><mn>0.2</mn></mrow><annotation encoding="application/x-tex">N=2,\tau=0.2</annotation></semantics></math>，anchor 为单位向量 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1,0)</annotation></semantics></math>，正对为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0.8</mn><mo separator="true">,</mo><mn>0.6</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0.8,0.6)</annotation></semantics></math>，唯一负对为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,1)</annotation></semantics></math>。相似度分别为 0.8 与 0，得到
 
-$$
-d=-\log\frac{e^{0.8/0.2}}{e^{0/0.2}}=-\log e^4=-4.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>d</mi><mo>=</mo><mo>−</mo><mi>log</mi><mo>⁡</mo><mfrac><msup><mi>e</mi><mrow><mn>0.8</mn><mi mathvariant="normal">/</mi><mn>0.2</mn></mrow></msup><msup><mi>e</mi><mrow><mn>0</mn><mi mathvariant="normal">/</mi><mn>0.2</mn></mrow></msup></mfrac><mo>=</mo><mo>−</mo><mi>log</mi><mo>⁡</mo><msup><mi>e</mi><mn>4</mn></msup><mo>=</mo><mo>−</mo><mn>4.</mn></mrow><annotation encoding="application/x-tex">d=-\log\frac{e^{0.8/0.2}}{e^{0/0.2}}=-\log e^4=-4.</annotation></semantics></math>
 
-出现负值是该印式的数学结果。若把正对加入分母，则为 $-\log(e^4/(e^4+1))=0.01815$；两种定义不能混用。论文称其为 NT-Xent，并不允许读者自动把公式替换成自己熟悉的形式。这是原文描述需核对之处，不代表本轮已经发现实际代码错误。[PDF p. 6，Eq. (1)，X-Ray 已目视核验]
+出现负值是该印式的数学结果。若把正对加入分母，则为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mi>log</mi><mo>⁡</mo><mo stretchy="false">(</mo><msup><mi>e</mi><mn>4</mn></msup><mi mathvariant="normal">/</mi><mo stretchy="false">(</mo><msup><mi>e</mi><mn>4</mn></msup><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>=</mo><mn>0.01815</mn></mrow><annotation encoding="application/x-tex">-\log(e^4/(e^4+1))=0.01815</annotation></semantics></math>；两种定义不能混用。论文称其为 NT-Xent，并不允许读者自动把公式替换成自己熟悉的形式。这是原文描述需核对之处，不代表本轮已经发现实际代码错误。[PDF p. 6，Eq. (1)，X-Ray 已目视核验]
 
-正文还把负样本描述为其他试次的全部四视图，而该式只显式枚举固定视图的 $N-1$ 项。式 (3) 的跨模型距离有相同问题。实际负样本集合、是否双向计算，需要匹配代码版本才能确定。[PDF pp. 5–6]
+正文还把负样本描述为其他试次的全部四视图，而该式只显式枚举固定视图的 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">N-1</annotation></semantics></math> 项。式 (3) 的跨模型距离有相同问题。实际负样本集合、是否双向计算，需要匹配代码版本才能确定。[PDF pp. 5–6]
 
 ### 2. CVC 与 CMC 汇总不同关系
 
-$c,t$ 分别指 CNN、Transformer，$z_i^{cv}$ 是试次 $i$ 在视图 $v$ 下的 CNN 表示。CVC 在每个分支内比较 raw 与三个增强：
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo separator="true">,</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">c,t</annotation></semantics></math> 分别指 CNN、Transformer，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>z</mi><mi>i</mi><mrow><mi>c</mi><mi>v</mi></mrow></msubsup></mrow><annotation encoding="application/x-tex">z_i^{cv}</annotation></semantics></math> 是试次 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math> 在视图 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math> 下的 CNN 表示。CVC 在每个分支内比较 raw 与三个增强：
 
-$$
-L_{\mathrm{CVC}}=\frac1{NV}\sum_{i=1}^{N}\sum_{v\in\{T,S,F\}}[d(z_i^c,z_i^{cv})+d(z_i^t,z_i^{tv})].
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>L</mi><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">V</mi><mi mathvariant="normal">C</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi>N</mi><mi>V</mi></mrow></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><munder><mo>∑</mo><mrow><mi>v</mi><mo>∈</mo><mo stretchy="false">{</mo><mi>T</mi><mo separator="true">,</mo><mi>S</mi><mo separator="true">,</mo><mi>F</mi><mo stretchy="false">}</mo></mrow></munder><mo stretchy="false">[</mo><mi>d</mi><mo stretchy="false">(</mo><msubsup><mi>z</mi><mi>i</mi><mi>c</mi></msubsup><mo separator="true">,</mo><msubsup><mi>z</mi><mi>i</mi><mrow><mi>c</mi><mi>v</mi></mrow></msubsup><mo stretchy="false">)</mo><mo>+</mo><mi>d</mi><mo stretchy="false">(</mo><msubsup><mi>z</mi><mi>i</mi><mi>t</mi></msubsup><mo separator="true">,</mo><msubsup><mi>z</mi><mi>i</mi><mrow><mi>t</mi><mi>v</mi></mrow></msubsup><mo stretchy="false">)</mo><mo stretchy="false">]</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">L_{\mathrm{CVC}}=\frac1{NV}\sum_{i=1}^{N}\sum_{v\in\{T,S,F\}}[d(z_i^c,z_i^{cv})+d(z_i^t,z_i^{tv})].</annotation></semantics></math>
 
 CMC 在 raw 及三个增强视图上分别比较两分支：
 
-$$
-L_{\mathrm{CMC}}=\frac1{NV}\sum_{i=1}^{N}\left[d(z_i^c,z_i^t)+\sum_{v\in\{T,S,F\}}d(z_i^{cv},z_i^{tv})\right].
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>L</mi><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi>N</mi><mi>V</mi></mrow></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo fence="true">[</mo><mi>d</mi><mo stretchy="false">(</mo><msubsup><mi>z</mi><mi>i</mi><mi>c</mi></msubsup><mo separator="true">,</mo><msubsup><mi>z</mi><mi>i</mi><mi>t</mi></msubsup><mo stretchy="false">)</mo><mo>+</mo><munder><mo>∑</mo><mrow><mi>v</mi><mo>∈</mo><mo stretchy="false">{</mo><mi>T</mi><mo separator="true">,</mo><mi>S</mi><mo separator="true">,</mo><mi>F</mi><mo stretchy="false">}</mo></mrow></munder><mi>d</mi><mo stretchy="false">(</mo><msubsup><mi>z</mi><mi>i</mi><mrow><mi>c</mi><mi>v</mi></mrow></msubsup><mo separator="true">,</mo><msubsup><mi>z</mi><mi>i</mi><mrow><mi>t</mi><mi>v</mi></mrow></msubsup><mo stretchy="false">)</mo><mo fence="true">]</mo></mrow><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">L_{\mathrm{CMC}}=\frac1{NV}\sum_{i=1}^{N}\left[d(z_i^c,z_i^t)+\sum_{v\in\{T,S,F\}}d(z_i^{cv},z_i^{tv})\right].</annotation></semantics></math>
 
-论文没有在这些公式附近清楚消除归一化用的 $V$ 究竟计三个增强还是四个视图的歧义。为手算先约定 $V=3,N=2$。若每个 CVC 配对在 CNN、Transformer 中的距离分别为 −4、−3，总和是 $2\times3\times(-4-3)=-42$，除以 6 得 −7。另取独立的 CMC 例子：每条试次四个距离为 −4、−3、−2、−1，则总和 −20，除以 6 得 −3.3333；若归一化按 $V=4$，则为 −2.5。两个例子独立演示求和方式，不声称来自同一个完整特征矩阵。[PDF p. 6，Eqs. (2)–(4)]
+论文没有在这些公式附近清楚消除归一化用的 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math> 究竟计三个增强还是四个视图的歧义。为手算先约定 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mn>3</mn><mo separator="true">,</mo><mi>N</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">V=3,N=2</annotation></semantics></math>。若每个 CVC 配对在 CNN、Transformer 中的距离分别为 −4、−3，总和是 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mo stretchy="false">(</mo><mo>−</mo><mn>4</mn><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>42</mn></mrow><annotation encoding="application/x-tex">2\times3\times(-4-3)=-42</annotation></semantics></math>，除以 6 得 −7。另取独立的 CMC 例子：每条试次四个距离为 −4、−3、−2、−1，则总和 −20，除以 6 得 −3.3333；若归一化按 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">V=4</annotation></semantics></math>，则为 −2.5。两个例子独立演示求和方式，不声称来自同一个完整特征矩阵。[PDF p. 6，Eqs. (2)–(4)]
 
 ### 3. 分类给出任务方向，总损失决定三种要求如何折中
 
-用 $p_i^v\in\mathbb R^{N_c}$ 表示分类概率，$y_i$ 为类别索引，$\mathrm{CE}(p,y)=-\log p_y$。论文统一以原始标签写出：
+用 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>p</mi><mi>i</mi><mi>v</mi></msubsup><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><msub><mi>N</mi><mi>c</mi></msub></msup></mrow><annotation encoding="application/x-tex">p_i^v\in\mathbb R^{N_c}</annotation></semantics></math> 表示分类概率，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">y_i</annotation></semantics></math> 为类别索引，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">E</mi></mrow><mo stretchy="false">(</mo><mi>p</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mi>log</mi><mo>⁡</mo><msub><mi>p</mi><mi>y</mi></msub></mrow><annotation encoding="application/x-tex">\mathrm{CE}(p,y)=-\log p_y</annotation></semantics></math>。论文统一以原始标签写出：
 
-$$
-L_{\mathrm{CLS}}=\sum_{i=1}^{N}\left[\mathrm{CE}(p_i^0,y_i)+\sum_{v\in\{T,S,F\}}\mathrm{CE}(p_i^v,y_i)\right],
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>L</mi><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">L</mi><mi mathvariant="normal">S</mi></mrow></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo fence="true">[</mo><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">E</mi></mrow><mo stretchy="false">(</mo><msubsup><mi>p</mi><mi>i</mi><mn>0</mn></msubsup><mo separator="true">,</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo>+</mo><munder><mo>∑</mo><mrow><mi>v</mi><mo>∈</mo><mo stretchy="false">{</mo><mi>T</mi><mo separator="true">,</mo><mi>S</mi><mo separator="true">,</mo><mi>F</mi><mo stretchy="false">}</mo></mrow></munder><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">E</mi></mrow><mo stretchy="false">(</mo><msubsup><mi>p</mi><mi>i</mi><mi>v</mi></msubsup><mo separator="true">,</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo fence="true">]</mo></mrow><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">L_{\mathrm{CLS}}=\sum_{i=1}^{N}\left[\mathrm{CE}(p_i^0,y_i)+\sum_{v\in\{T,S,F\}}\mathrm{CE}(p_i^v,y_i)\right],</annotation></semantics></math>
 
-$$
-L_{\mathrm{all}}=L_{\mathrm{CLS}}+\lambda L_{\mathrm{CVC}}+\gamma L_{\mathrm{CMC}}.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>L</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">l</mi></mrow></msub><mo>=</mo><msub><mi>L</mi><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">L</mi><mi mathvariant="normal">S</mi></mrow></msub><mo>+</mo><mi>λ</mi><msub><mi>L</mi><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">V</mi><mi mathvariant="normal">C</mi></mrow></msub><mo>+</mo><mi>γ</mi><msub><mi>L</mi><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi></mrow></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">L_{\mathrm{all}}=L_{\mathrm{CLS}}+\lambda L_{\mathrm{CVC}}+\gamma L_{\mathrm{CMC}}.</annotation></semantics></math>
 
-教学例子中，两条试次各自在四视图上给正确类别概率 0.8、0.7、0.9、0.6。单条分类损失约为 $1.196005$，两条共 $2.392009$。再假设某一步的两个对比标量分别是 1.2、0.6，按论文 $\lambda=\gamma=0.1$，总损失为 $2.392009+0.12+0.06=2.572009$。这只是加权示例，不承接上一节的负值例子。[PDF pp. 6、8]
+教学例子中，两条试次各自在四视图上给正确类别概率 0.8、0.7、0.9、0.6。单条分类损失约为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1.196005</mn></mrow><annotation encoding="application/x-tex">1.196005</annotation></semantics></math>，两条共 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2.392009</mn></mrow><annotation encoding="application/x-tex">2.392009</annotation></semantics></math>。再假设某一步的两个对比标量分别是 1.2、0.6，按论文 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>=</mo><mi>γ</mi><mo>=</mo><mn>0.1</mn></mrow><annotation encoding="application/x-tex">\lambda=\gamma=0.1</annotation></semantics></math>，总损失为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2.392009</mn><mo>+</mo><mn>0.12</mn><mo>+</mo><mn>0.06</mn><mo>=</mo><mn>2.572009</mn></mrow><annotation encoding="application/x-tex">2.392009+0.12+0.06=2.572009</annotation></semantics></math>。这只是加权示例，不承接上一节的负值例子。[PDF pp. 6、8]
 
 分类公式采用求和，对比公式带平均因子，因此 sum/mean 的实现约定会影响实际权重。同样写“权重 0.1”，在不同归一化实现下并不意味着相同训练强度。
 
 ### 4. 一个最值得停下来想的例子：镜像之后，标签变了
 
-Table II 中 CR 把左右半球通道交换，并令 $y'=1-y$。设 $X_L=(2,1),X_R=(0,1),y=0$；镜像后 $X'_L=(0,1),X'_R=(2,1),y'=1$。若预测为 $(0.1,0.9)$，使用变换后的标签，损失是 $-\log0.9=0.105361$；使用旧标签则是 $-\log0.1=2.302585$。
+Table II 中 CR 把左右半球通道交换，并令 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo>=</mo><mn>1</mn><mo>−</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">y&#x27;=1-y</annotation></semantics></math>。设 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mi>L</mi></msub><mo>=</mo><mo stretchy="false">(</mo><mn>2</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><msub><mi>X</mi><mi>R</mi></msub><mo>=</mo><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">X_L=(2,1),X_R=(0,1),y=0</annotation></semantics></math>；镜像后 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>X</mi><mi>L</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msubsup><mo>=</mo><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><msubsup><mi>X</mi><mi>R</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msubsup><mo>=</mo><mo stretchy="false">(</mo><mn>2</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><msup><mi>y</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">X&#x27;_L=(0,1),X&#x27;_R=(2,1),y&#x27;=1</annotation></semantics></math>。若预测为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0.1</mn><mo separator="true">,</mo><mn>0.9</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0.1,0.9)</annotation></semantics></math>，使用变换后的标签，损失是 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mi>log</mi><mo>⁡</mo><mn>0.9</mn><mo>=</mo><mn>0.105361</mn></mrow><annotation encoding="application/x-tex">-\log0.9=0.105361</annotation></semantics></math>；使用旧标签则是 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mi>log</mi><mo>⁡</mo><mn>0.1</mn><mo>=</mo><mn>2.302585</mn></mrow><annotation encoding="application/x-tex">-\log0.1=2.302585</annotation></semantics></math>。
 
 因此，CR 要求标签随变换交换，这叫等变；小幅 Scale 通常被设计为保留标签，这叫不变。两者不能用同一条“增强后类别都不变”的话概括。式 (5) 与 Algorithm 1 没有显式写增强标签的变化，CVC 又在拉近原始与增强特征，形成需要实现解释的接口缺口。它不证明方法无效，但提示读者：正确理解 MVCNet 必须同时追踪输入、标签和正对关系。[PDF pp. 5–7，Table II，Eq. (5)，Algorithm 1]
 
@@ -181,9 +167,9 @@ Table VI 报告：无 CVC/CMC 为 76.84，仅 CVC 为 78.29，仅 CMC 为 77.90�
 
 Table V 中，SCNN 使用 FSurr 的四数据集均值从 72.46 降到 64.97；DCNN 使用 HS 从 73.63 降到 55.20。IFNet 在 Blankertz2007 上，CR 为 79.36，高于对应 MVCNet(IFNet) 的 77.53。这些例子说明增强效果依赖任务和骨干，不能由“更多视图”推导“更高性能”。[PDF p. 10]
 
-![原论文 Figure 6：两两增强组合准确率](<./refs/paper-cards/mvcnet/assets/figure-06-pairwise-augmentations.png>)
+![原论文 Figure 6：两两增强组合准确率](<assets/figure-06-pairwise-augmentations.png>)
 
-[打开原图，放大查看](<./refs/paper-cards/mvcnet/assets/figure-06-pairwise-augmentations.png>)
+[打开原图，放大查看](<assets/figure-06-pairwise-augmentations.png>)
 
 *Figure 6，PDF 第 10 页，EEGNet 骨干、LOSO。横纵轴是第二/第一增强，格内数字为准确率百分比；四个面板对应四数据集，对角线表示单增强。*
 
@@ -199,9 +185,9 @@ Figure 7 的 t-SNE 显示不同增强视图在 MVCNet 表示中的排列更一�
 
 ## 复现与解释仍缺什么
 
-所有模型训练 100 epochs，使用 Adam、学习率 $10^{-3}$；基线 batch size 32，增强方法/MVCNet 为 64。若有 640 条原始试次，一轮分别是 20 步与 10 步，且 MVCNet 每条试次处理更多视图与分支。相同 epoch 不能说明步数、计算或负样本预算相同。论文说明基线结构超参数沿用各自原论文，但没有报告相同调参预算、完整训练成本或增强组合选择的验证流程。[PDF p. 8]
+所有模型训练 100 epochs，使用 Adam、学习率 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow><annotation encoding="application/x-tex">10^{-3}</annotation></semantics></math>；基线 batch size 32，增强方法/MVCNet 为 64。若有 640 条原始试次，一轮分别是 20 步与 10 步，且 MVCNet 每条试次处理更多视图与分支。相同 epoch 不能说明步数、计算或负样本预算相同。论文说明基线结构超参数沿用各自原论文，但没有报告相同调参预算、完整训练成本或增强组合选择的验证流程。[PDF p. 8]
 
-原文还有若干具体复现歧义：正文时间卷积核为 63，Table I 为 64；正文投影 MLP 提到 BatchNorm，表中为 LayerNorm；CNN 池化输出如何对应最后 $d_p$ 维向量没有完整列清；HS 如何选择源试次、赋予标签也没有充分交代。它们影响逐行复现，但不能仅凭文字缺口断言实际运行错误。[PDF pp. 4–7]
+原文还有若干具体复现歧义：正文时间卷积核为 63，Table I 为 64；正文投影 MLP 提到 BatchNorm，表中为 LayerNorm；CNN 池化输出如何对应最后 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">d_p</annotation></semantics></math> 维向量没有完整列清；HS 如何选择源试次、赋予标签也没有充分交代。它们影响逐行复现，但不能仅凭文字缺口断言实际运行错误。[PDF pp. 4–7]
 
 作者没有列出正式局限章节，只在讨论中提出更深注意力结构“可能”过拟合或难以优化，并在结论建议探索 Mamba 混合模型。前述机制并未被单独诊断，不能把“可能”改写成已经证明的原因。[PDF pp. 9–11]
 

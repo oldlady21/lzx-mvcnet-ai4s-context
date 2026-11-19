@@ -1,8 +1,8 @@
 # lzx-mvcnet-ai4s 讨论资料入口
 
 仓库：https://github.com/oldlady21/lzx-mvcnet-ai4s-context
-导出时间（UTC）：2026-11-17T09:52:08.543845+00:00
-快照身份：`6e1fb374916a4e1f58dcd0b985792a02c149e7e8bf4c152f2aec314f8897bace`
+导出时间（UTC）：2026-11-19T15:16:24.360590+00:00
+快照身份：`52f29b1ccaa8bc43a9fd81b2c4ec22fd778c88bd43eec049ca4f4ffd56fddbe5`
 
 这是本地已保存文件的公开讨论副本。来源与公开文件 SHA-256、脱敏计数、未公开引用见 [SYNC_MANIFEST.json](SYNC_MANIFEST.json)。
 机器字段已机械脱敏；保留原研究身份、冻结边界、预算、证据状态和历史。它不替代本地权威记录，不授予执行/恢复/改协议权限。
@@ -17,13 +17,16 @@
 {
   "mvcnet": {
     "source_path": "ai4s/programs/mvcnet/research/STATE.yaml",
-    "source_sha256": "7a7238443dfd96bf7626d4bd37b7afa1cacc689dd0a4e87529b24de85f76be10",
+    "source_sha256": "3ed342e70471fc4acd566e45fe2e607e43456db2f27c1f6809ba4d3d78014e5c",
     "source_public_url": "https://github.com/oldlady21/lzx-mvcnet-ai4s-context/blob/main/ai4s/programs/mvcnet/research/STATE.yaml",
     "source_in_this_repository": true,
-    "source_updated_at": "2026-11-16T15:44:37.744328+00:00",
-    "status": "COMPLETE_MAX_ROUNDS",
-    "paused": true,
-    "active_run": null,
+    "source_updated_at": "2026-11-19T15:01:50.609783+00:00",
+    "status": "WAITING_REMOTE",
+    "paused": false,
+    "active_run": {
+      "round_id": "mvcnet-dual-bn-004-development-v1",
+      "dispatch_status": "REMOTE_ACCEPTED"
+    },
     "active_operation": null
   }
 }
@@ -49,8 +52,7 @@
 - [ai4s/PROMPT_INDEX.yaml](<ai4s/PROMPT_INDEX.yaml>)
 - [ai4s/README.md](<ai4s/README.md>)
 - [ai4s/programs/mvcnet/PROGRAM.yaml](<ai4s/programs/mvcnet/PROGRAM.yaml>)
-- [ai4s/programs/mvcnet/PROJECT_PROMPT_v3.3.md](<ai4s/programs/mvcnet/PROJECT_PROMPT_v3.3.md>)
-- [ai4s/programs/mvcnet/PROJECT_PROMPT_v3.4.md](<ai4s/programs/mvcnet/PROJECT_PROMPT_v3.4.md>)
+- [ai4s/programs/mvcnet/PROJECT_PROMPT_v4.1.md](<ai4s/programs/mvcnet/PROJECT_PROMPT_v4.1.md>)
 - [ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md](<ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md>)
 - [ai4s/programs/mvcnet/research/EVIDENCE_INDEX.yaml](<ai4s/programs/mvcnet/research/EVIDENCE_INDEX.yaml>)
 - [ai4s/programs/mvcnet/research/STATE.yaml](<ai4s/programs/mvcnet/research/STATE.yaml>)
@@ -69,10 +71,8 @@
 - [ai4s/programs/mvcnet/research/xsn-r1/review_20261029/NOVELTY_AND_REBUTTAL.md](<ai4s/programs/mvcnet/research/xsn-r1/review_20261029/NOVELTY_AND_REBUTTAL.md>)
 - [ai4s/prompts/EVALUATION_EVIDENCE.md](<ai4s/prompts/EVALUATION_EVIDENCE.md>)
 - [ai4s/prompts/EXTERNAL_REVIEW.md](<ai4s/prompts/EXTERNAL_REVIEW.md>)
-- [ai4s/prompts/LEVEL1_RESEARCH_v3.3.md](<ai4s/prompts/LEVEL1_RESEARCH_v3.3.md>)
-- [ai4s/prompts/LEVEL1_RESEARCH_v3.4.md](<ai4s/prompts/LEVEL1_RESEARCH_v3.4.md>)
-- [ai4s/prompts/LEVEL2_EXECUTION_v3.3.md](<ai4s/prompts/LEVEL2_EXECUTION_v3.3.md>)
-- [ai4s/prompts/LEVEL2_EXECUTION_v3.4.md](<ai4s/prompts/LEVEL2_EXECUTION_v3.4.md>)
+- [ai4s/prompts/LEVEL1_RESEARCH_v4.0.md](<ai4s/prompts/LEVEL1_RESEARCH_v4.0.md>)
+- [ai4s/prompts/LEVEL2_EXECUTION_v4.0.md](<ai4s/prompts/LEVEL2_EXECUTION_v4.0.md>)
 - [ai4s/prompts/MIEEG_AI4S_SKILL_ROUTER.md](<ai4s/prompts/MIEEG_AI4S_SKILL_ROUTER.md>)
 - [ai4s/prompts/TRANSACTION_RUNTIME.md](<ai4s/prompts/TRANSACTION_RUNTIME.md>)
 - [experiments/UNIFIED_EVALUATION_PROTOCOL.md](<experiments/UNIFIED_EVALUATION_PROTOCOL.md>)

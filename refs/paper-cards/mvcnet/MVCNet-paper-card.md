@@ -95,9 +95,9 @@
 | EEG 数据增强 | Flip、Noise、Scale、FShift、FSurr、CR、HS | 注入特定域扰动与先验 | 单一增强的收益依赖数据集、类别语义和骨干 | 每次从三域各取一视图参与联合训练 [Paper: Table II, S007-S008; Table V, S015] |
 | 对比表示学习 | SimCLR、MoCo、BYOL、SimSiam、SupCon 及 EEG 变体 | 用正负对或自举学习不变表示 | 无监督方法依赖数据量和调参；标签利用不足 | 用有标签训练同时定义 CVC 与 CMC [Paper: Section II-C, S003-S004] |
 
-![Figure 1](<./refs/paper-cards/mvcnet/assets/figure-01-prior-knowledge.png>)
+![Figure 1](<assets/figure-01-prior-knowledge.png>)
 
-[打开原图，放大查看](<./refs/paper-cards/mvcnet/assets/figure-01-prior-knowledge.png>)
+[打开原图，放大查看](<assets/figure-01-prior-knowledge.png>)
 
 <a id="reading-section-05"></a>
 
@@ -162,9 +162,9 @@
 
 [Paper: Figure 2; Algorithm 1; Equations (1)-(6); S005-S011]
 
-![Figure 2](<./refs/paper-cards/mvcnet/assets/figure-02-mvcnet-architecture.png>)
+![Figure 2](<assets/figure-02-mvcnet-architecture.png>)
 
-[打开原图，放大查看](<./refs/paper-cards/mvcnet/assets/figure-02-mvcnet-architecture.png>)
+[打开原图，放大查看](<assets/figure-02-mvcnet-architecture.png>)
 
 <a id="reading-section-08"></a>
 
@@ -181,9 +181,9 @@
 | 联合目标 | 同时优化标签判别、视图一致和模型一致 | 防止对比目标脱离任务标签 | logits/features -> `L_all` | Equations (5)-(6); Algorithm 1 [Paper: S011] | `[Paper]` CVC+CMC 为 78.72；比无两项高 1.88 pp，但与单项差距较小且缺少统计检验 [Paper: Table VI; S017] |
 | EA | 减小协方差分布差异 | 支持跨被试/时间对齐 | 预处理 EEG -> 对齐 EEG | Section IV-A [Paper: S012] | `Not assessable`：本论文主消融未报告去除 EA 的影响 |
 
-![Figure 3](<./refs/paper-cards/mvcnet/assets/figure-03-augmentations.png>)
+![Figure 3](<assets/figure-03-augmentations.png>)
 
-[打开原图，放大查看](<./refs/paper-cards/mvcnet/assets/figure-03-augmentations.png>)
+[打开原图，放大查看](<assets/figure-03-augmentations.png>)
 
 <a id="reading-section-09"></a>
 
@@ -191,53 +191,39 @@
 
 ### 9.1 跨视图 NT-Xent 距离
 
-$$
-d(z_i,z_i^v)=-\log\frac{\exp(\operatorname{sim}(z_i,z_i^v)/\tau)}
-{\sum_{j=1}^{N}\mathbb{I}[i\neq j]\exp(\operatorname{sim}(z_i,z_j^v)/\tau)}.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>d</mi><mo stretchy="false">(</mo><msub><mi>z</mi><mi>i</mi></msub><mo separator="true">,</mo><msubsup><mi>z</mi><mi>i</mi><mi>v</mi></msubsup><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mi>log</mi><mo>⁡</mo><mfrac><mrow><mi>exp</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi mathvariant="normal">sim</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mi>z</mi><mi>i</mi></msub><mo separator="true">,</mo><msubsup><mi>z</mi><mi>i</mi><mi>v</mi></msubsup><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mi>τ</mi><mo stretchy="false">)</mo></mrow><mrow><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mi mathvariant="double-struck">I</mi><mo stretchy="false">[</mo><mi>i</mi><mo mathvariant="normal">≠</mo><mi>j</mi><mo stretchy="false">]</mo><mi>exp</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi mathvariant="normal">sim</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mi>z</mi><mi>i</mi></msub><mo separator="true">,</mo><msubsup><mi>z</mi><mi>j</mi><mi>v</mi></msubsup><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mi>τ</mi><mo stretchy="false">)</mo></mrow></mfrac><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">d(z_i,z_i^v)=-\log\frac{\exp(\operatorname{sim}(z_i,z_i^v)/\tau)} {\sum_{j=1}^{N}\mathbb{I}[i\neq j]\exp(\operatorname{sim}(z_i,z_j^v)/\tau)}.</annotation></semantics></math>
 
 `z_i` 是原始试次表示，`z_i^v` 是同一试次在视图 `v in {T,S,F}` 下的表示，`sim` 为余弦相似度，`tau` 为温度，`N` 为 batch 大小。它提高正对相似度并压低其他试次的跨视图相似度。[Paper: Equation (1); Section III-D; S009]
 
 ### 9.2 CVC
 
-$$
-L_{CVC}=\frac{1}{NV}\sum_{i=1}^{N}\sum_{v\in\{T,S,F\}}
-\left[d(z_i^c,z_i^{cv})+d(z_i^t,z_i^{tv})\right].
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>L</mi><mrow><mi>C</mi><mi>V</mi><mi>C</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi>N</mi><mi>V</mi></mrow></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><munder><mo>∑</mo><mrow><mi>v</mi><mo>∈</mo><mo stretchy="false">{</mo><mi>T</mi><mo separator="true">,</mo><mi>S</mi><mo separator="true">,</mo><mi>F</mi><mo stretchy="false">}</mo></mrow></munder><mrow><mo fence="true">[</mo><mi>d</mi><mo stretchy="false">(</mo><msubsup><mi>z</mi><mi>i</mi><mi>c</mi></msubsup><mo separator="true">,</mo><msubsup><mi>z</mi><mi>i</mi><mrow><mi>c</mi><mi>v</mi></mrow></msubsup><mo stretchy="false">)</mo><mo>+</mo><mi>d</mi><mo stretchy="false">(</mo><msubsup><mi>z</mi><mi>i</mi><mi>t</mi></msubsup><mo separator="true">,</mo><msubsup><mi>z</mi><mi>i</mi><mrow><mi>t</mi><mi>v</mi></mrow></msubsup><mo stretchy="false">)</mo><mo fence="true">]</mo></mrow><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">L_{CVC}=\frac{1}{NV}\sum_{i=1}^{N}\sum_{v\in\{T,S,F\}} \left[d(z_i^c,z_i^{cv})+d(z_i^t,z_i^{tv})\right].</annotation></semantics></math>
 
 `c/t` 分别表示 CNN/Transformer；CVC 在两个分支内分别执行跨视图对齐。[Paper: Equation (2); S009]
 
 ### 9.3 CMC
 
-$$
-L_{CMC}=\frac{1}{NV}\sum_{i=1}^{N}\left[d(z_i^c,z_i^t)+
-\sum_{v\in\{T,S,F\}}d(z_i^{cv},z_i^{tv})\right].
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>L</mi><mrow><mi>C</mi><mi>M</mi><mi>C</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi>N</mi><mi>V</mi></mrow></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo fence="true">[</mo><mi>d</mi><mo stretchy="false">(</mo><msubsup><mi>z</mi><mi>i</mi><mi>c</mi></msubsup><mo separator="true">,</mo><msubsup><mi>z</mi><mi>i</mi><mi>t</mi></msubsup><mo stretchy="false">)</mo><mo>+</mo><munder><mo>∑</mo><mrow><mi>v</mi><mo>∈</mo><mo stretchy="false">{</mo><mi>T</mi><mo separator="true">,</mo><mi>S</mi><mo separator="true">,</mo><mi>F</mi><mo stretchy="false">}</mo></mrow></munder><mi>d</mi><mo stretchy="false">(</mo><msubsup><mi>z</mi><mi>i</mi><mrow><mi>c</mi><mi>v</mi></mrow></msubsup><mo separator="true">,</mo><msubsup><mi>z</mi><mi>i</mi><mrow><mi>t</mi><mi>v</mi></mrow></msubsup><mo stretchy="false">)</mo><mo fence="true">]</mo></mrow><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">L_{CMC}=\frac{1}{NV}\sum_{i=1}^{N}\left[d(z_i^c,z_i^t)+ \sum_{v\in\{T,S,F\}}d(z_i^{cv},z_i^{tv})\right].</annotation></semantics></math>
 
 CMC 对 raw 和三个增强视图分别约束 CNN/Transformer 的同试次表示。[Paper: Equations (3)-(4); Section III-E; S010]
 
-![Figure 4](<./refs/paper-cards/mvcnet/assets/figure-04-cvc-pairs.png>)
+![Figure 4](<assets/figure-04-cvc-pairs.png>)
 
-[打开原图，放大查看](<./refs/paper-cards/mvcnet/assets/figure-04-cvc-pairs.png>)
+[打开原图，放大查看](<assets/figure-04-cvc-pairs.png>)
 
-![Figure 5](<./refs/paper-cards/mvcnet/assets/figure-05-cmc-pairs.png>)
+![Figure 5](<assets/figure-05-cmc-pairs.png>)
 
-[打开原图，放大查看](<./refs/paper-cards/mvcnet/assets/figure-05-cmc-pairs.png>)
+[打开原图，放大查看](<assets/figure-05-cmc-pairs.png>)
 
 ### 9.4 多视图分类损失
 
-$$
-L_{CLS}=\sum_{i=1}^{N}\left[CE(\hat y_i,y_i)+
-\sum_{v\in\{T,S,F\}}CE(\hat y_i^v,y_i)\right].
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>L</mi><mrow><mi>C</mi><mi>L</mi><mi>S</mi></mrow></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo fence="true">[</mo><mi>C</mi><mi>E</mi><mo stretchy="false">(</mo><msub><mover accent="true"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo>+</mo><munder><mo>∑</mo><mrow><mi>v</mi><mo>∈</mo><mo stretchy="false">{</mo><mi>T</mi><mo separator="true">,</mo><mi>S</mi><mo separator="true">,</mo><mi>F</mi><mo stretchy="false">}</mo></mrow></munder><mi>C</mi><mi>E</mi><mo stretchy="false">(</mo><msubsup><mover accent="true"><mi>y</mi><mo>^</mo></mover><mi>i</mi><mi>v</mi></msubsup><mo separator="true">,</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo fence="true">]</mo></mrow><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">L_{CLS}=\sum_{i=1}^{N}\left[CE(\hat y_i,y_i)+ \sum_{v\in\{T,S,F\}}CE(\hat y_i^v,y_i)\right].</annotation></semantics></math>
 
 同一分类器同时监督 raw 和增强视图；这使增强语义是否有效直接影响分类目标。[Paper: Equation (5); S011]
 
 ### 9.5 总目标
 
-$$
-L_{all}=L_{CLS}+\lambda L_{CVC}+\gamma L_{CMC}.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>L</mi><mrow><mi>a</mi><mi>l</mi><mi>l</mi></mrow></msub><mo>=</mo><msub><mi>L</mi><mrow><mi>C</mi><mi>L</mi><mi>S</mi></mrow></msub><mo>+</mo><mi>λ</mi><msub><mi>L</mi><mrow><mi>C</mi><mi>V</mi><mi>C</mi></mrow></msub><mo>+</mo><mi>γ</mi><msub><mi>L</mi><mrow><mi>C</mi><mi>M</mi><mi>C</mi></mrow></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">L_{all}=L_{CLS}+\lambda L_{CVC}+\gamma L_{CMC}.</annotation></semantics></math>
 
 论文固定 `lambda=gamma=0.1`、`tau=0.2`；Figure 8 只在另一个权重固定为 0.1 时逐一考察敏感性。[Paper: Equation (6); Section IV-C/H; Figure 8; S011, S013, S017]
 
@@ -278,21 +264,21 @@ $$
 | 权重敏感性 | `lambda/gamma` 不需精细调参 | 一项变化、另一项固定 0.1 | 作者称在较宽范围稳定 | 在所示单参数扫描中未出现剧烈敏感 | 不证明二维联合超参数空间稳定 | [Paper: Figure 8; S017] |
 | Transformer 结构敏感性 | 浅层小头数适合当前数据 | BNCI2014001；层数 1–4、头数 1/2/4/8 | 2 层、2 头为默认；更深/8 头略降 | 所测数据上扩大注意力容量无持续收益 | 不证明相同配置对五数据集全都最优 | [Paper: Figure 9; S017] |
 
-![Figure 6](<./refs/paper-cards/mvcnet/assets/figure-06-pairwise-augmentations.png>)
+![Figure 6](<assets/figure-06-pairwise-augmentations.png>)
 
-[打开原图，放大查看](<./refs/paper-cards/mvcnet/assets/figure-06-pairwise-augmentations.png>)
+[打开原图，放大查看](<assets/figure-06-pairwise-augmentations.png>)
 
-![Figure 7](<./refs/paper-cards/mvcnet/assets/figure-07-tsne.png>)
+![Figure 7](<assets/figure-07-tsne.png>)
 
-[打开原图，放大查看](<./refs/paper-cards/mvcnet/assets/figure-07-tsne.png>)
+[打开原图，放大查看](<assets/figure-07-tsne.png>)
 
-![Figure 8](<./refs/paper-cards/mvcnet/assets/figure-08-loss-sensitivity.png>)
+![Figure 8](<assets/figure-08-loss-sensitivity.png>)
 
-[打开原图，放大查看](<./refs/paper-cards/mvcnet/assets/figure-08-loss-sensitivity.png>)
+[打开原图，放大查看](<assets/figure-08-loss-sensitivity.png>)
 
-![Figure 9](<./refs/paper-cards/mvcnet/assets/figure-09-transformer-sensitivity.png>)
+![Figure 9](<assets/figure-09-transformer-sensitivity.png>)
 
-[打开原图，放大查看](<./refs/paper-cards/mvcnet/assets/figure-09-transformer-sensitivity.png>)
+[打开原图，放大查看](<assets/figure-09-transformer-sensitivity.png>)
 
 ### 10.3 图、表、公式完整索引
 
